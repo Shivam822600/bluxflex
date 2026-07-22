@@ -1,98 +1,175 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
+import { Link } from 'react-router-dom';
+import { ChevronRight } from 'lucide-react';
+
 import asset_baffle_bag_png_1 from '../assets/images/baffle-bag.png?url';
 import asset_single_loop_png_2 from '../assets/images/single-loop.png?url';
 
 export default function RpetFibc() {
-    useEffect(() => {
-        window.dispatchEvent(new Event('resize'));
-        setTimeout(() => {
-            window.dispatchEvent(new Event('resize'));
-        }, 500);
-    }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-    return (
-        <Layout>
-            <div dangerouslySetInnerHTML={{ __html: `<main id="content" class="site-main post-1011 page type-page status-publish hentry">
-
-
-	<div class="productDetailsWrapper">
-		<div class="productBasicInfo">
-			 <!-- Featured Image -->
-    			<div class="product-info">
-			                 <div class="page-header">
-                    <h1 class="entry-title">rPET FIBC</h1>                </div>
-    	                <div class="page-content">
-        		<div data-elementor-type="wp-page" data-elementor-id="1011" class="elementor elementor-1011">
-				<div class="elementor-element elementor-element-f1127ee e-flex e-con-boxed magic-button-disabled-no e-con e-parent" data-id="f1127ee" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-a81af8d e-con-full e-flex magic-button-disabled-no e-con e-child" data-id="a81af8d" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-a53a4bd e-con-full e-flex magic-button-disabled-no e-con e-child" data-id="a53a4bd" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-62cc7e0 elementor-widget elementor-widget-image" data-id="62cc7e0" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
-															<img fetchpriority="high" decoding="async" width="800" height="808" src="${asset_baffle_bag_png_1}" class="attachment-large size-large wp-image-1530" alt="" srcset="${asset_baffle_bag_png_1} 945w, ${asset_baffle_bag_png_1} 297w, ${asset_baffle_bag_png_1} 768w" sizes="(max-width: 800px) 100vw, 800px">															</div>
-				</div>
-		<div class="elementor-element elementor-element-bd877e2 e-con-full e-flex magic-button-disabled-no e-con e-child" data-id="bd877e2" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-700445d elementor-widget elementor-widget-heading" data-id="700445d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">rРЕТ FIBC</h2>				</div>
-				<div class="elementor-element elementor-element-a255a06 elementor-widget elementor-widget-text-editor" data-id="a255a06" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									<p>Circular Performance. Commercial Advantage.</p>								</div>
-				<div class="elementor-element elementor-element-641b059 elementor-widget elementor-widget-text-editor" data-id="641b059" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									<p>Hook: The “Status Quo” is now your most expensive strategy.<br>Across major economies, packaging policy is shifting toward circular material integration and</p><ul><li>United States: California AB 793 content mandate; State-level EPR legislation.</li><li>European Union: €800/Tonne Plastic Packaging Tax; Circular Economy Action Plan.</li><li>Canada: Action Plan on Zero Plastic Waste; Proposed 50% recycled targets by 2030. Federal<br>Plastics Registry reporting requirements.</li><li>Australia/NZ: 2025 National Packaging Targets; 50% average recycled content objective.</li></ul>								</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-c0ab634 e-con-full e-flex magic-button-disabled-no e-con e-child" data-id="c0ab634" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-42a0682 e-con-full e-flex magic-button-disabled-no e-con e-child" data-id="42a0682" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-42c3d38 elementor-widget elementor-widget-image" data-id="42c3d38" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
-															<img decoding="async" width="800" height="808" src="${asset_single_loop_png_2}" class="attachment-large size-large wp-image-1526" alt="" srcset="${asset_single_loop_png_2} 945w, ${asset_single_loop_png_2} 297w, ${asset_single_loop_png_2} 768w" sizes="(max-width: 800px) 100vw, 800px">															</div>
-				</div>
-		<div class="elementor-element elementor-element-841c2b0 e-con-full e-flex magic-button-disabled-no e-con e-child" data-id="841c2b0" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-bbd1951 elementor-widget elementor-widget-heading" data-id="bbd1951" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">Bottle to Bag</h2>				</div>
-				<div class="elementor-element elementor-element-9d92ae5 elementor-widget elementor-widget-text-editor" data-id="9d92ae5" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									<p><span style="text-decoration: underline;"><strong>INDUSTRIAL STABILITY. CIRCULAR MATERIAL.</strong></span></p><p>Hook: Transparency in supply. Clarity in performance.<br>Through Intrinsic Viscosity (IV) stabilization and precision extrusion, our material achieves mechanical performance comparable to conventional PP woven fabric.</p><ul><li>Advanced optical sorting &amp; Multi-stage decontamination.</li><li>SSP for molecular stabilization.</li><li>Stable stacking performance &amp; Controlled elongation.</li><li>Food grade certification under process.</li></ul><p>&nbsp;</p><p><span style="text-decoration: underline;"><strong>INTEGRATED CONTAINER PROGRAMS</strong></span></p><p>Hook: Innovation without the “All-In” Gamble.<br>Bulk Flex enables mixed container loads. Trial rPET innovation within the same load as your existing PP specifications.</p><ul><li>No portfolio replacement.</li><li>No isolated stock.</li><li>No operational disruption. Your PP foundation remains intact while your portfolio gains circular capability.</li></ul>								</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-eee6d73 e-con-full e-flex magic-button-disabled-no e-con e-child" data-id="eee6d73" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-1e9683c e-con-full e-flex magic-button-disabled-no e-con e-child" data-id="1e9683c" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-bfd5c15 elementor-widget elementor-widget-heading" data-id="bfd5c15" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">The Market is Moving — Quietly</h2>				</div>
-				<div class="elementor-element elementor-element-e055d08 elementor-widget elementor-widget-text-editor" data-id="e055d08" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									<p>Importers across North America and Europe are evaluating rPET FIBC alongside established Polypropylene programs. This is a structured and commercially benchmarked expansion. The advantage belongs to those who prepare before the demand.</p><p><strong><span style="text-decoration: underline;">ENGINEERING IMPACT</span></strong><br>&gt; Bag: ~ 200 Recycled Bottles.<br>&gt; 1 Full container (20T) : Bottles Diverted.<br>&gt; Performance remains industrial. The becomes circular.</p>								</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-348ec8c e-con-full e-flex magic-button-disabled-no e-con e-child" data-id="348ec8c" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-b5233a2 e-con-full e-flex magic-button-disabled-no e-con e-child" data-id="b5233a2" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-3d79a18 elementor-widget elementor-widget-heading" data-id="3d79a18" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">Why rPET is a Commercial Advantage</h2>				</div>
-				<div class="elementor-element elementor-element-28282ac elementor-widget elementor-widget-text-editor" data-id="28282ac" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									<p>&gt; Aligns with customer ESG commitments.<br>&gt; Enables participation in circular procurement tenders.<br>&gt; Mitigates exposure to recycled content taxation models.<br>&gt; Differentiates your portfolio beyond commodity supply.</p>								</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-877737a e-con-full e-flex magic-button-disabled-no e-con e-child" data-id="877737a" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-1065824 e-con-full e-flex magic-button-disabled-no e-con e-child" data-id="1065824" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-32caf21 elementor-widget elementor-widget-heading" data-id="32caf21" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">Comprehensive Portfolio</h2>				</div>
-				<div class="elementor-element elementor-element-6fc1fe6 elementor-widget elementor-widget-text-editor" data-id="6fc1fe6" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									<p>&gt; Available in rpET &amp; Virgin pp: U+2, 4-panel, Baffle (Q-Bags), Circular, and Single Loop Bags.<br>&gt; Available in Virgin PP High-Airflow Ventilated Bags.<br>&gt; Food Grade Programs: Virgin PP BRC certified production. (rPET Food Grade in-process).</p>								</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		
-        
+  return (
+    <Layout>
+      <div className="productDetailsWrapper">
+        {/* Section 1: Hero Header & Policy Mandates */}
+        <div style={{
+          background: '#FFFFFF',
+          borderRadius: '20px',
+          border: '1px solid #E2E8F0',
+          padding: '36px',
+          marginBottom: '32px',
+          boxShadow: '0 8px 30px rgba(7, 40, 52, 0.04)'
+        }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '40px', alignItems: 'center' }}>
+            <div style={{ background: '#F8FAFC', borderRadius: '20px', padding: '24px', border: '1px solid #EEF2F6', textAlign: 'center' }}>
+              <img src={asset_baffle_bag_png_1} alt="rPET FIBC Baffle Bag" style={{ maxHeight: '340px', width: 'auto', margin: '0 auto', objectFit: 'contain' }} />
             </div>
-			</div>
-		</div>
-		
 
+            <div>
+              <h1 style={{ fontSize: '32px', color: '#072834', fontWeight: '800', marginBottom: '8px' }}>
+                rPET FIBC
+              </h1>
+              <h3 style={{ fontSize: '18px', color: '#00C2A8', fontWeight: '700', marginBottom: '16px' }}>
+                Circular Performance. Commercial Advantage.
+              </h3>
+              <p style={{ fontSize: '15px', color: '#475569', lineHeight: '1.6', marginBottom: '16px', fontWeight: '700' }}>
+                The “Status Quo” is now your most expensive strategy.
+              </p>
+              <p style={{ fontSize: '14px', color: '#64748B', lineHeight: '1.6', marginBottom: '16px' }}>
+                Across major economies, packaging policy is shifting toward circular material integration and regulatory mandates:
+              </p>
+              <ul style={{ listStyle: 'disc', paddingLeft: '20px', color: '#475569', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>
+                <li><strong>United States:</strong> California AB 793 content mandate; State-level EPR legislation.</li>
+                <li><strong>European Union:</strong> €800/Tonne Plastic Packaging Tax; Circular Economy Action Plan.</li>
+                <li><strong>Canada:</strong> Action Plan on Zero Plastic Waste; Proposed 50% recycled targets by 2030. Federal Plastics Registry reporting requirements.</li>
+                <li><strong>Australia/NZ:</strong> 2025 National Packaging Targets; 50% average recycled content objective.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-    
-		
-	</div>
+        {/* Section 2: Bottle to Bag & Integrated Container Programs */}
+        <div style={{
+          background: '#FFFFFF',
+          borderRadius: '20px',
+          border: '1px solid #E2E8F0',
+          padding: '36px',
+          marginBottom: '32px',
+          boxShadow: '0 8px 30px rgba(7, 40, 52, 0.04)'
+        }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '40px', alignItems: 'center' }}>
+            <div style={{ background: '#F8FAFC', borderRadius: '20px', padding: '24px', border: '1px solid #EEF2F6', textAlign: 'center' }}>
+              <img src={asset_single_loop_png_2} alt="Single Loop rPET FIBC" style={{ maxHeight: '340px', width: 'auto', margin: '0 auto', objectFit: 'contain' }} />
+            </div>
 
-    
-</main>` }} />
-        </Layout>
-    );
+            <div>
+              <h2 style={{ fontSize: '26px', color: '#072834', fontWeight: '800', marginBottom: '16px' }}>
+                Bottle to Bag
+              </h2>
+              
+              <div style={{ marginBottom: '20px' }}>
+                <h4 style={{ fontSize: '14px', fontWeight: '800', color: '#00C2A8', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '4px' }}>
+                  Industrial Stability. Circular Material.
+                </h4>
+                <p style={{ fontSize: '13px', color: '#64748B', lineHeight: '1.6', marginBottom: '10px' }}>
+                  Transparency in supply. Clarity in performance. Through Intrinsic Viscosity (IV) stabilization and precision extrusion, our material achieves mechanical performance comparable to conventional PP woven fabric.
+                </p>
+                <ul style={{ listStyle: 'disc', paddingLeft: '20px', color: '#475569', fontSize: '13px', lineHeight: '1.6' }}>
+                  <li>Advanced optical sorting & Multi-stage decontamination.</li>
+                  <li>SSP for molecular stabilization.</li>
+                  <li>Stable stacking performance & Controlled elongation.</li>
+                  <li>Food grade certification under process.</li>
+                </ul>
+              </div>
+
+              <div style={{ background: '#F8FAFC', padding: '16px 20px', borderRadius: '14px', border: '1px solid #E2E8F0' }}>
+                <h4 style={{ fontSize: '14px', fontWeight: '800', color: '#072834', marginBottom: '4px' }}>
+                  INTEGRATED CONTAINER PROGRAMS
+                </h4>
+                <p style={{ fontSize: '13px', color: '#64748B', lineHeight: '1.6', margin: '0 0 8px 0' }}>
+                  Innovation without the “All-In” Gamble. Bulk Flex enables mixed container loads. Trial rPET innovation within the same load as your existing PP specifications.
+                </p>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontSize: '13px', color: '#072834', fontWeight: '600' }}>
+                  <li>✓ No portfolio replacement.</li>
+                  <li>✓ No isolated stock.</li>
+                  <li>✓ No operational disruption. Your PP foundation remains intact while your portfolio gains circular capability.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Section 3: Market & Engineering Impact */}
+        <div style={{
+          background: '#FFFFFF',
+          borderRadius: '20px',
+          border: '1px solid #E2E8F0',
+          padding: '32px',
+          marginBottom: '32px'
+        }}>
+          <h2 style={{ fontSize: '24px', color: '#072834', fontWeight: '800', marginBottom: '12px' }}>
+            The Market is Moving — Quietly
+          </h2>
+          <p style={{ fontSize: '14px', color: '#475569', lineHeight: '1.6', marginBottom: '20px' }}>
+            Importers across North America and Europe are evaluating rPET FIBC alongside established Polypropylene programs. This is a structured and commercially benchmarked expansion. The advantage belongs to those who prepare before the demand.
+          </p>
+
+          <div style={{ background: '#072834', color: '#FFFFFF', padding: '24px', borderRadius: '16px' }}>
+            <h4 style={{ fontSize: '16px', fontWeight: '800', color: '#00C2A8', marginBottom: '12px' }}>
+              ENGINEERING IMPACT
+            </h4>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px' }}>
+              <div>
+                <span style={{ fontSize: '13px', color: '#94A3B8' }}>Bag:</span>
+                <p style={{ fontSize: '18px', fontWeight: '800', color: '#FFFFFF', margin: '2px 0 0 0' }}>~ 200 Recycled Bottles</p>
+              </div>
+              <div>
+                <span style={{ fontSize: '13px', color: '#94A3B8' }}>1 Full Container (20T):</span>
+                <p style={{ fontSize: '18px', fontWeight: '800', color: '#FFFFFF', margin: '2px 0 0 0' }}>Bottles Diverted At Scale</p>
+              </div>
+              <div>
+                <span style={{ fontSize: '13px', color: '#94A3B8' }}>Performance Standard:</span>
+                <p style={{ fontSize: '18px', fontWeight: '800', color: '#00C2A8', margin: '2px 0 0 0' }}>Industrial & Circular</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Section 4: Why rPET Commercial Advantage & Comprehensive Portfolio */}
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '28px', marginBottom: '32px' }}>
+          <div style={{ background: '#FFFFFF', borderRadius: '20px', border: '1px solid #E2E8F0', padding: '28px' }}>
+            <h3 style={{ fontSize: '20px', color: '#072834', fontWeight: '800', marginBottom: '14px' }}>
+              Why rPET is a Commercial Advantage
+            </h3>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '14px', color: '#475569' }}>
+              <li>➢ Aligns with customer ESG commitments.</li>
+              <li>➢ Enables participation in circular procurement tenders.</li>
+              <li>➢ Mitigates exposure to recycled content taxation models.</li>
+              <li>➢ Differentiates your portfolio beyond commodity supply.</li>
+            </ul>
+          </div>
+
+          <div style={{ background: '#FFFFFF', borderRadius: '20px', border: '1px solid #E2E8F0', padding: '28px' }}>
+            <h3 style={{ fontSize: '20px', color: '#072834', fontWeight: '800', marginBottom: '14px' }}>
+              Comprehensive Portfolio
+            </h3>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '14px', color: '#475569' }}>
+              <li>➢ <strong>rPET & Virgin PP:</strong> U+2, 4-panel, Baffle (Q-Bags), Circular, and Single Loop Bags.</li>
+              <li>➢ <strong>High-Airflow:</strong> Available in Virgin PP High-Airflow Ventilated Bags.</li>
+              <li>➢ <strong>Food Grade Programs:</strong> Virgin PP BRC certified production (rPET Food Grade in-process).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style={{ textAlign: 'center', marginTop: '24px' }}>
+          <Link to="/contact-us-2" className="btn-dark" style={{ display: 'inline-flex', padding: '14px 36px', fontSize: '15px' }}>
+            Inquire About rPET Programs <ChevronRight size={18} />
+          </Link>
+        </div>
+      </div>
+    </Layout>
+  );
 }

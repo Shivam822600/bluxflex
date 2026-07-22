@@ -8,9 +8,9 @@ export default function Footer() {
   };
 
   return (
-    <footer style={{ background: '#072834', color: '#FFFFFF', padding: 'clamp(40px, 6vw, 72px) 0 28px 0' }}>
+    <footer style={{ background: '#072834', color: '#FFFFFF', padding: 'clamp(40px, 6vw, 72px) 0 28px 0', borderTop: '1px solid rgba(255, 255, 255, 0.12)' }}>
       <div className="container">
-        <div 
+        <div
           className="footer-grid-container"
           style={{
             display: 'grid',
@@ -20,7 +20,7 @@ export default function Footer() {
             borderBottom: '1px solid rgba(255, 255, 255, 0.1)'
           }}
         >
-          
+
           {/* Column 1: Brand Info */}
           <div>
             <div style={{ fontSize: '24px', fontWeight: '800', marginBottom: '16px', fontFamily: 'var(--font-heading)' }}>
@@ -32,9 +32,9 @@ export default function Footer() {
 
             {/* Social Circle Icons */}
             <div style={{ display: 'flex', gap: '10px' }}>
-              <a 
-                href="https://linkedin.com" 
-                target="_blank" 
+              <a
+                href="https://linkedin.com"
+                target="_blank"
                 rel="noreferrer"
                 aria-label="BulkFlex LinkedIn"
                 style={{
@@ -52,9 +52,9 @@ export default function Footer() {
               >
                 in
               </a>
-              <a 
-                href="https://instagram.com" 
-                target="_blank" 
+              <a
+                href="https://instagram.com"
+                target="_blank"
                 rel="noreferrer"
                 aria-label="BulkFlex Instagram"
                 style={{
@@ -133,14 +133,14 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div 
+        <div
           className="footer-bottom-bar"
           style={{ paddingTop: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '12px', color: '#64748B' }}
         >
           <div>© 2025 Bulk Flex. All Rights Reserved.</div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-            <span>Design & Developed by Webpark Technologies</span>
-            <button 
+            <span>Design & Developed by Shivam Technologies</span>
+            <button
               onClick={scrollToTop}
               aria-label="Scroll back to top"
               style={{
