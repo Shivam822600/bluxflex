@@ -1,25 +1,12 @@
 import React, { useEffect } from 'react';
-import Layout from '../components/Layout';
-
+import { useNavigate } from 'react-router-dom';
 
 export default function ContactUs() {
-    useEffect(() => {
-        window.dispatchEvent(new Event('resize'));
-        setTimeout(() => {
-            window.dispatchEvent(new Event('resize'));
-        }, 500);
-    }, []);
+  const navigate = useNavigate();
 
-    return (
-        <Layout>
-            <div dangerouslySetInnerHTML={{ __html: `
-<a href="/contact-us-2"><h3>Click here...</h3></a>
+  useEffect(() => {
+    navigate('/contact-us-2', { replace: true });
+  }, [navigate]);
 
-
-
-
-
-` }} />
-        </Layout>
-    );
+  return null;
 }

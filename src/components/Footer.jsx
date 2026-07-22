@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, ArrowUp } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Footer() {
+  const { t } = useLanguage();
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -75,57 +78,66 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 2: Quick Links */}
+          {/* Column 2: Navigation */}
           <div>
-            <h4 style={{ fontSize: '15px', fontWeight: '700', marginBottom: '18px', color: '#FFFFFF' }}>Quick Links</h4>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '13px', color: '#CBD5E1' }}>
-              <li><Link to="/" style={{ padding: '4px 0', display: 'inline-block' }}>Home</Link></li>
-              <li><Link to="/products" style={{ padding: '4px 0', display: 'inline-block' }}>Products</Link></li>
-              <li><Link to="/rpet-fibc" style={{ padding: '4px 0', display: 'inline-block' }}>RPET FIBC</Link></li>
-              <li><Link to="/about-us" style={{ padding: '4px 0', display: 'inline-block' }}>About Us</Link></li>
-              <li><Link to="/contact-us-2" style={{ padding: '4px 0', display: 'inline-block' }}>Contact</Link></li>
+            <h4 style={{ fontSize: '15px', fontWeight: '700', color: '#00C2A8', marginBottom: '18px' }}>
+              Navigation
+            </h4>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '13.5px' }}>
+              <li><Link to="/" style={{ color: '#CBD5E1' }}>{t('home')}</Link></li>
+              <li><Link to="/about-us" style={{ color: '#CBD5E1' }}>{t('aboutUs')}</Link></li>
+              <li><Link to="/products" style={{ color: '#CBD5E1' }}>{t('products')}</Link></li>
+              <li><Link to="/rpet-fibc" style={{ color: '#CBD5E1' }}>{t('rpetFibc')}</Link></li>
+              <li><Link to="/buyer-tools" style={{ color: '#CBD5E1' }}>{t('buyerCorner')}</Link></li>
+              <li><Link to="/contact-us-2" style={{ color: '#CBD5E1' }}>{t('contactUs')}</Link></li>
             </ul>
           </div>
 
           {/* Column 3: Products */}
           <div>
-            <h4 style={{ fontSize: '15px', fontWeight: '700', marginBottom: '18px', color: '#FFFFFF' }}>Products</h4>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '13px', color: '#CBD5E1' }}>
-              <li><Link to="/product_category/fibc" style={{ padding: '4px 0', display: 'inline-block' }}>FIBC Jumbo Bag</Link></li>
-              <li><Link to="/product_category/leno-bags-febric" style={{ padding: '4px 0', display: 'inline-block' }}>Leno Bags & Fabric</Link></li>
-              <li><Link to="/product_category/pp-woven-sacks" style={{ padding: '4px 0', display: 'inline-block' }}>PP Woven Sacks</Link></li>
-              <li><Link to="/product_category/jute-burlap" style={{ padding: '4px 0', display: 'inline-block' }}>Jute / Burlap</Link></li>
-              <li><Link to="/product_category/specialty-febrics" style={{ padding: '4px 0', display: 'inline-block' }}>Specialty Fabrics</Link></li>
-              <li><Link to="/product_category/retail-shoping-bags" style={{ padding: '4px 0', display: 'inline-block' }}>Retail Shopping Bags</Link></li>
+            <h4 style={{ fontSize: '15px', fontWeight: '700', color: '#00C2A8', marginBottom: '18px' }}>
+              Categories
+            </h4>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '13.5px' }}>
+              <li><Link to="/product_category/fibc" style={{ color: '#CBD5E1' }}>FIBC Jumbo Bags</Link></li>
+              <li><Link to="/north-america-paper-bag-2" style={{ color: '#CBD5E1' }}>Paper Bags</Link></li>
+              <li><Link to="/product_category/leno-bags-febric" style={{ color: '#CBD5E1' }}>Leno Bags</Link></li>
+              <li><Link to="/product_category/pp-woven-sacks" style={{ color: '#CBD5E1' }}>PP Woven Sacks</Link></li>
+              <li><Link to="/product_category/jute-burlap" style={{ color: '#CBD5E1' }}>Jute / Burlap</Link></li>
+              <li><Link to="/product_category/container-liners" style={{ color: '#CBD5E1' }}>Container Liners</Link></li>
             </ul>
           </div>
 
-          {/* Column 4: Legal & Compliance */}
+          {/* Column 4: Sourcing Hubs */}
           <div>
-            <h4 style={{ fontSize: '15px', fontWeight: '700', marginBottom: '18px', color: '#FFFFFF' }}>Legal & Compliance</h4>
+            <h4 style={{ fontSize: '15px', fontWeight: '700', color: '#00C2A8', marginBottom: '18px' }}>
+              Global Hubs
+            </h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '13px', color: '#CBD5E1' }}>
-              <li><Link to="/terms-and-conditions" style={{ padding: '4px 0', display: 'inline-block' }}>Terms & Conditions</Link></li>
-              <li><Link to="/terms-and-conditions" style={{ padding: '4px 0', display: 'inline-block' }}>Privacy Policy</Link></li>
-              <li><Link to="/terms-and-conditions" style={{ padding: '4px 0', display: 'inline-block' }}>Disclaimer</Link></li>
-              <li><Link to="/terms-and-conditions" style={{ padding: '4px 0', display: 'inline-block' }}>Certificates</Link></li>
+              <li><strong>India Sourcing HQ:</strong> Gujarat &amp; Mumbai</li>
+              <li><strong>Vietnam Hub:</strong> Ho Chi Minh City</li>
+              <li><strong>Americas Desk:</strong> New York, USA</li>
+              <li><strong>Europe Desk:</strong> London, UK</li>
             </ul>
           </div>
 
-          {/* Column 5: Get in Touch */}
+          {/* Column 5: Contact Info */}
           <div>
-            <h4 style={{ fontSize: '15px', fontWeight: '700', marginBottom: '18px', color: '#FFFFFF' }}>Get in Touch</h4>
+            <h4 style={{ fontSize: '15px', fontWeight: '700', color: '#00C2A8', marginBottom: '18px' }}>
+              Contact HQ
+            </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '13px', color: '#CBD5E1' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <Mail size={16} color="#00C2A8" />
-                <a href="mailto:info@bulkflex.com" style={{ color: '#CBD5E1' }}>info@bulkflex.com</a>
+              <div style={{ display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
+                <MapPin size={16} color="#00C2A8" style={{ marginTop: '2px', flexShrink: 0 }} />
+                <span>BulkFlex Private Limited, India</span>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <Phone size={16} color="#00C2A8" />
+              <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                <Phone size={16} color="#00C2A8" style={{ flexShrink: 0 }} />
                 <a href="tel:+919876543210" style={{ color: '#CBD5E1' }}>+91 98765 43210</a>
               </div>
-              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
-                <MapPin size={16} color="#00C2A8" style={{ marginTop: '2px', flexShrink: 0 }} />
-                <span>Address<br />India Hub | Asia Hub</span>
+              <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                <Mail size={16} color="#00C2A8" style={{ flexShrink: 0 }} />
+                <a href="mailto:info@bulkflex.com" style={{ color: '#CBD5E1' }}>info@bulkflex.com</a>
               </div>
             </div>
           </div>
@@ -133,27 +145,30 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div
-          className="footer-bottom-bar"
-          style={{ paddingTop: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '12px', color: '#64748B' }}
-        >
-          <div>© 2025 Bulk Flex. All Rights Reserved.</div>
+        <div style={{ paddingTop: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px', fontSize: '13px', color: '#64748B' }}>
+          <div>
+            © {new Date().getFullYear()} BulkFlex Private Limited. {t('footerRights')}
+          </div>
+
           <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-            <span>Design & Developed by Shivam Technologies</span>
+            <Link to="/terms-and-conditions" style={{ color: '#64748B' }}>Terms &amp; Conditions</Link>
+
+            {/* Back to top button */}
             <button
               onClick={scrollToTop}
-              aria-label="Scroll back to top"
+              aria-label="Scroll back to top of page"
               style={{
-                width: '40px',
-                height: '40px',
-                borderRadius: '50%',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
-                background: 'transparent',
+                background: 'rgba(255, 255, 255, 0.08)',
+                border: '1px solid rgba(255, 255, 255, 0.15)',
                 color: '#FFFFFF',
+                width: '36px',
+                height: '36px',
+                borderRadius: '50%',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                cursor: 'pointer'
+                cursor: 'pointer',
+                transition: 'all 0.2s'
               }}
             >
               <ArrowUp size={16} />

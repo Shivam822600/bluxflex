@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown, Globe, Menu, X, Clock, Phone, Mail } from 'lucide-react';
+import { useLanguage, languages } from '../context/LanguageContext';
 
 export default function Header() {
+  const { language, changeLanguage, t, currentLangObj } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
   const [productDropdownOpen, setProductDropdownOpen] = useState(false);
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
-  const [currentLang, setCurrentLang] = useState('EN');
   const [time, setTime] = useState({
     ny: '',
     london: '',
@@ -48,14 +49,6 @@ export default function Header() {
     { name: 'Container Liners', path: '/product_category/container-liners' },
   ];
 
-  const languages = [
-    { code: 'EN', name: 'English', flag: '🇬🇧' },
-    { code: 'ES', name: 'Spanish', flag: '🇪🇸' },
-    { code: 'FR', name: 'French', flag: '🇫🇷' },
-    { code: 'DE', name: 'German', flag: '🇩🇪' },
-    { code: 'AR', name: 'Arabic', flag: '🇦🇪' },
-  ];
-
   return (
     <header style={{
       position: 'sticky',
@@ -81,7 +74,7 @@ export default function Header() {
           <div style={{ display: 'flex', alignItems: 'center', gap: '18px', flexWrap: 'wrap' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#00C2A8', fontWeight: '700' }}>
               <Clock size={13} color="#00C2A8" />
-              <span>LIVE REGIONAL DESKS:</span>
+              <span>{t('liveDesks')}</span>
             </div>
 
             {/* Americas Hub */}
@@ -135,7 +128,7 @@ export default function Header() {
         {/* Centered Navigation Links */}
         <nav className="desktop-only" style={{ display: 'flex', gap: '32px', alignItems: 'center', fontWeight: '600', fontSize: '14px' }}>
           <Link to="/" style={{ color: location.pathname === '/' ? '#00C2A8' : '#FFFFFF', padding: '8px 0', transition: 'color 0.2s' }}>
-            Home
+            {t('home')}
           </Link>
 
           {/* Products Dropdown */}
@@ -152,7 +145,7 @@ export default function Header() {
               padding: '8px 0',
               transition: 'color 0.2s'
             }}>
-              Products <ChevronDown size={14} />
+              {t('products')} <ChevronDown size={14} />
             </Link>
 
             {productDropdownOpen && (
@@ -199,19 +192,19 @@ export default function Header() {
           </div>
 
           <Link to="/rpet-fibc" style={{ color: location.pathname === '/rpet-fibc' ? '#00C2A8' : '#FFFFFF', padding: '8px 0', transition: 'color 0.2s' }}>
-            RPET FIBC
+            {t('rpetFibc')}
           </Link>
           <Link to="/north-america-paper-bag-2" style={{ color: location.pathname === '/north-america-paper-bag-2' ? '#00C2A8' : '#FFFFFF', padding: '8px 0', transition: 'color 0.2s' }}>
-            Multiwall Paper Bag
+            {t('paperBag')}
           </Link>
           <Link to="/buyer-tools" style={{ color: location.pathname === '/buyer-tools' ? '#00C2A8' : '#FFFFFF', padding: '8px 0', transition: 'color 0.2s' }}>
-            Buyer Corner
+            {t('buyerCorner')}
           </Link>
           <Link to="/about-us" style={{ color: location.pathname === '/about-us' ? '#00C2A8' : '#FFFFFF', padding: '8px 0', transition: 'color 0.2s' }}>
-            About Us
+            {t('aboutUs')}
           </Link>
           <Link to="/contact-us-2" style={{ color: location.pathname === '/contact-us-2' ? '#00C2A8' : '#FFFFFF', padding: '8px 0', transition: 'color 0.2s' }}>
-            Contact Us
+            {t('contactUs')}
           </Link>
         </nav>
 
@@ -265,7 +258,7 @@ export default function Header() {
                 transition: 'all 0.2s'
               }}
             >
-              <span>🇬🇧</span> {currentLang} <ChevronDown size={14} />
+              <span>{currentLangObj.flag}</span> {currentLangObj.code} <ChevronDown size={14} />
             </button>
 
             {langDropdownOpen && (
@@ -277,14 +270,14 @@ export default function Header() {
                 borderRadius: '12px',
                 padding: '8px',
                 boxShadow: '0 10px 30px rgba(0,0,0,0.15)',
-                minWidth: '140px',
+                minWidth: '145px',
                 zIndex: 1100
               }}>
                 {languages.map((lang) => (
                   <div 
                     key={lang.code}
                     onClick={() => {
-                      setCurrentLang(lang.code);
+                      changeLanguage(lang.code);
                       setLangDropdownOpen(false);
                     }}
                     style={{
@@ -292,15 +285,20 @@ export default function Header() {
                       borderRadius: '6px',
                       fontSize: '13px',
                       fontWeight: '600',
-                      color: '#072834',
+                      color: language === lang.code ? '#00C2A8' : '#072834',
+                      background: language === lang.code ? '#E8F7F5' : 'transparent',
                       cursor: 'pointer',
                       display: 'flex',
                       alignItems: 'center',
                       gap: '8px',
                       transition: 'background 0.2s'
                     }}
-                    onMouseEnter={(e) => e.currentTarget.style.background = '#E8F7F5'}
-                    onMouseLeave={(e) => e.currentTarget.style.background = 'transparent'}
+                    onMouseEnter={(e) => {
+                      if (language !== lang.code) e.currentTarget.style.background = '#F8FAFC';
+                    }}
+                    onMouseLeave={(e) => {
+                      if (language !== lang.code) e.currentTarget.style.background = 'transparent';
+                    }}
                   >
                     <span>{lang.flag}</span> {lang.name}
                   </div>

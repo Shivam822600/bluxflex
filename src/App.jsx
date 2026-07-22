@@ -107,6 +107,7 @@ import TermsAndConditions from './pages/TermsAndConditions';
 import Welcome from './pages/Welcome';
 import WpJson from './pages/WpJson';
 import SplashScreen from './components/SplashScreen';
+import { LanguageProvider } from './context/LanguageContext';
 
 
 function ScrollToTop() {
@@ -121,7 +122,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   return (
-    <>
+    <LanguageProvider>
       {loading && <SplashScreen onFinish={() => setLoading(false)} />}
       <Router>
         <ScrollToTop />
@@ -234,7 +235,7 @@ function App() {
           <Route path="/wp-json" element={<WpJson />} />
         </Routes>
       </Router>
-    </>
+    </LanguageProvider>
   );
 }
 

@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../components/Layout';
+import { useLanguage } from '../context/LanguageContext';
 import { 
   ArrowRight, 
   ChevronDown, 
@@ -44,6 +45,7 @@ import asset_Company_Overview from '../assets/images/Company-Overview.png?url';
 import asset_Manufacturing from '../assets/images/Manufacturing.png?url';
 
 export default function HomePage() {
+  const { t } = useLanguage();
   const [activeTab, setActiveTab] = useState(0);
   const [heroLangOpen, setHeroLangOpen] = useState(false);
   const [selectedHeroLang, setSelectedHeroLang] = useState('EN - English');
@@ -216,7 +218,7 @@ export default function HomePage() {
                 }}
               >
                 <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#00C2A8' }}></span>
-                B2B Sourcing & Logistics Hub
+                {t('heroTag')}
               </div>
 
               <h1 style={{
@@ -228,14 +230,7 @@ export default function HomePage() {
                 marginBottom: '22px',
                 fontFamily: 'var(--font-heading)'
               }}>
-                Global Procurement <br />
-                <span style={{ 
-                  background: 'linear-gradient(135deg, #072834 0%, #00C2A8 100%)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent'
-                }}>
-                  Simplified & Scaled.
-                </span>
+                {t('heroTitle')}
               </h1>
 
               <p style={{
@@ -245,7 +240,7 @@ export default function HomePage() {
                 marginBottom: '32px',
                 maxWidth: '540px'
               }}>
-                Bulk Flex enables enterprise buyers to source from India and Asia with guaranteed continuity, stringent quality controls, and full supply chain visibility.
+                {t('heroDesc')}
               </p>
 
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', alignItems: 'center' }}>
@@ -257,15 +252,15 @@ export default function HomePage() {
                     color: '#FFFFFF',
                     padding: '16px 32px',
                     borderRadius: '50px',
-                    fontWeight: '700',
+                    fontWeight: '800',
                     fontSize: '15px',
                     display: 'inline-flex',
                     alignItems: 'center',
                     gap: '10px',
-                    boxShadow: '0 12px 30px rgba(7, 40, 52, 0.25)',
-                    border: 'none',
+                    boxShadow: '0 10px 25px rgba(7, 40, 52, 0.25)',
                     cursor: 'pointer',
-                    transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)'
+                    border: 'none',
+                    transition: 'all 0.3s ease'
                   }}
                   onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
                   onMouseLeave={(e) => e.currentTarget.style.transform = 'none'}
