@@ -1,9 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from '../components/Layout';
 import { MapPin, Phone, Mail, Send, CheckCircle2 } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function ContactUs2() {
+  const { t } = useLanguage();
   const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,32 +20,37 @@ export default function ContactUs2() {
   return (
     <Layout>
       {/* Banner */}
-      <section style={{ background: '#072834', color: '#FFFFFF', padding: '56px 0', textAlign: 'center' }}>
+      <section style={{ background: '#072834', color: '#FFFFFF', padding: 'clamp(36px, 6vw, 64px) 0', textAlign: 'center' }}>
         <div className="container">
-          <h1 style={{ fontSize: '38px', color: '#FFFFFF', fontWeight: '800', fontFamily: 'var(--font-heading)' }}>
-            Contact Us
+          <h1 style={{ fontSize: 'clamp(28px, 4vw, 42px)', color: '#FFFFFF', fontWeight: '800', fontFamily: 'var(--font-heading)' }}>
+            {t('contactUs')}
           </h1>
-          <p style={{ color: '#94A3B8', fontSize: '15px', marginTop: '8px' }}>
+          <p style={{ color: '#94A3B8', fontSize: '15px', marginTop: '8px', maxWidth: '540px', margin: '8px auto 0 auto' }}>
             Get in touch with our global procurement execution team.
           </p>
         </div>
       </section>
 
       {/* Main Form & Address Section */}
-      <section style={{ padding: '72px 0', background: '#F8FAFC' }}>
+      <section style={{ padding: 'clamp(36px, 6vw, 72px) 0', background: '#F8FAFC' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '48px', alignItems: 'start' }}>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: 'clamp(24px, 4vw, 48px)',
+            alignItems: 'start'
+          }}>
             
             {/* Contact Details Card */}
-            <div style={{ background: '#072834', color: '#FFFFFF', padding: '40px', borderRadius: '16px' }}>
-              <h2 style={{ fontSize: '28px', color: '#FFFFFF', marginBottom: '12px' }}>Get In Touch</h2>
-              <p style={{ color: '#CBD5E1', fontSize: '15px', lineHeight: '1.6', marginBottom: '32px' }}>
+            <div style={{ background: '#072834', color: '#FFFFFF', padding: 'clamp(24px, 4vw, 40px)', borderRadius: '20px' }}>
+              <h2 style={{ fontSize: 'clamp(22px, 3vw, 28px)', color: '#FFFFFF', marginBottom: '12px' }}>Get In Touch</h2>
+              <p style={{ color: '#CBD5E1', fontSize: '14.5px', lineHeight: '1.6', marginBottom: '32px' }}>
                 Ready to discuss your bulk packaging requirements? Contact our technical team today.
               </p>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                 <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-                  <div style={{ background: 'rgba(0, 194, 168, 0.2)', padding: '12px', borderRadius: '10px', color: '#00C2A8' }}>
+                  <div style={{ background: 'rgba(0, 194, 168, 0.2)', padding: '12px', borderRadius: '10px', color: '#00C2A8', flexShrink: 0 }}>
                     <MapPin size={22} />
                   </div>
                   <div>
@@ -51,7 +62,7 @@ export default function ContactUs2() {
                 </div>
 
                 <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
-                  <div style={{ background: 'rgba(0, 194, 168, 0.2)', padding: '12px', borderRadius: '10px', color: '#00C2A8' }}>
+                  <div style={{ background: 'rgba(0, 194, 168, 0.2)', padding: '12px', borderRadius: '10px', color: '#00C2A8', flexShrink: 0 }}>
                     <Phone size={22} />
                   </div>
                   <div>
@@ -61,7 +72,7 @@ export default function ContactUs2() {
                 </div>
 
                 <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
-                  <div style={{ background: 'rgba(0, 194, 168, 0.2)', padding: '12px', borderRadius: '10px', color: '#00C2A8' }}>
+                  <div style={{ background: 'rgba(0, 194, 168, 0.2)', padding: '12px', borderRadius: '10px', color: '#00C2A8', flexShrink: 0 }}>
                     <Mail size={22} />
                   </div>
                   <div>
@@ -73,9 +84,9 @@ export default function ContactUs2() {
             </div>
 
             {/* Contact Form Card */}
-            <div className="card-clean" style={{ padding: '40px' }}>
-              <h2 style={{ fontSize: '26px', color: '#072834', marginBottom: '8px' }}>Send Us a Message</h2>
-              <p style={{ color: '#64748B', fontSize: '14px', marginBottom: '28px' }}>
+            <div className="card-clean" style={{ padding: 'clamp(24px, 4vw, 40px)' }}>
+              <h2 style={{ fontSize: 'clamp(22px, 3vw, 26px)', color: '#072834', marginBottom: '8px' }}>Send Us a Message</h2>
+              <p style={{ color: '#64748B', fontSize: '14px', marginBottom: '24px' }}>
                 Fill out the form below and an export engineer will respond within 24 hours.
               </p>
 
@@ -87,7 +98,11 @@ export default function ContactUs2() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+                  <div style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+                    gap: '16px'
+                  }}>
                     <div>
                       <label style={{ fontSize: '13px', fontWeight: '600', color: '#072834', display: 'block', marginBottom: '6px' }}>Your Name</label>
                       <input type="text" placeholder="John Doe" required style={{ width: '100%', padding: '12px', borderRadius: '8px', border: '1px solid #CBD5E1', fontSize: '14px' }} />
@@ -99,7 +114,7 @@ export default function ContactUs2() {
                   </div>
 
                   <div>
-                    <label style={{ fontSize: '13px', fontWeight: '600', color: '#072834', display: 'block', marginBottom: '6px' }}>Company & Country</label>
+                    <label style={{ fontSize: '13px', fontWeight: '600', color: '#072834', display: 'block', marginBottom: '6px' }}>Company &amp; Country</label>
                     <input type="text" placeholder="Acme Logistics, USA" style={{ width: '100%', padding: '12px', borderRadius: '8px', border: '1px solid #CBD5E1', fontSize: '14px' }} />
                   </div>
 
@@ -108,7 +123,7 @@ export default function ContactUs2() {
                     <textarea rows="4" placeholder="Describe your bag dimensions, SWL requirement, and quantity..." required style={{ width: '100%', padding: '12px', borderRadius: '8px', border: '1px solid #CBD5E1', fontSize: '14px', resize: 'vertical' }}></textarea>
                   </div>
 
-                  <button type="submit" className="btn-dark" style={{ background: '#072834', justifyContent: 'center' }}>
+                  <button type="submit" className="btn-dark" style={{ background: '#072834', justifyContent: 'center', minHeight: '44px' }}>
                     Send Message <Send size={16} />
                   </button>
                 </form>

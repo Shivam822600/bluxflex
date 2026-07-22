@@ -190,10 +190,10 @@ export default function HomePage() {
         }} />
 
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
-          <div style={{
+          <div className="grid-responsive-2" style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-            gap: '48px',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: 'clamp(24px, 5vw, 48px)',
             alignItems: 'center'
           }}>
             
@@ -764,8 +764,8 @@ export default function HomePage() {
           {/* Row 1: Image Left, Text Right */}
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-            gap: '64px',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: 'clamp(32px, 5vw, 64px)',
             alignItems: 'center',
             marginBottom: '80px'
           }}>
@@ -815,8 +815,8 @@ export default function HomePage() {
           {/* Row 2: Text Left, Image Right */}
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-            gap: '64px',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: 'clamp(32px, 5vw, 64px)',
             alignItems: 'center'
           }}>
             <div style={{ order: 2 }}>

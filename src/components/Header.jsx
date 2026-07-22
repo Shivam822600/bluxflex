@@ -1,26 +1,35 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { ChevronDown, Globe, Menu, X, Clock, Phone, Mail } from 'lucide-react';
+import { ChevronDown, Menu, X, Clock, Phone, Mail } from 'lucide-react';
 import { useLanguage, languages } from '../context/LanguageContext';
 
 export default function Header() {
   const { language, changeLanguage, t, currentLangObj } = useLanguage();
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
   const [productDropdownOpen, setProductDropdownOpen] = useState(false);
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
-  const [time, setTime] = useState({
-    ny: '',
-    london: '',
-    mumbai: ''
-  });
+  const [time, setTime] = useState({ ny: '', london: '', mumbai: '' });
 
   const location = useLocation();
 
+  // Close sidebar and reset sub-menus on route change
   useEffect(() => {
-    setMobileMenuOpen(false);
+    setSidebarOpen(false);
     setMobileProductsOpen(false);
   }, [location.pathname]);
+
+  // Lock body scroll when sidebar is open
+  useEffect(() => {
+    if (sidebarOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [sidebarOpen]);
 
   // Live Time Clock Updater
   useEffect(() => {
@@ -71,35 +80,35 @@ export default function Header() {
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
           
           {/* Live Regional Desks & Local Times */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '18px', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#00C2A8', fontWeight: '700' }}>
               <Clock size={13} color="#00C2A8" />
               <span>{t('liveDesks')}</span>
             </div>
 
             {/* Americas Hub */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
               <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#10B981' }}></span>
-              <span style={{ color: '#E2E8F0', fontWeight: '700' }}>US/Americas:</span>
-              <span>{time.ny || '07:11 AM'} EST</span>
+              <span style={{ color: '#E2E8F0', fontWeight: '700' }}>US:</span>
+              <span>{time.ny || '07:11 AM'}</span>
             </div>
 
-            <span style={{ opacity: 0.3 }}>|</span>
+            <span className="desktop-only" style={{ opacity: 0.3 }}>|</span>
 
             {/* Europe Hub */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
               <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#10B981' }}></span>
-              <span style={{ color: '#E2E8F0', fontWeight: '700' }}>Europe:</span>
-              <span>{time.london || '12:11'} BST</span>
+              <span style={{ color: '#E2E8F0', fontWeight: '700' }}>EU:</span>
+              <span>{time.london || '12:11'}</span>
             </div>
 
-            <span style={{ opacity: 0.3 }}>|</span>
+            <span className="desktop-only" style={{ opacity: 0.3 }}>|</span>
 
             {/* Asia Sourcing Hub */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
               <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#10B981' }}></span>
-              <span style={{ color: '#E2E8F0', fontWeight: '700' }}>India HQ:</span>
-              <span>{time.mumbai || '04:41 PM'} IST</span>
+              <span style={{ color: '#E2E8F0', fontWeight: '700' }}>IN:</span>
+              <span>{time.mumbai || '04:41 PM'}</span>
             </div>
           </div>
 
@@ -116,17 +125,17 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: '76px' }}>
+      <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: '72px' }}>
         
         {/* Logo Left */}
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '8px' }} aria-label="BulkFlex Home">
-          <span style={{ fontSize: '24px', fontWeight: '800', letterSpacing: '-0.5px', color: '#FFFFFF', fontFamily: 'var(--font-heading)' }}>
+          <span style={{ fontSize: 'clamp(20px, 3.5vw, 24px)', fontWeight: '800', letterSpacing: '-0.5px', color: '#FFFFFF', fontFamily: 'var(--font-heading)' }}>
             BULK <span style={{ color: '#00C2A8' }}>FLEX</span>
           </span>
         </Link>
 
-        {/* Centered Navigation Links */}
-        <nav className="desktop-only" style={{ display: 'flex', gap: '32px', alignItems: 'center', fontWeight: '600', fontSize: '14px' }}>
+        {/* Centered Navigation Links (Desktop 1025px+) */}
+        <nav className="desktop-only" style={{ display: 'flex', gap: '28px', alignItems: 'center', fontWeight: '600', fontSize: '14px' }}>
           <Link to="/" style={{ color: location.pathname === '/' ? '#00C2A8' : '#FFFFFF', padding: '8px 0', transition: 'color 0.2s' }}>
             {t('home')}
           </Link>
@@ -209,13 +218,14 @@ export default function Header() {
         </nav>
 
         {/* Right Section: Brochure Download CTA + Language Selector + Mobile Toggle */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
           
           {/* Brochure Download Button */}
           <a
             href="/src/assets/wp-content/uploads/2026/02/Bulk-Flex-Pvt-Ltd-brochure-.pdf"
             target="_blank"
             rel="noopener noreferrer"
+            className="desktop-only"
             style={{
               background: '#00C2A8',
               color: '#072834',
@@ -246,8 +256,8 @@ export default function Header() {
                 background: 'rgba(255, 255, 255, 0.08)',
                 border: '1px solid rgba(255, 255, 255, 0.18)',
                 borderRadius: '50px',
-                padding: '6px 16px',
-                minHeight: '38px',
+                padding: '6px 14px',
+                minHeight: '40px',
                 color: '#FFFFFF',
                 fontSize: '13px',
                 fontWeight: '600',
@@ -293,12 +303,6 @@ export default function Header() {
                       gap: '8px',
                       transition: 'background 0.2s'
                     }}
-                    onMouseEnter={(e) => {
-                      if (language !== lang.code) e.currentTarget.style.background = '#F8FAFC';
-                    }}
-                    onMouseLeave={(e) => {
-                      if (language !== lang.code) e.currentTarget.style.background = 'transparent';
-                    }}
                   >
                     <span>{lang.flag}</span> {lang.name}
                   </div>
@@ -307,17 +311,17 @@ export default function Header() {
             )}
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile/Tablet Hamburger Toggle (Below 1024px) */}
           <button 
-            className="mobile-only"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle Navigation Menu"
+            className="mobile-toggle"
+            onClick={() => setSidebarOpen(true)}
+            aria-label="Open Navigation Sidebar"
             style={{
               background: 'rgba(255, 255, 255, 0.1)',
               border: '1px solid rgba(255, 255, 255, 0.2)',
               borderRadius: '8px',
-              width: '40px',
-              height: '40px',
+              width: '44px',
+              height: '44px',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
@@ -325,66 +329,245 @@ export default function Header() {
               cursor: 'pointer'
             }}
           >
-            {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+            <Menu size={22} />
           </button>
         </div>
 
       </div>
 
-      {/* Mobile Drawer */}
-      {mobileMenuOpen && (
-        <div 
-          className="mobile-only"
-          style={{
-            background: '#0B2532',
-            borderTop: '1px solid rgba(255, 255, 255, 0.1)',
-            padding: '16px 24px 24px 24px',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '12px'
-          }}
-        >
-          <Link to="/" style={{ color: location.pathname === '/' ? '#00C2A8' : '#FFFFFF', fontSize: '15px', fontWeight: '600', padding: '10px 0', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
-            Home
-          </Link>
+      {/* Mobile Slide-in Sidebar & Overlay */}
+      {/* 1. Backdrop Overlay */}
+      <div 
+        onClick={() => setSidebarOpen(false)}
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100vw',
+          height: '100vh',
+          background: 'rgba(7, 40, 52, 0.75)',
+          backdropFilter: 'blur(4px)',
+          zIndex: 1200,
+          opacity: sidebarOpen ? 1 : 0,
+          pointerEvents: sidebarOpen ? 'auto' : 'none',
+          transition: 'opacity 0.3s ease'
+        }}
+      />
 
-          <div>
-            <div 
-              onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
-              style={{ color: location.pathname.startsWith('/product') ? '#00C2A8' : '#FFFFFF', fontSize: '15px', fontWeight: '600', padding: '10px 0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid rgba(255,255,255,0.05)', cursor: 'pointer' }}
+      {/* 2. Slide-In Sidebar Panel */}
+      <aside 
+        style={{
+          position: 'fixed',
+          top: 0,
+          right: 0,
+          width: 'min(82vw, 360px)',
+          height: '100vh',
+          background: '#072834',
+          color: '#FFFFFF',
+          zIndex: 1300,
+          boxShadow: '-10px 0 30px rgba(0,0,0,0.5)',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between',
+          transform: sidebarOpen ? 'translateX(0)' : 'translateX(100%)',
+          transition: 'transform 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
+          overflowY: 'auto',
+          padding: '24px 20px'
+        }}
+      >
+        <div>
+          {/* Top Panel Header: Logo & Close Button */}
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingBottom: '20px', borderBottom: '1px solid rgba(255, 255, 255, 0.12)' }}>
+            <span style={{ fontSize: '20px', fontWeight: '800', color: '#FFFFFF', fontFamily: 'var(--font-heading)' }}>
+              BULK <span style={{ color: '#00C2A8' }}>FLEX</span>
+            </span>
+            <button
+              onClick={() => setSidebarOpen(false)}
+              aria-label="Close Navigation Sidebar"
+              style={{
+                background: 'rgba(255, 255, 255, 0.1)',
+                border: '1px solid rgba(255, 255, 255, 0.2)',
+                borderRadius: '50%',
+                width: '40px',
+                height: '40px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: '#FFFFFF',
+                cursor: 'pointer'
+              }}
             >
-              <span>Products</span>
-              <ChevronDown size={16} style={{ transform: mobileProductsOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s' }} />
-            </div>
-
-            {mobileProductsOpen && (
-              <div style={{ paddingLeft: '16px', display: 'flex', flexDirection: 'column', gap: '6px', paddingTop: '8px' }}>
-                <Link to="/products" style={{ color: '#00C2A8', fontSize: '13px', fontWeight: '600', padding: '6px 0' }}>
-                  All Products Overview →
-                </Link>
-                {productCategories.map((cat, idx) => (
-                  <Link key={idx} to={cat.path} style={{ color: '#CBD5E1', fontSize: '13px', padding: '6px 0' }}>
-                    {cat.name}
-                  </Link>
-                ))}
-              </div>
-            )}
+              <X size={20} />
+            </button>
           </div>
 
-          <Link to="/rpet-fibc" style={{ color: location.pathname === '/rpet-fibc' ? '#00C2A8' : '#FFFFFF', fontSize: '15px', fontWeight: '600', padding: '10px 0', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
-            RPET FIBC
-          </Link>
-          <Link to="/buyer-tools" style={{ color: location.pathname === '/buyer-tools' ? '#00C2A8' : '#FFFFFF', fontSize: '15px', fontWeight: '600', padding: '10px 0', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
-            Buyer Corner
-          </Link>
-          <Link to="/about-us" style={{ color: location.pathname === '/about-us' ? '#00C2A8' : '#FFFFFF', fontSize: '15px', fontWeight: '600', padding: '10px 0', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
-            About Us
-          </Link>
-          <Link to="/contact-us-2" style={{ color: location.pathname === '/contact-us-2' ? '#00C2A8' : '#FFFFFF', fontSize: '15px', fontWeight: '600', padding: '10px 0' }}>
-            Contact Us
-          </Link>
+          {/* Vertical Stack Nav Links */}
+          <nav style={{ display: 'flex', flexDirection: 'column', gap: '4px', marginTop: '20px' }}>
+            <Link 
+              to="/" 
+              onClick={() => setSidebarOpen(false)}
+              style={{
+                color: location.pathname === '/' ? '#00C2A8' : '#FFFFFF',
+                fontSize: '16px',
+                fontWeight: '700',
+                padding: '12px 14px',
+                borderRadius: '8px',
+                background: location.pathname === '/' ? 'rgba(0, 194, 168, 0.1)' : 'transparent',
+                display: 'block'
+              }}
+            >
+              {t('home')}
+            </Link>
+
+            {/* Accordion Products Submenu */}
+            <div>
+              <div
+                onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
+                style={{
+                  color: location.pathname.startsWith('/product') ? '#00C2A8' : '#FFFFFF',
+                  fontSize: '16px',
+                  fontWeight: '700',
+                  padding: '12px 14px',
+                  borderRadius: '8px',
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  cursor: 'pointer'
+                }}
+              >
+                <span>{t('products')}</span>
+                <ChevronDown size={18} style={{ transform: mobileProductsOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.25s' }} />
+              </div>
+
+              {mobileProductsOpen && (
+                <div style={{ paddingLeft: '14px', display: 'flex', flexDirection: 'column', gap: '4px', marginTop: '4px' }}>
+                  <Link 
+                    to="/products"
+                    onClick={() => setSidebarOpen(false)}
+                    style={{ color: '#00C2A8', fontSize: '13.5px', fontWeight: '700', padding: '8px 12px', borderRadius: '6px', background: 'rgba(0,194,168,0.08)' }}
+                  >
+                    View All Categories →
+                  </Link>
+                  {productCategories.map((cat, idx) => (
+                    <Link
+                      key={idx}
+                      to={cat.path}
+                      onClick={() => setSidebarOpen(false)}
+                      style={{ color: '#CBD5E1', fontSize: '13.5px', padding: '8px 12px', borderRadius: '6px' }}
+                    >
+                      {cat.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <Link 
+              to="/rpet-fibc" 
+              onClick={() => setSidebarOpen(false)}
+              style={{
+                color: location.pathname === '/rpet-fibc' ? '#00C2A8' : '#FFFFFF',
+                fontSize: '16px',
+                fontWeight: '700',
+                padding: '12px 14px',
+                borderRadius: '8px',
+                display: 'block'
+              }}
+            >
+              {t('rpetFibc')}
+            </Link>
+
+            <Link 
+              to="/north-america-paper-bag-2" 
+              onClick={() => setSidebarOpen(false)}
+              style={{
+                color: location.pathname === '/north-america-paper-bag-2' ? '#00C2A8' : '#FFFFFF',
+                fontSize: '16px',
+                fontWeight: '700',
+                padding: '12px 14px',
+                borderRadius: '8px',
+                display: 'block'
+              }}
+            >
+              {t('paperBag')}
+            </Link>
+
+            <Link 
+              to="/buyer-tools" 
+              onClick={() => setSidebarOpen(false)}
+              style={{
+                color: location.pathname === '/buyer-tools' ? '#00C2A8' : '#FFFFFF',
+                fontSize: '16px',
+                fontWeight: '700',
+                padding: '12px 14px',
+                borderRadius: '8px',
+                display: 'block'
+              }}
+            >
+              {t('buyerCorner')}
+            </Link>
+
+            <Link 
+              to="/about-us" 
+              onClick={() => setSidebarOpen(false)}
+              style={{
+                color: location.pathname === '/about-us' ? '#00C2A8' : '#FFFFFF',
+                fontSize: '16px',
+                fontWeight: '700',
+                padding: '12px 14px',
+                borderRadius: '8px',
+                display: 'block'
+              }}
+            >
+              {t('aboutUs')}
+            </Link>
+
+            <Link 
+              to="/contact-us-2" 
+              onClick={() => setSidebarOpen(false)}
+              style={{
+                color: location.pathname === '/contact-us-2' ? '#00C2A8' : '#FFFFFF',
+                fontSize: '16px',
+                fontWeight: '700',
+                padding: '12px 14px',
+                borderRadius: '8px',
+                display: 'block'
+              }}
+            >
+              {t('contactUs')}
+            </Link>
+          </nav>
         </div>
-      )}
+
+        {/* Sidebar Bottom CTA & Language Pill */}
+        <div style={{ paddingTop: '20px', borderTop: '1px solid rgba(255, 255, 255, 0.12)', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+          <a
+            href="/src/assets/wp-content/uploads/2026/02/Bulk-Flex-Pvt-Ltd-brochure-.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              background: '#00C2A8',
+              color: '#072834',
+              padding: '12px',
+              borderRadius: '50px',
+              fontWeight: '800',
+              fontSize: '14px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '8px',
+              textDecoration: 'none'
+            }}
+          >
+            Download Brochure PDF
+          </a>
+
+          <div style={{ textAlign: 'center', fontSize: '12px', color: '#64748B' }}>
+            BulkFlex Global Procurement HQ
+          </div>
+        </div>
+      </aside>
+
     </header>
   );
 }

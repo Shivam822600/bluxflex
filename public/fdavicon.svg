@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="600" height="700">
+  <defs>
+    <linearGradient id="bfOrangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFA858" />
+      <stop offset="100%" stop-color="#F58E36" />
+    </linearGradient>
+  </defs>
+
+  <!-- NO BACKGROUND (100% Transparent) -->
+
+  <!-- Precise Interlocking B-F Monogram Emblem -->
+  <g fill="none" stroke="url(#bfOrangeGrad)" stroke-width="36" stroke-linecap="round" stroke-linejoin="round">
+    
+    <!-- Left B arch stroke -->
+    <path d="M 160 410 L 160 210 C 160 160 210 150 270 150 L 330 150" />
+    
+    <!-- Vertical top F stem -->
+    <path d="M 370 96 L 370 160" />
+    
+    <!-- Top F horizontal bar crossing the ribbon -->
+    <path d="M 280 160 C 370 160 440 160 470 160" />
+    
+    <!-- Middle F horizontal bar -->
+    <path d="M 370 260 L 460 260" />
+    
+    <!-- Swirling Ribbon: Starts top left of S-loop, crosses down, forms bottom flask loop and goes back up -->
+    <path d="M 275 320 C 275 220 370 180 440 200 C 390 270 330 320 270 370 C 200 420 160 480 180 540 C 200 600 280 610 370 610 C 440 610 460 560 460 500 C 460 420 390 340 370 300" />
+
+  </g>
+</svg>
