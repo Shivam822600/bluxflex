@@ -320,6 +320,7 @@ var bdthemes_magic_copy_ajax = {"post_id":"22","ajax_url":"/wp-admin/admin-ajax.
 
         function initLogistics() {
             const container = document.getElementById('master-routes');
+            if (!container) return;
             
             worldNodes.forEach((node) => {
                 const dx = node.x - centerHub.x;
