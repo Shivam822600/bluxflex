@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { ChevronDown, Globe, Menu, X, ChevronRight } from 'lucide-react';
+import { ChevronDown, Globe, Menu, X, Clock, Phone, Mail } from 'lucide-react';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -8,12 +8,34 @@ export default function Header() {
   const [productDropdownOpen, setProductDropdownOpen] = useState(false);
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
   const [currentLang, setCurrentLang] = useState('EN');
+  const [time, setTime] = useState({
+    ny: '',
+    london: '',
+    mumbai: ''
+  });
+
   const location = useLocation();
 
   useEffect(() => {
     setMobileMenuOpen(false);
     setMobileProductsOpen(false);
   }, [location.pathname]);
+
+  // Live Time Clock Updater
+  useEffect(() => {
+    const updateClocks = () => {
+      const now = new Date();
+      setTime({
+        ny: now.toLocaleTimeString('en-US', { timeZone: 'America/New_York', hour: '2-digit', minute: '2-digit', hour12: true }),
+        london: now.toLocaleTimeString('en-GB', { timeZone: 'Europe/London', hour: '2-digit', minute: '2-digit', hour12: false }),
+        mumbai: now.toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit', hour12: true })
+      });
+    };
+
+    updateClocks();
+    const timer = setInterval(updateClocks, 10000);
+    return () => clearInterval(timer);
+  }, []);
 
   const productCategories = [
     { name: 'FIBC Jumbo Bag', path: '/product_category/fibc' },
@@ -43,6 +65,64 @@ export default function Header() {
       color: '#FFFFFF',
       borderBottom: '1px solid rgba(255, 255, 255, 0.08)'
     }}>
+      
+      {/* Top Live Global Desk & Timezone Bar */}
+      <div style={{
+        background: '#041B23',
+        borderBottom: '1px solid rgba(255, 255, 255, 0.06)',
+        fontSize: '11px',
+        fontWeight: '600',
+        color: '#94A3B8',
+        padding: '6px 0'
+      }}>
+        <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
+          
+          {/* Live Regional Desks & Local Times */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '18px', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#00C2A8', fontWeight: '700' }}>
+              <Clock size={13} color="#00C2A8" />
+              <span>LIVE REGIONAL DESKS:</span>
+            </div>
+
+            {/* Americas Hub */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#10B981' }}></span>
+              <span style={{ color: '#E2E8F0', fontWeight: '700' }}>US/Americas:</span>
+              <span>{time.ny || '07:11 AM'} EST</span>
+            </div>
+
+            <span style={{ opacity: 0.3 }}>|</span>
+
+            {/* Europe Hub */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#10B981' }}></span>
+              <span style={{ color: '#E2E8F0', fontWeight: '700' }}>Europe:</span>
+              <span>{time.london || '12:11'} BST</span>
+            </div>
+
+            <span style={{ opacity: 0.3 }}>|</span>
+
+            {/* Asia Sourcing Hub */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#10B981' }}></span>
+              <span style={{ color: '#E2E8F0', fontWeight: '700' }}>India HQ:</span>
+              <span>{time.mumbai || '04:41 PM'} IST</span>
+            </div>
+          </div>
+
+          {/* Direct Support Contact */}
+          <div className="desktop-only" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+            <a href="tel:+919876543210" style={{ display: 'flex', alignItems: 'center', gap: '5px', color: '#CBD5E1' }}>
+              <Phone size={12} color="#00C2A8" /> +91 98765 43210
+            </a>
+            <a href="mailto:info@bulkflex.com" style={{ display: 'flex', alignItems: 'center', gap: '5px', color: '#CBD5E1' }}>
+              <Mail size={12} color="#00C2A8" /> info@bulkflex.com
+            </a>
+          </div>
+
+        </div>
+      </div>
+
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: '76px' }}>
         
         {/* Logo Left */}

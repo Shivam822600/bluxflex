@@ -180,6 +180,89 @@ a {
   border-radius: 32px;
 }
 
+/* Glassmorphism & Modern Effects */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.glass-card-dark {
+  background: rgba(7, 40, 52, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0, 194, 168, 0.4); }
+  50% { box-shadow: 0 0 0 12px rgba(0, 194, 168, 0); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(1deg); }
+}
+
+@keyframes shine {
+  100% { left: 125%; }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.pulse-badge {
+  animation: pulseGlow 2.5s infinite;
+}
+
+/* Product Card Premium Styling */
+.product-card-premium {
+  position: relative;
+  background: #FFFFFF;
+  border-radius: 20px;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 10px 30px rgba(7, 40, 52, 0.05);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.product-card-premium:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(7, 40, 52, 0.14);
+  border-color: rgba(0, 194, 168, 0.4);
+}
+
+.product-card-premium .img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card-premium .img-container img {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-card-premium:hover .img-container img {
+  transform: scale(1.06);
+}
+
+/* Pill Tabs Scrollbar styling */
+.categories-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
 /* Mobile Drawer Overlay Animation */
 .mobile-drawer-enter {
   opacity: 0;
