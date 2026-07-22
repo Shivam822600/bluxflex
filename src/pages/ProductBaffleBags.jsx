@@ -1,46 +1,65 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
+import { Link } from 'react-router-dom';
+import { ChevronLeft, ShieldCheck, ArrowRight } from 'lucide-react';
 import asset_Diaper_Bag_jpg_1 from '../assets/images/Diaper-Bag.jpg?url';
-import asset_Diaper_Bag_297x300_jpg_2 from '../assets/images/Diaper-Bag-297x300.jpg?url';
 
 export default function ProductBaffleBags() {
-    useEffect(() => {
-        window.dispatchEvent(new Event('resize'));
-        setTimeout(() => {
-            window.dispatchEvent(new Event('resize'));
-        }, 500);
-    }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-    return (
-        <Layout>
-            <div dangerouslySetInnerHTML={{ __html: `<main id="content" class="site-main post-846 product type-product status-publish has-post-thumbnail hentry product_category-fibc">
+  return (
+    <Layout>
+      {/* Banner */}
+      <section style={{ background: '#072834', color: '#FFFFFF', padding: '40px 0' }}>
+        <div className="container">
+          <Link to="/products" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: '#00C2A8', fontSize: '13px', fontWeight: '600', marginBottom: '12px' }}>
+            <ChevronLeft size={16} /> Back to Products
+          </Link>
+          <h1 style={{ fontSize: '32px', color: '#FFFFFF', fontWeight: '800', fontFamily: 'var(--font-heading)' }}>
+            Baffle Bags
+          </h1>
+          <p style={{ color: '#94A3B8', fontSize: '14px', marginTop: '4px' }}>
+            Form-stable FIBC bulk container with internal baffle panels
+          </p>
+        </div>
+      </section>
 
-
-	<div class="productDetailsWrapper">
-		<div class="productBasicInfo">
-			 <!-- Featured Image -->
-            <div class="featured-image">
-            <img width="800" height="808" src="${asset_Diaper_Bag_jpg_1}" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="${asset_Diaper_Bag_jpg_1} 945w, ${asset_Diaper_Bag_297x300_jpg_2} 297w, ${asset_Diaper_Bag_jpg_1} 768w" sizes="(max-width: 800px) 100vw, 800px">        </div>
-    			<div class="product-info">
-			                 <div class="page-header">
-                    <h1 class="entry-title">Baffle Bags</h1>                </div>
-    	                <div class="page-content">
-        <p>We offer premium-quality Baffle Bags that are specially engineered to maintain a square shape even after filling. With internal baffle panels, these bags optimize storage space, improve stacking efficiency, and reduce transportation costs.</p>
-<p>Made from durable woven polypropylene fabric, our baffle bags are perfect for fine and flowable materials like powders and granules. If you are looking for better space utilization and safer bulk handling, our baffle bags are the ideal solution.</p>
-
-        
+      {/* Details */}
+      <section style={{ padding: '56px 0', background: '#F8FAFC' }}>
+        <div className="container">
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '40px', alignItems: 'start' }}>
+            {/* Image */}
+            <div className="card-clean" style={{ padding: '24px', textAlign: 'center', background: '#FFFFFF' }}>
+              <img src={asset_Diaper_Bag_jpg_1} alt="Baffle Bags" style={{ maxHeight: '340px', objectFit: 'contain', margin: '0 auto' }} />
             </div>
-			</div>
-		</div>
-		
 
+            {/* Content Info */}
+            <div className="card-clean" style={{ padding: '36px' }}>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: '#E8F7F5', color: '#00C2A8', padding: '6px 14px', borderRadius: '50px', fontSize: '12px', fontWeight: '700', marginBottom: '16px' }}>
+                <ShieldCheck size={14} /> Certified FIBC Specification
+              </div>
+              <h2 style={{ fontSize: '26px', color: '#072834', marginBottom: '16px' }}>Form-Stable Baffle Jumbo Bags</h2>
+              <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.7', marginBottom: '16px' }}>
+                We offer premium-quality Baffle Bags that are specially engineered to maintain a square shape even after filling. With internal baffle panels, these bags optimize storage space, improve stacking efficiency, and reduce transportation costs.
+              </p>
+              <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.7', marginBottom: '24px' }}>
+                Made from durable woven polypropylene fabric, our baffle bags are perfect for fine and flowable materials like powders and granules. If you are looking for better space utilization and safer bulk handling, our baffle bags are the ideal solution.
+              </p>
 
-    
-		
-	</div>
-
-    
-</main>` }} />
-        </Layout>
-    );
+              <div style={{ display: 'flex', gap: '16px' }}>
+                <Link to="/contact-us-2" className="btn-dark" style={{ flex: 1, justifyContent: 'center' }}>
+                  Request RFQ Quote <ArrowRight size={16} />
+                </Link>
+                <Link to="/buyer-tools" className="btn-outline-dark" style={{ flex: 1, justifyContent: 'center' }}>
+                  Load Calculator
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  );
 }

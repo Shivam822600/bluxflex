@@ -71,40 +71,45 @@ export default function ProductCategoryFibc() {
           </p>
         </div>
 
-        {/* Sub-Category Navigation Bar */}
-        <div className="productTypes" style={{ marginBottom: '32px' }}>
-          <ul style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            gap: '12px',
-            listStyle: 'none',
-            padding: '12px 16px',
-            margin: 0,
-            background: '#072834',
-            borderRadius: '16px'
-          }}>
+        {/* Clean Modern Light Filter Pills Bar */}
+        <div style={{
+          background: '#FFFFFF',
+          border: '1px solid #E2E8F0',
+          padding: '16px 24px',
+          borderRadius: '18px',
+          boxShadow: '0 4px 20px rgba(7, 40, 52, 0.04)',
+          marginBottom: '36px',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '12px',
+          flexWrap: 'wrap'
+        }}>
+          <span style={{ color: '#072834', fontSize: '13px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.5px', marginRight: '6px' }}>
+            Specifications:
+          </span>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
             {subNavItems.map((nav, idx) => (
-              <li key={idx}>
-                <Link
-                  to={nav.path}
-                  style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    background: 'rgba(255, 255, 255, 0.08)',
-                    color: '#E2E8F0',
-                    border: '1px solid rgba(255, 255, 255, 0.12)',
-                    padding: '8px 20px',
-                    borderRadius: '50px',
-                    fontWeight: '700',
-                    fontSize: '13px',
-                    textDecoration: 'none'
-                  }}
-                >
-                  {nav.title}
-                </Link>
-              </li>
+              <Link
+                key={idx}
+                to={nav.path}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  background: '#F1F5F9',
+                  color: '#072834',
+                  border: '1px solid #CBD5E1',
+                  padding: '8px 20px',
+                  borderRadius: '50px',
+                  fontWeight: '700',
+                  fontSize: '13px',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                {nav.title}
+              </Link>
             ))}
-          </ul>
+          </div>
         </div>
 
         {/* Product Cards Grid */}
@@ -128,11 +133,11 @@ export default function ProductCategoryFibc() {
                 justifyContent: 'space-between'
               }}
             >
-              <div style={{ height: '220px', background: '#F8FAFC', padding: '16px' }}>
+              <div style={{ height: '220px', background: '#F8FAFC', padding: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <img
                   src={product.image}
                   alt={product.title}
-                  style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                  style={{ maxHeight: '180px', maxWidth: '100%', objectFit: 'contain' }}
                 />
               </div>
 

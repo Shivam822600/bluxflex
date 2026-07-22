@@ -1,154 +1,189 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
+import { Link } from 'react-router-dom';
+import { ChevronRight } from 'lucide-react';
+
 import asset_paper_bags_png_1 from '../assets/images/paper_bags.png?url';
 import asset_cotton_bags_jpg_2 from '../assets/images/cotton_bags.jpg?url';
-import asset_cotton_bags_jpeg_3 from '../assets/images/cotton_bags.jpeg?url';
 import asset_ppwovwnnonvowen_bags_png_4 from '../assets/images/ppwovwnnonvowen_bags.png?url';
 import asset_winebeverage_bags_jpg_5 from '../assets/images/winebeverage_bags.jpg?url';
-import asset_winebeverage_bags_jpeg_6 from '../assets/images/winebeverage_bags.jpeg?url';
 import asset_cooler_bags_jpg_7 from '../assets/images/cooler_bags.jpg?url';
-import asset_cooler_bags_jpeg_8 from '../assets/images/cooler_bags.jpeg?url';
 import asset_PP_shopping_bag_jpg_9 from '../assets/images/PP-shopping-bag.jpg?url';
-import asset_PP_shopping_bag_297x300_jpg_10 from '../assets/images/PP-shopping-bag-297x300.jpg?url';
-import asset_bulk3_png_11 from '../assets/images/bulk3.png?url';
-import asset_bulk3_297x300_png_12 from '../assets/images/bulk3-297x300.png?url';
-import asset_bulk11_png_13 from '../assets/images/bulk11.png?url';
-import asset_bulk11_297x300_png_14 from '../assets/images/bulk11-297x300.png?url';
-import asset_bulk12_png_15 from '../assets/images/bulk12.png?url';
-import asset_bulk12_297x300_png_16 from '../assets/images/bulk12-297x300.png?url';
 
 export default function ProductCategoryRetailShopingBags() {
-    useEffect(() => {
-        window.dispatchEvent(new Event('resize'));
-        setTimeout(() => {
-            window.dispatchEvent(new Event('resize'));
-        }, 500);
-    }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-    return (
-        <Layout>
-            <div dangerouslySetInnerHTML={{ __html: `<main id="content" class="site-main">
-	<div class="productListWrapper">
-	
+  const retailProducts = [
+    {
+      title: 'Kraft Paper Bags',
+      link: '/product/paper-bags',
+      image: asset_paper_bags_png_1,
+      desc: 'Eco-friendly natural brown and bleached white kraft paper carrier bags with twisted handles.'
+    },
+    {
+      title: 'Cotton Tote Bags',
+      link: '/product/cotton-bags',
+      image: asset_cotton_bags_jpg_2,
+      desc: '100% natural organic cotton and canvas reusable shopping bags with screen-printed brand logos.'
+    },
+    {
+      title: 'PP Woven & Non-Woven Bags',
+      link: '/product/pp-woven-non-woven-bags',
+      image: asset_ppwovwnnonvowen_bags_png_4,
+      desc: 'Durable laminated PP woven and non-woven reusable shopping bags for supermarket chains.'
+    },
+    {
+      title: 'Wine & Beverage Bags',
+      link: '/product/wine-beverage-bags',
+      image: asset_winebeverage_bags_jpg_5,
+      desc: 'Single and multi-bottle jute/canvas wine carrier bags with padded dividers.'
+    },
+    {
+      title: 'Insulated Thermal Cooler Bags',
+      link: '/product/cooler-bags',
+      image: asset_cooler_bags_jpg_7,
+      desc: 'Aluminum foil insulated thermal cooler bags engineered for cold chain food and beverage retail.'
+    },
+    {
+      title: 'Custom PP Retail Shopping Bag',
+      link: '/product/retail-shopping-bag-a',
+      image: asset_PP_shopping_bag_jpg_9,
+      desc: 'High-gloss BOPP reverse printed reusable shopping bags with soft webbing handles.'
+    }
+  ];
 
-	<div class="page-content">
-		<div class="productContent">	
-			
-			 				<div class="page-header">
-					<h1 class="entry-title">Product Category: <span>Retail Shoping Bags</span></h1><p class="archive-description"></p><p>The bag your customer walks out with is the last thing you give them and the most visible thing they carry into the world. On every street, every commute, and every kitchen counter it reaches after the sale — it is carrying your brand silently, repeatedly, and for free.</p>
-<p>A considered bag specification turns a packaging cost into a marketing asset. The wrong one is just a cost.</p>
-<p>We supply every retail shopping bag format — paper, jute, cotton, polypropylene, and insulated cooler bags — fully customised in size, construction, colour, and print. Every bag is built to your brand specification. Every order ships with full compliance documentation for your destination market.</p>
-<p></p>				</div>
-						
-			<div class="productTypes">
-				<ul>
-					<li><a href="/fibc/types">Types</a></li>
-					<li><a href="/fibc/discharge">Discharge</a></li>
-					<li><a href="/fibc/filling">Filling</a></li>
-					<li><a href="/fibc/lift-loops">Lift Loops</a></li>
-					<li><a href="/fibc/liners">Liners</a></li>
-					<li><a href="/fibc/stitch-types">Stitch Types</a></li>
-				</ul>
-			</div>
-			<div class="productCategories">
-				
-							</div>
-			
+  const subNavItems = [
+    { title: 'Types', path: '/fibc/types' },
+    { title: 'Discharge', path: '/fibc/discharge' },
+    { title: 'Filling', path: '/fibc/filling' },
+    { title: 'Lift Loops', path: '/fibc/lift-loops' },
+    { title: 'Liners', path: '/fibc/liners' },
+    { title: 'Stitch Types', path: '/fibc/stitch-types' }
+  ];
 
-		
-		
-        <div class="productListing">
-           
-    
-            <div class="productList">
-            			<article class="post">
-				<div class="entry-thumbnail"><a href="/product/paper-bags"><img fetchpriority="high" width="800" height="800" src="${asset_paper_bags_png_1}" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="${asset_paper_bags_png_1} 1024w, ${asset_paper_bags_png_1} 300w, ${asset_paper_bags_png_1} 150w, ${asset_paper_bags_png_1} 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div>
-				<div class="entry-content-wrapper">
-					<h2 class="entry-title"><a href="/product/paper-bags">Paper Bags</a></h2><p>Paper is the most universally accepted sustainable retail packaging material. No consumer explanation required. No regulatory risk in markets where single-use plastic is levied or banned. And no other material delivers the same combination of premium brand presentation and environmental credibility at the price point paper achieves. We supply paper bags in two base constructions… <a class="read-more-inline" href="/product/paper-bags">Read More</a></p>
-					
-				</div>
-
-			</article>
-
-					<article class="post">
-				<div class="entry-thumbnail"><a href="/product/cotton-bags"><img width="800" height="800" src="${asset_cotton_bags_jpg_2}" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="${asset_cotton_bags_jpeg_3} 800w, ${asset_cotton_bags_jpeg_3} 300w, ${asset_cotton_bags_jpeg_3} 150w, ${asset_cotton_bags_jpeg_3} 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div>
-				<div class="entry-content-wrapper">
-					<h2 class="entry-title"><a href="/product/cotton-bags">Cotton Bags</a></h2><p>Cotton tote bags are washable, durable, and reusable indefinitely. They are the retail bag consumers keep longest, use most often, and associate most strongly with the brand they received them from. For retailers building a sustainable packaging programme, the cotton tote delivers brand exposure long after the original sale — with every subsequent use. Cotton… <a class="read-more-inline" href="/product/cotton-bags">Read More</a></p>
-					
-				</div>
-
-			</article>
-
-					<article class="post">
-				<div class="entry-thumbnail"><a href="/product/pp-woven-non-woven-bags"><img width="800" height="800" src="${asset_ppwovwnnonvowen_bags_png_4}" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="${asset_ppwovwnnonvowen_bags_png_4} 1024w, ${asset_ppwovwnnonvowen_bags_png_4} 300w, ${asset_ppwovwnnonvowen_bags_png_4} 150w, ${asset_ppwovwnnonvowen_bags_png_4} 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div>
-				<div class="entry-content-wrapper">
-					<h2 class="entry-title"><a href="/product/pp-woven-non-woven-bags">PP Woven &amp; Non-Woven Bags</a></h2><p>Polypropylene shopping bags serve the commercial brief that requires high volume, durable carry performance, and a price point that makes large retail bag programmes economically viable. Where paper, jute, and cotton communicate material story and premium positioning, PP delivers durability and print quality at scale — and with post-consumer recycled content options now available across… <a class="read-more-inline" href="/product/pp-woven-non-woven-bags">Read More</a></p>
-					
-				</div>
-
-			</article>
-
-					<article class="post">
-				<div class="entry-thumbnail"><a href="/product/wine-beverage-bags"><img width="800" height="800" src="${asset_winebeverage_bags_jpg_5}" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="${asset_winebeverage_bags_jpeg_6} 800w, ${asset_winebeverage_bags_jpeg_6} 300w, ${asset_winebeverage_bags_jpeg_6} 150w, ${asset_winebeverage_bags_jpeg_6} 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div>
-				<div class="entry-content-wrapper">
-					<h2 class="entry-title"><a href="/product/wine-beverage-bags">Wine &amp; Beverage Bags</a></h2><p>PP Woven Beverage Carrier Bag :- Structured woven PP bags for one, two, four, or six bottles. PP woven construction resists the moisture, weight, and abrasion that glass bottle packaging generates and carries multiple bottles without handle or seam failure under repeated use. Available with BOPP lamination in matte or gloss finish for premium full-colour… <a class="read-more-inline" href="/product/wine-beverage-bags">Read More</a></p>
-					
-				</div>
-
-			</article>
-
-					<article class="post">
-				<div class="entry-thumbnail"><a href="/product/cooler-bags"><img width="800" height="800" src="${asset_cooler_bags_jpg_7}" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="${asset_cooler_bags_jpeg_8} 800w, ${asset_cooler_bags_jpeg_8} 300w, ${asset_cooler_bags_jpeg_8} 150w, ${asset_cooler_bags_jpeg_8} 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div>
-				<div class="entry-content-wrapper">
-					<h2 class="entry-title"><a href="/product/cooler-bags">Cooler Bags</a></h2><p>A cooler bag is a promise from retailer to customer — that the quality of what they bought is protected all the way to their refrigerator. For grocery, specialty food, beverage, meal kit, and pharmaceutical retail, it is a functional requirement and a brand statement simultaneously. A well-made branded cooler bag that a customer keeps… <a class="read-more-inline" href="/product/cooler-bags">Read More</a></p>
-					
-				</div>
-
-			</article>
-
-					<article class="post">
-				<div class="entry-thumbnail"><a href="/product/retail-shopping-bag-d"><img width="800" height="808" src="${asset_PP_shopping_bag_jpg_9}" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="${asset_PP_shopping_bag_jpg_9} 945w, ${asset_PP_shopping_bag_297x300_jpg_10} 297w, ${asset_PP_shopping_bag_jpg_9} 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div>
-				<div class="entry-content-wrapper">
-					<h2 class="entry-title"><a href="/product/retail-shopping-bag-d">PP Shopping Bags</a></h2><p>The Bag That Works As Hard As Your Business Ask any retailer what they want from a shopping bag and the answer is always the same something strong, something affordable, and something that keeps coming back. That is exactly what our PP Shopping Bags deliver, every single time. Made from woven polypropylene, these bags are… <a class="read-more-inline" href="/product/retail-shopping-bag-d">Read More</a></p>
-					
-				</div>
-
-			</article>
-
-					<article class="post">
-				<div class="entry-thumbnail"><a href="/product/retail-shopping-bag-c"><img width="800" height="808" src="${asset_bulk3_png_11}" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="${asset_bulk3_png_11} 945w, ${asset_bulk3_297x300_png_12} 297w, ${asset_bulk3_png_11} 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div>
-				<div class="entry-content-wrapper">
-					<h2 class="entry-title"><a href="/product/retail-shopping-bag-c">Jute Shopping Bag</a></h2><p>Carry More Than Just Groceries. Carry a Statement. There is something about a jute shopping bag that no other bag can replicate. It has texture, warmth, and a quiet confidence that says the person carrying it made a thoughtful choice. In a world saturated with plastic and synthetic materials, jute stands apart and that is… <a class="read-more-inline" href="/product/retail-shopping-bag-c">Read More</a></p>
-					
-				</div>
-
-			</article>
-
-					<article class="post">
-				<div class="entry-thumbnail"><a href="/product/retail-shopping-bag-b"><img width="800" height="808" src="${asset_bulk11_png_13}" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="${asset_bulk11_png_13} 945w, ${asset_bulk11_297x300_png_14} 297w, ${asset_bulk11_png_13} 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div>
-				<div class="entry-content-wrapper">
-					<h2 class="entry-title"><a href="/product/retail-shopping-bag-b">White Bleached Flat Handle</a></h2><p>Clean, Confident, and Unmistakably Premium First impressions in retail happen the moment a customer takes a bag from across the counter. The White Bleached Flat Handle Bag understands that moment completely. Bleached to a clean, bright white, this bag offers a completely different canvas compared to natural kraft. The whiteness makes colours pop, fine print… <a class="read-more-inline" href="/product/retail-shopping-bag-b">Read More</a></p>
-					
-				</div>
-
-			</article>
-
-					<article class="post">
-				<div class="entry-thumbnail"><a href="/product/retail-shopping-bag-a"><img width="800" height="808" src="${asset_bulk12_png_15}" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="${asset_bulk12_png_15} 945w, ${asset_bulk12_297x300_png_16} 297w, ${asset_bulk12_png_15} 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div>
-				<div class="entry-content-wrapper">
-					<h2 class="entry-title"><a href="/product/retail-shopping-bag-a">Paper Bag With Twisted Handle</a></h2><p>Simple to Hold. Hard to Forget. The paper bag with a twisted handle has been around retail floors for decades and it has survived every packaging trend for one simple reason: it works, and it works well. The twisted handle is made by winding recycled paper fibres together to form a handle that is surprisingly… <a class="read-more-inline" href="/product/retail-shopping-bag-a">Read More</a></p>
-					
-				</div>
-
-			</article>
-
-		        </div>
+  return (
+    <Layout>
+      <div className="productListWrapper">
+        {/* Header */}
+        <div className="page-header" style={{
+          background: '#FFFFFF',
+          padding: '32px',
+          borderRadius: '20px',
+          border: '1px solid #E2E8F0',
+          marginBottom: '32px'
+        }}>
+          <h1 className="entry-title" style={{ fontSize: '32px', fontWeight: '800', color: '#072834', marginBottom: '12px' }}>
+            Product Category: <span style={{ color: '#00C2A8' }}>Retail Shopping Bags</span>
+          </h1>
+          <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.7', marginBottom: '12px' }}>
+            The bag your customer carries out is a mobile billboard for your brand. High quality reusable packaging turns a packaging expense into a marketing asset.
+          </p>
+          <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.7' }}>
+            We supply paper, jute, cotton, PP woven, and insulated thermal cooler bags fully customized in size, handle type, color, and high-definition printing.
+          </p>
         </div>
-        </div>
-	</div>
 
-		</div>
-</main>` }} />
-        </Layout>
-    );
+        {/* Clean Modern Light Filter Pills Bar */}
+        <div style={{
+          background: '#FFFFFF',
+          border: '1px solid #E2E8F0',
+          padding: '16px 24px',
+          borderRadius: '18px',
+          boxShadow: '0 4px 20px rgba(7, 40, 52, 0.04)',
+          marginBottom: '36px',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '12px',
+          flexWrap: 'wrap'
+        }}>
+          <span style={{ color: '#072834', fontSize: '13px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.5px', marginRight: '6px' }}>
+            Specifications:
+          </span>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+            {subNavItems.map((nav, idx) => (
+              <Link
+                key={idx}
+                to={nav.path}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  background: '#F1F5F9',
+                  color: '#072834',
+                  border: '1px solid #CBD5E1',
+                  padding: '8px 20px',
+                  borderRadius: '50px',
+                  fontWeight: '700',
+                  fontSize: '13px',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                {nav.title}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Grid */}
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))',
+          gap: '28px'
+        }}>
+          {retailProducts.map((product, idx) => (
+            <div
+              key={idx}
+              className="product-card-premium"
+              style={{
+                background: '#FFFFFF',
+                borderRadius: '20px',
+                border: '1px solid #EEF2F6',
+                overflow: 'hidden',
+                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.05)',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between'
+              }}
+            >
+              <div style={{ height: '220px', background: '#F8FAFC', padding: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <img
+                  src={product.image}
+                  alt={product.title}
+                  style={{ maxHeight: '180px', maxWidth: '100%', objectFit: 'contain' }}
+                />
+              </div>
+
+              <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', flexGrow: 1, justifyContent: 'space-between' }}>
+                <div>
+                  <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#072834', marginBottom: '8px' }}>
+                    {product.title}
+                  </h3>
+                  <p style={{ fontSize: '13px', color: '#64748B', lineHeight: '1.6', marginBottom: '16px' }}>
+                    {product.desc}
+                  </p>
+                </div>
+
+                <Link
+                  to={product.link}
+                  style={{
+                    color: '#00C2A8',
+                    fontWeight: '800',
+                    fontSize: '14px',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '4px',
+                    textDecoration: 'none'
+                  }}
+                >
+                  Read More <ChevronRight size={16} />
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Layout>
+  );
 }

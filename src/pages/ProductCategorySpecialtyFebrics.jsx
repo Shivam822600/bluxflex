@@ -1,111 +1,182 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
+import { Link } from 'react-router-dom';
+import { ChevronRight } from 'lucide-react';
+
 import asset_specialty_fabrics_png_1 from '../assets/images/specialty_fabrics.png?url';
-import asset_specialty_fabrics_300x300_png_2 from '../assets/images/specialty_fabrics-300x300.png?url';
 import asset_Monofilament_Fabrics_jpg_3 from '../assets/images/Monofilament-Fabrics.jpg?url';
-import asset_Monofilament_Fabrics_297x300_jpg_4 from '../assets/images/Monofilament-Fabrics-297x300.jpg?url';
 import asset_rPET_Fabrics_jpg_5 from '../assets/images/rPET-Fabrics.jpg?url';
-import asset_rPET_Fabrics_297x300_jpg_6 from '../assets/images/rPET-Fabrics-297x300.jpg?url';
 import asset_Lumber_Cover_Fabrics_jpg_7 from '../assets/images/Lumber-Cover-Fabrics.jpg?url';
-import asset_Lumber_Cover_Fabrics_297x300_jpg_8 from '../assets/images/Lumber-Cover-Fabrics-297x300.jpg?url';
 import asset_Silt_Fence_jpg_9 from '../assets/images/Silt-Fence.jpg?url';
 
 export default function ProductCategorySpecialtyFebrics() {
-    useEffect(() => {
-        window.dispatchEvent(new Event('resize'));
-        setTimeout(() => {
-            window.dispatchEvent(new Event('resize'));
-        }, 500);
-    }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-    return (
-        <Layout>
-            <div dangerouslySetInnerHTML={{ __html: `<main id="content" class="site-main">
-	<div class="productListWrapper">
-	
+  const specialtyProducts = [
+    {
+      title: 'Woven Specialty Fabrics',
+      link: '/product/woven-specialty-fabrics',
+      image: asset_specialty_fabrics_png_1,
+      desc: 'High-density polyethylene (HDPE) flat tape woven fabrics delivering superior UV resistance and dimensional stability.'
+    },
+    {
+      title: 'Monofilament Fabrics',
+      link: '/product/monofilament-fabrics',
+      image: asset_Monofilament_Fabrics_jpg_3,
+      desc: 'High-tensile monofilament yarn woven mesh fabrics for agricultural filtration, shading, and heavy loads.'
+    },
+    {
+      title: 'rPET Recycled Fabrics',
+      link: '/product/rpet-fabrics',
+      image: asset_rPET_Fabrics_jpg_5,
+      desc: '100% recycled polyester (rPET) post-consumer woven fabrics supporting eco-friendly circular supply chains.'
+    },
+    {
+      title: 'Lumber Cover Fabrics',
+      link: '/product/lumber-cover-fabrics',
+      image: asset_Lumber_Cover_Fabrics_jpg_7,
+      desc: 'Heavy-duty coated woven polyethylene lumber wrap protecting timber shipments from moisture and road grime.'
+    },
+    {
+      title: 'Silt Fence Sediment Control',
+      link: '/product/silt-fence',
+      image: asset_Silt_Fence_jpg_9,
+      desc: 'Woven geotextile sediment barrier fabric for civil construction site erosion control and water runoff.'
+    }
+  ];
 
-	<div class="page-content">
-		<div class="productContent">	
-			
-			 				<div class="page-header">
-					<h1 class="entry-title">Product Category: <span>Specialty Fabrics</span></h1><p class="archive-description"></p><p>Some applications do not fit a standard product category. They need a fabric engineered for a specific load, a specific environment, a specific performance requirement and they need it in the right material, the right weight, the right weave, and the right UV specification for the job.</p>
-<p>This page covers the woven specialty fabrics we supply for industrial, agricultural, construction, and technical applications — HDPE fabric, lumber covers, silt fence, rPET recycled fabric, monofilament fabric, polypropylene carpet backing, heavy-duty ground cover, and mulch films. Each product is built for a defined purpose. Each is available in custom sizes. And each requires a conversation about specification before an order is placed because getting the specification right is the difference between a product that performs for its intended life and one that fails before its job is done.</p>
-<p>If you know what you need, share the specification. If you are not sure, share the application we will advise the correct fabric, weight, and construction.</p>
-<p></p>				</div>
-						
-			<div class="productTypes">
-				<ul>
-					<li><a href="/fibc/types">Types</a></li>
-					<li><a href="/fibc/discharge">Discharge</a></li>
-					<li><a href="/fibc/filling">Filling</a></li>
-					<li><a href="/fibc/lift-loops">Lift Loops</a></li>
-					<li><a href="/fibc/liners">Liners</a></li>
-					<li><a href="/fibc/stitch-types">Stitch Types</a></li>
-				</ul>
-			</div>
-			<div class="productCategories">
-				
-							</div>
-			
+  const subNavItems = [
+    { title: 'Types', path: '/fibc/types' },
+    { title: 'Discharge', path: '/fibc/discharge' },
+    { title: 'Filling', path: '/fibc/filling' },
+    { title: 'Lift Loops', path: '/fibc/lift-loops' },
+    { title: 'Liners', path: '/fibc/liners' },
+    { title: 'Stitch Types', path: '/fibc/stitch-types' }
+  ];
 
-		
-		
-        <div class="productListing">
-           
-    
-            <div class="productList">
-            			<article class="post">
-				<div class="entry-thumbnail"><a href="/product/woven-specialty-fabrics"><img fetchpriority="high" width="800" height="800" src="${asset_specialty_fabrics_png_1}" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="${asset_specialty_fabrics_png_1} 1024w, ${asset_specialty_fabrics_300x300_png_2} 300w, ${asset_specialty_fabrics_png_1} 150w, ${asset_specialty_fabrics_png_1} 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div>
-				<div class="entry-content-wrapper">
-					<h2 class="entry-title"><a href="/product/woven-specialty-fabrics">Woven Specialty Fabrics</a></h2><p>HDPE Woven Fabric High-density polyethylene woven fabric is produced from HDPE flat tapes on weaving looms, delivering a fabric with higher UV resistance, greater dimensional stability at elevated temperatures, and better chemical resistance than standard polypropylene woven fabric of equivalent construction. HDPE tape woven fabric retains its structural integrity under prolonged UV exposure without the… <a class="read-more-inline" href="/product/woven-specialty-fabrics">Read More</a></p>
-					
-				</div>
-
-			</article>
-
-					<article class="post">
-				<div class="entry-thumbnail"><a href="/product/monofilament-fabrics"><img width="800" height="808" src="${asset_Monofilament_Fabrics_jpg_3}" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="${asset_Monofilament_Fabrics_jpg_3} 945w, ${asset_Monofilament_Fabrics_297x300_jpg_4} 297w, ${asset_Monofilament_Fabrics_jpg_3} 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div>
-				<div class="entry-content-wrapper">
-					<h2 class="entry-title"><a href="/product/monofilament-fabrics">Monofilament Fabrics</a></h2><p>Single Strand. Superior Strength. Our Monofilament Fabrics are high-performance technical textiles woven from a single continuous synthetic filament — making them stronger, smoother, and more dimensionally stable than standard multi-strand fabrics. This unique single-filament construction gives the fabric outstanding tensile strength, uniform structure, and excellent resistance to abrasion, chemicals, and deformation under pressure. Unlike conventional… <a class="read-more-inline" href="/product/monofilament-fabrics">Read More</a></p>
-					
-				</div>
-
-			</article>
-
-					<article class="post">
-				<div class="entry-thumbnail"><a href="/product/rpet-fabrics"><img width="800" height="808" src="${asset_rPET_Fabrics_jpg_5}" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="${asset_rPET_Fabrics_jpg_5} 945w, ${asset_rPET_Fabrics_297x300_jpg_6} 297w, ${asset_rPET_Fabrics_jpg_5} 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div>
-				<div class="entry-content-wrapper">
-					<h2 class="entry-title"><a href="/product/rpet-fabrics">rPET Fabrics</a></h2><p>Recycled from Plastic. Reimagined for Industry. Our rPET Fabrics are high-quality textiles made from recycled polyethylene terephthalate primarily sourced from post-consumer plastic bottles and industrial plastic waste. By transforming discarded plastics into premium-grade fabric, rPET offers the same strength, durability, and performance as virgin polyester while dramatically reducing environmental impact. The production of rPET fabric… <a class="read-more-inline" href="/product/rpet-fabrics">Read More</a></p>
-					
-				</div>
-
-			</article>
-
-					<article class="post">
-				<div class="entry-thumbnail"><a href="/product/lumber-cover-fabrics"><img width="800" height="808" src="${asset_Lumber_Cover_Fabrics_jpg_7}" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="${asset_Lumber_Cover_Fabrics_jpg_7} 945w, ${asset_Lumber_Cover_Fabrics_297x300_jpg_8} 297w, ${asset_Lumber_Cover_Fabrics_jpg_7} 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div>
-				<div class="entry-content-wrapper">
-					<h2 class="entry-title"><a href="/product/lumber-cover-fabrics">Lumber Cover Fabrics</a></h2><p>Protect Your Timber. Preserve Your Value. Our Lumber Cover Fabrics are heavy-duty, weather-resistant fabrics specifically engineered to protect timber, wood products, and building materials during storage, handling, and long-distance transportation. Made from high-strength woven polypropylene with UV-stabilized coatings, these covers act as a powerful shield against moisture, sunlight, dust, and physical damage preserving the quality… <a class="read-more-inline" href="/product/lumber-cover-fabrics">Read More</a></p>
-					
-				</div>
-
-			</article>
-
-					<article class="post">
-				<div class="entry-thumbnail"><a href="/product/silt-fence"><img width="800" height="808" src="${asset_Silt_Fence_jpg_9}" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="${asset_Silt_Fence_jpg_9} 945w, ${asset_Silt_Fence_jpg_9} 297w, ${asset_Silt_Fence_jpg_9} 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div>
-				<div class="entry-content-wrapper">
-					<h2 class="entry-title"><a href="/product/silt-fence">Silt Fence</a></h2><p>Control Sediment. Protect the Environment. Our Silt Fence is a heavy-duty, permeable geotextile barrier engineered to prevent sediment runoff from construction sites, roadworks, and land development projects. Made from durable woven polypropylene fabric, it acts as a temporary but highly effective filtration barrier allowing water to pass through freely while trapping suspended soil particles, sediment,… <a class="read-more-inline" href="/product/silt-fence">Read More</a></p>
-					
-				</div>
-
-			</article>
-
-		        </div>
+  return (
+    <Layout>
+      <div className="productListWrapper">
+        {/* Header */}
+        <div className="page-header" style={{
+          background: '#FFFFFF',
+          padding: '32px',
+          borderRadius: '20px',
+          border: '1px solid #E2E8F0',
+          marginBottom: '32px'
+        }}>
+          <h1 className="entry-title" style={{ fontSize: '32px', fontWeight: '800', color: '#072834', marginBottom: '12px' }}>
+            Product Category: <span style={{ color: '#00C2A8' }}>Specialty Fabrics</span>
+          </h1>
+          <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.7', marginBottom: '12px' }}>
+            Some applications require custom technical textiles. We engineer woven specialty fabrics for specific load capacities, thermal resistance, and environmental conditions.
+          </p>
+          <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.7' }}>
+            We supply HDPE flat tape woven fabric, lumber covers, silt fence, rPET recycled fabric, monofilament mesh, and geotextiles.
+          </p>
         </div>
-        </div>
-	</div>
 
-		</div>
-</main>` }} />
-        </Layout>
-    );
+        {/* Clean Modern Light Filter Pills Bar */}
+        <div style={{
+          background: '#FFFFFF',
+          border: '1px solid #E2E8F0',
+          padding: '16px 24px',
+          borderRadius: '18px',
+          boxShadow: '0 4px 20px rgba(7, 40, 52, 0.04)',
+          marginBottom: '36px',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '12px',
+          flexWrap: 'wrap'
+        }}>
+          <span style={{ color: '#072834', fontSize: '13px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.5px', marginRight: '6px' }}>
+            Specifications:
+          </span>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+            {subNavItems.map((nav, idx) => (
+              <Link
+                key={idx}
+                to={nav.path}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  background: '#F1F5F9',
+                  color: '#072834',
+                  border: '1px solid #CBD5E1',
+                  padding: '8px 20px',
+                  borderRadius: '50px',
+                  fontWeight: '700',
+                  fontSize: '13px',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                {nav.title}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Grid */}
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))',
+          gap: '28px'
+        }}>
+          {specialtyProducts.map((product, idx) => (
+            <div
+              key={idx}
+              className="product-card-premium"
+              style={{
+                background: '#FFFFFF',
+                borderRadius: '20px',
+                border: '1px solid #EEF2F6',
+                overflow: 'hidden',
+                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.05)',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between'
+              }}
+            >
+              <div style={{ height: '220px', background: '#F8FAFC', padding: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <img
+                  src={product.image}
+                  alt={product.title}
+                  style={{ maxHeight: '180px', maxWidth: '100%', objectFit: 'contain' }}
+                />
+              </div>
+
+              <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', flexGrow: 1, justifyContent: 'space-between' }}>
+                <div>
+                  <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#072834', marginBottom: '8px' }}>
+                    {product.title}
+                  </h3>
+                  <p style={{ fontSize: '13px', color: '#64748B', lineHeight: '1.6', marginBottom: '16px' }}>
+                    {product.desc}
+                  </p>
+                </div>
+
+                <Link
+                  to={product.link}
+                  style={{
+                    color: '#00C2A8',
+                    fontWeight: '800',
+                    fontSize: '14px',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '4px',
+                    textDecoration: 'none'
+                  }}
+                >
+                  Read More <ChevronRight size={16} />
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Layout>
+  );
 }

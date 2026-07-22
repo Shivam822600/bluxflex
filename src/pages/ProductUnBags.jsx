@@ -1,45 +1,61 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
+import { Link } from 'react-router-dom';
+import { ChevronLeft, ShieldCheck, ArrowRight } from 'lucide-react';
 import asset_Un_Bags_jpg_1 from '../assets/images/Un-Bags-297x300.jpg?url';
 
 export default function ProductUnBags() {
-    useEffect(() => {
-        window.dispatchEvent(new Event('resize'));
-        setTimeout(() => {
-            window.dispatchEvent(new Event('resize'));
-        }, 500);
-    }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-    return (
-        <Layout>
-            <div dangerouslySetInnerHTML={{ __html: `<main id="content" class="site-main post-851 product type-product status-publish has-post-thumbnail hentry product_category-conductive-bag product_category-fibc">
+  return (
+    <Layout>
+      <section style={{ background: '#072834', color: '#FFFFFF', padding: '40px 0' }}>
+        <div className="container">
+          <Link to="/products" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: '#00C2A8', fontSize: '13px', fontWeight: '600', marginBottom: '12px' }}>
+            <ChevronLeft size={16} /> Back to Products
+          </Link>
+          <h1 style={{ fontSize: '32px', color: '#FFFFFF', fontWeight: '800', fontFamily: 'var(--font-heading)' }}>
+            Conductive Type C Jumbo Bag
+          </h1>
+          <p style={{ color: '#94A3B8', fontSize: '14px', marginTop: '4px' }}>
+            Electrostatic discharge protection for explosive powders and flammable environments
+          </p>
+        </div>
+      </section>
 
-
-	<div class="productDetailsWrapper">
-		<div class="productBasicInfo">
-			 <!-- Featured Image -->
-            <div class="featured-image">
-            <img width="800" height="808" src="${asset_Un_Bags_jpg_1}" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="${asset_Un_Bags_jpg_1} 945w, ${asset_Un_Bags_jpg_1} 297w, ${asset_Un_Bags_jpg_1} 768w" sizes="(max-width: 800px) 100vw, 800px">        </div>
-    			<div class="product-info">
-			                 <div class="page-header">
-                    <h1 class="entry-title">Conductive Bag</h1>                </div>
-    	                <div class="page-content">
-        <p>Our Conductive Bags are designed to eliminate the risks associated with static electricity during storage and transportation. Made from specialized conductive materials, these bags safely dissipate electrostatic charges, making them ideal for flammable or sensitive materials.</p>
-<p>Widely used in chemical and industrial applications, our conductive bags ensure maximum safety, compliance, and peace of mind in environments where static discharge can be hazardous.</p>
-
-        
+      <section style={{ padding: '56px 0', background: '#F8FAFC' }}>
+        <div className="container">
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '40px', alignItems: 'start' }}>
+            <div className="card-clean" style={{ padding: '24px', textAlign: 'center', background: '#FFFFFF' }}>
+              <img src={asset_Un_Bags_jpg_1} alt="Conductive Bag" style={{ maxHeight: '340px', objectFit: 'contain', margin: '0 auto' }} />
             </div>
-			</div>
-		</div>
-		
 
+            <div className="card-clean" style={{ padding: '36px' }}>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: '#E8F7F5', color: '#00C2A8', padding: '6px 14px', borderRadius: '50px', fontSize: '12px', fontWeight: '700', marginBottom: '16px' }}>
+                <ShieldCheck size={14} /> Type C Groundable Conductive
+              </div>
+              <h2 style={{ fontSize: '26px', color: '#072834', marginBottom: '16px' }}>Electrostatic Discharge Protection</h2>
+              <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.7', marginBottom: '16px' }}>
+                Our Conductive Bags are designed to eliminate the risks associated with static electricity during storage and transportation. Made from specialized conductive materials, these bags safely dissipate electrostatic charges, making them ideal for flammable or sensitive materials.
+              </p>
+              <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.7', marginBottom: '24px' }}>
+                Widely used in chemical and industrial applications, our conductive bags ensure maximum safety, compliance, and peace of mind in environments where static discharge can be hazardous.
+              </p>
 
-    
-		
-	</div>
-
-    
-</main>` }} />
-        </Layout>
-    );
+              <div style={{ display: 'flex', gap: '16px' }}>
+                <Link to="/contact-us-2" className="btn-dark" style={{ flex: 1, justifyContent: 'center' }}>
+                  Request RFQ Quote <ArrowRight size={16} />
+                </Link>
+                <Link to="/buyer-tools" className="btn-outline-dark" style={{ flex: 1, justifyContent: 'center' }}>
+                  Load Calculator
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  );
 }

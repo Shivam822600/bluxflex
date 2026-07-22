@@ -1,64 +1,50 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_Un_Bags_jpg_1 from '../assets/images/Un-Bags-297x300.jpg?url';
+import { Link } from 'react-router-dom';
+import { ChevronRight } from 'lucide-react';
+
+import asset_C_Conductive_Bag_jpg_1 from '../assets/images/C-Conductive-Bag.jpg?url';
 
 export default function ProductCategoryConductiveBag() {
-    useEffect(() => {
-        window.dispatchEvent(new Event('resize'));
-        setTimeout(() => {
-            window.dispatchEvent(new Event('resize'));
-        }, 500);
-    }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-    return (
-        <Layout>
-            <div dangerouslySetInnerHTML={{ __html: `<main id="content" class="site-main">
-	<div class="productListWrapper">
-	
-
-	<div class="page-content">
-		<div class="productContent">	
-			
-			 				<div class="page-header">
-					<h1 class="entry-title">Product Category: <span>Conductive Bag</span></h1>				</div>
-						
-			<div class="productTypes">
-				<ul>
-					<li><a href="/fibc/types">Types</a></li>
-					<li><a href="/fibc/discharge">Discharge</a></li>
-					<li><a href="/fibc/filling">Filling</a></li>
-					<li><a href="/fibc/lift-loops">Lift Loops</a></li>
-					<li><a href="/fibc/liners">Liners</a></li>
-					<li><a href="/fibc/stitch-types">Stitch Types</a></li>
-				</ul>
-			</div>
-			<div class="productCategories">
-				
-				<ul><li><a class="subcat-item all-tab " href="/fibc">All</a></li><li><a class="subcat-item " href="/baffle-bags">Baffle Bags</a></li><li><a class="subcat-item active" href="/">Conductive Bag</a></li><li><a class="subcat-item " href="/diaper-bag">Diaper Bag</a></li><li><a class="subcat-item " href="/un-bag">UN Bag</a></li></ul>			</div>
-			
-
-		
-		
-        <div class="productListing">
-           
-    
-            <div class="productList">
-            			<article class="post">
-				<div class="entry-thumbnail"><a href="/product/un-bags"><img fetchpriority="high" width="800" height="808" src="${asset_Un_Bags_jpg_1}" class="attachment-large size-large wp-post-image" alt="" decoding="async" srcset="${asset_Un_Bags_jpg_1} 945w, ${asset_Un_Bags_jpg_1} 297w, ${asset_Un_Bags_jpg_1} 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div>
-				<div class="entry-content-wrapper">
-					<h2 class="entry-title"><a href="/product/un-bags">Conductive Bag</a></h2><p>Our Conductive Bags are designed to eliminate the risks associated with static electricity during storage and transportation. Made from specialized conductive materials, these bags safely dissipate electrostatic charges, making them ideal for flammable or sensitive materials. Widely used in chemical and industrial applications, our conductive bags ensure maximum safety, compliance, and peace of mind in… <a class="read-more-inline" href="/product/un-bags">Read More</a></p>
-					
-				</div>
-
-			</article>
-
-		        </div>
+  return (
+    <Layout>
+      <div className="productListWrapper">
+        <div className="page-header" style={{
+          background: '#FFFFFF',
+          padding: '32px',
+          borderRadius: '20px',
+          border: '1px solid #E2E8F0',
+          marginBottom: '32px'
+        }}>
+          <h1 className="entry-title" style={{ fontSize: '32px', fontWeight: '800', color: '#072834', marginBottom: '12px' }}>
+            Product Category: <span style={{ color: '#00C2A8' }}>Conductive Bags</span>
+          </h1>
+          <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.7' }}>
+            Type C groundable bulk containers engineered with conductive threads to safely dissipate electrostatic charges during filling and emptying.
+          </p>
         </div>
-        </div>
-	</div>
 
-		</div>
-</main>` }} />
-        </Layout>
-    );
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '28px' }}>
+          <div className="product-card-premium" style={{ background: '#FFFFFF', borderRadius: '20px', border: '1px solid #EEF2F6', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.05)' }}>
+            <div style={{ height: '240px', background: '#F8FAFC', padding: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <img src={asset_C_Conductive_Bag_jpg_1} alt="Conductive Bag" style={{ maxHeight: '200px', maxWidth: '100%', objectFit: 'contain' }} />
+            </div>
+            <div style={{ padding: '24px' }}>
+              <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#072834', marginBottom: '8px' }}>UN Conductive Bag</h3>
+              <p style={{ fontSize: '13px', color: '#64748B', lineHeight: '1.6', marginBottom: '16px' }}>
+                Specially designed with grounding tabs and conductive grid threads to prevent static discharge sparks in combustible environments.
+              </p>
+              <Link to="/product/c-conductive-bag" style={{ color: '#00C2A8', fontWeight: '800', fontSize: '14px', display: 'inline-flex', alignItems: 'center', gap: '4px', textDecoration: 'none' }}>
+                Read More <ChevronRight size={16} />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Layout>
+  );
 }
