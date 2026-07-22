@@ -1,125 +1,210 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
+import { Link } from 'react-router-dom';
+import { ChevronLeft, ShieldCheck, ArrowRight, Download, CheckCircle2 } from 'lucide-react';
+
 import asset_image_flour_png_1 from '../assets/images/image_flour.png?url';
 import asset_image0_1_1024x683_png_2 from '../assets/images/image0-1-1024x683.png?url';
 import asset_65d7bcaa_8606_45f6_b3e9_dfe376cc5326_1024x683_png_3 from '../assets/images/65d7bcaa-8606-45f6-b3e9-dfe376cc5326-1024x683.png?url';
 
 export default function NorthAmericaPaperBag2() {
-    useEffect(() => {
-        window.dispatchEvent(new Event('resize'));
-        setTimeout(() => {
-            window.dispatchEvent(new Event('resize'));
-        }, 500);
-    }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-    return (
-        <Layout>
-            <div dangerouslySetInnerHTML={{ __html: `<main id="content" class="site-main post-1144 page type-page status-publish hentry">
+  return (
+    <Layout>
+      {/* Hero Banner */}
+      <section style={{ background: 'linear-gradient(135deg, #072834 0%, #0F3A4A 100%)', color: '#FFFFFF', padding: '64px 0' }}>
+        <div className="container">
+          <Link to="/products" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: '#00C2A8', fontSize: '13px', fontWeight: '600', marginBottom: '16px' }}>
+            <ChevronLeft size={16} /> Back to Products
+          </Link>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(0, 194, 168, 0.15)', color: '#00C2A8', padding: '6px 16px', borderRadius: '50px', fontSize: '13px', fontWeight: '700', marginBottom: '20px', border: '1px solid rgba(0, 194, 168, 0.3)' }}>
+            🇨🇦 Canadian Manufactured Food-Grade Packaging
+          </div>
+          <h1 style={{ fontSize: '38px', color: '#FFFFFF', fontWeight: '800', fontFamily: 'var(--font-heading)', marginBottom: '16px', lineHeight: '1.2' }}>
+            North America Multiwall & Paper Packaging Solutions
+          </h1>
+          <p style={{ color: '#94A3B8', fontSize: '17px', maxWidth: '840px', lineHeight: '1.6', marginBottom: '28px' }}>
+            Bulk Flex supplies Canadian-manufactured multiwall paper bags and printed roll stock for the North American food and agricultural market. Our solutions support grocery chains, flour mills, sugar packers, ingredient manufacturers, and automated packaging operations across Canada and the United States.
+          </p>
+          <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+            <Link to="/contact-us-2" className="btn-teal" style={{ padding: '14px 32px', fontSize: '15px', fontWeight: '800' }}>
+              Request Custom Quote <ArrowRight size={18} />
+            </Link>
+            <a
+              href="/src/assets/wp-content/uploads/2026/02/Bulk-Flex-Pvt-Ltd-brochure-.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-outline-dark"
+              style={{ padding: '14px 28px', fontSize: '15px', fontWeight: '700', borderColor: 'rgba(255,255,255,0.3)', color: '#FFFFFF' }}
+            >
+              <Download size={18} /> Download Brochure PDF
+            </a>
+          </div>
+        </div>
+      </section>
 
+      {/* Section 1: Sift-Proof Paper Bags for Flour & Sugar */}
+      <section style={{ padding: '64px 0', background: '#FFFFFF' }}>
+        <div className="container">
+          <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '48px', alignItems: 'center' }}>
+            <div>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: '#E8F7F5', color: '#00C2A8', padding: '6px 14px', borderRadius: '50px', fontSize: '12px', fontWeight: '700', marginBottom: '16px' }}>
+                <ShieldCheck size={14} /> Sift-Proof Technology
+              </div>
+              <h2 style={{ fontSize: '28px', color: '#072834', fontWeight: '800', marginBottom: '16px' }}>
+                Sift-Proof Paper Bags for Flour & Sugar
+              </h2>
+              <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.7', marginBottom: '20px' }}>
+                Bulk Flex supplies <strong>sift-proof paper bags</strong> designed for clean containment of fine powders such as flour and sugar. These food-grade bags help reduce leakage, dusting, and product loss during filling, transport, and retail display.
+              </p>
 
-	<div class="productDetailsWrapper">
-		<div class="productBasicInfo">
-			 <!-- Featured Image -->
-    			<div class="product-info">
-			                 <div class="page-header">
-                    <h1 class="entry-title">Multi Wall Paper Bag</h1>                </div>
-    	                <div class="page-content">
-        		<div data-elementor-type="wp-page" data-elementor-id="1144" class="elementor elementor-1144">
-				<div class="elementor-element elementor-element-c054a86 e-flex e-con-boxed magic-button-disabled-no e-con e-parent" data-id="c054a86" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-982bbd2 elementor-widget elementor-widget-heading" data-id="982bbd2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">North America Multiwall &amp; Paper Packaging Solutions</h2>				</div>
-					</div>
-				</div>
-		<div class="elementor-element elementor-element-984849b e-flex e-con-boxed magic-button-disabled-no e-con e-parent" data-id="984849b" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-6c830b9 e-con-full e-flex magic-button-disabled-no e-con e-child" data-id="6c830b9" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-3532c41 elementor-widget elementor-widget-heading" data-id="3532c41" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">Sift-Proof Paper Bags for Flour &amp; Sugar</h2>				</div>
-				<div class="elementor-element elementor-element-b540409 elementor-widget elementor-widget-text-editor" data-id="b540409" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									<p>Bulk Flex supplies <strong data-start="145" data-end="170">sift-proof paper bags</strong> designed for clean containment of fine powders such as flour and sugar. These food-grade bags help reduce leakage, dusting, and product loss during filling, transport, and retail display.</p>								</div>
-				<div class="elementor-element elementor-element-1db9994 elementor-widget elementor-widget-heading" data-id="1db9994" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">Available Sizes:</h2>				</div>
-				<div class="elementor-element elementor-element-ffea8c5 elementor-widget elementor-widget-text-editor" data-id="ffea8c5" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									<p>1.5 kg • 2 kg • 4 lb • 10 lb</p>								</div>
-				<div class="elementor-element elementor-element-6f1476c elementor-widget elementor-widget-heading" data-id="6f1476c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">Construction Options:</h2>				</div>
-				<div class="elementor-element elementor-element-8080c01 elementor-widget elementor-widget-text-editor" data-id="8080c01" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									<ul><li>1 Ply and 2 Ply paper bags</li><li>White Bleached Kraft or Natural Kraft</li><li>SOS style packaging</li></ul>								</div>
-				<div class="elementor-element elementor-element-4b48db4 elementor-widget elementor-widget-heading" data-id="4b48db4" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">Designed For:</h2>				</div>
-				<div class="elementor-element elementor-element-1940f92 elementor-widget elementor-widget-text-editor" data-id="1940f92" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									<p data-start="541" data-end="655">Flour mills • Sugar refineries • Baking ingredient manufacturers • Private label food brands</p>								</div>
-				</div>
-		<div class="elementor-element elementor-element-148dfd7 e-con-full e-flex magic-button-disabled-no e-con e-child" data-id="148dfd7" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-				<div class="elementor-element elementor-element-866ef4d elementor-widget elementor-widget-image" data-id="866ef4d" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
-															<img decoding="async" src="${asset_image_flour_png_1}" title="" alt="" loading="lazy">															</div>
-				</div>
-					</div>
-				</div>
-		<div class="elementor-element elementor-element-d162699 e-flex e-con-boxed magic-button-disabled-no e-con e-parent" data-id="d162699" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-e5ca7a5 e-con-full e-flex magic-button-disabled-no e-con e-child" data-id="e5ca7a5" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-92dcb95 elementor-widget elementor-widget-heading" data-id="92dcb95" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">Printed Paper Roll Stock for Form &amp; Fill Systems</h2>				</div>
-				<div class="elementor-element elementor-element-2c9c971 elementor-widget elementor-widget-text-editor" data-id="2c9c971" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									<p>Bulk Flex supplies <strong data-start="156" data-end="206">Canadian-manufactured printed paper roll stock</strong> designed for high-speed form and fill packaging lines. Our materials ensure consistent print quality, reliable performance, and efficient automated production.</p>								</div>
-				<div class="elementor-element elementor-element-d9d50bf elementor-widget elementor-widget-text-editor" data-id="d9d50bf" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									<ul><li>High-speed compatibility up to 2,000 ft/min</li><li>100% print verification and inspection</li><li>Food-grade compliant materials</li><li>Precision color consistency</li><li>Stable roll tension for smooth operations</li></ul>								</div>
-				<div class="elementor-element elementor-element-bd5f440 elementor-widget elementor-widget-text-editor" data-id="bd5f440" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									<p>Ideal for <strong data-start="583" data-end="678">automated flour packaging, sugar form &amp; fill systems, and high-volume ingredient production</strong>, delivering dependable performance for continuous manufacturing.</p>								</div>
-				</div>
-		<div class="elementor-element elementor-element-be6a589 e-con-full e-flex magic-button-disabled-no e-con e-child" data-id="be6a589" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-				<div class="elementor-element elementor-element-59bb6b1 elementor-widget elementor-widget-image" data-id="59bb6b1" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
-															<img fetchpriority="high" decoding="async" width="800" height="534" src="${asset_image0_1_1024x683_png_2}" class="attachment-large size-large wp-image-1229" alt="" srcset="${asset_image0_1_1024x683_png_2} 1024w, ${asset_image0_1_1024x683_png_2} 300w, ${asset_image0_1_1024x683_png_2} 768w, ${asset_image0_1_1024x683_png_2} 1536w" sizes="(max-width: 800px) 100vw, 800px">															</div>
-				</div>
-					</div>
-				</div>
-		<div class="elementor-element elementor-element-5d64602 e-flex e-con-boxed magic-button-disabled-no e-con e-parent" data-id="5d64602" data-element_type="container" data-e-type="container">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-aa8ef2c elementor-widget elementor-widget-heading" data-id="aa8ef2c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">Canadian Manufactured Food Grade Paper Bags</h2>				</div>
-				<div class="elementor-element elementor-element-60d8c01 elementor-widget elementor-widget-text-editor" data-id="60d8c01" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									<p data-start="139" data-end="440">Bulk Flex supplies Canadian-manufactured multiwall paper bags and printed roll stock for the North American food and agricultural market. Our solutions support grocery chains, flour mills, sugar packers, ingredient manufacturers, and automated packaging operations across Canada and the United States.</p>								</div>
-				<div class="elementor-element elementor-element-2a2801d elementor-widget elementor-widget-text-editor" data-id="2a2801d" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									<ul><li>Generic stock paper bags with quick availability</li><li>Private label printed bags with custom branding</li><li>High-quality food-grade packaging materials</li><li>Retail-ready designs for food and agriculture markets</li><li>Reliable supply for North American distribution</li></ul>								</div>
-				<div class="elementor-element elementor-element-804d95f elementor-widget elementor-widget-text-editor" data-id="804d95f" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									<p>We also provide <strong data-start="722" data-end="805">Canadian-made potato paper bags in standard sizes: 3 lb, 5 lb, 10 lb, and 50 lb</strong>, designed for strong performance, produce freshness, and efficient high-speed filling.</p>								</div>
-					</div>
-				</div>
-		<div class="elementor-element elementor-element-2057a65 e-flex e-con-boxed magic-button-disabled-no e-con e-parent" data-id="2057a65" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-e2b1f76 e-con-full e-flex magic-button-disabled-no e-con e-child" data-id="e2b1f76" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-202ae3e elementor-widget elementor-widget-heading" data-id="202ae3e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">Food-Grade Paper Packaging</h2>				</div>
-				<div class="elementor-element elementor-element-3759e9b elementor-widget elementor-widget-text-editor" data-id="3759e9b" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									<p>Bulk Flex provides <strong data-start="195" data-end="248">food-grade paper packaging manufactured in Canada</strong>, designed to meet <strong data-start="267" data-end="306">North American regulatory standards</strong> and support <strong data-start="319" data-end="367">retail packaging and automated filling lines</strong>.</p>								</div>
-				<div class="elementor-element elementor-element-eaf1a9f elementor-widget elementor-widget-heading" data-id="eaf1a9f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">Key Features</h2>				</div>
-				<div class="elementor-element elementor-element-83e6e89 elementor-widget elementor-widget-text-editor" data-id="83e6e89" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									<ul><li data-section-id="mwui48" data-start="387" data-end="415"><p data-start="389" data-end="415">CFIA-compliant packaging</p></li><li data-section-id="1bj90v2" data-start="416" data-end="467"><p data-start="418" data-end="467">FDA food-grade compatibility (where applicable)</p></li><li data-section-id="ojrxo8" data-start="468" data-end="513"><p data-start="470" data-end="513">Retail &amp; industrial food safety standards</p></li><li data-section-id="1xiboxp" data-start="514" data-end="559"><p data-start="516" data-end="559">Designed for high-speed automated filling</p></li><li data-section-id="nbkqgv" data-start="560" data-end="602"><p data-start="562" data-end="602">Canadian manufacturing &amp; stable supply</p></li></ul>								</div>
-				</div>
-		<div class="elementor-element elementor-element-adff6ba e-con-full e-flex magic-button-disabled-no e-con e-child" data-id="adff6ba" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-add65e1 elementor-widget elementor-widget-image" data-id="add65e1" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
-															<img decoding="async" width="800" height="534" src="${asset_65d7bcaa_8606_45f6_b3e9_dfe376cc5326_1024x683_png_3}" class="attachment-large size-large wp-image-1921" alt="" srcset="${asset_65d7bcaa_8606_45f6_b3e9_dfe376cc5326_1024x683_png_3} 1024w, ${asset_65d7bcaa_8606_45f6_b3e9_dfe376cc5326_1024x683_png_3} 300w, ${asset_65d7bcaa_8606_45f6_b3e9_dfe376cc5326_1024x683_png_3} 768w, ${asset_65d7bcaa_8606_45f6_b3e9_dfe376cc5326_1024x683_png_3} 1536w" sizes="(max-width: 800px) 100vw, 800px">															</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		
-        
+              <div style={{ background: '#F8FAFC', borderRadius: '18px', padding: '24px', border: '1px solid #E2E8F0', marginBottom: '24px' }}>
+                <div style={{ marginBottom: '14px' }}>
+                  <span style={{ fontSize: '12px', fontWeight: '800', color: '#00C2A8', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Available Sizes:</span>
+                  <p style={{ fontSize: '16px', fontWeight: '800', color: '#072834', margin: '4px 0 0 0' }}>1.5 kg • 2 kg • 4 lb • 10 lb</p>
+                </div>
+                <div style={{ marginBottom: '14px' }}>
+                  <span style={{ fontSize: '12px', fontWeight: '800', color: '#00C2A8', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Construction Options:</span>
+                  <p style={{ fontSize: '14px', color: '#475569', margin: '4px 0 0 0', fontWeight: '600' }}>• 1 Ply and 2 Ply paper bags<br/>• White Bleached Kraft or Natural Kraft<br/>• SOS style packaging</p>
+                </div>
+                <div>
+                  <span style={{ fontSize: '12px', fontWeight: '800', color: '#00C2A8', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Designed For:</span>
+                  <p style={{ fontSize: '14px', color: '#475569', margin: '4px 0 0 0', fontWeight: '600' }}>Flour mills • Sugar refineries • Baking ingredient manufacturers • Private label food brands</p>
+                </div>
+              </div>
             </div>
-			</div>
-		</div>
-		
 
+            <div style={{ background: '#F8FAFC', borderRadius: '24px', padding: '32px', textAlign: 'center', border: '1px solid #EEF2F6', boxShadow: '0 10px 30px rgba(0,0,0,0.04)' }}>
+              <img src={asset_image_flour_png_1} alt="Sift-Proof Paper Bags for Flour and Sugar" style={{ maxHeight: '360px', width: 'auto', margin: '0 auto', objectFit: 'contain' }} />
+            </div>
+          </div>
+        </div>
+      </section>
 
-    
-		
-	</div>
+      {/* Section 2: Printed Paper Roll Stock */}
+      <section style={{ padding: '64px 0', background: '#F8FAFC', borderTop: '1px solid #E2E8F0' }}>
+        <div className="container">
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '48px', alignItems: 'center' }}>
+            <div style={{ background: '#FFFFFF', borderRadius: '24px', padding: '32px', textAlign: 'center', border: '1px solid #EEF2F6', boxShadow: '0 10px 30px rgba(0,0,0,0.04)' }}>
+              <img src={asset_image0_1_1024x683_png_2} alt="Printed Paper Roll Stock for Form & Fill Systems" style={{ maxHeight: '340px', width: 'auto', margin: '0 auto', objectFit: 'contain' }} />
+            </div>
 
-    
-</main>` }} />
-        </Layout>
-    );
+            <div>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: '#E8F7F5', color: '#00C2A8', padding: '6px 14px', borderRadius: '50px', fontSize: '12px', fontWeight: '700', marginBottom: '16px' }}>
+                <CheckCircle2 size={14} /> High-Speed Form & Fill Lines
+              </div>
+              <h2 style={{ fontSize: '28px', color: '#072834', fontWeight: '800', marginBottom: '16px' }}>
+                Printed Paper Roll Stock for Form & Fill Systems
+              </h2>
+              <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.7', marginBottom: '20px' }}>
+                Bulk Flex supplies <strong>Canadian-manufactured printed paper roll stock</strong> designed for high-speed form and fill packaging lines. Our materials ensure consistent print quality, reliable performance, and efficient automated production.
+              </p>
+
+              <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 24px 0', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                {[
+                  'High-speed compatibility up to 2,000 ft/min',
+                  '100% print verification and inspection',
+                  'Food-grade compliant materials',
+                  'Precision color consistency',
+                  'Stable roll tension for smooth operations'
+                ].map((item, idx) => (
+                  <li key={idx} style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '14px', color: '#072834', fontWeight: '600' }}>
+                    <CheckCircle2 size={16} color="#00C2A8" /> {item}
+                  </li>
+                ))}
+              </ul>
+
+              <p style={{ fontSize: '14px', color: '#475569', lineHeight: '1.6', background: '#FFFFFF', padding: '16px 20px', borderRadius: '12px', border: '1px solid #E2E8F0' }}>
+                Ideal for <strong>automated flour packaging, sugar form & fill systems, and high-volume ingredient production</strong>, delivering dependable performance for continuous manufacturing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 3: Canadian Food Grade Paper Bags & Potato Bags */}
+      <section style={{ padding: '64px 0', background: '#FFFFFF', borderTop: '1px solid #E2E8F0' }}>
+        <div className="container">
+          <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '48px', alignItems: 'center' }}>
+            <div>
+              <h2 style={{ fontSize: '28px', color: '#072834', fontWeight: '800', marginBottom: '16px' }}>
+                Canadian Manufactured Food Grade Paper Bags
+              </h2>
+              <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.7', marginBottom: '20px' }}>
+                Bulk Flex supplies Canadian-manufactured multiwall paper bags and printed roll stock for the North American food and agricultural market. Our solutions support grocery chains, flour mills, sugar packers, ingredient manufacturers, and automated packaging operations across Canada and the United States.
+              </p>
+
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px', marginBottom: '24px' }}>
+                {[
+                  'Generic stock paper bags with quick availability',
+                  'Private label printed bags with custom branding',
+                  'High-quality food-grade packaging materials',
+                  'Retail-ready designs for food & agriculture',
+                  'Reliable supply for North American distribution'
+                ].map((feat, idx) => (
+                  <div key={idx} style={{ background: '#F8FAFC', padding: '12px 16px', borderRadius: '12px', border: '1px solid #E2E8F0', fontSize: '13px', fontWeight: '700', color: '#072834' }}>
+                    ✓ {feat}
+                  </div>
+                ))}
+              </div>
+
+              <div style={{ background: '#E8F7F5', border: '1px solid rgba(0, 194, 168, 0.3)', padding: '18px 22px', borderRadius: '16px' }}>
+                <p style={{ fontSize: '14px', color: '#072834', margin: 0, lineHeight: '1.6' }}>
+                  We also provide <strong>Canadian-made potato paper bags in standard sizes: 3 lb, 5 lb, 10 lb, and 50 lb</strong>, designed for strong performance, produce freshness, and efficient high-speed filling.
+                </p>
+              </div>
+            </div>
+
+            <div style={{ background: '#F8FAFC', borderRadius: '24px', padding: '32px', textAlign: 'center', border: '1px solid #EEF2F6', boxShadow: '0 10px 30px rgba(0,0,0,0.04)' }}>
+              <img src={asset_65d7bcaa_8606_45f6_b3e9_dfe376cc5326_1024x683_png_3} alt="Canadian Manufactured Food Grade Paper Packaging" style={{ maxHeight: '340px', width: 'auto', margin: '0 auto', objectFit: 'contain' }} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 4: Food-Grade Paper Packaging (Matching Screenshot Layout) */}
+      <section style={{ padding: '64px 0', background: '#F8FAFC', borderTop: '1px solid #E2E8F0' }}>
+        <div className="container">
+          <div style={{ display: 'grid', gridTemplateColumns: '1.1fr 1fr', gap: '48px', alignItems: 'center' }}>
+            <div>
+              <h2 style={{ fontSize: '32px', color: '#072834', fontWeight: '800', marginBottom: '16px', fontFamily: 'var(--font-heading)' }}>
+                Food–Grade Paper Packaging
+              </h2>
+              <p style={{ color: '#64748B', fontSize: '15px', lineHeight: '1.7', marginBottom: '28px' }}>
+                Bulk Flex provides <strong>food–grade paper packaging manufactured in Canada</strong>, designed to meet <strong>North American regulatory standards</strong> and support <strong>retail packaging and automated filling lines</strong>.
+              </p>
+
+              <h3 style={{ fontSize: '20px', color: '#072834', fontWeight: '800', marginBottom: '16px' }}>
+                Key Features
+              </h3>
+              <ul style={{ listStyle: 'disc', paddingLeft: '20px', margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                {[
+                  'CFIA–compliant packaging',
+                  'FDA food–grade compatibility (where applicable)',
+                  'Retail & industrial food safety standards',
+                  'Designed for high–speed automated filling',
+                  'Canadian manufacturing & stable supply'
+                ].map((feature, idx) => (
+                  <li key={idx} style={{ fontSize: '15px', color: '#475569', lineHeight: '1.5' }}>
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div style={{ borderRadius: '24px', overflow: 'hidden', boxShadow: '0 12px 36px rgba(0, 0, 0, 0.08)', background: '#FFFFFF' }}>
+              <img
+                src={asset_65d7bcaa_8606_45f6_b3e9_dfe376cc5326_1024x683_png_3}
+                alt="Food-Grade Paper Packaging"
+                style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  );
 }
