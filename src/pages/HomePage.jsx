@@ -155,7 +155,7 @@ export default function HomePage() {
       a: 'Our MOQs depend on product customization. Standard FIBC bulk bags usually start at 1,000 units, while custom printed PP woven sacks start at 5,000 units. Container load consolidations are also available for multi-SKU orders.'
     },
     {
-      q: 'Can Bulk Flex handle multi-supplier order consolidation in India/Asia?',
+      q: 'Can BulkFlex handle multi-supplier order consolidation in India/Asia?',
       a: 'Yes, absolutely. We specialize in single-point procurement. We manage quality checks, production scheduling, and container optimization across multiple manufacturing facilities so you receive a single consolidated shipment.'
     },
     {
@@ -799,7 +799,7 @@ export default function HomePage() {
                 Single-Point Control for Multi-Supplier Chains
               </h2>
               <p style={{ color: '#94A3B8', fontSize: '16px', lineHeight: '1.7', marginBottom: '28px' }}>
-                Managing multiple Asian suppliers can be fragmented and unpredictable. Bulk Flex coordinates vetted manufacturing partners to deliver consistent quality, optimized container loading, and total transparency under one unified management system.
+                Managing multiple Asian suppliers can be fragmented and unpredictable. BulkFlex coordinates vetted manufacturing partners to deliver consistent quality, optimized container loading, and total transparency under one unified management system.
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
                 {['Rigorous factory audits & quality checks', 'Multi-SKU container loading optimization', 'Real-time production and shipment tracking'].map((item, i) => (
@@ -980,73 +980,6 @@ export default function HomePage() {
             ))}
           </div>
 
-        </div>
-      </section>
-
-      {/* 7. CLIENT TESTIMONIALS / TRUST SECTION */}
-      <section style={{ padding: 'clamp(64px, 8vw, 96px) 0', background: '#FFFFFF', borderTop: '1px solid #E2E8F0' }}>
-        <div className="container">
-          <div style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto 52px auto' }}>
-            <span style={{ color: '#8DC63F', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1.2px' }}>
-              Trusted Globally
-            </span>
-            <h2 style={{ fontSize: 'clamp(30px, 3.8vw, 42px)', fontWeight: '800', color: '#142E3D', marginTop: '8px', marginBottom: '12px' }}>
-              What Procurement Leaders Say
-            </h2>
-            <p style={{ color: '#64748B', fontSize: '16px' }}>
-              Partnering with international buyers to streamline bulk packaging logistics.
-            </p>
-          </div>
-
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-            gap: '32px'
-          }}>
-            {[
-              {
-                quote: "Bulk Flex streamlined our Asian sourcing drastically. Their quality audit checks and container space optimization cut our landed packaging costs by 14%.",
-                author: "Markus Vance",
-                role: "VP of Supply Chain",
-                company: "AgroChem International (Germany)"
-              },
-              {
-                quote: "Finding reliable UN Certified conductive bags was a huge challenge until we partnered with Bulk Flex. Zero defect rate across 45 container shipments.",
-                author: "Sarah Jenkins",
-                role: "Global Procurement Manager",
-                company: "Polymer Logistics LLC (USA)"
-              },
-              {
-                quote: "Outstanding product consistency and communication. Having a single point of contact for multi-SKU Leno and PP woven sacks saved us hundreds of man-hours.",
-                author: "David Thorne",
-                role: "Operations Director",
-                company: "Nordic Packaging Group (Rotterdam)"
-              }
-            ].map((t, idx) => (
-              <div key={idx} style={{
-                background: '#FBF1E6',
-                borderRadius: '20px',
-                padding: '36px 32px',
-                border: '1px solid #E2E8F0',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'space-between',
-                boxShadow: '0 8px 24px rgba(0,0,0,0.03)'
-              }}>
-                <p style={{ fontSize: '15px', color: '#334155', lineHeight: '1.75', fontStyle: 'italic', marginBottom: '28px' }}>
-                  "{t.quote}"
-                </p>
-                <div>
-                  <h4 style={{ fontSize: '17px', fontWeight: '800', color: '#142E3D', margin: 0 }}>
-                    {t.author}
-                  </h4>
-                  <p style={{ fontSize: '13px', color: '#8DC63F', fontWeight: '700', margin: '4px 0 0 0' }}>
-                    {t.role} - <span style={{ color: '#64748B' }}>{t.company}</span>
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 

@@ -75,37 +75,24 @@ import ProductWindshieldNets from './pages/ProductWindshieldNets';
 import ProductWineBeverageBags from './pages/ProductWineBeverageBags';
 import ProductWovenGroundCover from './pages/ProductWovenGroundCover';
 import ProductWovenSpecialtyFabrics from './pages/ProductWovenSpecialtyFabrics';
-import ProductCategoryAgroTextilesFeed from './pages/ProductCategoryAgroTextilesFeed';
 import ProductCategoryAgroTextiles from './pages/ProductCategoryAgroTextiles';
 import ProductCategoryAgroTextilesPage2 from './pages/ProductCategoryAgroTextilesPage2';
-import ProductCategoryBaffleBagsFeed from './pages/ProductCategoryBaffleBagsFeed';
 import ProductCategoryBaffleBags from './pages/ProductCategoryBaffleBags';
-import ProductCategoryConductiveBagFeed from './pages/ProductCategoryConductiveBagFeed';
 import ProductCategoryConductiveBag from './pages/ProductCategoryConductiveBag';
-import ProductCategoryContainerLinersFeed from './pages/ProductCategoryContainerLinersFeed';
 import ProductCategoryContainerLiners from './pages/ProductCategoryContainerLiners';
-import ProductCategoryDiaperBagFeed from './pages/ProductCategoryDiaperBagFeed';
 import ProductCategoryDiaperBag from './pages/ProductCategoryDiaperBag';
-import ProductCategoryFibcFeed from './pages/ProductCategoryFibcFeed';
 import ProductCategoryFibc from './pages/ProductCategoryFibc';
-import ProductCategoryJuteBurlapFeed from './pages/ProductCategoryJuteBurlapFeed';
 import ProductCategoryJuteBurlap from './pages/ProductCategoryJuteBurlap';
 import ProductCategoryJuteBurlapPage2 from './pages/ProductCategoryJuteBurlapPage2';
-import ProductCategoryLenoBagsFebricFeed from './pages/ProductCategoryLenoBagsFebricFeed';
 import ProductCategoryLenoBagsFebric from './pages/ProductCategoryLenoBagsFebric';
-import ProductCategoryPpWovenSacksFeed from './pages/ProductCategoryPpWovenSacksFeed';
 import ProductCategoryPpWovenSacks from './pages/ProductCategoryPpWovenSacks';
-import ProductCategoryRetailShopingBagsFeed from './pages/ProductCategoryRetailShopingBagsFeed';
 import ProductCategoryRetailShopingBags from './pages/ProductCategoryRetailShopingBags';
-import ProductCategorySpecialtyFebricsFeed from './pages/ProductCategorySpecialtyFebricsFeed';
 import ProductCategorySpecialtyFebrics from './pages/ProductCategorySpecialtyFebrics';
-import ProductCategoryUnBagFeed from './pages/ProductCategoryUnBagFeed';
 import ProductCategoryUnBag from './pages/ProductCategoryUnBag';
 import Products from './pages/Products';
 import RpetFibc from './pages/RpetFibc';
 import TermsAndConditions from './pages/TermsAndConditions';
 import Welcome from './pages/Welcome';
-import WpJson from './pages/WpJson';
 import SplashScreen from './components/SplashScreen';
 import { LanguageProvider } from './context/LanguageContext';
 
@@ -202,37 +189,24 @@ function App() {
           <Route path="/product/wine-beverage-bags" element={<ProductWineBeverageBags />} />
           <Route path="/product/woven-ground-cover" element={<ProductWovenGroundCover />} />
           <Route path="/product/woven-specialty-fabrics" element={<ProductWovenSpecialtyFabrics />} />
-          <Route path="/product_category/agro-textiles/feed" element={<ProductCategoryAgroTextilesFeed />} />
           <Route path="/product_category/agro-textiles" element={<ProductCategoryAgroTextiles />} />
           <Route path="/product_category/agro-textiles/page/2" element={<ProductCategoryAgroTextilesPage2 />} />
-          <Route path="/product_category/baffle-bags/feed" element={<ProductCategoryBaffleBagsFeed />} />
           <Route path="/product_category/baffle-bags" element={<ProductCategoryBaffleBags />} />
-          <Route path="/product_category/conductive-bag/feed" element={<ProductCategoryConductiveBagFeed />} />
           <Route path="/product_category/conductive-bag" element={<ProductCategoryConductiveBag />} />
-          <Route path="/product_category/container-liners/feed" element={<ProductCategoryContainerLinersFeed />} />
           <Route path="/product_category/container-liners" element={<ProductCategoryContainerLiners />} />
-          <Route path="/product_category/diaper-bag/feed" element={<ProductCategoryDiaperBagFeed />} />
           <Route path="/product_category/diaper-bag" element={<ProductCategoryDiaperBag />} />
-          <Route path="/product_category/fibc/feed" element={<ProductCategoryFibcFeed />} />
           <Route path="/product_category/fibc" element={<ProductCategoryFibc />} />
-          <Route path="/product_category/jute-burlap/feed" element={<ProductCategoryJuteBurlapFeed />} />
           <Route path="/product_category/jute-burlap" element={<ProductCategoryJuteBurlap />} />
           <Route path="/product_category/jute-burlap/page/2" element={<ProductCategoryJuteBurlapPage2 />} />
-          <Route path="/product_category/leno-bags-febric/feed" element={<ProductCategoryLenoBagsFebricFeed />} />
           <Route path="/product_category/leno-bags-febric" element={<ProductCategoryLenoBagsFebric />} />
-          <Route path="/product_category/pp-woven-sacks/feed" element={<ProductCategoryPpWovenSacksFeed />} />
           <Route path="/product_category/pp-woven-sacks" element={<ProductCategoryPpWovenSacks />} />
-          <Route path="/product_category/retail-shoping-bags/feed" element={<ProductCategoryRetailShopingBagsFeed />} />
           <Route path="/product_category/retail-shoping-bags" element={<ProductCategoryRetailShopingBags />} />
-          <Route path="/product_category/specialty-febrics/feed" element={<ProductCategorySpecialtyFebricsFeed />} />
           <Route path="/product_category/specialty-febrics" element={<ProductCategorySpecialtyFebrics />} />
-          <Route path="/product_category/un-bag/feed" element={<ProductCategoryUnBagFeed />} />
           <Route path="/product_category/un-bag" element={<ProductCategoryUnBag />} />
           <Route path="/products" element={<Products />} />
           <Route path="/rpet-fibc" element={<RpetFibc />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="/welcome" element={<Welcome />} />
-          <Route path="/wp-json" element={<WpJson />} />
         </Routes>
       </Router>
     </LanguageProvider>
