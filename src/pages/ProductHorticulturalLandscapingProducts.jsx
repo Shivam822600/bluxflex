@@ -26,21 +26,9 @@ export default function ProductHorticulturalLandscapingProducts() {
                     <h1 class="entry-title">Horticultural &amp; Landscaping</h1>                </div>
     	                <div class="page-content">
         <p><strong>Jute Soil Saver</strong><br>
-Topsoil is one of the most valuable and most vulnerable resources in any landscaping,<br>
-horticulture, or civil engineering project. On slopes, embankments, newly planted areas, and<br>
-disturbed ground, unprotected topsoil erodes in the first heavy rain event — sometimes<br>
-before the first plant has established. What takes decades to form washes away in an<br>
-afternoon.<br>
-The jute soil saver is an open-mesh jute fabric mat or roll that is laid directly on the soil<br>
-surface — over seeds, over new plantings, over exposed embankments — and pegged in<br>
-place. The mesh holds the topsoil particles in position against the erosive force of rainfall<br>
-and surface water flow. It allows rain to penetrate to the soil and seeds below. It allows<br>
-emerging seedlings to grow through the mesh openings without obstruction. And then, as<br>
-the plants establish and their root systems begin to stabilise the soil naturally, the jute mesh<br>
-degrades — returning to the soil as organic matter at exactly the point when it is no longer<br>
-needed.<br>
-The soil saver does not need to be removed. It does not leave synthetic residue. It does not<br>
-need to be disposed of. It simply disappears on schedule, having done its job.<br>
+On slopes, embankments, newly planted areas, and disturbed ground, unprotected topsoil can erode in a heavy rain event, sometimes before plants have established.<br>
+The jute soil saver is an open-mesh jute fabric mat or roll that is laid directly on the soil surface — over seeds, over new plantings, over exposed embankments — and pegged in place. The mesh helps hold topsoil in position against rainfall and surface water flow, while still allowing rain to reach the soil and seedlings to emerge through the mesh. As plants establish and root systems begin to stabilise the soil, the jute mesh biodegrades naturally.<br>
+The soil saver does not need to be removed after use and leaves no synthetic residue.<br>
 <strong>Mesh Construction:</strong> Open-weave jute — allows rain penetration and seedling emergence<br>
 <strong>Biodegradation:</strong> 1–2 growing seasons <strong>Installation:</strong> Laid on soil surface, pegged at edges<br>
 and overlaps <strong>Roll Dimensions:</strong> Custom width and length — standard 1 m × 25 m, 1 m × 50<br>
