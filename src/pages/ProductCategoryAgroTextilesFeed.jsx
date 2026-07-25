@@ -98,7 +98,7 @@ export default function ProductCategoryAgroTextilesFeed() {
 ]]&gt;</description>
 										<content:encoded><!--[CDATA[<p--><strong>The One Threat That Gives No Warning</strong><p></p>
 <p>Drought develops over weeks. Frost comes with a forecast. Insects build over a season. Hail arrives in fifteen minutes and leaves a commercial harvest unmarketable in the same time.</p>
-<p>A single moderate hail event on an apple, pear, cherry, or grape crop at or near harvest can downgrade 100% of the fresh market crop to processing grade — a price reduction of 60 to 80 percent on the entire season’s investment. For premium fruit production targeting fresh market and export channels, there is no recovery within the same season.</p>
+<p>A single moderate hail event on an apple, pear, cherry, or grape crop at or near harvest can downgrade fresh market fruit to processing grade, significantly reducing its value for that season. For premium fruit production targeting fresh market and export channels, there is typically no recovery within the same season.</p>
 <p>Hail nets are the only commercially practical intervention that prevents this outcome at the crop level.</p>
 <p><strong>➤ Knitted HDPE Hail Net</strong></p>
 <p>Hail nets are knitted from high-tenacity HDPE yarns engineered to absorb and distribute hailstone impact energy across the net structure rather than transmitting it to the fruit below. The net deflects slightly under impact — absorbing kinetic energy in the knitted yarn — then returns to its geometry. The fruit receives a fraction of the impact that direct exposure delivers.</p>

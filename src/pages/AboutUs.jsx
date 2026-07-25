@@ -67,10 +67,10 @@ export default function AboutUs() {
                 Company Overview
               </h2>
               <p style={{ fontSize: '14.5px', color: '#475569', lineHeight: '1.7', marginBottom: '16px' }}>
-                BulkFlex is a leading manufacturer and exporter of industrial packaging solutions, specializing in Flexible Intermediate Bulk Containers (FIBC), agricultural films, and container liners.
+                BulkFlex is a manufacturer and exporter of industrial packaging solutions, specializing in Flexible Intermediate Bulk Containers (FIBC), agricultural films, and container liners.
               </p>
               <p style={{ fontSize: '14.5px', color: '#475569', lineHeight: '1.7', marginBottom: '24px' }}>
-                With state-of-the-art manufacturing facilities and an uncompromised commitment to quality, we serve clients across North America, Europe, and Asia-Pacific regions.
+                With state-of-the-art manufacturing facilities and a commitment to quality, we serve clients across North America, Europe, and Asia-Pacific regions.
               </p>
 
               <div style={{
@@ -151,14 +151,8 @@ export default function AboutUs() {
                   <Target size={22} />
                 </div>
                 <h3 style={{ fontSize: '20px', fontWeight: '800', color: '#142E3D', marginBottom: '12px' }}>OUR MISSION</h3>
-                <p style={{ fontSize: '15px', fontWeight: '800', color: '#8DC63F', marginBottom: '14px', lineHeight: '1.5' }}>
-                  We exist so global buyers never have to wonder if they got it right.
-                </p>
-                <p style={{ fontSize: '13.5px', color: '#475569', lineHeight: '1.7', marginBottom: '14px' }}>
-                  Every importer carries the same risk. A wrong specification, a failed quality check, or a non-compliant shipment does not land on the supplier’s desk — it lands on yours. Returns, claims, production stoppages, and damaged buyer relationships follow.
-                </p>
                 <p style={{ fontSize: '13.5px', color: '#475569', lineHeight: '1.7' }}>
-                  We are the procurement execution partner that stands between your specification and the factory floor — matching every product to the right facility, controlling quality at every stage, and delivering every shipment with full compliance.
+                  To provide high-quality, sustainable packaging solutions with reliable service and competitive pricing — supporting global buyers with consistent, well-managed sourcing from India and Asia.
                 </p>
               </div>
             </div>
@@ -170,14 +164,8 @@ export default function AboutUs() {
                   <Eye size={22} />
                 </div>
                 <h3 style={{ fontSize: '20px', fontWeight: '800', color: '#142E3D', marginBottom: '12px' }}>OUR VISION</h3>
-                <p style={{ fontSize: '15px', fontWeight: '800', color: '#8DC63F', marginBottom: '14px', lineHeight: '1.5' }}>
-                  To be the partner global buyers call first — because they know the answer will be right.
-                </p>
-                <p style={{ fontSize: '13.5px', color: '#475569', lineHeight: '1.7', marginBottom: '14px' }}>
-                  Not the biggest name in packaging. The most dependable one. We are building a business where procurement heads and importers across North America, Europe, and Australia trust BulkFlex with their most critical supply lines.
-                </p>
                 <p style={{ fontSize: '13.5px', color: '#475569', lineHeight: '1.7' }}>
-                  That trust is earned one correct shipment at a time. We are committed to earning it on every order we take.
+                  To be a dependable packaging partner, delivering solutions that support global trade for buyers across North America, Europe, and Asia-Pacific.
                 </p>
               </div>
             </div>
@@ -204,14 +192,13 @@ export default function AboutUs() {
             gap: '24px'
           }}>
             {[
-              { title: 'Ground Presence Over Overseas Desks', desc: 'Real factory visits, in-person inspections, and face-to-face supplier accountability.' },
-              { title: 'Zero Vendor Unknowns', desc: 'Every manufacturing plant has passed a structured factory audit covering capacity and compliance.' },
-              { title: 'Compliance Embedded', desc: 'Batch traceability, certificates of origin, and pre-shipment lab testing are standard.' },
-              { title: 'Buyer-Specific SOPs', desc: 'Packaging standards and labelling requirements implemented as factory operating procedures.' },
-              { title: 'End-to-End Ownership', desc: 'From specification review to final container dispatch, we take complete responsibility.' }
+              { title: 'Integrity', desc: 'Transparent dealings and honest communication with every buyer and supplier partner.' },
+              { title: 'Innovation', desc: 'Ongoing exploration of sustainable materials and improved packaging methods.' },
+              { title: 'Customer Focus', desc: 'Solutions shaped around each buyer\'s specific sourcing requirements.' },
+              { title: 'Sustainability', desc: 'Support for eco-friendly materials, including rPET and natural fiber options.' },
+              { title: 'Excellence', desc: 'A consistent standard applied across sourcing, production, and delivery.' }
             ].map((val, idx) => (
               <div key={idx} className="card-clean" style={{ padding: '24px' }}>
-                <div style={{ fontSize: '13px', fontWeight: '800', color: '#8DC63F', marginBottom: '8px' }}>0{idx + 1}. VALUE</div>
                 <h4 style={{ fontSize: '16px', fontWeight: '800', color: '#142E3D', marginBottom: '10px' }}>{val.title}</h4>
                 <p style={{ fontSize: '13.5px', color: '#64748B', lineHeight: '1.6', margin: 0 }}>{val.desc}</p>
               </div>

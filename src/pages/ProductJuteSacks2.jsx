@@ -27,7 +27,7 @@ export default function ProductJuteSacks2() {
         <p><strong>Strong. Breathable. Built for Bulk.</strong></p>
 <p>Our Jute Sacks are the go-to packaging solution for industries that demand strength without compromising sustainability. Made from 100% natural jute fibers, these sacks offer exceptional load bearing capacity, breathability, and durability making them ideal for storing and transporting bulk goods across the supply chain.</p>
 <p>Unlike plastic bags, the breathable weave of jute prevents moisture buildup and mold growth, keeping contents fresh and safe during long-distance shipping. They are fully biodegradable, decomposing naturally without leaving any harmful residue in the environment.</p>
-<p>Widely trusted by exporters in agriculture, food processing, and industrial sectors, our Jute Sacks are available in a range of sizes and weight capacities. Custom sizing, stitching styles, and branding options are available for bulk orders.</p>
+<p>Our Jute Sacks are available in a range of sizes and weight capacities. Custom sizing, stitching styles, and branding options are available for bulk orders.</p>
 <p><strong>Ideal For:</strong> Grains, rice, wheat, coffee beans, cocoa, spices, pulses, fertilizers, seeds, and industrial raw materials.<br>
 <strong>Key Features:</strong> 100% natural and biodegradable High load-bearing capacity (up to 100 kg) Breathable weave prevents mold and moisture damage Durable for rough handling and long-distance transport Available in custom sizes and branded options Eco-compliant for EU, USA, and international markets</p>
 

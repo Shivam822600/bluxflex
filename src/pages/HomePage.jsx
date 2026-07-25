@@ -286,13 +286,13 @@ export default function HomePage() {
               {/* Trust Micro-Metrics */}
               <div style={{ display: 'flex', alignItems: 'center', gap: '24px', marginTop: '36px', paddingTop: '24px', borderTop: '1px solid rgba(0,0,0,0.06)' }}>
                 <div>
-                  <div style={{ fontSize: '18px', fontWeight: '800', color: '#142E3D' }}>100% Verified</div>
-                  <div style={{ fontSize: '12px', color: '#64748B' }}>Audit Certified Plants</div>
+                  <div style={{ fontSize: '18px', fontWeight: '800', color: '#142E3D' }}>20+ Years</div>
+                  <div style={{ fontSize: '12px', color: '#64748B' }}>Industrial Experience</div>
                 </div>
                 <div style={{ width: '1px', height: '28px', background: '#E2E8F0' }} />
                 <div>
-                  <div style={{ fontSize: '18px', fontWeight: '800', color: '#142E3D' }}>0% Quality Defect</div>
-                  <div style={{ fontSize: '12px', color: '#64748B' }}>Container Level Testing</div>
+                  <div style={{ fontSize: '18px', fontWeight: '800', color: '#142E3D' }}>ISO 9001:2015</div>
+                  <div style={{ fontSize: '12px', color: '#64748B' }}>Certified Facility</div>
                 </div>
               </div>
             </div>
@@ -880,10 +880,10 @@ export default function HomePage() {
             gap: '28px'
           }}>
             {[
-              { title: 'Quality Assurance', desc: '100% inspection and compliance with international dangerous goods & food-grade packaging standards.', icon: <ShieldCheck size={26} color="#8DC63F" /> },
-              { title: 'Supply Chain Continuity', desc: 'Redundant multi-plant sourcing to guarantee uninterrupted delivery timelines.', icon: <RefreshCw size={26} color="#8DC63F" /> },
-              { title: 'Cost Optimization', desc: 'Direct mill pricing with container space maximization to reduce landed costs.', icon: <Target size={26} color="#8DC63F" /> },
-              { title: 'Sustainable Innovation', desc: 'Pioneering eco-friendly rPET fabrics and 100% recyclable mono-material bulk bags.', icon: <Sprout size={26} color="#8DC63F" /> }
+              { title: 'Quality Assurance', desc: 'Inspection and compliance checks aligned with international dangerous goods & food-grade packaging standards.', icon: <ShieldCheck size={26} color="#8DC63F" /> },
+              { title: 'Supply Chain Continuity', desc: 'Multi-plant sourcing designed to support consistent delivery timelines.', icon: <RefreshCw size={26} color="#8DC63F" /> },
+              { title: 'Cost Optimization', desc: 'Direct mill pricing with container space optimization to help reduce landed costs.', icon: <Target size={26} color="#8DC63F" /> },
+              { title: 'Sustainable Innovation', desc: 'Sourcing eco-friendly rPET fabrics and recyclable mono-material bulk bags.', icon: <Sprout size={26} color="#8DC63F" /> }
             ].map((val, i) => (
               <div key={i} style={{
                 background: '#FBF1E6',

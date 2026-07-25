@@ -30,7 +30,7 @@ export default function ProductJuteFabric() {
 <p>It can be woven in various weights and finishes, dyed in multiple colors, laminated for water resistance, or blended with cotton for a softer feel. Whether used as raw fabric for manufacturing or as finished textile for retail, our Jute Fabric meets international quality standards and is available in bulk quantities for global export.</p>
 <p><strong>Ideal For:</strong> Bag manufacturing, carpet backing, upholstery, home furnishings, wall coverings, canvas, fashion accessories, packaging liners, and agricultural wrapping.</p>
 <p><strong>Key Features:</strong></p>
-<p>100% natural, biodegradable, and renewable Strong, durable, and abrasion-resistant Breathable and naturally moisture-absorbing Available in various weights, weaves, and widths Can be dyed, laminated, or blended with cotton CO2 neutral one hectare of jute absorbs up to 15 tons of CO2 Suitable for fashion, industrial, and agricultural applications Compliant with international eco and sustainability standards</p>
+<p>100% natural, biodegradable, and renewable Strong, durable, and abrasion-resistant Breathable and naturally moisture-absorbing Available in various weights, weaves, and widths Can be dyed, laminated, or blended with cotton A renewable crop grown as part of the natural carbon cycle. Suitable for fashion, industrial, and agricultural applications Compliant with international eco and sustainability standards</p>
 
         
             </div>
