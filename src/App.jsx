@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import AboutUs from './pages/AboutUs';
 import BuyerTools from './pages/BuyerTools';
@@ -93,7 +93,7 @@ import Products from './pages/Products';
 import RpetFibc from './pages/RpetFibc';
 import TermsAndConditions from './pages/TermsAndConditions';
 import Welcome from './pages/Welcome';
-import SplashScreen from './components/SplashScreen';
+// SplashScreen removed — B2B sites should load instantly
 import { LanguageProvider } from './context/LanguageContext';
 
 
@@ -106,11 +106,8 @@ function ScrollToTop() {
 }
 
 function App() {
-  const [loading, setLoading] = useState(true);
-
   return (
     <LanguageProvider>
-      {loading && <SplashScreen onFinish={() => setLoading(false)} />}
       <Router>
         <ScrollToTop />
         <Routes>

@@ -1,165 +1,154 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, ArrowUp } from 'lucide-react';
-import { useLanguage } from '../context/LanguageContext';
+import { Mail, MapPin, ArrowUp } from 'lucide-react';
 
 export default function Footer() {
-  const { t } = useLanguage();
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
-    <footer style={{ background: '#142E3D', color: '#FFFFFF', padding: 'clamp(40px, 6vw, 72px) 0 28px 0', borderTop: '1px solid rgba(255, 255, 255, 0.12)' }}>
-      <div className="container">
-        <div
-          className="footer-grid-container"
+    <footer style={{ background: 'var(--brand-dark-deep)', color: 'var(--text-on-dark)' }}>
+      
+      {/* Main Footer Content */}
+      <div className="container" style={{ padding: 'clamp(64px, 8vw, 96px) clamp(1.25rem, 5vw, 2.5rem) 48px' }}>
+        <div 
+          className="footer-grid"
           style={{
             display: 'grid',
-            gridTemplateColumns: '1.8fr 1fr 1.2fr 1.2fr 1.4fr',
-            gap: '40px',
+            gridTemplateColumns: '1.6fr 1fr 1.2fr 1.4fr',
+            gap: '64px',
             paddingBottom: '48px',
-            borderBottom: '1px solid rgba(255, 255, 255, 0.1)'
+            borderBottom: '1px solid var(--border-dark)'
           }}
         >
 
-          {/* Column 1: Brand Info */}
+          {/* Column 1: Brand */}
           <div>
-            <div style={{ fontSize: '24px', fontWeight: '800', marginBottom: '16px', fontFamily: 'var(--font-heading)' }}>
-              BULK <span style={{ color: '#8DC63F' }}>FLEX</span>
+            <div style={{ fontSize: '22px', fontWeight: 800, marginBottom: '14px', fontFamily: 'var(--font-family)' }}>
+              BULK<span style={{ color: '#8DC63F' }}>FLEX</span>
             </div>
-            <p style={{ color: '#94A3B8', fontSize: '13px', lineHeight: '1.6', marginBottom: '20px', maxWidth: '280px' }}>
-              Your reliable partner for flexible packaging and logistics solutions. Building relationships and delivering value every container.
+            <p style={{ color: '#94A3B8', fontSize: '0.875rem', lineHeight: '1.65', marginBottom: '20px', maxWidth: '300px' }}>
+              BulkFlex Private Limited connects businesses with trusted manufacturing partners for industrial packaging solutions. We manage sourcing, quality coordination, and export logistics.
             </p>
-
-            {/* Social Circle Icons */}
-            <div style={{ display: 'flex', gap: '10px' }}>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="BulkFlex LinkedIn"
-                style={{
-                  width: '40px',
-                  height: '40px',
-                  borderRadius: '50%',
-                  border: '1px solid rgba(255, 255, 255, 0.2)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '13px',
-                  fontWeight: '700',
-                  color: '#FFFFFF'
-                }}
-              >
-                in
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="BulkFlex Instagram"
-                style={{
-                  width: '40px',
-                  height: '40px',
-                  borderRadius: '50%',
-                  border: '1px solid rgba(255, 255, 255, 0.2)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '13px',
-                  fontWeight: '700',
-                  color: '#FFFFFF'
-                }}
-              >
-                ig
-              </a>
-            </div>
           </div>
 
           {/* Column 2: Navigation */}
           <div>
-            <h4 style={{ fontSize: '15px', fontWeight: '700', color: '#8DC63F', marginBottom: '18px' }}>
+            <h4 style={{ fontSize: '0.875rem', fontWeight: 800, color: 'var(--brand-green)', marginBottom: '24px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
               Navigation
             </h4>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '13.5px' }}>
-              <li><Link to="/" style={{ color: '#CBD5E1' }}>{t('home')}</Link></li>
-              <li><Link to="/about-us" style={{ color: '#CBD5E1' }}>{t('aboutUs')}</Link></li>
-              <li><Link to="/products" style={{ color: '#CBD5E1' }}>{t('products')}</Link></li>
-              <li><Link to="/rpet-fibc" style={{ color: '#CBD5E1' }}>{t('rpetFibc')}</Link></li>
-              <li><Link to="/buyer-tools" style={{ color: '#CBD5E1' }}>{t('buyerCorner')}</Link></li>
-              <li><Link to="/contact-us-2" style={{ color: '#CBD5E1' }}>{t('contactUs')}</Link></li>
+            <ul style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+              {[
+                { label: 'Home', path: '/' },
+                { label: 'Products', path: '/products' },
+                { label: 'rPET FIBC', path: '/rpet-fibc' },
+                { label: 'Buyer Corner', path: '/buyer-tools' },
+                { label: 'About Us', path: '/about-us' },
+                { label: 'Contact Us', path: '/contact-us-2' },
+              ].map((link) => (
+                <li key={link.path}>
+                  <Link to={link.path} style={{ color: '#CBD5E1', fontSize: '0.875rem', fontWeight: 500, transition: 'color 0.2s' }}
+                    onMouseEnter={(e) => e.currentTarget.style.color = '#8DC63F'}
+                    onMouseLeave={(e) => e.currentTarget.style.color = '#CBD5E1'}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Column 3: Products */}
+          {/* Column 3: Product Categories */}
           <div>
-            <h4 style={{ fontSize: '15px', fontWeight: '700', color: '#8DC63F', marginBottom: '18px' }}>
-              Categories
+            <h4 style={{ fontSize: '0.875rem', fontWeight: 800, color: 'var(--brand-green)', marginBottom: '24px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+              Products
             </h4>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '13.5px' }}>
-              <li><Link to="/product_category/fibc" style={{ color: '#CBD5E1' }}>FIBC Jumbo Bags</Link></li>
-              <li><Link to="/north-america-paper-bag-2" style={{ color: '#CBD5E1' }}>Paper Bags</Link></li>
-              <li><Link to="/product_category/leno-bags-febric" style={{ color: '#CBD5E1' }}>Leno Bags</Link></li>
-              <li><Link to="/product_category/pp-woven-sacks" style={{ color: '#CBD5E1' }}>PP Woven Sacks</Link></li>
-              <li><Link to="/product_category/jute-burlap" style={{ color: '#CBD5E1' }}>Jute / Burlap</Link></li>
-              <li><Link to="/product_category/container-liners" style={{ color: '#CBD5E1' }}>Container Liners</Link></li>
+            <ul style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+              {[
+                { label: 'FIBC Jumbo Bags', path: '/product_category/fibc' },
+                { label: 'PP Woven Sacks', path: '/product_category/pp-woven-sacks' },
+                { label: 'Leno Bags & Fabrics', path: '/product_category/leno-bags-febric' },
+                { label: 'Jute / Burlap', path: '/product_category/jute-burlap' },
+                { label: 'Container Liners', path: '/product_category/container-liners' },
+                { label: 'Multi-Wall Paper Bags', path: '/north-america-paper-bag-2' },
+              ].map((link) => (
+                <li key={link.path}>
+                  <Link to={link.path} style={{ color: '#CBD5E1', fontSize: '0.875rem', fontWeight: 500, transition: 'color 0.2s' }}
+                    onMouseEnter={(e) => e.currentTarget.style.color = '#8DC63F'}
+                    onMouseLeave={(e) => e.currentTarget.style.color = '#CBD5E1'}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Column 4: Sourcing Hubs */}
+          {/* Column 4: Contact */}
           <div>
-            <h4 style={{ fontSize: '15px', fontWeight: '700', color: '#8DC63F', marginBottom: '18px' }}>
-              Global Hubs
+            <h4 style={{ fontSize: '0.875rem', fontWeight: 800, color: 'var(--brand-green)', marginBottom: '24px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+              Contact
             </h4>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '13px', color: '#CBD5E1' }}>
-              <li><strong>India Sourcing HQ:</strong> Gujarat &amp; Mumbai</li>
-              <li><strong>Vietnam Hub:</strong> Ho Chi Minh City</li>
-              <li><strong>Americas Desk:</strong> New York, USA</li>
-              <li><strong>Europe Desk:</strong> London, UK</li>
-            </ul>
-          </div>
-
-          {/* Column 5: Contact Info */}
-          <div>
-            <h4 style={{ fontSize: '15px', fontWeight: '700', color: '#8DC63F', marginBottom: '18px' }}>
-              Contact HQ
-            </h4>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '13px', color: '#CBD5E1' }}>
-              <div style={{ display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
-                <MapPin size={16} color="#8DC63F" style={{ marginTop: '2px', flexShrink: 0 }} />
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', fontSize: '0.9375rem', color: 'var(--text-on-dark-muted)' }}>
+              <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                <MapPin size={16} color="#8DC63F" style={{ marginTop: '3px', flexShrink: 0 }} />
                 <span>BulkFlex Private Limited, India</span>
               </div>
-              <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-                <Phone size={16} color="#8DC63F" style={{ flexShrink: 0 }} />
-                <a href="tel:+919876543210" style={{ color: '#CBD5E1' }}>+91 98765 43210</a>
-              </div>
-              <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+              <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
                 <Mail size={16} color="#8DC63F" style={{ flexShrink: 0 }} />
-                <a href="mailto:info@bulkflex.com" style={{ color: '#CBD5E1' }}>info@bulkflex.com</a>
+                <a href="mailto:info@bulkflex.com" style={{ color: '#CBD5E1', transition: 'color 0.2s' }}
+                  onMouseEnter={(e) => e.currentTarget.style.color = '#8DC63F'}
+                  onMouseLeave={(e) => e.currentTarget.style.color = '#CBD5E1'}
+                >
+                  info@bulkflex.com
+                </a>
               </div>
+            </div>
+
+            {/* Markets Served */}
+            <div style={{ marginTop: '28px', paddingTop: '20px', borderTop: '1px solid var(--border-dark)' }}>
+              <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: 700, marginBottom: '10px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+                Markets Served
+              </div>
+              <p style={{ color: 'var(--text-light)', fontSize: '0.875rem', lineHeight: '1.7' }}>
+                North America · Europe · Asia-Pacific
+              </p>
             </div>
           </div>
 
         </div>
 
         {/* Bottom Bar */}
-        <div style={{ paddingTop: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px', fontSize: '13px', color: '#64748B' }}>
+        <div style={{
+          paddingTop: '24px',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          flexWrap: 'wrap',
+          gap: '12px',
+          fontSize: '0.8125rem',
+          color: '#64748B'
+        }}>
           <div>
-            © {new Date().getFullYear()} BulkFlex Private Limited. {t('footerRights')}
+            © {new Date().getFullYear()} BulkFlex Private Limited. All rights reserved.
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-            <Link to="/terms-and-conditions" style={{ color: '#64748B' }}>Terms &amp; Conditions</Link>
+            <Link to="/terms-and-conditions" style={{ color: '#64748B', transition: 'color 0.2s' }}
+              onMouseEnter={(e) => e.currentTarget.style.color = '#CBD5E1'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#64748B'}
+            >
+              Terms & Conditions
+            </Link>
 
-            {/* Back to top button */}
             <button
               onClick={scrollToTop}
-              aria-label="Scroll back to top of page"
+              aria-label="Scroll to top"
               style={{
-                background: 'rgba(255, 255, 255, 0.08)',
-                border: '1px solid rgba(255, 255, 255, 0.15)',
+                background: 'rgba(255, 255, 255, 0.06)',
+                border: '1px solid rgba(255, 255, 255, 0.12)',
                 color: '#FFFFFF',
                 width: '36px',
                 height: '36px',
@@ -170,12 +159,21 @@ export default function Footer() {
                 cursor: 'pointer',
                 transition: 'all 0.2s'
               }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = '#8DC63F';
+                e.currentTarget.style.borderColor = '#8DC63F';
+                e.currentTarget.style.color = '#142E3D';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = 'rgba(255, 255, 255, 0.06)';
+                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.12)';
+                e.currentTarget.style.color = '#FFFFFF';
+              }}
             >
               <ArrowUp size={16} />
             </button>
           </div>
         </div>
-
       </div>
     </footer>
   );

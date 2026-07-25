@@ -1,27 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+/* ===================================================================
+   BulkFlex Design System
+   Brand: #142E3D (Primary) · #8DC63F (Accent Green) · #FBF1E6 (Beige)
+   Font: Montserrat
+   =================================================================== */
 
 :root {
-  /* Official Brand Identity — DO NOT DEVIATE */
+  /* Brand Colors */
+  --brand-dark: #142E3D;
+  --brand-navy: #0F2531;
+  --brand-green: #8DC63F;
+  --brand-green-hover: #7AB635;
+  --brand-green-light: #F0F7E4;
+  --brand-beige: #FBF1E6;
+
+  /* Surfaces */
   --bg-primary: #FFFFFF;
-  --bg-secondary: #FBF1E6;      /* Beige Background */
-  --brand-dark: #142E3D;         /* Primary Blue */
-  --brand-navy: #0F2531;         /* Darker shade of Primary Blue, for depth/hover states */
-  --brand-green: #8DC63F;        /* Green Accent */
-  --brand-green-light: #F0F7E4;  /* Tint of Green Accent, for subtle backgrounds */
-  --text-main: #1E293B;
-  --text-muted: #5B6B76;
-  --border-color: #E4DCD0;       /* Warm border tone to sit with the beige background */
+  --bg-secondary: #FBF1E6;
+  --bg-dark: #142E3D;
+  --bg-dark-deep: #0A1F2B;
 
-  --font-heading: 'Manrope', sans-serif;
-  --font-body: 'Inter', sans-serif;
+  /* Text */
+  --text-heading: #142E3D;
+  --text-body: #374151;
+  --text-muted: #6B7280;
+  --text-light: #94A3B8;
+  --text-on-dark: #FFFFFF;
+  --text-on-dark-muted: #CBD5E1;
 
-  --shadow-card: 0 10px 30px rgba(20, 46, 61, 0.06);
-  --shadow-hover: 0 20px 40px rgba(20, 46, 61, 0.12);
-  --radius-card: 16px;
+  /* Borders */
+  --border-light: #E5E7EB;
+  --border-warm: #E4DCD0;
+
+  /* Typography */
+  --font-family: 'Montserrat', sans-serif;
+
+  /* Spacing (8px grid) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
   --radius-pill: 50px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(20, 46, 61, 0.04);
+  --shadow-card: 0 4px 16px rgba(20, 46, 61, 0.06);
+  --shadow-card-hover: 0 12px 32px rgba(20, 46, 61, 0.12);
+  --shadow-elevated: 0 20px 48px rgba(20, 46, 61, 0.14);
+  --shadow-modal: 0 24px 60px rgba(0, 0, 0, 0.25);
+
+  /* Transitions */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 0.2s var(--ease-out);
+  --transition-normal: 0.3s var(--ease-out);
 }
 
-/* Global Reset & Base Setup */
+
+/* ===================================================================
+   1. RESET & BASE
+   =================================================================== */
+
 *,
 *::before,
 *::after {
@@ -37,8 +90,8 @@ html {
 }
 
 body {
-  font-family: var(--font-body);
-  color: var(--text-main);
+  font-family: var(--font-family);
+  color: var(--text-body);
   background-color: var(--bg-primary);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -47,13 +100,11 @@ body {
   width: 100%;
 }
 
-/* Accessible Focus Ring */
 :focus-visible {
   outline: 2px solid var(--brand-green);
   outline-offset: 3px;
 }
 
-/* Media Element Scaling & Protection against Horizontal Overflow */
 img,
 video,
 iframe,
@@ -63,119 +114,675 @@ svg {
   display: block;
 }
 
-/* Typography Hierarchy with Fluid Clamping */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--transition-fast);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+
+/* ===================================================================
+   2. TYPOGRAPHY
+   =================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family);
+  color: var(--text-heading);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
 h1 {
-  font-size: clamp(1.8rem, 5vw, 3.5rem);
-  font-family: var(--font-heading);
-  color: var(--brand-dark);
+  font-size: clamp(2rem, 5vw, 3.25rem);
   font-weight: 800;
-  line-height: 1.15;
+  letter-spacing: -0.5px;
 }
 
 h2 {
-  font-size: clamp(1.4rem, 3.5vw, 2.5rem);
-  font-family: var(--font-heading);
-  color: var(--brand-dark);
-  font-weight: 800;
-  line-height: 1.25;
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+  font-weight: 700;
 }
 
 h3 {
-  font-size: clamp(1.2rem, 2.5vw, 1.75rem);
-  font-family: var(--font-heading);
-  color: var(--brand-dark);
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
   font-weight: 700;
 }
 
 h4 {
-  font-size: clamp(1rem, 2vw, 1.35rem);
-  font-family: var(--font-heading);
-  color: var(--brand-dark);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.7;
+  color: var(--text-body);
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8125rem;
   font-weight: 700;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-  transition: color 0.2s ease, opacity 0.2s ease;
+.font-bold {
+  font-weight: 700;
 }
 
-/* Fluid Container */
+.font-extrabold {
+  font-weight: 800;
+}
+
+
+/* ===================================================================
+   3. LAYOUT
+   =================================================================== */
+
 .container {
   width: 100%;
-  max-width: 1240px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 clamp(1rem, 4vw, 2rem);
 }
 
-/* Buttons System - Touch Target Standard (Minimum 44x44px) */
-.btn-dark {
+.container-narrow {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 4vw, 2rem);
+}
+
+
+/* ===================================================================
+   4. SECTION PATTERNS
+   =================================================================== */
+
+.section {
+  padding: clamp(var(--space-16), 8vw, var(--space-24)) 0;
+}
+
+.section-sm {
+  padding: clamp(var(--space-12), 6vw, var(--space-16)) 0;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto var(--space-12);
+}
+
+.section-header .section-label {
+  display: inline-block;
+  color: var(--brand-green);
+  font-weight: 700;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: var(--space-2);
+}
+
+.section-header h2 {
+  margin-bottom: var(--space-3);
+}
+
+.section-header p {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.bg-white {
+  background-color: var(--bg-primary);
+}
+
+.bg-beige {
+  background-color: var(--bg-secondary);
+}
+
+.bg-dark {
+  background-color: var(--bg-dark);
+  color: var(--text-on-dark);
+}
+
+
+/* ===================================================================
+   5. GRID SYSTEM
+   =================================================================== */
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-8);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+}
+
+.grid-auto-fill {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-6);
+}
+
+.grid-auto-fit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* ===================================================================
+   6. BUTTONS
+   =================================================================== */
+
+.btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  background: var(--brand-dark);
-  color: #FFFFFF;
+  gap: var(--space-2);
+  font-family: var(--font-family);
   font-weight: 600;
   font-size: 0.9375rem;
-  padding: 12px 26px;
-  min-height: 44px;
+  padding: 14px 28px;
+  min-height: 48px;
   border-radius: var(--radius-pill);
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   white-space: nowrap;
+  transition: all var(--transition-normal);
 }
 
-.btn-dark:hover {
-  background: var(--brand-navy);
+.btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(20, 46, 61, 0.2);
 }
 
-.btn-outline-dark {
+.btn-primary {
+  background: var(--brand-dark);
+  color: var(--text-on-dark);
+  border-color: var(--brand-dark);
+  box-shadow: 0 4px 14px rgba(20, 46, 61, 0.2);
+}
+
+.btn-primary:hover {
+  background: var(--brand-navy);
+  border-color: var(--brand-navy);
+  box-shadow: 0 8px 24px rgba(20, 46, 61, 0.3);
+}
+
+.btn-green {
+  background: var(--brand-green);
+  color: var(--brand-dark);
+  border-color: var(--brand-green);
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(141, 198, 63, 0.3);
+}
+
+.btn-green:hover {
+  background: var(--brand-green-hover);
+  border-color: var(--brand-green-hover);
+  box-shadow: 0 8px 24px rgba(141, 198, 63, 0.4);
+}
+
+.btn-outline {
+  background: var(--bg-primary);
+  color: var(--brand-dark);
+  border-color: var(--border-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-outline:hover {
+  background: var(--brand-dark);
+  color: var(--text-on-dark);
+  border-color: var(--brand-dark);
+}
+
+.btn-ghost {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-on-dark);
+  border-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.btn-sm {
+  padding: 10px 20px;
+  min-height: 40px;
+  font-size: 0.875rem;
+}
+
+.btn-lg {
+  padding: 16px 36px;
+  min-height: 54px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+
+/* ===================================================================
+   7. CARDS
+   =================================================================== */
+
+.card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.card-body {
+  padding: var(--space-6);
+}
+
+.card-beige {
+  background: var(--bg-secondary);
+  border-color: var(--border-warm);
+}
+
+/* Product Card */
+.product-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  transition: all 0.4s var(--ease-out);
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-elevated);
+  border-color: rgba(141, 198, 63, 0.3);
+}
+
+.product-card .product-card-img {
+  position: relative;
+  overflow: hidden;
+  height: 220px;
+  background: #F3F4F6;
+}
+
+.product-card .product-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s var(--ease-out);
+}
+
+.product-card:hover .product-card-img img {
+  transform: scale(1.05);
+}
+
+.product-card .product-card-content {
+  padding: var(--space-5);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ===================================================================
+   8. BADGES & LABELS
+   =================================================================== */
+
+.badge {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 8px;
-  background: transparent;
-  color: var(--brand-dark);
-  font-weight: 600;
-  font-size: 0.9375rem;
-  padding: 12px 26px;
-  min-height: 44px;
+  gap: 6px;
+  padding: 6px 14px;
   border-radius: var(--radius-pill);
-  border: 1.5px solid var(--brand-dark);
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  white-space: nowrap;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.btn-outline-dark:hover {
-  background: var(--brand-dark);
-  color: #FFFFFF;
+.badge-dark {
+  background: rgba(20, 46, 61, 0.85);
+  color: var(--text-on-dark);
+  backdrop-filter: blur(4px);
 }
 
-/* Cards & Surfaces */
-.card-clean {
-  background: #FFFFFF;
-  border: 1px solid #EEF2F6;
-  border-radius: var(--radius-card);
+.badge-green {
+  background: var(--brand-green-light);
+  color: var(--brand-dark);
+}
+
+.badge-outline {
+  background: rgba(141, 198, 63, 0.1);
+  border: 1px solid rgba(141, 198, 63, 0.3);
+  color: var(--brand-dark);
+}
+
+
+/* ===================================================================
+   9. ICON BOX
+   =================================================================== */
+
+.icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: var(--brand-green-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon-box-sm {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+}
+
+.icon-box-circle {
+  border-radius: 50%;
+}
+
+
+/* ===================================================================
+   10. ACCORDION / FAQ
+   =================================================================== */
+
+.accordion-item {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: box-shadow var(--transition-fast);
+}
+
+.accordion-item:hover {
   box-shadow: var(--shadow-card);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  height: 100%;
 }
 
-.card-clean:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-hover);
+.accordion-trigger {
+  width: 100%;
+  padding: var(--space-5) var(--space-6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  gap: var(--space-4);
 }
 
-/* Category & Product Pages Styling Enhancements */
+.accordion-content {
+  padding: 0 var(--space-6) var(--space-5);
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  border-top: 1px solid var(--border-light);
+  padding-top: var(--space-4);
+}
+
+
+/* ===================================================================
+   11. FORM ELEMENTS
+   =================================================================== */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-label {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--text-heading);
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border-light);
+  font-family: var(--font-family);
+  font-size: 0.9375rem;
+  color: var(--text-body);
+  background: var(--bg-primary);
+  transition: border-color var(--transition-fast);
+  outline: none;
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+  border-color: var(--brand-green);
+  box-shadow: 0 0 0 3px rgba(141, 198, 63, 0.15);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+
+/* ===================================================================
+   12. MODAL
+   =================================================================== */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 31, 43, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-5);
+}
+
+.modal-content {
+  background: var(--bg-primary);
+  border-radius: var(--radius-xl);
+  max-width: 520px;
+  width: 100%;
+  padding: var(--space-8);
+  position: relative;
+  box-shadow: var(--shadow-modal);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: var(--space-5);
+  right: var(--space-5);
+  background: #F3F4F6;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-muted);
+  font-weight: 700;
+  transition: all var(--transition-fast);
+}
+
+.modal-close:hover {
+  background: var(--border-light);
+  color: var(--text-heading);
+}
+
+
+/* ===================================================================
+   13. DIVIDERS & SEPARATORS
+   =================================================================== */
+
+.divider {
+  width: 1px;
+  height: 28px;
+  background: var(--border-light);
+}
+
+.divider-horizontal {
+  width: 100%;
+  height: 1px;
+  background: var(--border-light);
+}
+
+
+/* ===================================================================
+   14. LINK ARROW
+   =================================================================== */
+
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  color: var(--brand-green);
+  transition: gap var(--transition-fast);
+}
+
+.link-arrow:hover {
+  gap: 10px;
+}
+
+
+/* ===================================================================
+   15. STAT CARD
+   =================================================================== */
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  padding: var(--space-5) var(--space-6);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-light);
+  transition: transform var(--transition-normal);
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+}
+
+.stat-number {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-heading);
+  line-height: 1.15;
+}
+
+.stat-label {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+
+/* ===================================================================
+   16. PROCESS / STEPPER
+   =================================================================== */
+
+.process-step {
+  text-align: center;
+  position: relative;
+  padding: var(--space-6);
+}
+
+.process-number {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--brand-dark);
+  color: var(--text-on-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.125rem;
+  margin: 0 auto var(--space-4);
+}
+
+
+/* ===================================================================
+   17. PRODUCT & CATEGORY PAGE STYLES (preserved for existing pages)
+   =================================================================== */
+
 .productListWrapper,
 .productDetailsWrapper {
   padding: clamp(1.5rem, 5vw, 3rem) 0 clamp(2.5rem, 6vw, 5rem) 0;
-  max-width: 1240px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-left: clamp(1rem, 4vw, 2rem);
   padding-right: clamp(1rem, 4vw, 2rem);
@@ -191,7 +798,7 @@ a {
   font-weight: 800;
 }
 
-/* Global Elementor Container & Image Overflow Safeguards */
+/* Elementor compatibility (for scraped product pages) */
 .elementor img {
   max-width: 100% !important;
   height: auto;
@@ -210,75 +817,60 @@ a {
   width: auto !important;
 }
 
-/* Animations */
-@keyframes pulseGlow {
-  0% { box-shadow: 0 0 0 0 rgba(0, 194, 168, 0.4); }
-  70% { box-shadow: 0 0 0 10px rgba(0, 194, 168, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(0, 194, 168, 0); }
+
+/* ===================================================================
+   18. ANIMATIONS (subtle, purposeful)
+   =================================================================== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
 }
 
-@keyframes floatSlow {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-15px); }
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s var(--ease-out) both;
 }
 
-.animate-float { animation: float 4s ease-in-out infinite; }
-.animate-float-slow { animation: floatSlow 6s ease-in-out infinite; }
-.pulse-badge { animation: pulseGlow 2.5s infinite; }
-
-/* Product Card Premium Styling */
-.product-card-premium {
-  position: relative;
-  background: #FFFFFF;
-  border-radius: 20px;
-  border: 1px solid #E2E8F0;
-  box-shadow: 0 10px 30px rgba(7, 40, 52, 0.05);
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  overflow: hidden;
+.animate-pulse {
+  animation: pulse 2s ease-in-out infinite;
 }
 
-.product-card-premium:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 45px rgba(7, 40, 52, 0.14);
-  border-color: rgba(0, 194, 168, 0.4);
+/* Scrollbar hide utility */
+.scroll-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.product-card-premium .img-container {
-  position: relative;
-  overflow: hidden;
+.scroll-hide::-webkit-scrollbar {
+  display: none;
 }
 
-.product-card-premium .img-container img {
-  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-}
 
-.product-card-premium:hover .img-container img {
-  transform: scale(1.06);
-}
+/* ===================================================================
+   19. VISIBILITY HELPERS
+   =================================================================== */
 
-/* Horizontal Scrollable Categories Filter Pills (No Wrapping) */
-.categories-scroll-wrapper {
-  display: flex;
-  overflow-x: auto;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
-  scrollbar-width: none; /* Firefox */
-  padding-bottom: 8px;
-}
-
-.categories-scroll-wrapper::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Edge */
-}
-
-/* Breakpoint Visibility Helpers */
 @media (min-width: 1025px) {
-  .mobile-only, .mobile-toggle {
+  .mobile-only {
     display: none !important;
   }
 }
@@ -287,82 +879,64 @@ a {
   .desktop-only {
     display: none !important;
   }
-  .mobile-toggle {
-    display: flex !important;
-  }
 }
 
-/* Breakpoint 1: Extra Small Mobile (320px–374px) */
-@media (max-width: 374px) {
-  .container {
-    padding: 0 12px;
-  }
-  .grid-responsive-4,
-  .grid-responsive-3,
-  .grid-responsive-2 {
-    grid-template-columns: 1fr !important;
-    gap: 12px !important;
-  }
-  .footer-grid-container {
-    grid-template-columns: 1fr !important;
-    gap: 24px !important;
-    text-align: center;
-  }
-}
 
-/* Breakpoint 2: Mobile (375px–480px) */
+/* ===================================================================
+   20. RESPONSIVE GRID BREAKPOINTS
+   =================================================================== */
+
+/* Small mobile (< 480px) */
 @media (max-width: 480px) {
-  .grid-responsive-4,
-  .grid-responsive-3,
-  .grid-responsive-2 {
+
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .grid-auto-fill {
     grid-template-columns: 1fr !important;
-    gap: 16px !important;
+    gap: var(--space-4) !important;
   }
-  .footer-grid-container {
+
+  .section {
+    padding: var(--space-12) 0;
+  }
+}
+
+/* Tablet (481px – 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: var(--space-5) !important;
+  }
+}
+
+/* Small laptop (769px – 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Footer responsive */
+@media (max-width: 768px) {
+  .footer-grid {
     grid-template-columns: 1fr !important;
-    gap: 28px !important;
+    gap: var(--space-8) !important;
     text-align: center;
   }
-  .footer-grid-container p,
-  .footer-grid-container div {
+
+  .footer-grid p,
+  .footer-grid div {
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-/* Breakpoint 3: Large Mobile / Small Tablet (481px–640px) */
-@media (min-width: 481px) and (max-width: 640px) {
-  .grid-responsive-4,
-  .grid-responsive-3 {
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer-grid {
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 16px !important;
-  }
-  .footer-grid-container {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 32px !important;
-  }
-}
-
-/* Breakpoint 4: Tablet (641px–1024px) */
-@media (min-width: 641px) and (max-width: 1024px) {
-  .grid-responsive-4 {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 20px !important;
-  }
-  .grid-responsive-3 {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 20px !important;
-  }
-  .footer-grid-container {
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 36px !important;
-  }
-}
-
-/* Breakpoint 5: Small Laptop (1025px–1280px) */
-@media (min-width: 1025px) and (max-width: 1280px) {
-  .grid-responsive-4 {
-    grid-template-columns: repeat(4, 1fr) !important;
-    gap: 20px !important;
+    gap: var(--space-8) !important;
   }
 }
