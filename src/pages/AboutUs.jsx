@@ -17,9 +17,9 @@ export default function AboutUs() {
   return (
     <Layout>
       {/* Hero Banner */}
-      <section style={{ background: 'linear-gradient(135deg, #072834 0%, #0F3A4A 100%)', color: '#FFFFFF', padding: 'clamp(44px, 6vw, 64px) 0' }}>
+      <section style={{ background: 'linear-gradient(135deg, #142E3D 0%, #0F3A4A 100%)', color: '#FFFFFF', padding: 'clamp(44px, 6vw, 64px) 0' }}>
         <div className="container" style={{ textAlign: 'center', maxWidth: '800px' }}>
-          <span style={{ color: '#00C2A8', fontSize: '13px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1px' }}>
+          <span style={{ color: '#8DC63F', fontSize: '13px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1px' }}>
             About BulkFlex
           </span>
           <h1 style={{ fontSize: 'clamp(28px, 4vw, 40px)', fontWeight: '800', color: '#FFFFFF', margin: '12px 0 16px 0', fontFamily: 'var(--font-heading)', lineHeight: '1.2' }}>
@@ -41,14 +41,14 @@ export default function AboutUs() {
             alignItems: 'center'
           }}>
             
-            <div style={{ position: 'relative', background: '#F8FAFC', borderRadius: '24px', padding: 'clamp(16px, 3vw, 24px)', border: '1px solid #EEF2F6', boxShadow: '0 10px 30px rgba(0,0,0,0.04)' }}>
+            <div style={{ position: 'relative', background: '#FBF1E6', borderRadius: '24px', padding: 'clamp(16px, 3vw, 24px)', border: '1px solid #EEF2F6', boxShadow: '0 10px 30px rgba(0,0,0,0.04)' }}>
               <img src={asset_Company_Overview_png_1} alt="BulkFlex Company Overview" style={{ width: '100%', height: 'auto', borderRadius: '16px', display: 'block' }} />
               
               <div style={{
                 position: 'absolute',
                 bottom: '-16px',
                 right: '12px',
-                background: '#072834',
+                background: '#142E3D',
                 color: '#FFFFFF',
                 padding: '12px 20px',
                 borderRadius: '16px',
@@ -57,13 +57,13 @@ export default function AboutUs() {
                 alignItems: 'center',
                 gap: '12px'
               }}>
-                <span style={{ fontSize: 'clamp(24px, 3vw, 32px)', fontWeight: '800', color: '#00C2A8', lineHeight: 1 }}>20+</span>
+                <span style={{ fontSize: 'clamp(24px, 3vw, 32px)', fontWeight: '800', color: '#8DC63F', lineHeight: 1 }}>20+</span>
                 <span style={{ fontSize: '12px', color: '#E2E8F0', fontWeight: '600', lineHeight: 1.3 }}>Years of<br />Excellence</span>
               </div>
             </div>
 
             <div>
-              <h2 style={{ fontSize: 'clamp(24px, 3.5vw, 30px)', color: '#072834', fontWeight: '800', marginBottom: '16px' }}>
+              <h2 style={{ fontSize: 'clamp(24px, 3.5vw, 30px)', color: '#142E3D', fontWeight: '800', marginBottom: '16px' }}>
                 Company Overview
               </h2>
               <p style={{ fontSize: '14.5px', color: '#475569', lineHeight: '1.7', marginBottom: '16px' }}>
@@ -78,13 +78,13 @@ export default function AboutUs() {
                 gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
                 gap: '16px'
               }}>
-                <div style={{ background: '#F8FAFC', padding: '18px', borderRadius: '16px', border: '1px solid #E2E8F0' }}>
-                  <span style={{ fontSize: '24px', fontWeight: '800', color: '#00C2A8' }}>20+</span>
-                  <p style={{ fontSize: '13px', color: '#072834', fontWeight: '700', margin: '4px 0 0 0' }}>Years of Industrial Experience</p>
+                <div style={{ background: '#FBF1E6', padding: '18px', borderRadius: '16px', border: '1px solid #E2E8F0' }}>
+                  <span style={{ fontSize: '24px', fontWeight: '800', color: '#8DC63F' }}>20+</span>
+                  <p style={{ fontSize: '13px', color: '#142E3D', fontWeight: '700', margin: '4px 0 0 0' }}>Years of Industrial Experience</p>
                 </div>
-                <div style={{ background: '#F8FAFC', padding: '18px', borderRadius: '16px', border: '1px solid #E2E8F0' }}>
-                  <span style={{ fontSize: '24px', fontWeight: '800', color: '#00C2A8' }}>30+</span>
-                  <p style={{ fontSize: '13px', color: '#072834', fontWeight: '700', margin: '4px 0 0 0' }}>Vetted Manufacturers Network</p>
+                <div style={{ background: '#FBF1E6', padding: '18px', borderRadius: '16px', border: '1px solid #E2E8F0' }}>
+                  <span style={{ fontSize: '24px', fontWeight: '800', color: '#8DC63F' }}>30+</span>
+                  <p style={{ fontSize: '13px', color: '#142E3D', fontWeight: '700', margin: '4px 0 0 0' }}>Vetted Manufacturers Network</p>
                 </div>
               </div>
             </div>
@@ -94,7 +94,7 @@ export default function AboutUs() {
       </section>
 
       {/* Section 2: Packaging Performance */}
-      <section style={{ padding: 'clamp(36px, 6vw, 64px) 0', background: '#F8FAFC', borderTop: '1px solid #E2E8F0' }}>
+      <section style={{ padding: 'clamp(36px, 6vw, 64px) 0', background: '#FBF1E6', borderTop: '1px solid #E2E8F0' }}>
         <div className="container">
           <div style={{
             display: 'grid',
@@ -103,10 +103,10 @@ export default function AboutUs() {
             alignItems: 'center'
           }}>
             <div>
-              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: '#E8F7F5', color: '#00C2A8', padding: '6px 14px', borderRadius: '50px', fontSize: '12px', fontWeight: '700', marginBottom: '16px' }}>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: '#F0F7E4', color: '#8DC63F', padding: '6px 14px', borderRadius: '50px', fontSize: '12px', fontWeight: '700', marginBottom: '16px' }}>
                 <ShieldCheck size={14} /> Quality Assurance
               </div>
-              <h2 style={{ fontSize: 'clamp(24px, 3.5vw, 30px)', color: '#072834', fontWeight: '800', marginBottom: '16px' }}>
+              <h2 style={{ fontSize: 'clamp(24px, 3.5vw, 30px)', color: '#142E3D', fontWeight: '800', marginBottom: '16px' }}>
                 Packaging Performance
               </h2>
               <p style={{ fontSize: '14.5px', color: '#475569', lineHeight: '1.7', marginBottom: '24px' }}>
@@ -121,8 +121,8 @@ export default function AboutUs() {
                   'Reliable containment for powders & dry bulk materials',
                   'Engineered for high-throughput industrial supply chains'
                 ].map((item, idx) => (
-                  <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '14px', color: '#072834', fontWeight: '600' }}>
-                    <CheckCircle2 size={18} color="#00C2A8" style={{ flexShrink: 0 }} /> <span>{item}</span>
+                  <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '14px', color: '#142E3D', fontWeight: '600' }}>
+                    <CheckCircle2 size={18} color="#8DC63F" style={{ flexShrink: 0 }} /> <span>{item}</span>
                   </div>
                 ))}
               </div>
@@ -147,11 +147,11 @@ export default function AboutUs() {
             {/* Mission */}
             <div className="card-clean" style={{ padding: 'clamp(24px, 4vw, 36px)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
               <div>
-                <div style={{ width: '44px', height: '44px', background: '#E8F7F5', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20px', color: '#00C2A8' }}>
+                <div style={{ width: '44px', height: '44px', background: '#F0F7E4', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20px', color: '#8DC63F' }}>
                   <Target size={22} />
                 </div>
-                <h3 style={{ fontSize: '20px', fontWeight: '800', color: '#072834', marginBottom: '12px' }}>OUR MISSION</h3>
-                <p style={{ fontSize: '15px', fontWeight: '800', color: '#00C2A8', marginBottom: '14px', lineHeight: '1.5' }}>
+                <h3 style={{ fontSize: '20px', fontWeight: '800', color: '#142E3D', marginBottom: '12px' }}>OUR MISSION</h3>
+                <p style={{ fontSize: '15px', fontWeight: '800', color: '#8DC63F', marginBottom: '14px', lineHeight: '1.5' }}>
                   We exist so global buyers never have to wonder if they got it right.
                 </p>
                 <p style={{ fontSize: '13.5px', color: '#475569', lineHeight: '1.7', marginBottom: '14px' }}>
@@ -166,11 +166,11 @@ export default function AboutUs() {
             {/* Vision */}
             <div className="card-clean" style={{ padding: 'clamp(24px, 4vw, 36px)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
               <div>
-                <div style={{ width: '44px', height: '44px', background: '#E8F7F5', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20px', color: '#00C2A8' }}>
+                <div style={{ width: '44px', height: '44px', background: '#F0F7E4', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20px', color: '#8DC63F' }}>
                   <Eye size={22} />
                 </div>
-                <h3 style={{ fontSize: '20px', fontWeight: '800', color: '#072834', marginBottom: '12px' }}>OUR VISION</h3>
-                <p style={{ fontSize: '15px', fontWeight: '800', color: '#00C2A8', marginBottom: '14px', lineHeight: '1.5' }}>
+                <h3 style={{ fontSize: '20px', fontWeight: '800', color: '#142E3D', marginBottom: '12px' }}>OUR VISION</h3>
+                <p style={{ fontSize: '15px', fontWeight: '800', color: '#8DC63F', marginBottom: '14px', lineHeight: '1.5' }}>
                   To be the partner global buyers call first — because they know the answer will be right.
                 </p>
                 <p style={{ fontSize: '13.5px', color: '#475569', lineHeight: '1.7', marginBottom: '14px' }}>
@@ -187,13 +187,13 @@ export default function AboutUs() {
       </section>
 
       {/* Section 4: Our Values 5-Card Grid */}
-      <section style={{ padding: 'clamp(36px, 6vw, 64px) 0', background: '#F8FAFC', borderTop: '1px solid #E2E8F0' }}>
+      <section style={{ padding: 'clamp(36px, 6vw, 64px) 0', background: '#FBF1E6', borderTop: '1px solid #E2E8F0' }}>
         <div className="container">
           <div style={{ textAlign: 'center', maxWidth: '640px', margin: '0 auto 40px auto' }}>
-            <span style={{ color: '#00C2A8', fontSize: '13px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1px' }}>
+            <span style={{ color: '#8DC63F', fontSize: '13px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1px' }}>
               Core Principles
             </span>
-            <h2 style={{ fontSize: 'clamp(26px, 3.5vw, 34px)', color: '#072834', fontWeight: '800', marginTop: '6px' }}>
+            <h2 style={{ fontSize: 'clamp(26px, 3.5vw, 34px)', color: '#142E3D', fontWeight: '800', marginTop: '6px' }}>
               Our Operating Values
             </h2>
           </div>
@@ -211,8 +211,8 @@ export default function AboutUs() {
               { title: 'End-to-End Ownership', desc: 'From specification review to final container dispatch, we take complete responsibility.' }
             ].map((val, idx) => (
               <div key={idx} className="card-clean" style={{ padding: '24px' }}>
-                <div style={{ fontSize: '13px', fontWeight: '800', color: '#00C2A8', marginBottom: '8px' }}>0{idx + 1}. VALUE</div>
-                <h4 style={{ fontSize: '16px', fontWeight: '800', color: '#072834', marginBottom: '10px' }}>{val.title}</h4>
+                <div style={{ fontSize: '13px', fontWeight: '800', color: '#8DC63F', marginBottom: '8px' }}>0{idx + 1}. VALUE</div>
+                <h4 style={{ fontSize: '16px', fontWeight: '800', color: '#142E3D', marginBottom: '10px' }}>{val.title}</h4>
                 <p style={{ fontSize: '13.5px', color: '#64748B', lineHeight: '1.6', margin: 0 }}>{val.desc}</p>
               </div>
             ))}
@@ -224,7 +224,7 @@ export default function AboutUs() {
       <section style={{ padding: 'clamp(36px, 6vw, 64px) 0', background: '#FFFFFF', borderTop: '1px solid #E2E8F0' }}>
         <div className="container">
           <div style={{
-            background: 'linear-gradient(135deg, #072834 0%, #0D3B43 100%)',
+            background: 'linear-gradient(135deg, #142E3D 0%, #0D3B43 100%)',
             color: '#FFFFFF',
             borderRadius: '24px',
             padding: 'clamp(28px, 5vw, 48px)',
@@ -238,7 +238,7 @@ export default function AboutUs() {
               Connect with our relationship management team to audit your current bag specifications and get factory-direct pricing.
             </p>
             <div style={{ display: 'flex', gap: '14px', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <Link to="/contact-us-2" className="btn-dark" style={{ background: '#00C2A8', color: '#072834', minHeight: '44px', fontWeight: '800' }}>
+              <Link to="/contact-us-2" className="btn-dark" style={{ background: '#8DC63F', color: '#142E3D', minHeight: '44px', fontWeight: '800' }}>
                 Contact Procurement Team
               </Link>
               <Link to="/buyer-tools" className="btn-outline-dark" style={{ borderColor: 'rgba(255, 255, 255, 0.3)', color: '#FFFFFF', minHeight: '44px' }}>

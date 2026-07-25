@@ -141,7 +141,7 @@ export default function Products() {
     <Layout>
       {/* Banner */}
       <section style={{ 
-        background: 'linear-gradient(135deg, #072834 0%, #0D3B43 100%)', 
+        background: 'linear-gradient(135deg, #142E3D 0%, #0D3B43 100%)', 
         color: '#FFFFFF', 
         padding: 'clamp(56px, 7vw, 80px) 0',
         position: 'relative'
@@ -153,7 +153,7 @@ export default function Products() {
             gap: '8px',
             background: 'rgba(0, 194, 168, 0.15)',
             border: '1px solid rgba(0, 194, 168, 0.3)',
-            color: '#00C2A8',
+            color: '#8DC63F',
             padding: '6px 16px',
             borderRadius: '50px',
             fontSize: '12px',
@@ -175,7 +175,7 @@ export default function Products() {
       </section>
 
       {/* Main Section */}
-      <section style={{ padding: 'clamp(48px, 6vw, 80px) 0', background: '#F8FAFC' }}>
+      <section style={{ padding: 'clamp(48px, 6vw, 80px) 0', background: '#FBF1E6' }}>
         <div className="container">
           
           {/* Controls Bar */}
@@ -203,7 +203,7 @@ export default function Products() {
                   key={i}
                   onClick={() => setActiveCategory(cat)}
                   style={{
-                    background: activeCategory === cat ? '#072834' : '#FFFFFF',
+                    background: activeCategory === cat ? '#142E3D' : '#FFFFFF',
                     color: activeCategory === cat ? '#FFFFFF' : '#475569',
                     border: activeCategory === cat ? 'none' : '1px solid #E2E8F0',
                     padding: '10px 20px',
@@ -281,7 +281,7 @@ export default function Products() {
                   {/* Content */}
                   <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', flexGrow: 1 }}>
                     <div>
-                      <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#072834', marginBottom: '8px', lineHeight: '1.3' }}>
+                      <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#142E3D', marginBottom: '8px', lineHeight: '1.3' }}>
                         {product.title}
                       </h3>
                       <p style={{ fontSize: '13px', color: '#64748B', lineHeight: '1.6', marginBottom: '20px' }}>
@@ -293,7 +293,7 @@ export default function Products() {
                       <Link
                         to={product.link}
                         style={{
-                          color: '#00C2A8',
+                          color: '#8DC63F',
                           fontWeight: '800',
                           fontSize: '14px',
                           display: 'inline-flex',
@@ -310,8 +310,8 @@ export default function Products() {
                           width: '36px',
                           height: '36px',
                           borderRadius: '50%',
-                          background: '#E8F7F5',
-                          color: '#072834',
+                          background: '#F0F7E4',
+                          color: '#142E3D',
                           display: 'flex',
                           alignItems: 'center',
                           justifyContent: 'center',

@@ -15,7 +15,7 @@ export default function Welcome() {
   return (
     <Layout>
       <div style={{
-        background: '#072834',
+        background: '#142E3D',
         minHeight: '70vh',
         display: 'flex',
         flexDirection: 'column',
@@ -34,7 +34,7 @@ export default function Welcome() {
           alt="Bulk Sourcing Simplified"
           style={{ maxWidth: '360px', width: '100%', height: 'auto', marginBottom: '32px' }}
         />
-        <Link to="/" className="btn-dark" style={{ background: '#00C2A8', color: '#072834', padding: '14px 32px', fontWeight: '800' }}>
+        <Link to="/" className="btn-dark" style={{ background: '#8DC63F', color: '#142E3D', padding: '14px 32px', fontWeight: '800' }}>
           Explore Homepage →
         </Link>
       </div>

@@ -65,8 +65,8 @@ export default function ProductCategoryPpWovenSacks() {
           border: '1px solid #E2E8F0',
           marginBottom: '32px'
         }}>
-          <h1 className="entry-title" style={{ fontSize: '32px', fontWeight: '800', color: '#072834', marginBottom: '12px' }}>
-            Product Category: <span style={{ color: '#00C2A8' }}>PP Woven Sacks</span>
+          <h1 className="entry-title" style={{ fontSize: '32px', fontWeight: '800', color: '#142E3D', marginBottom: '12px' }}>
+            Product Category: <span style={{ color: '#8DC63F' }}>PP Woven Sacks</span>
           </h1>
           <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.7', marginBottom: '12px' }}>
             Woven polypropylene bags are the backbone of global dry commodity logistics. Getting the specification right prevents seam tearing, moisture damage, and filling line downtime.
@@ -97,7 +97,7 @@ export default function ProductCategoryPpWovenSacks() {
                 justifyContent: 'space-between'
               }}
             >
-              <div style={{ height: '220px', background: '#F8FAFC', padding: '16px' }}>
+              <div style={{ height: '220px', background: '#FBF1E6', padding: '16px' }}>
                 <img
                   src={product.image}
                   alt={product.title}
@@ -107,7 +107,7 @@ export default function ProductCategoryPpWovenSacks() {
 
               <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', flexGrow: 1, justifyContent: 'space-between' }}>
                 <div>
-                  <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#072834', marginBottom: '8px' }}>
+                  <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#142E3D', marginBottom: '8px' }}>
                     {product.title}
                   </h3>
                   <p style={{ fontSize: '13px', color: '#64748B', lineHeight: '1.6', marginBottom: '16px' }}>
@@ -118,7 +118,7 @@ export default function ProductCategoryPpWovenSacks() {
                 <Link
                   to={product.link}
                   style={{
-                    color: '#00C2A8',
+                    color: '#8DC63F',
                     fontWeight: '800',
                     fontSize: '14px',
                     display: 'inline-flex',

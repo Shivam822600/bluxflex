@@ -18,12 +18,12 @@ export default function NorthAmericaPaperBag2() {
   return (
     <Layout>
       {/* Hero Banner */}
-      <section style={{ background: 'linear-gradient(135deg, #072834 0%, #0F3A4A 100%)', color: '#FFFFFF', padding: 'clamp(44px, 6vw, 64px) 0' }}>
+      <section style={{ background: 'linear-gradient(135deg, #142E3D 0%, #0F3A4A 100%)', color: '#FFFFFF', padding: 'clamp(44px, 6vw, 64px) 0' }}>
         <div className="container">
-          <Link to="/products" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: '#00C2A8', fontSize: '13px', fontWeight: '600', marginBottom: '16px' }}>
+          <Link to="/products" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: '#8DC63F', fontSize: '13px', fontWeight: '600', marginBottom: '16px' }}>
             <ChevronLeft size={16} /> Back to Products
           </Link>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(0, 194, 168, 0.15)', color: '#00C2A8', padding: '6px 16px', borderRadius: '50px', fontSize: '12.5px', fontWeight: '700', marginBottom: '20px', border: '1px solid rgba(0, 194, 168, 0.3)' }}>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(0, 194, 168, 0.15)', color: '#8DC63F', padding: '6px 16px', borderRadius: '50px', fontSize: '12.5px', fontWeight: '700', marginBottom: '20px', border: '1px solid rgba(0, 194, 168, 0.3)' }}>
             🇨🇦 Canadian Manufactured Food-Grade Packaging
           </div>
           <h1 style={{ fontSize: 'clamp(28px, 4vw, 40px)', color: '#FFFFFF', fontWeight: '800', fontFamily: 'var(--font-heading)', marginBottom: '16px', lineHeight: '1.2' }}>
@@ -33,7 +33,7 @@ export default function NorthAmericaPaperBag2() {
             BulkFlex supplies Canadian-manufactured multiwall paper bags and printed roll stock for the North American food and agricultural market. Our solutions support grocery chains, flour mills, sugar packers, ingredient manufacturers, and automated packaging operations across Canada and the United States.
           </p>
           <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
-            <Link to="/contact-us-2" className="btn-dark" style={{ background: '#00C2A8', color: '#072834', padding: '14px 28px', fontSize: '14.5px', fontWeight: '800' }}>
+            <Link to="/contact-us-2" className="btn-dark" style={{ background: '#8DC63F', color: '#142E3D', padding: '14px 28px', fontSize: '14.5px', fontWeight: '800' }}>
               Request Custom Quote <ArrowRight size={18} />
             </Link>
             <a
@@ -59,33 +59,33 @@ export default function NorthAmericaPaperBag2() {
             alignItems: 'center'
           }}>
             <div>
-              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: '#E8F7F5', color: '#00C2A8', padding: '6px 14px', borderRadius: '50px', fontSize: '12px', fontWeight: '700', marginBottom: '16px' }}>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: '#F0F7E4', color: '#8DC63F', padding: '6px 14px', borderRadius: '50px', fontSize: '12px', fontWeight: '700', marginBottom: '16px' }}>
                 <ShieldCheck size={14} /> Sift-Proof Technology
               </div>
-              <h2 style={{ fontSize: 'clamp(24px, 3.5vw, 30px)', color: '#072834', fontWeight: '800', marginBottom: '16px' }}>
+              <h2 style={{ fontSize: 'clamp(24px, 3.5vw, 30px)', color: '#142E3D', fontWeight: '800', marginBottom: '16px' }}>
                 Sift-Proof Paper Bags for Flour &amp; Sugar
               </h2>
               <p style={{ color: '#475569', fontSize: '14.5px', lineHeight: '1.7', marginBottom: '20px' }}>
                 BulkFlex supplies <strong>sift-proof paper bags</strong> designed for clean containment of fine powders such as flour and sugar. These food-grade bags help reduce leakage, dusting, and product loss during filling, transport, and retail display.
               </p>
 
-              <div style={{ background: '#F8FAFC', borderRadius: '18px', padding: 'clamp(18px, 3.5vw, 24px)', border: '1px solid #E2E8F0', marginBottom: '24px' }}>
+              <div style={{ background: '#FBF1E6', borderRadius: '18px', padding: 'clamp(18px, 3.5vw, 24px)', border: '1px solid #E2E8F0', marginBottom: '24px' }}>
                 <div style={{ marginBottom: '14px' }}>
-                  <span style={{ fontSize: '12px', fontWeight: '800', color: '#00C2A8', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Available Sizes:</span>
-                  <p style={{ fontSize: '15px', fontWeight: '800', color: '#072834', margin: '4px 0 0 0' }}>1.5 kg • 2 kg • 4 lb • 10 lb</p>
+                  <span style={{ fontSize: '12px', fontWeight: '800', color: '#8DC63F', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Available Sizes:</span>
+                  <p style={{ fontSize: '15px', fontWeight: '800', color: '#142E3D', margin: '4px 0 0 0' }}>1.5 kg • 2 kg • 4 lb • 10 lb</p>
                 </div>
                 <div style={{ marginBottom: '14px' }}>
-                  <span style={{ fontSize: '12px', fontWeight: '800', color: '#00C2A8', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Construction Options:</span>
+                  <span style={{ fontSize: '12px', fontWeight: '800', color: '#8DC63F', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Construction Options:</span>
                   <p style={{ fontSize: '13.5px', color: '#475569', margin: '4px 0 0 0', fontWeight: '600' }}>• 1 Ply and 2 Ply paper bags<br/>• White Bleached Kraft or Natural Kraft<br/>• SOS style packaging</p>
                 </div>
                 <div>
-                  <span style={{ fontSize: '12px', fontWeight: '800', color: '#00C2A8', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Designed For:</span>
+                  <span style={{ fontSize: '12px', fontWeight: '800', color: '#8DC63F', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Designed For:</span>
                   <p style={{ fontSize: '13.5px', color: '#475569', margin: '4px 0 0 0', fontWeight: '600' }}>Flour mills • Sugar refineries • Baking ingredient manufacturers • Private label food brands</p>
                 </div>
               </div>
             </div>
 
-            <div style={{ background: '#F8FAFC', borderRadius: '24px', padding: 'clamp(18px, 3.5vw, 32px)', textAlign: 'center', border: '1px solid #EEF2F6', boxShadow: '0 10px 30px rgba(0,0,0,0.04)' }}>
+            <div style={{ background: '#FBF1E6', borderRadius: '24px', padding: 'clamp(18px, 3.5vw, 32px)', textAlign: 'center', border: '1px solid #EEF2F6', boxShadow: '0 10px 30px rgba(0,0,0,0.04)' }}>
               <img src={asset_image_flour_png_1} alt="Sift-Proof Paper Bags for Flour and Sugar" style={{ maxHeight: '320px', width: '100%', objectFit: 'contain', margin: '0 auto' }} />
             </div>
           </div>
@@ -93,7 +93,7 @@ export default function NorthAmericaPaperBag2() {
       </section>
 
       {/* Section 2: Printed Paper Roll Stock */}
-      <section style={{ padding: 'clamp(36px, 6vw, 64px) 0', background: '#F8FAFC', borderTop: '1px solid #E2E8F0' }}>
+      <section style={{ padding: 'clamp(36px, 6vw, 64px) 0', background: '#FBF1E6', borderTop: '1px solid #E2E8F0' }}>
         <div className="container">
           <div style={{
             display: 'grid',
@@ -106,10 +106,10 @@ export default function NorthAmericaPaperBag2() {
             </div>
 
             <div>
-              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: '#E8F7F5', color: '#00C2A8', padding: '6px 14px', borderRadius: '50px', fontSize: '12px', fontWeight: '700', marginBottom: '16px' }}>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: '#F0F7E4', color: '#8DC63F', padding: '6px 14px', borderRadius: '50px', fontSize: '12px', fontWeight: '700', marginBottom: '16px' }}>
                 <CheckCircle2 size={14} /> High-Speed Form &amp; Fill Lines
               </div>
-              <h2 style={{ fontSize: 'clamp(24px, 3.5vw, 30px)', color: '#072834', fontWeight: '800', marginBottom: '16px' }}>
+              <h2 style={{ fontSize: 'clamp(24px, 3.5vw, 30px)', color: '#142E3D', fontWeight: '800', marginBottom: '16px' }}>
                 Printed Paper Roll Stock for Form &amp; Fill Systems
               </h2>
               <p style={{ color: '#475569', fontSize: '14.5px', lineHeight: '1.7', marginBottom: '20px' }}>
@@ -124,8 +124,8 @@ export default function NorthAmericaPaperBag2() {
                   'Precision color consistency',
                   'Stable roll tension for smooth operations'
                 ].map((item, idx) => (
-                  <li key={idx} style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '13.5px', color: '#072834', fontWeight: '600' }}>
-                    <CheckCircle2 size={16} color="#00C2A8" style={{ flexShrink: 0 }} /> <span>{item}</span>
+                  <li key={idx} style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '13.5px', color: '#142E3D', fontWeight: '600' }}>
+                    <CheckCircle2 size={16} color="#8DC63F" style={{ flexShrink: 0 }} /> <span>{item}</span>
                   </li>
                 ))}
               </ul>
@@ -148,7 +148,7 @@ export default function NorthAmericaPaperBag2() {
             alignItems: 'center'
           }}>
             <div>
-              <h2 style={{ fontSize: 'clamp(24px, 3.5vw, 30px)', color: '#072834', fontWeight: '800', marginBottom: '16px' }}>
+              <h2 style={{ fontSize: 'clamp(24px, 3.5vw, 30px)', color: '#142E3D', fontWeight: '800', marginBottom: '16px' }}>
                 Canadian Manufactured Food Grade Paper Bags
               </h2>
               <p style={{ color: '#475569', fontSize: '14.5px', lineHeight: '1.7', marginBottom: '20px' }}>
@@ -161,22 +161,22 @@ export default function NorthAmericaPaperBag2() {
                 gap: '14px',
                 marginBottom: '24px'
               }}>
-                <div style={{ background: '#F8FAFC', padding: '16px', borderRadius: '12px', border: '1px solid #E2E8F0' }}>
-                  <h4 style={{ fontSize: '14px', color: '#072834', fontWeight: '800', marginBottom: '4px' }}>Food Grade Certified</h4>
+                <div style={{ background: '#FBF1E6', padding: '16px', borderRadius: '12px', border: '1px solid #E2E8F0' }}>
+                  <h4 style={{ fontSize: '14px', color: '#142E3D', fontWeight: '800', marginBottom: '4px' }}>Food Grade Certified</h4>
                   <p style={{ fontSize: '12.5px', color: '#64748B', margin: 0 }}>Safe direct food contact materials</p>
                 </div>
-                <div style={{ background: '#F8FAFC', padding: '16px', borderRadius: '12px', border: '1px solid #E2E8F0' }}>
-                  <h4 style={{ fontSize: '14px', color: '#072834', fontWeight: '800', marginBottom: '4px' }}>Potato &amp; Agri Bags</h4>
+                <div style={{ background: '#FBF1E6', padding: '16px', borderRadius: '12px', border: '1px solid #E2E8F0' }}>
+                  <h4 style={{ fontSize: '14px', color: '#142E3D', fontWeight: '800', marginBottom: '4px' }}>Potato &amp; Agri Bags</h4>
                   <p style={{ fontSize: '12.5px', color: '#64748B', margin: 0 }}>Breathable mesh window options</p>
                 </div>
               </div>
 
-              <Link to="/contact-us-2" className="btn-dark" style={{ background: '#072834', padding: '12px 26px', fontSize: '14px' }}>
+              <Link to="/contact-us-2" className="btn-dark" style={{ background: '#142E3D', padding: '12px 26px', fontSize: '14px' }}>
                 Request Spec Sheet &amp; Samples →
               </Link>
             </div>
 
-            <div style={{ background: '#F8FAFC', borderRadius: '24px', padding: 'clamp(18px, 3.5vw, 32px)', textAlign: 'center', border: '1px solid #EEF2F6', boxShadow: '0 10px 30px rgba(0,0,0,0.04)' }}>
+            <div style={{ background: '#FBF1E6', borderRadius: '24px', padding: 'clamp(18px, 3.5vw, 32px)', textAlign: 'center', border: '1px solid #EEF2F6', boxShadow: '0 10px 30px rgba(0,0,0,0.04)' }}>
               <img src={asset_65d7bcaa_8606_45f6_b3e9_dfe376cc5326_1024x683_png_3} alt="Food Grade Potato Bags and Agricultural Paper Sacks" style={{ maxHeight: '320px', width: '100%', objectFit: 'contain', margin: '0 auto' }} />
             </div>
           </div>
@@ -184,10 +184,10 @@ export default function NorthAmericaPaperBag2() {
       </section>
 
       {/* Section 4: Bottom CTA */}
-      <section style={{ padding: 'clamp(36px, 6vw, 64px) 0', background: '#F8FAFC', borderTop: '1px solid #E2E8F0' }}>
+      <section style={{ padding: 'clamp(36px, 6vw, 64px) 0', background: '#FBF1E6', borderTop: '1px solid #E2E8F0' }}>
         <div className="container">
           <div style={{
-            background: 'linear-gradient(135deg, #072834 0%, #0D3B43 100%)',
+            background: 'linear-gradient(135deg, #142E3D 0%, #0D3B43 100%)',
             color: '#FFFFFF',
             borderRadius: '24px',
             padding: 'clamp(28px, 5vw, 48px)',
@@ -201,7 +201,7 @@ export default function NorthAmericaPaperBag2() {
               Connect with our Canadian &amp; US paper packaging technical desk for roll stock specifications, bag dimensions, and custom flexo print artwork setup.
             </p>
             <div style={{ display: 'flex', gap: '14px', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <Link to="/contact-us-2" className="btn-dark" style={{ background: '#00C2A8', color: '#072834', minHeight: '44px', fontWeight: '800' }}>
+              <Link to="/contact-us-2" className="btn-dark" style={{ background: '#8DC63F', color: '#142E3D', minHeight: '44px', fontWeight: '800' }}>
                 Contact Technical Paper Sales
               </Link>
               <Link to="/buyer-tools" className="btn-outline-dark" style={{ borderColor: 'rgba(255, 255, 255, 0.3)', color: '#FFFFFF', minHeight: '44px' }}>

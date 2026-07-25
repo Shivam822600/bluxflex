@@ -207,7 +207,7 @@ export default function HomePage() {
                   gap: '8px',
                   background: 'rgba(0, 194, 168, 0.1)',
                   border: '1px solid rgba(0, 194, 168, 0.3)',
-                  color: '#072834',
+                  color: '#142E3D',
                   padding: '7px 16px',
                   borderRadius: '50px',
                   fontSize: '12px',
@@ -217,14 +217,14 @@ export default function HomePage() {
                   marginBottom: '24px'
                 }}
               >
-                <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#00C2A8' }}></span>
+                <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#8DC63F' }}></span>
                 {t('heroTag')}
               </div>
 
               <h1 style={{
                 fontSize: 'clamp(34px, 4.8vw, 58px)',
                 fontWeight: '800',
-                color: '#072834',
+                color: '#142E3D',
                 lineHeight: '1.1',
                 letterSpacing: '-1.5px',
                 marginBottom: '22px',
@@ -248,7 +248,7 @@ export default function HomePage() {
                   onClick={() => handleOpenQuote()}
                   className="btn-primary" 
                   style={{
-                    background: 'linear-gradient(135deg, #072834 0%, #0D3B43 100%)',
+                    background: 'linear-gradient(135deg, #142E3D 0%, #0D3B43 100%)',
                     color: '#FFFFFF',
                     padding: '16px 32px',
                     borderRadius: '50px',
@@ -265,12 +265,12 @@ export default function HomePage() {
                   onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
                   onMouseLeave={(e) => e.currentTarget.style.transform = 'none'}
                 >
-                  Request Fast Quote <ArrowRight size={18} color="#00C2A8" />
+                  Request Fast Quote <ArrowRight size={18} color="#8DC63F" />
                 </button>
 
                 <Link to="/products" className="btn-outline" style={{
                   background: '#FFFFFF',
-                  color: '#072834',
+                  color: '#142E3D',
                   border: '1.5px solid #CBD5E1',
                   padding: '15px 28px',
                   borderRadius: '50px',
@@ -286,12 +286,12 @@ export default function HomePage() {
               {/* Trust Micro-Metrics */}
               <div style={{ display: 'flex', alignItems: 'center', gap: '24px', marginTop: '36px', paddingTop: '24px', borderTop: '1px solid rgba(0,0,0,0.06)' }}>
                 <div>
-                  <div style={{ fontSize: '18px', fontWeight: '800', color: '#072834' }}>100% Verified</div>
+                  <div style={{ fontSize: '18px', fontWeight: '800', color: '#142E3D' }}>100% Verified</div>
                   <div style={{ fontSize: '12px', color: '#64748B' }}>Audit Certified Plants</div>
                 </div>
                 <div style={{ width: '1px', height: '28px', background: '#E2E8F0' }} />
                 <div>
-                  <div style={{ fontSize: '18px', fontWeight: '800', color: '#072834' }}>0% Quality Defect</div>
+                  <div style={{ fontSize: '18px', fontWeight: '800', color: '#142E3D' }}>0% Quality Defect</div>
                   <div style={{ fontSize: '12px', color: '#64748B' }}>Container Level Testing</div>
                 </div>
               </div>
@@ -318,14 +318,14 @@ export default function HomePage() {
                     padding: '8px 20px',
                     fontSize: '13px',
                     fontWeight: '700',
-                    color: '#072834',
+                    color: '#142E3D',
                     display: 'flex',
                     alignItems: 'center',
                     gap: '8px',
                     cursor: 'pointer'
                   }}
                 >
-                  <Globe size={16} color="#00C2A8" />
+                  <Globe size={16} color="#8DC63F" />
                   <span>{selectedHeroLang}</span>
                   <ChevronDown size={14} />
                 </button>
@@ -354,11 +354,11 @@ export default function HomePage() {
                           padding: '9px 14px',
                           fontSize: '13px',
                           fontWeight: '600',
-                          color: '#072834',
+                          color: '#142E3D',
                           borderRadius: '8px',
                           cursor: 'pointer'
                         }}
-                        onMouseEnter={(e) => e.currentTarget.style.background = '#E8F7F5'}
+                        onMouseEnter={(e) => e.currentTarget.style.background = '#F0F7E4'}
                         onMouseLeave={(e) => e.currentTarget.style.background = 'transparent'}
                       >
                         {lang}
@@ -384,11 +384,11 @@ export default function HomePage() {
                   zIndex: 5
                 }}
               >
-                <div style={{ width: '40px', height: '40px', borderRadius: '10px', background: '#E8F7F5', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <ShieldCheck size={22} color="#00C2A8" />
+                <div style={{ width: '40px', height: '40px', borderRadius: '10px', background: '#F0F7E4', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <ShieldCheck size={22} color="#8DC63F" />
                 </div>
                 <div>
-                  <div style={{ fontSize: '13px', fontWeight: '800', color: '#072834' }}>UN Packaging Certified</div>
+                  <div style={{ fontSize: '13px', fontWeight: '800', color: '#142E3D' }}>UN Packaging Certified</div>
                   <div style={{ fontSize: '11px', color: '#64748B', fontWeight: '600' }}>Type A, B, C & D Conductive</div>
                 </div>
               </div>
@@ -415,25 +415,25 @@ export default function HomePage() {
                 <svg viewBox="0 0 800 500" style={{ width: '100%', height: '100%' }}>
                   <defs>
                     <linearGradient id="mapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#E8F7F5" stopOpacity="0.8" />
+                      <stop offset="0%" stopColor="#F0F7E4" stopOpacity="0.8" />
                       <stop offset="100%" stopColor="#FFFFFF" stopOpacity="1" />
                     </linearGradient>
                   </defs>
 
                   {/* Route Connections */}
-                  <path d="M 120 180 Q 250 140 460 270 T 700 200" fill="none" stroke="#00C2A8" strokeWidth="2.5" strokeDasharray="6 6" opacity="0.6" />
-                  <path d="M 460 270 Q 300 350 200 320" fill="none" stroke="#00C2A8" strokeWidth="2" strokeDasharray="4 4" opacity="0.4" />
-                  <path d="M 460 270 Q 550 120 680 140" fill="none" stroke="#00C2A8" strokeWidth="2" strokeDasharray="4 4" opacity="0.4" />
+                  <path d="M 120 180 Q 250 140 460 270 T 700 200" fill="none" stroke="#8DC63F" strokeWidth="2.5" strokeDasharray="6 6" opacity="0.6" />
+                  <path d="M 460 270 Q 300 350 200 320" fill="none" stroke="#8DC63F" strokeWidth="2" strokeDasharray="4 4" opacity="0.4" />
+                  <path d="M 460 270 Q 550 120 680 140" fill="none" stroke="#8DC63F" strokeWidth="2" strokeDasharray="4 4" opacity="0.4" />
 
                   {/* India Central Hub Marker */}
                   <circle cx="460" cy="270" r="38" fill="rgba(0, 194, 168, 0.15)">
                     <animate attributeName="r" values="28;44;28" dur="2.8s" repeatCount="indefinite" />
                   </circle>
-                  <circle cx="460" cy="270" r="12" fill="#00C2A8" stroke="#FFFFFF" strokeWidth="3" />
+                  <circle cx="460" cy="270" r="12" fill="#8DC63F" stroke="#FFFFFF" strokeWidth="3" />
                   
                   {/* Hub Label Callout */}
                   <g transform="translate(460, 212)">
-                    <rect x="-64" y="-18" width="128" height="34" rx="17" fill="#072834" />
+                    <rect x="-64" y="-18" width="128" height="34" rx="17" fill="#142E3D" />
                     <text x="0" y="4" textAnchor="middle" fill="#FFFFFF" fontSize="12" fontWeight="800" fontFamily="sans-serif">
                       INDIA HUB
                     </text>
@@ -447,7 +447,7 @@ export default function HomePage() {
                     { x: 220, y: 330, label: 'MIDDLE EAST' }
                   ].map((node, i) => (
                     <g key={i} transform={`translate(${node.x}, ${node.y})`}>
-                      <circle r="7" fill="#FA5221" />
+                      <circle r="7" fill="#8DC63F" />
                       <circle r="14" fill="rgba(250, 82, 33, 0.2)" />
                       <text y="24" textAnchor="middle" fill="#64748B" fontSize="11" fontWeight="800">
                         {node.label}
@@ -472,16 +472,16 @@ export default function HomePage() {
             gap: '32px'
           }}>
             {[
-              { number: '20+', label: 'Years Industrial Experience', icon: <Award color="#00C2A8" size={26} /> },
-              { number: '30+', label: 'Vetted Manufacturers Network', icon: <ShieldCheck color="#00C2A8" size={26} /> },
-              { number: 'Multi-SKU', label: 'Container Optimization', icon: <Truck color="#00C2A8" size={26} /> },
+              { number: '20+', label: 'Years Industrial Experience', icon: <Award color="#8DC63F" size={26} /> },
+              { number: '30+', label: 'Vetted Manufacturers Network', icon: <ShieldCheck color="#8DC63F" size={26} /> },
+              { number: 'Multi-SKU', label: 'Container Optimization', icon: <Truck color="#8DC63F" size={26} /> },
             ].map((stat, i) => (
               <div key={i} style={{
                 display: 'flex',
                 alignItems: 'center',
                 gap: '20px',
                 padding: '20px 28px',
-                background: '#F8FAFC',
+                background: '#FBF1E6',
                 borderRadius: '20px',
                 border: '1px solid #E2E8F0',
                 transition: 'transform 0.3s, box-shadow 0.3s'
@@ -499,7 +499,7 @@ export default function HomePage() {
                   width: '60px',
                   height: '60px',
                   borderRadius: '16px',
-                  background: '#E8F7F5',
+                  background: '#F0F7E4',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -508,7 +508,7 @@ export default function HomePage() {
                   {stat.icon}
                 </div>
                 <div>
-                  <div style={{ fontSize: '28px', fontWeight: '800', color: '#072834', lineHeight: '1.15' }}>
+                  <div style={{ fontSize: '28px', fontWeight: '800', color: '#142E3D', lineHeight: '1.15' }}>
                     {stat.number}
                   </div>
                   <div style={{ fontSize: '13px', color: '#64748B', fontWeight: '600', marginTop: '2px' }}>
@@ -522,15 +522,15 @@ export default function HomePage() {
       </section>
 
       {/* 3. PRODUCTS SECTION */}
-      <section style={{ padding: 'clamp(64px, 8vw, 96px) 0', background: '#F8FAFC' }}>
+      <section style={{ padding: 'clamp(64px, 8vw, 96px) 0', background: '#FBF1E6' }}>
         <div className="container">
           
           {/* Centered Heading */}
           <div style={{ textAlign: 'center', maxWidth: '640px', margin: '0 auto 44px auto' }}>
-            <span style={{ color: '#00C2A8', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px' }}>
+            <span style={{ color: '#8DC63F', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px' }}>
               Industrial Grade Range
             </span>
-            <h2 style={{ fontSize: 'clamp(30px, 3.8vw, 42px)', fontWeight: '800', color: '#072834', marginTop: '6px', marginBottom: '12px' }}>
+            <h2 style={{ fontSize: 'clamp(30px, 3.8vw, 42px)', fontWeight: '800', color: '#142E3D', marginTop: '6px', marginBottom: '12px' }}>
               Our Product Portfolio
             </h2>
             <p style={{ color: '#64748B', fontSize: '16px' }}>
@@ -554,7 +554,7 @@ export default function HomePage() {
                 borderRadius: '50%',
                 background: '#FFFFFF',
                 border: '1px solid #E2E8F0',
-                color: '#072834',
+                color: '#142E3D',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -564,13 +564,13 @@ export default function HomePage() {
                 transition: 'all 0.2s ease'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = '#072834';
+                e.currentTarget.style.background = '#142E3D';
                 e.currentTarget.style.color = '#FFFFFF';
-                e.currentTarget.style.borderColor = '#072834';
+                e.currentTarget.style.borderColor = '#142E3D';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.background = '#FFFFFF';
-                e.currentTarget.style.color = '#072834';
+                e.currentTarget.style.color = '#142E3D';
                 e.currentTarget.style.borderColor = '#E2E8F0';
               }}
             >
@@ -596,7 +596,7 @@ export default function HomePage() {
                   key={idx}
                   onClick={() => setActiveTab(idx)}
                   style={{
-                    background: activeTab === idx ? '#072834' : '#FFFFFF',
+                    background: activeTab === idx ? '#142E3D' : '#FFFFFF',
                     color: activeTab === idx ? '#FFFFFF' : '#475569',
                     border: activeTab === idx ? 'none' : '1px solid #E2E8F0',
                     padding: '13px 26px',
@@ -627,7 +627,7 @@ export default function HomePage() {
                 borderRadius: '50%',
                 background: '#FFFFFF',
                 border: '1px solid #E2E8F0',
-                color: '#072834',
+                color: '#142E3D',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -637,13 +637,13 @@ export default function HomePage() {
                 transition: 'all 0.2s ease'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = '#072834';
+                e.currentTarget.style.background = '#142E3D';
                 e.currentTarget.style.color = '#FFFFFF';
-                e.currentTarget.style.borderColor = '#072834';
+                e.currentTarget.style.borderColor = '#142E3D';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.background = '#FFFFFF';
-                e.currentTarget.style.color = '#072834';
+                e.currentTarget.style.color = '#142E3D';
                 e.currentTarget.style.borderColor = '#E2E8F0';
               }}
             >
@@ -691,7 +691,7 @@ export default function HomePage() {
                 {/* Content */}
                 <div style={{ padding: '22px', display: 'flex', flexDirection: 'column', height: 'calc(100% - 230px)', justifyContent: 'space-between' }}>
                   <div>
-                    <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#072834', marginBottom: '8px' }}>
+                    <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#142E3D', marginBottom: '8px' }}>
                       {prod.title}
                     </h3>
                     <p style={{ fontSize: '13px', color: '#64748B', lineHeight: '1.55', marginBottom: '20px' }}>
@@ -706,7 +706,7 @@ export default function HomePage() {
                       style={{
                         background: 'transparent',
                         border: 'none',
-                        color: '#00C2A8',
+                        color: '#8DC63F',
                         fontWeight: '800',
                         fontSize: '13px',
                         cursor: 'pointer',
@@ -721,20 +721,20 @@ export default function HomePage() {
                         width: '38px',
                         height: '38px',
                         borderRadius: '50%',
-                        background: '#E8F7F5',
-                        color: '#072834',
+                        background: '#F0F7E4',
+                        color: '#142E3D',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
                         transition: 'all 0.2s'
                       }}
                       onMouseEnter={(e) => {
-                        e.currentTarget.style.background = '#00C2A8';
+                        e.currentTarget.style.background = '#8DC63F';
                         e.currentTarget.style.color = '#FFFFFF';
                       }}
                       onMouseLeave={(e) => {
-                        e.currentTarget.style.background = '#E8F7F5';
-                        e.currentTarget.style.color = '#072834';
+                        e.currentTarget.style.background = '#F0F7E4';
+                        e.currentTarget.style.color = '#142E3D';
                       }}
                     >
                       <ArrowRight size={16} />
@@ -750,11 +750,11 @@ export default function HomePage() {
       </section>
 
       {/* 4. STORYTELLING SECTION (Full-Width Organic Wave Background) */}
-      <section style={{ position: 'relative', background: '#072834', color: '#FFFFFF', padding: '96px 0' }}>
+      <section style={{ position: 'relative', background: '#142E3D', color: '#FFFFFF', padding: '96px 0' }}>
         
         {/* Top Organic SVG Wave Divider */}
         <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', overflow: 'hidden', lineHeight: 0, transform: 'rotate(180deg)' }}>
-          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" style={{ width: '100%', height: '40px', fill: '#F8FAFC' }}>
+          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" style={{ width: '100%', height: '40px', fill: '#FBF1E6' }}>
             <path d="M0,0 C150,90 350,-40 500,60 C650,160 900,10 1200,40 L1200,120 L0,120 Z"></path>
           </svg>
         </div>
@@ -786,13 +786,13 @@ export default function HomePage() {
                   boxShadow: '0 12px 32px rgba(0,0,0,0.3)'
                 }}
               >
-                <div style={{ fontSize: '20px', fontWeight: '800', color: '#00C2A8' }}>Multi-Plant Sourcing</div>
+                <div style={{ fontSize: '20px', fontWeight: '800', color: '#8DC63F' }}>Multi-Plant Sourcing</div>
                 <div style={{ fontSize: '12px', color: '#CBD5E1' }}>Integrated Quality Assurance</div>
               </div>
             </div>
 
             <div>
-              <span style={{ color: '#00C2A8', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1.2px' }}>
+              <span style={{ color: '#8DC63F', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1.2px' }}>
                 End-to-End Execution
               </span>
               <h2 style={{ fontSize: 'clamp(28px, 3.8vw, 42px)', fontWeight: '800', marginTop: '12px', marginBottom: '22px', lineHeight: '1.2' }}>
@@ -804,7 +804,7 @@ export default function HomePage() {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
                 {['Rigorous factory audits & quality checks', 'Multi-SKU container loading optimization', 'Real-time production and shipment tracking'].map((item, i) => (
                   <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '15px', color: '#E2E8F0' }}>
-                    <CheckCircle2 size={20} color="#00C2A8" />
+                    <CheckCircle2 size={20} color="#8DC63F" />
                     <span>{item}</span>
                   </div>
                 ))}
@@ -827,7 +827,7 @@ export default function HomePage() {
               />
             </div>
             <div style={{ order: 1 }}>
-              <span style={{ color: '#00C2A8', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1.2px' }}>
+              <span style={{ color: '#8DC63F', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1.2px' }}>
                 Compliance & Quality
               </span>
               <h2 style={{ fontSize: 'clamp(28px, 3.8vw, 42px)', fontWeight: '800', marginTop: '12px', marginBottom: '22px', lineHeight: '1.2' }}>
@@ -837,7 +837,7 @@ export default function HomePage() {
                 From UN-certified dangerous goods containers to food-grade cleanroom FIBCs, every product undergoes strict physical testing, tensile strength evaluation, and UV resistance inspection prior to dispatch.
               </p>
               <Link to="/about-us" style={{
-                color: '#00C2A8',
+                color: '#8DC63F',
                 fontWeight: '800',
                 fontSize: '15px',
                 display: 'inline-flex',
@@ -865,7 +865,7 @@ export default function HomePage() {
         <div className="container">
           
           <div style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto 52px auto' }}>
-            <h2 style={{ fontSize: 'clamp(30px, 3.8vw, 42px)', fontWeight: '800', color: '#072834', marginBottom: '12px' }}>
+            <h2 style={{ fontSize: 'clamp(30px, 3.8vw, 42px)', fontWeight: '800', color: '#142E3D', marginBottom: '12px' }}>
               Vision & Core Values
             </h2>
             <p style={{ color: '#64748B', fontSize: '16px' }}>
@@ -880,13 +880,13 @@ export default function HomePage() {
             gap: '28px'
           }}>
             {[
-              { title: 'Quality Assurance', desc: '100% inspection and compliance with international dangerous goods & food-grade packaging standards.', icon: <ShieldCheck size={26} color="#00C2A8" /> },
-              { title: 'Supply Chain Continuity', desc: 'Redundant multi-plant sourcing to guarantee uninterrupted delivery timelines.', icon: <RefreshCw size={26} color="#00C2A8" /> },
-              { title: 'Cost Optimization', desc: 'Direct mill pricing with container space maximization to reduce landed costs.', icon: <Target size={26} color="#00C2A8" /> },
-              { title: 'Sustainable Innovation', desc: 'Pioneering eco-friendly rPET fabrics and 100% recyclable mono-material bulk bags.', icon: <Sprout size={26} color="#00C2A8" /> }
+              { title: 'Quality Assurance', desc: '100% inspection and compliance with international dangerous goods & food-grade packaging standards.', icon: <ShieldCheck size={26} color="#8DC63F" /> },
+              { title: 'Supply Chain Continuity', desc: 'Redundant multi-plant sourcing to guarantee uninterrupted delivery timelines.', icon: <RefreshCw size={26} color="#8DC63F" /> },
+              { title: 'Cost Optimization', desc: 'Direct mill pricing with container space maximization to reduce landed costs.', icon: <Target size={26} color="#8DC63F" /> },
+              { title: 'Sustainable Innovation', desc: 'Pioneering eco-friendly rPET fabrics and 100% recyclable mono-material bulk bags.', icon: <Sprout size={26} color="#8DC63F" /> }
             ].map((val, i) => (
               <div key={i} style={{
-                background: '#F8FAFC',
+                background: '#FBF1E6',
                 borderRadius: '20px',
                 padding: '36px 28px',
                 border: '1px solid #E2E8F0',
@@ -905,7 +905,7 @@ export default function HomePage() {
                   width: '56px',
                   height: '56px',
                   borderRadius: '16px',
-                  background: '#E8F7F5',
+                  background: '#F0F7E4',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -913,7 +913,7 @@ export default function HomePage() {
                 }}>
                   {val.icon}
                 </div>
-                <h3 style={{ fontSize: '19px', fontWeight: '800', color: '#072834', marginBottom: '10px' }}>
+                <h3 style={{ fontSize: '19px', fontWeight: '800', color: '#142E3D', marginBottom: '10px' }}>
                   {val.title}
                 </h3>
                 <p style={{ fontSize: '14px', color: '#64748B', lineHeight: '1.65' }}>
@@ -927,11 +927,11 @@ export default function HomePage() {
       </section>
 
       {/* 6. INDUSTRIES WE SERVE */}
-      <section style={{ padding: 'clamp(56px, 7vw, 80px) 0', background: '#F8FAFC', borderTop: '1px solid #E2E8F0' }}>
+      <section style={{ padding: 'clamp(56px, 7vw, 80px) 0', background: '#FBF1E6', borderTop: '1px solid #E2E8F0' }}>
         <div className="container">
           
           <div style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto 44px auto' }}>
-            <h2 style={{ fontSize: 'clamp(28px, 3.5vw, 38px)', fontWeight: '800', color: '#072834', marginBottom: '10px' }}>
+            <h2 style={{ fontSize: 'clamp(28px, 3.5vw, 38px)', fontWeight: '800', color: '#142E3D', marginBottom: '10px' }}>
               Industries We Serve
             </h2>
             <p style={{ color: '#64748B', fontSize: '15px' }}>
@@ -945,10 +945,10 @@ export default function HomePage() {
             gap: '24px'
           }}>
             {[
-              { title: 'Chemicals & Resins', icon: <Factory size={24} color="#00C2A8" /> },
-              { title: 'Agriculture & Grain', icon: <Sprout size={24} color="#00C2A8" /> },
-              { title: 'Construction Materials', icon: <Building2 size={24} color="#00C2A8" /> },
-              { title: 'Food & Pharma', icon: <Package size={24} color="#00C2A8" /> },
+              { title: 'Chemicals & Resins', icon: <Factory size={24} color="#8DC63F" /> },
+              { title: 'Agriculture & Grain', icon: <Sprout size={24} color="#8DC63F" /> },
+              { title: 'Construction Materials', icon: <Building2 size={24} color="#8DC63F" /> },
+              { title: 'Food & Pharma', icon: <Package size={24} color="#8DC63F" /> },
             ].map((ind, i) => (
               <div key={i} style={{
                 background: '#FFFFFF',
@@ -965,7 +965,7 @@ export default function HomePage() {
                   width: '46px',
                   height: '46px',
                   borderRadius: '12px',
-                  background: '#E8F7F5',
+                  background: '#F0F7E4',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -973,7 +973,7 @@ export default function HomePage() {
                 }}>
                   {ind.icon}
                 </div>
-                <span style={{ fontSize: '16px', fontWeight: '800', color: '#072834' }}>
+                <span style={{ fontSize: '16px', fontWeight: '800', color: '#142E3D' }}>
                   {ind.title}
                 </span>
               </div>
@@ -987,10 +987,10 @@ export default function HomePage() {
       <section style={{ padding: 'clamp(64px, 8vw, 96px) 0', background: '#FFFFFF', borderTop: '1px solid #E2E8F0' }}>
         <div className="container">
           <div style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto 52px auto' }}>
-            <span style={{ color: '#00C2A8', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1.2px' }}>
+            <span style={{ color: '#8DC63F', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1.2px' }}>
               Trusted Globally
             </span>
-            <h2 style={{ fontSize: 'clamp(30px, 3.8vw, 42px)', fontWeight: '800', color: '#072834', marginTop: '8px', marginBottom: '12px' }}>
+            <h2 style={{ fontSize: 'clamp(30px, 3.8vw, 42px)', fontWeight: '800', color: '#142E3D', marginTop: '8px', marginBottom: '12px' }}>
               What Procurement Leaders Say
             </h2>
             <p style={{ color: '#64748B', fontSize: '16px' }}>
@@ -1024,7 +1024,7 @@ export default function HomePage() {
               }
             ].map((t, idx) => (
               <div key={idx} style={{
-                background: '#F8FAFC',
+                background: '#FBF1E6',
                 borderRadius: '20px',
                 padding: '36px 32px',
                 border: '1px solid #E2E8F0',
@@ -1037,10 +1037,10 @@ export default function HomePage() {
                   "{t.quote}"
                 </p>
                 <div>
-                  <h4 style={{ fontSize: '17px', fontWeight: '800', color: '#072834', margin: 0 }}>
+                  <h4 style={{ fontSize: '17px', fontWeight: '800', color: '#142E3D', margin: 0 }}>
                     {t.author}
                   </h4>
-                  <p style={{ fontSize: '13px', color: '#00C2A8', fontWeight: '700', margin: '4px 0 0 0' }}>
+                  <p style={{ fontSize: '13px', color: '#8DC63F', fontWeight: '700', margin: '4px 0 0 0' }}>
                     {t.role} - <span style={{ color: '#64748B' }}>{t.company}</span>
                   </p>
                 </div>
@@ -1051,10 +1051,10 @@ export default function HomePage() {
       </section>
 
       {/* 8. INTERACTIVE FAQ ACCORDION */}
-      <section style={{ padding: 'clamp(64px, 8vw, 96px) 0', background: '#F8FAFC', borderTop: '1px solid #E2E8F0' }}>
+      <section style={{ padding: 'clamp(64px, 8vw, 96px) 0', background: '#FBF1E6', borderTop: '1px solid #E2E8F0' }}>
         <div className="container" style={{ maxWidth: '860px' }}>
           <div style={{ textAlign: 'center', marginBottom: '48px' }}>
-            <h2 style={{ fontSize: 'clamp(30px, 3.8vw, 42px)', fontWeight: '800', color: '#072834', marginBottom: '12px' }}>
+            <h2 style={{ fontSize: 'clamp(30px, 3.8vw, 42px)', fontWeight: '800', color: '#142E3D', marginBottom: '12px' }}>
               Frequently Asked Questions
             </h2>
             <p style={{ color: '#64748B', fontSize: '16px' }}>
@@ -1088,13 +1088,13 @@ export default function HomePage() {
                     cursor: 'pointer',
                     fontSize: '17px',
                     fontWeight: '800',
-                    color: '#072834'
+                    color: '#142E3D'
                   }}
                 >
                   <span>{faq.q}</span>
                   <ChevronDown 
                     size={20} 
-                    color="#00C2A8" 
+                    color="#8DC63F" 
                     style={{ 
                       transform: openFaq === idx ? 'rotate(180deg)' : 'none', 
                       transition: 'transform 0.25s ease',
@@ -1117,7 +1117,7 @@ export default function HomePage() {
 
       {/* 9. RFQ CTA BANNER */}
       <section style={{ 
-        background: 'linear-gradient(135deg, #072834 0%, #0D3B43 100%)',
+        background: 'linear-gradient(135deg, #142E3D 0%, #0D3B43 100%)',
         color: '#FFFFFF',
         padding: '80px 0',
         textAlign: 'center',
@@ -1135,8 +1135,8 @@ export default function HomePage() {
             <button
               onClick={() => handleOpenQuote()}
               style={{
-                background: '#00C2A8',
-                color: '#072834',
+                background: '#8DC63F',
+                color: '#142E3D',
                 padding: '16px 36px',
                 borderRadius: '50px',
                 fontWeight: '800',
@@ -1220,7 +1220,7 @@ export default function HomePage() {
             {!quoteSubmitted ? (
               <>
                 <div style={{ marginBottom: '24px' }}>
-                  <h3 style={{ fontSize: '24px', fontWeight: '800', color: '#072834', marginBottom: '8px' }}>
+                  <h3 style={{ fontSize: '24px', fontWeight: '800', color: '#142E3D', marginBottom: '8px' }}>
                     Request B2B Quote
                   </h3>
                   <p style={{ fontSize: '13px', color: '#64748B' }}>
@@ -1235,7 +1235,7 @@ export default function HomePage() {
                   setQuoteSubmitted(true);
                 }} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                   <div>
-                    <label style={{ display: 'block', fontSize: '12px', fontWeight: '700', color: '#072834', marginBottom: '6px' }}>
+                    <label style={{ display: 'block', fontSize: '12px', fontWeight: '700', color: '#142E3D', marginBottom: '6px' }}>
                       Full Name *
                     </label>
                     <input 
@@ -1255,7 +1255,7 @@ export default function HomePage() {
 
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
                     <div>
-                      <label style={{ display: 'block', fontSize: '12px', fontWeight: '700', color: '#072834', marginBottom: '6px' }}>
+                      <label style={{ display: 'block', fontSize: '12px', fontWeight: '700', color: '#142E3D', marginBottom: '6px' }}>
                         Business Email *
                       </label>
                       <input 
@@ -1273,7 +1273,7 @@ export default function HomePage() {
                       />
                     </div>
                     <div>
-                      <label style={{ display: 'block', fontSize: '12px', fontWeight: '700', color: '#072834', marginBottom: '6px' }}>
+                      <label style={{ display: 'block', fontSize: '12px', fontWeight: '700', color: '#142E3D', marginBottom: '6px' }}>
                         Phone Number
                       </label>
                       <input 
@@ -1292,7 +1292,7 @@ export default function HomePage() {
                   </div>
 
                   <div>
-                    <label style={{ display: 'block', fontSize: '12px', fontWeight: '700', color: '#072834', marginBottom: '6px' }}>
+                    <label style={{ display: 'block', fontSize: '12px', fontWeight: '700', color: '#142E3D', marginBottom: '6px' }}>
                       Packaging Requirements / Estimated Quantity
                     </label>
                     <textarea 
@@ -1313,7 +1313,7 @@ export default function HomePage() {
                   <button
                     type="submit"
                     style={{
-                      background: '#072834',
+                      background: '#142E3D',
                       color: '#FFFFFF',
                       padding: '14px',
                       borderRadius: '50px',
@@ -1335,15 +1335,15 @@ export default function HomePage() {
                   width: '64px',
                   height: '64px',
                   borderRadius: '50%',
-                  background: '#E8F7F5',
+                  background: '#F0F7E4',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   margin: '0 auto 20px auto'
                 }}>
-                  <CheckCircle2 size={36} color="#00C2A8" />
+                  <CheckCircle2 size={36} color="#8DC63F" />
                 </div>
-                <h3 style={{ fontSize: '22px', fontWeight: '800', color: '#072834', marginBottom: '8px' }}>
+                <h3 style={{ fontSize: '22px', fontWeight: '800', color: '#142E3D', marginBottom: '8px' }}>
                   Quote Request Received!
                 </h3>
                 <p style={{ fontSize: '14px', color: '#64748B', marginBottom: '24px' }}>
@@ -1352,8 +1352,8 @@ export default function HomePage() {
                 <button
                   onClick={() => setInquiryModalOpen(false)}
                   style={{
-                    background: '#00C2A8',
-                    color: '#072834',
+                    background: '#8DC63F',
+                    color: '#142E3D',
                     padding: '12px 28px',
                     borderRadius: '50px',
                     fontWeight: '700',

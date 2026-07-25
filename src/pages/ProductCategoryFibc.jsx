@@ -60,8 +60,8 @@ export default function ProductCategoryFibc() {
           border: '1px solid #E2E8F0',
           marginBottom: '32px'
         }}>
-          <h1 className="entry-title" style={{ fontSize: '32px', fontWeight: '800', color: '#072834', marginBottom: '12px' }}>
-            Product Category: <span style={{ color: '#00C2A8' }}>FIBC Jumbo Bags</span>
+          <h1 className="entry-title" style={{ fontSize: '32px', fontWeight: '800', color: '#142E3D', marginBottom: '12px' }}>
+            Product Category: <span style={{ color: '#8DC63F' }}>FIBC Jumbo Bags</span>
           </h1>
           <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.7', marginBottom: '12px' }}>
             Flexible Intermediate Bulk Containers — FIBCs, bulk bags, jumbo bags, or super sacks are the most efficient way to move dry flowable products at scale. One bulk bag replaces 20 to 25 small bags, cuts labour time at every handling point, and reduces packaging cost per tonne by up to 60 percent compared to smaller formats.
@@ -84,7 +84,7 @@ export default function ProductCategoryFibc() {
           gap: '12px',
           flexWrap: 'wrap'
         }}>
-          <span style={{ color: '#072834', fontSize: '13px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.5px', marginRight: '6px' }}>
+          <span style={{ color: '#142E3D', fontSize: '13px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.5px', marginRight: '6px' }}>
             Specifications:
           </span>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
@@ -96,7 +96,7 @@ export default function ProductCategoryFibc() {
                   display: 'inline-flex',
                   alignItems: 'center',
                   background: '#F1F5F9',
-                  color: '#072834',
+                  color: '#142E3D',
                   border: '1px solid #CBD5E1',
                   padding: '8px 20px',
                   borderRadius: '50px',
@@ -133,7 +133,7 @@ export default function ProductCategoryFibc() {
                 justifyContent: 'space-between'
               }}
             >
-              <div style={{ height: '220px', background: '#F8FAFC', padding: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <div style={{ height: '220px', background: '#FBF1E6', padding: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <img
                   src={product.image}
                   alt={product.title}
@@ -143,7 +143,7 @@ export default function ProductCategoryFibc() {
 
               <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', flexGrow: 1, justifyContent: 'space-between' }}>
                 <div>
-                  <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#072834', marginBottom: '8px' }}>
+                  <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#142E3D', marginBottom: '8px' }}>
                     {product.title}
                   </h3>
                   <p style={{ fontSize: '13px', color: '#64748B', lineHeight: '1.6', marginBottom: '16px' }}>
@@ -154,7 +154,7 @@ export default function ProductCategoryFibc() {
                 <Link
                   to={product.link}
                   style={{
-                    color: '#00C2A8',
+                    color: '#8DC63F',
                     fontWeight: '800',
                     fontSize: '14px',
                     display: 'inline-flex',

@@ -12,9 +12,9 @@ export default function ProductBaffleBags() {
   return (
     <Layout>
       {/* Banner */}
-      <section style={{ background: '#072834', color: '#FFFFFF', padding: '40px 0' }}>
+      <section style={{ background: '#142E3D', color: '#FFFFFF', padding: '40px 0' }}>
         <div className="container">
-          <Link to="/products" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: '#00C2A8', fontSize: '13px', fontWeight: '600', marginBottom: '12px' }}>
+          <Link to="/products" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: '#8DC63F', fontSize: '13px', fontWeight: '600', marginBottom: '12px' }}>
             <ChevronLeft size={16} /> Back to Products
           </Link>
           <h1 style={{ fontSize: '32px', color: '#FFFFFF', fontWeight: '800', fontFamily: 'var(--font-heading)' }}>
@@ -27,7 +27,7 @@ export default function ProductBaffleBags() {
       </section>
 
       {/* Details */}
-      <section style={{ padding: '56px 0', background: '#F8FAFC' }}>
+      <section style={{ padding: '56px 0', background: '#FBF1E6' }}>
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '40px', alignItems: 'start' }}>
             {/* Image */}
@@ -37,10 +37,10 @@ export default function ProductBaffleBags() {
 
             {/* Content Info */}
             <div className="card-clean" style={{ padding: '36px' }}>
-              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: '#E8F7F5', color: '#00C2A8', padding: '6px 14px', borderRadius: '50px', fontSize: '12px', fontWeight: '700', marginBottom: '16px' }}>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: '#F0F7E4', color: '#8DC63F', padding: '6px 14px', borderRadius: '50px', fontSize: '12px', fontWeight: '700', marginBottom: '16px' }}>
                 <ShieldCheck size={14} /> Certified FIBC Specification
               </div>
-              <h2 style={{ fontSize: '26px', color: '#072834', marginBottom: '16px' }}>Form-Stable Baffle Jumbo Bags</h2>
+              <h2 style={{ fontSize: '26px', color: '#142E3D', marginBottom: '16px' }}>Form-Stable Baffle Jumbo Bags</h2>
               <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.7', marginBottom: '16px' }}>
                 We offer premium-quality Baffle Bags that are specially engineered to maintain a square shape even after filling. With internal baffle panels, these bags optimize storage space, improve stacking efficiency, and reduce transportation costs.
               </p>

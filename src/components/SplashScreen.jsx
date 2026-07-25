@@ -28,7 +28,7 @@ export default function SplashScreen({ onFinish }) {
         left: 0,
         width: '100vw',
         height: '100vh',
-        background: 'radial-gradient(circle at center, #0F3A4A 0%, #072834 70%, #041820 100%)',
+        background: 'radial-gradient(circle at center, #0F3A4A 0%, #142E3D 70%, #041820 100%)',
         zIndex: 99999,
         display: 'flex',
         flexDirection: 'column',
@@ -98,7 +98,7 @@ export default function SplashScreen({ onFinish }) {
           style={{
             width: '120px',
             height: '3px',
-            background: 'linear-gradient(90deg, transparent, #00C2A8, transparent)',
+            background: 'linear-gradient(90deg, transparent, #8DC63F, transparent)',
             borderRadius: '2px',
             marginBottom: '24px'
           }}
@@ -120,7 +120,7 @@ export default function SplashScreen({ onFinish }) {
 
         <p
           style={{
-            color: '#00C2A8',
+            color: '#8DC63F',
             fontSize: '14px',
             fontWeight: '700',
             letterSpacing: '3px',

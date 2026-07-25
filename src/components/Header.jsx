@@ -63,7 +63,7 @@ export default function Header() {
       position: 'sticky',
       top: 0,
       zIndex: 1000,
-      background: '#072834',
+      background: '#142E3D',
       color: '#FFFFFF',
       borderBottom: '1px solid rgba(255, 255, 255, 0.08)'
     }}>
@@ -81,8 +81,8 @@ export default function Header() {
           
           {/* Live Regional Desks & Local Times */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#00C2A8', fontWeight: '700' }}>
-              <Clock size={13} color="#00C2A8" />
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#8DC63F', fontWeight: '700' }}>
+              <Clock size={13} color="#8DC63F" />
               <span>{t('liveDesks')}</span>
             </div>
 
@@ -115,10 +115,10 @@ export default function Header() {
           {/* Direct Support Contact */}
           <div className="desktop-only" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
             <a href="tel:+919876543210" style={{ display: 'flex', alignItems: 'center', gap: '5px', color: '#CBD5E1' }}>
-              <Phone size={12} color="#00C2A8" /> +91 98765 43210
+              <Phone size={12} color="#8DC63F" /> +91 98765 43210
             </a>
             <a href="mailto:info@bulkflex.com" style={{ display: 'flex', alignItems: 'center', gap: '5px', color: '#CBD5E1' }}>
-              <Mail size={12} color="#00C2A8" /> info@bulkflex.com
+              <Mail size={12} color="#8DC63F" /> info@bulkflex.com
             </a>
           </div>
 
@@ -130,13 +130,13 @@ export default function Header() {
         {/* Logo Left */}
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '8px' }} aria-label="BulkFlex Home">
           <span style={{ fontSize: 'clamp(20px, 3.5vw, 24px)', fontWeight: '800', letterSpacing: '-0.5px', color: '#FFFFFF', fontFamily: 'var(--font-heading)' }}>
-            BULK <span style={{ color: '#00C2A8' }}>FLEX</span>
+            BULK <span style={{ color: '#8DC63F' }}>FLEX</span>
           </span>
         </Link>
 
         {/* Centered Navigation Links (Desktop 1025px+) */}
         <nav className="desktop-only" style={{ display: 'flex', gap: '28px', alignItems: 'center', fontWeight: '600', fontSize: '14px' }}>
-          <Link to="/" style={{ color: location.pathname === '/' ? '#00C2A8' : '#FFFFFF', padding: '8px 0', transition: 'color 0.2s' }}>
+          <Link to="/" style={{ color: location.pathname === '/' ? '#8DC63F' : '#FFFFFF', padding: '8px 0', transition: 'color 0.2s' }}>
             {t('home')}
           </Link>
 
@@ -147,7 +147,7 @@ export default function Header() {
             onMouseLeave={() => setProductDropdownOpen(false)}
           >
             <Link to="/products" style={{
-              color: location.pathname.startsWith('/product') ? '#00C2A8' : '#FFFFFF',
+              color: location.pathname.startsWith('/product') ? '#8DC63F' : '#FFFFFF',
               display: 'flex',
               alignItems: 'center',
               gap: '5px',
@@ -181,16 +181,16 @@ export default function Header() {
                       borderRadius: '8px',
                       fontSize: '13px',
                       fontWeight: '600',
-                      color: '#072834',
+                      color: '#142E3D',
                       transition: 'all 0.2s'
                     }}
                     onMouseEnter={(e) => {
-                      e.currentTarget.style.background = '#E8F7F5';
-                      e.currentTarget.style.color = '#00C2A8';
+                      e.currentTarget.style.background = '#F0F7E4';
+                      e.currentTarget.style.color = '#8DC63F';
                     }}
                     onMouseLeave={(e) => {
                       e.currentTarget.style.background = 'transparent';
-                      e.currentTarget.style.color = '#072834';
+                      e.currentTarget.style.color = '#142E3D';
                     }}
                   >
                     {cat.name}
@@ -200,19 +200,19 @@ export default function Header() {
             )}
           </div>
 
-          <Link to="/rpet-fibc" style={{ color: location.pathname === '/rpet-fibc' ? '#00C2A8' : '#FFFFFF', padding: '8px 0', transition: 'color 0.2s' }}>
+          <Link to="/rpet-fibc" style={{ color: location.pathname === '/rpet-fibc' ? '#8DC63F' : '#FFFFFF', padding: '8px 0', transition: 'color 0.2s' }}>
             {t('rpetFibc')}
           </Link>
-          <Link to="/north-america-paper-bag-2" style={{ color: location.pathname === '/north-america-paper-bag-2' ? '#00C2A8' : '#FFFFFF', padding: '8px 0', transition: 'color 0.2s' }}>
+          <Link to="/north-america-paper-bag-2" style={{ color: location.pathname === '/north-america-paper-bag-2' ? '#8DC63F' : '#FFFFFF', padding: '8px 0', transition: 'color 0.2s' }}>
             {t('paperBag')}
           </Link>
-          <Link to="/buyer-tools" style={{ color: location.pathname === '/buyer-tools' ? '#00C2A8' : '#FFFFFF', padding: '8px 0', transition: 'color 0.2s' }}>
+          <Link to="/buyer-tools" style={{ color: location.pathname === '/buyer-tools' ? '#8DC63F' : '#FFFFFF', padding: '8px 0', transition: 'color 0.2s' }}>
             {t('buyerCorner')}
           </Link>
-          <Link to="/about-us" style={{ color: location.pathname === '/about-us' ? '#00C2A8' : '#FFFFFF', padding: '8px 0', transition: 'color 0.2s' }}>
+          <Link to="/about-us" style={{ color: location.pathname === '/about-us' ? '#8DC63F' : '#FFFFFF', padding: '8px 0', transition: 'color 0.2s' }}>
             {t('aboutUs')}
           </Link>
-          <Link to="/contact-us-2" style={{ color: location.pathname === '/contact-us-2' ? '#00C2A8' : '#FFFFFF', padding: '8px 0', transition: 'color 0.2s' }}>
+          <Link to="/contact-us-2" style={{ color: location.pathname === '/contact-us-2' ? '#8DC63F' : '#FFFFFF', padding: '8px 0', transition: 'color 0.2s' }}>
             {t('contactUs')}
           </Link>
         </nav>
@@ -227,8 +227,8 @@ export default function Header() {
             rel="noopener noreferrer"
             className="desktop-only"
             style={{
-              background: '#00C2A8',
-              color: '#072834',
+              background: '#8DC63F',
+              color: '#142E3D',
               padding: '8px 18px',
               borderRadius: '50px',
               fontWeight: '800',
@@ -295,8 +295,8 @@ export default function Header() {
                       borderRadius: '6px',
                       fontSize: '13px',
                       fontWeight: '600',
-                      color: language === lang.code ? '#00C2A8' : '#072834',
-                      background: language === lang.code ? '#E8F7F5' : 'transparent',
+                      color: language === lang.code ? '#8DC63F' : '#142E3D',
+                      background: language === lang.code ? '#F0F7E4' : 'transparent',
                       cursor: 'pointer',
                       display: 'flex',
                       alignItems: 'center',
@@ -362,7 +362,7 @@ export default function Header() {
           right: 0,
           width: 'min(82vw, 360px)',
           height: '100vh',
-          background: '#072834',
+          background: '#142E3D',
           color: '#FFFFFF',
           zIndex: 1300,
           boxShadow: '-10px 0 30px rgba(0,0,0,0.5)',
@@ -379,7 +379,7 @@ export default function Header() {
           {/* Top Panel Header: Logo & Close Button */}
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingBottom: '20px', borderBottom: '1px solid rgba(255, 255, 255, 0.12)' }}>
             <span style={{ fontSize: '20px', fontWeight: '800', color: '#FFFFFF', fontFamily: 'var(--font-heading)' }}>
-              BULK <span style={{ color: '#00C2A8' }}>FLEX</span>
+              BULK <span style={{ color: '#8DC63F' }}>FLEX</span>
             </span>
             <button
               onClick={() => setSidebarOpen(false)}
@@ -407,7 +407,7 @@ export default function Header() {
               to="/" 
               onClick={() => setSidebarOpen(false)}
               style={{
-                color: location.pathname === '/' ? '#00C2A8' : '#FFFFFF',
+                color: location.pathname === '/' ? '#8DC63F' : '#FFFFFF',
                 fontSize: '16px',
                 fontWeight: '700',
                 padding: '12px 14px',
@@ -424,7 +424,7 @@ export default function Header() {
               <div
                 onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
                 style={{
-                  color: location.pathname.startsWith('/product') ? '#00C2A8' : '#FFFFFF',
+                  color: location.pathname.startsWith('/product') ? '#8DC63F' : '#FFFFFF',
                   fontSize: '16px',
                   fontWeight: '700',
                   padding: '12px 14px',
@@ -444,7 +444,7 @@ export default function Header() {
                   <Link 
                     to="/products"
                     onClick={() => setSidebarOpen(false)}
-                    style={{ color: '#00C2A8', fontSize: '13.5px', fontWeight: '700', padding: '8px 12px', borderRadius: '6px', background: 'rgba(0,194,168,0.08)' }}
+                    style={{ color: '#8DC63F', fontSize: '13.5px', fontWeight: '700', padding: '8px 12px', borderRadius: '6px', background: 'rgba(0,194,168,0.08)' }}
                   >
                     View All Categories →
                   </Link>
@@ -466,7 +466,7 @@ export default function Header() {
               to="/rpet-fibc" 
               onClick={() => setSidebarOpen(false)}
               style={{
-                color: location.pathname === '/rpet-fibc' ? '#00C2A8' : '#FFFFFF',
+                color: location.pathname === '/rpet-fibc' ? '#8DC63F' : '#FFFFFF',
                 fontSize: '16px',
                 fontWeight: '700',
                 padding: '12px 14px',
@@ -481,7 +481,7 @@ export default function Header() {
               to="/north-america-paper-bag-2" 
               onClick={() => setSidebarOpen(false)}
               style={{
-                color: location.pathname === '/north-america-paper-bag-2' ? '#00C2A8' : '#FFFFFF',
+                color: location.pathname === '/north-america-paper-bag-2' ? '#8DC63F' : '#FFFFFF',
                 fontSize: '16px',
                 fontWeight: '700',
                 padding: '12px 14px',
@@ -496,7 +496,7 @@ export default function Header() {
               to="/buyer-tools" 
               onClick={() => setSidebarOpen(false)}
               style={{
-                color: location.pathname === '/buyer-tools' ? '#00C2A8' : '#FFFFFF',
+                color: location.pathname === '/buyer-tools' ? '#8DC63F' : '#FFFFFF',
                 fontSize: '16px',
                 fontWeight: '700',
                 padding: '12px 14px',
@@ -511,7 +511,7 @@ export default function Header() {
               to="/about-us" 
               onClick={() => setSidebarOpen(false)}
               style={{
-                color: location.pathname === '/about-us' ? '#00C2A8' : '#FFFFFF',
+                color: location.pathname === '/about-us' ? '#8DC63F' : '#FFFFFF',
                 fontSize: '16px',
                 fontWeight: '700',
                 padding: '12px 14px',
@@ -526,7 +526,7 @@ export default function Header() {
               to="/contact-us-2" 
               onClick={() => setSidebarOpen(false)}
               style={{
-                color: location.pathname === '/contact-us-2' ? '#00C2A8' : '#FFFFFF',
+                color: location.pathname === '/contact-us-2' ? '#8DC63F' : '#FFFFFF',
                 fontSize: '16px',
                 fontWeight: '700',
                 padding: '12px 14px',
@@ -546,8 +546,8 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
             style={{
-              background: '#00C2A8',
-              color: '#072834',
+              background: '#8DC63F',
+              color: '#142E3D',
               padding: '12px',
               borderRadius: '50px',
               fontWeight: '800',

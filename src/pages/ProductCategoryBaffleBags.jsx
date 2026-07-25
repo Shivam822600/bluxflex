@@ -20,8 +20,8 @@ export default function ProductCategoryBaffleBags() {
           border: '1px solid #E2E8F0',
           marginBottom: '32px'
         }}>
-          <h1 className="entry-title" style={{ fontSize: '32px', fontWeight: '800', color: '#072834', marginBottom: '12px' }}>
-            Product Category: <span style={{ color: '#00C2A8' }}>Baffle Bags</span>
+          <h1 className="entry-title" style={{ fontSize: '32px', fontWeight: '800', color: '#142E3D', marginBottom: '12px' }}>
+            Product Category: <span style={{ color: '#8DC63F' }}>Baffle Bags</span>
           </h1>
           <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.7' }}>
             Form-stable FIBC bulk containers featuring internal baffle panels engineered to maintain a square shape post-filling.
@@ -30,15 +30,15 @@ export default function ProductCategoryBaffleBags() {
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '28px' }}>
           <div className="product-card-premium" style={{ background: '#FFFFFF', borderRadius: '20px', border: '1px solid #EEF2F6', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.05)' }}>
-            <div style={{ height: '240px', background: '#F8FAFC', padding: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ height: '240px', background: '#FBF1E6', padding: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <img src={asset_Diaper_Bag_jpg_6} alt="Baffle Bags" style={{ maxHeight: '200px', maxWidth: '100%', objectFit: 'contain' }} />
             </div>
             <div style={{ padding: '24px' }}>
-              <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#072834', marginBottom: '8px' }}>Baffle Bags</h3>
+              <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#142E3D', marginBottom: '8px' }}>Baffle Bags</h3>
               <p style={{ fontSize: '13px', color: '#64748B', lineHeight: '1.6', marginBottom: '16px' }}>
                 Internal baffle panels maintain a square shape, optimizing warehouse storage and shipping container space by up to 25%.
               </p>
-              <Link to="/product/baffle-bags" style={{ color: '#00C2A8', fontWeight: '800', fontSize: '14px', display: 'inline-flex', alignItems: 'center', gap: '4px', textDecoration: 'none' }}>
+              <Link to="/product/baffle-bags" style={{ color: '#8DC63F', fontWeight: '800', fontSize: '14px', display: 'inline-flex', alignItems: 'center', gap: '4px', textDecoration: 'none' }}>
                 Read More <ChevronRight size={16} />
               </Link>
             </div>

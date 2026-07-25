@@ -65,8 +65,8 @@ export default function ProductCategoryLenoBagsFebric() {
           border: '1px solid #E2E8F0',
           marginBottom: '32px'
         }}>
-          <h1 className="entry-title" style={{ fontSize: '32px', fontWeight: '800', color: '#072834', marginBottom: '12px' }}>
-            Product Category: <span style={{ color: '#00C2A8' }}>Leno Bags & Fabrics</span>
+          <h1 className="entry-title" style={{ fontSize: '32px', fontWeight: '800', color: '#142E3D', marginBottom: '12px' }}>
+            Product Category: <span style={{ color: '#8DC63F' }}>Leno Bags & Fabrics</span>
           </h1>
           <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.7', marginBottom: '12px' }}>
             Some products cannot go into a sealed bag. Onions, potatoes, garlic, shellfish, and firewood require continuous airflow to stay fresh. Trap heat and moisture inside a closed container and rot begins within days.
@@ -97,7 +97,7 @@ export default function ProductCategoryLenoBagsFebric() {
                 justifyContent: 'space-between'
               }}
             >
-              <div style={{ height: '220px', background: '#F8FAFC', padding: '16px' }}>
+              <div style={{ height: '220px', background: '#FBF1E6', padding: '16px' }}>
                 <img
                   src={product.image}
                   alt={product.title}
@@ -107,7 +107,7 @@ export default function ProductCategoryLenoBagsFebric() {
 
               <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', flexGrow: 1, justifyContent: 'space-between' }}>
                 <div>
-                  <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#072834', marginBottom: '8px' }}>
+                  <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#142E3D', marginBottom: '8px' }}>
                     {product.title}
                   </h3>
                   <p style={{ fontSize: '13px', color: '#64748B', lineHeight: '1.6', marginBottom: '16px' }}>
@@ -118,7 +118,7 @@ export default function ProductCategoryLenoBagsFebric() {
                 <Link
                   to={product.link}
                   style={{
-                    color: '#00C2A8',
+                    color: '#8DC63F',
                     fontWeight: '800',
                     fontSize: '14px',
                     display: 'inline-flex',

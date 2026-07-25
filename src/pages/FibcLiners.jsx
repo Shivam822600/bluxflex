@@ -36,7 +36,7 @@ export default function FibcLiners() {
           border: '1px solid #E2E8F0'
         }}>
           <div>
-            <h1 style={{ fontSize: '26px', fontWeight: '800', color: '#072834', margin: 0 }}>
+            <h1 style={{ fontSize: '26px', fontWeight: '800', color: '#142E3D', margin: 0 }}>
               FIBC : Liners
             </h1>
             <p style={{ color: '#64748B', fontSize: '14px', margin: '4px 0 0 0' }}>
@@ -49,7 +49,7 @@ export default function FibcLiners() {
               display: 'inline-flex',
               alignItems: 'center',
               gap: '6px',
-              background: '#072834',
+              background: '#142E3D',
               color: '#FFFFFF',
               padding: '8px 20px',
               borderRadius: '50px',
@@ -100,7 +100,7 @@ export default function FibcLiners() {
                   style={{ maxHeight: '120px', maxWidth: '100%', objectFit: 'contain' }}
                 />
               </div>
-              <h6 style={{ fontSize: '16px', fontWeight: '800', color: '#072834', marginTop: '14px', margin: 0 }}>
+              <h6 style={{ fontSize: '16px', fontWeight: '800', color: '#142E3D', marginTop: '14px', margin: 0 }}>
                 {item.title}
               </h6>
             </div>

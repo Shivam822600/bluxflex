@@ -11,7 +11,7 @@ export default function Footer() {
   };
 
   return (
-    <footer style={{ background: '#072834', color: '#FFFFFF', padding: 'clamp(40px, 6vw, 72px) 0 28px 0', borderTop: '1px solid rgba(255, 255, 255, 0.12)' }}>
+    <footer style={{ background: '#142E3D', color: '#FFFFFF', padding: 'clamp(40px, 6vw, 72px) 0 28px 0', borderTop: '1px solid rgba(255, 255, 255, 0.12)' }}>
       <div className="container">
         <div
           className="footer-grid-container"
@@ -27,7 +27,7 @@ export default function Footer() {
           {/* Column 1: Brand Info */}
           <div>
             <div style={{ fontSize: '24px', fontWeight: '800', marginBottom: '16px', fontFamily: 'var(--font-heading)' }}>
-              BULK <span style={{ color: '#00C2A8' }}>FLEX</span>
+              BULK <span style={{ color: '#8DC63F' }}>FLEX</span>
             </div>
             <p style={{ color: '#94A3B8', fontSize: '13px', lineHeight: '1.6', marginBottom: '20px', maxWidth: '280px' }}>
               Your reliable partner for flexible packaging and logistics solutions. Building relationships and delivering value every container.
@@ -80,7 +80,7 @@ export default function Footer() {
 
           {/* Column 2: Navigation */}
           <div>
-            <h4 style={{ fontSize: '15px', fontWeight: '700', color: '#00C2A8', marginBottom: '18px' }}>
+            <h4 style={{ fontSize: '15px', fontWeight: '700', color: '#8DC63F', marginBottom: '18px' }}>
               Navigation
             </h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '13.5px' }}>
@@ -95,7 +95,7 @@ export default function Footer() {
 
           {/* Column 3: Products */}
           <div>
-            <h4 style={{ fontSize: '15px', fontWeight: '700', color: '#00C2A8', marginBottom: '18px' }}>
+            <h4 style={{ fontSize: '15px', fontWeight: '700', color: '#8DC63F', marginBottom: '18px' }}>
               Categories
             </h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '13.5px' }}>
@@ -110,7 +110,7 @@ export default function Footer() {
 
           {/* Column 4: Sourcing Hubs */}
           <div>
-            <h4 style={{ fontSize: '15px', fontWeight: '700', color: '#00C2A8', marginBottom: '18px' }}>
+            <h4 style={{ fontSize: '15px', fontWeight: '700', color: '#8DC63F', marginBottom: '18px' }}>
               Global Hubs
             </h4>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '13px', color: '#CBD5E1' }}>
@@ -123,20 +123,20 @@ export default function Footer() {
 
           {/* Column 5: Contact Info */}
           <div>
-            <h4 style={{ fontSize: '15px', fontWeight: '700', color: '#00C2A8', marginBottom: '18px' }}>
+            <h4 style={{ fontSize: '15px', fontWeight: '700', color: '#8DC63F', marginBottom: '18px' }}>
               Contact HQ
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '13px', color: '#CBD5E1' }}>
               <div style={{ display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
-                <MapPin size={16} color="#00C2A8" style={{ marginTop: '2px', flexShrink: 0 }} />
+                <MapPin size={16} color="#8DC63F" style={{ marginTop: '2px', flexShrink: 0 }} />
                 <span>BulkFlex Private Limited, India</span>
               </div>
               <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-                <Phone size={16} color="#00C2A8" style={{ flexShrink: 0 }} />
+                <Phone size={16} color="#8DC63F" style={{ flexShrink: 0 }} />
                 <a href="tel:+919876543210" style={{ color: '#CBD5E1' }}>+91 98765 43210</a>
               </div>
               <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-                <Mail size={16} color="#00C2A8" style={{ flexShrink: 0 }} />
+                <Mail size={16} color="#8DC63F" style={{ flexShrink: 0 }} />
                 <a href="mailto:info@bulkflex.com" style={{ color: '#CBD5E1' }}>info@bulkflex.com</a>
               </div>
             </div>

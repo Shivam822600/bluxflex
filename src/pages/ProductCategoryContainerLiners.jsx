@@ -46,8 +46,8 @@ export default function ProductCategoryContainerLiners() {
           border: '1px solid #E2E8F0',
           marginBottom: '32px'
         }}>
-          <h1 className="entry-title" style={{ fontSize: '32px', fontWeight: '800', color: '#072834', marginBottom: '12px' }}>
-            Product Category: <span style={{ color: '#00C2A8' }}>Container Liners</span>
+          <h1 className="entry-title" style={{ fontSize: '32px', fontWeight: '800', color: '#142E3D', marginBottom: '12px' }}>
+            Product Category: <span style={{ color: '#8DC63F' }}>Container Liners</span>
           </h1>
           <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.7', marginBottom: '12px' }}>
             A standard shipping container is a steel box built for intermodal transport. Container liners transform a standard 20ft or 40ft container into a clean, sealed, product-specific bulk packaging unit.
@@ -70,7 +70,7 @@ export default function ProductCategoryContainerLiners() {
           gap: '12px',
           flexWrap: 'wrap'
         }}>
-          <span style={{ color: '#072834', fontSize: '13px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.5px', marginRight: '6px' }}>
+          <span style={{ color: '#142E3D', fontSize: '13px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '0.5px', marginRight: '6px' }}>
             Specifications:
           </span>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
@@ -82,7 +82,7 @@ export default function ProductCategoryContainerLiners() {
                   display: 'inline-flex',
                   alignItems: 'center',
                   background: '#F1F5F9',
-                  color: '#072834',
+                  color: '#142E3D',
                   border: '1px solid #CBD5E1',
                   padding: '8px 20px',
                   borderRadius: '50px',
@@ -119,7 +119,7 @@ export default function ProductCategoryContainerLiners() {
                 justifyContent: 'space-between'
               }}
             >
-              <div style={{ height: '240px', background: '#F8FAFC', padding: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <div style={{ height: '240px', background: '#FBF1E6', padding: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <img
                   src={product.image}
                   alt={product.title}
@@ -129,7 +129,7 @@ export default function ProductCategoryContainerLiners() {
 
               <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', flexGrow: 1, justifyContent: 'space-between' }}>
                 <div>
-                  <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#072834', marginBottom: '8px' }}>
+                  <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#142E3D', marginBottom: '8px' }}>
                     {product.title}
                   </h3>
                   <p style={{ fontSize: '13px', color: '#64748B', lineHeight: '1.6', marginBottom: '16px' }}>
@@ -140,7 +140,7 @@ export default function ProductCategoryContainerLiners() {
                 <Link
                   to={product.link}
                   style={{
-                    color: '#00C2A8',
+                    color: '#8DC63F',
                     fontWeight: '800',
                     fontSize: '14px',
                     display: 'inline-flex',
