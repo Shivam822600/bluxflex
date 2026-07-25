@@ -25,10 +25,10 @@ export default function ProductRpetFabrics() {
 			                 <div class="page-header">
                     <h1 class="entry-title">rPET Fabrics</h1>                </div>
     	                <div class="page-content">
-        <p><strong>Recycled from Plastic. Reimagined for Industry.</strong></p>
-<p>Our rPET Fabrics are high-quality textiles made from recycled polyethylene terephthalate primarily sourced from post-consumer plastic bottles and industrial plastic waste. By transforming discarded plastics into premium-grade fabric, rPET offers the same strength, durability, and performance as virgin polyester while dramatically reducing environmental impact.</p>
-<p>The production of rPET fabric uses significantly less energy and water compared to conventional polyester, and helps divert millions of plastic bottles from landfills and oceans every year. It is the material of choice for brands, manufacturers, and governments committed to sustainability, circular economy, and plastic reduction goals.</p>
-<p>Our rPET Fabrics are available in woven and knitted formats, can be laminated, coated, printed, or blended with other fibers, and meet leading international sustainability standards. Used across fashion, sportswear, industrial textiles, and geotextiles.</p>
+        <p><strong>rPET Fabrics</strong></p>
+<p>Our rPET Fabrics are textiles made from recycled polyethylene terephthalate, primarily sourced from post-consumer plastic bottles and industrial plastic waste. rPET offers strength, durability, and performance comparable to virgin polyester, with a lower environmental footprint.</p>
+<p>rPET fabric production typically uses less energy and water than conventional polyester, and uses recycled plastic material as its feedstock. It is used by brands, manufacturers, and governments working toward sustainability and plastic reduction goals.</p>
+<p>Our rPET Fabrics are available in woven and knitted formats, can be laminated, coated, printed, or blended with other fibers. Used across fashion, sportswear, industrial textiles, and geotextiles.</p>
 <p><strong>Ideal For:</strong> Eco-friendly bags and packaging, sportswear and activewear, outdoor gear, home textiles, upholstery, automotive interiors, industrial non-wovens, and sustainable retail branding.</p>
 <p><strong>Key Features:</strong></p>
 <p>Made from 100% post-consumer recycled plastic bottles and waste. Matches virgin polyester in strength, durability, and performance, with lower energy and water use in production compared to virgin polyester. Water-resistant, wrinkle-resistant, quick-drying, and colorfast. Available in woven, knitted, laminated, and coated formats. Certifiable under GRS (Global Recycled Standard) and OEKO-TEX. Suitable for brands targeting sustainability and eco-compliance markets</p>
