@@ -24,12 +24,10 @@ export default function ProductPpWovenSacksA() {
 			                 <div class="page-header">
                     <h1 class="entry-title">Bopp Sacks</h1>                </div>
     	                <div class="page-content">
-        <p><strong>Where Industrial Strength Meets Retail Ambition</strong></p>
-<p>Most packaging has to choose be strong or look good. The BOPP Sack refuses to make that trade-off, and that refusal is exactly why it has become the packaging of choice for premium agricultural and food products worldwide.</p>
-<p>BOPP stands for Biaxially Oriented Polypropylene a specialised film that is stretched in two directions during production, giving it exceptional clarity, stiffness, and printability. When this film is laminated onto a woven polypropylene sack, the result is a bag with a smooth, glossy surface that can hold photographic-quality graphics, bold full-colour branding, and fine product detail with a sharpness that standard printed sacks simply cannot match. Set one BOPP sack next to a standard printed sack on a retail shelf and the difference is immediate and undeniable.</p>
-<p>This matters enormously in markets where the consumer makes a purchase decision based on what they see on the shelf premium rice brands, branded flour, quality sugar, pet food, animal feeds, and specialty seeds all compete for attention at the point of sale. The BOPP sack gives brands the visual platform to win that competition. It also adds a moisture barrier, a scuff-resistant surface, and excellent protection against grease and oils making it as practical as it is attractive.</p>
-<p>BOPP sacks are compatible with automated high-speed filling lines and are available in a range of sizes from small retail units to large industrial formats. Multi-colour printing of up to ten colours is available, with matte and gloss lamination options. Block-bottom and pinch-bottom configurations give BOPP sacks excellent stand-up stability on retail shelves, reinforcing the premium presentation from every angle.</p>
-<p>For brands that take their packaging seriously, the BOPP sack is not an upgrade it is the standard they should be working to.</p>
+        <p><strong>BOPP Laminated Woven PP Sacks</strong></p>
+<p>BOPP (Biaxially Oriented Polypropylene) is a specialised film stretched in two directions during production, giving it clarity, stiffness, and printability. When laminated onto a woven polypropylene sack, it produces a smooth, glossy surface capable of full-colour graphics and fine print detail — a sharper finish than standard printed sacks.</p>
+<p>This is used by brands where shelf presentation matters — premium rice, branded flour, sugar, pet food, animal feed, and specialty seeds. The lamination also adds a moisture barrier, a scuff-resistant surface, and resistance to grease and oils.</p>
+<p>BOPP sacks are compatible with automated high-speed filling lines and available in sizes from small retail units to large industrial formats. Multi-colour printing (up to ten colours) is available, with matte and gloss lamination options. Block-bottom and pinch-bottom configurations improve stand-up stability on retail shelves.</p>
 
         
             </div>
