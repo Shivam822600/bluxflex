@@ -24,7 +24,7 @@ export default function ProductPaperBags() {
 			                 <div class="page-header">
                     <h1 class="entry-title">Paper Bags</h1>                </div>
     	                <div class="page-content">
-        <p>Paper is the most universally accepted sustainable retail packaging material. No consumer explanation required. No regulatory risk in markets where single-use plastic is levied or banned. And no other material delivers the same combination of premium brand presentation and environmental credibility at the price point paper achieves.</p>
+        <p>Paper is a widely accepted sustainable retail packaging material, requiring no consumer explanation and carrying no regulatory risk in markets where single-use plastic is levied or banned. It offers a combination of brand presentation and environmental credibility at a competitive price point.</p>
 <p>We supply paper bags in two base constructions — handle bags for boutique and retail carry, and self-opening bags for food service and grocery — across kraft and bleached paper in every size and print specification.</p>
 <p><strong>➤ Paper Handle Bags&nbsp;</strong></p>
 <p>Paper handle bags are produced in kraft (natural brown) or bleached (white) paper and supplied with either a twisted handle or a flat handle — the two construction choices that determine how the bag looks, how it carries, and what it communicates about the brand behind it.</p>

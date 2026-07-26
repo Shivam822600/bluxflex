@@ -25,7 +25,7 @@ export default function ProductBurlapFabricHessianFabric() {
                     <h1 class="entry-title">Burlap Fabric</h1>                </div>
     	                <div class="page-content">
         <p>Burlap — known as hessian in Europe and the UK — is the base plain-woven jute fabric from which most jute products are made. It is woven from spun jute yarns on plain looms in an open, breathable construction that is simultaneously strong enough for heavy industrial packaging and natural enough for premium retail and horticulture applications.</p>
-<p>Burlap fabric is supplied in rolls in a range of weights, widths, and weave densities to suit the full spectrum of end uses — from lightweight decorative and craft fabric to heavy-duty sacking and industrial lining material. The natural tan colour of undyed burlap has become a recognised visual signal of natural, sustainable, and artisan product positioning at retail — a commercial asset that synthetic alternatives cannot replicate.</p>
+<p>Burlap fabric is supplied in rolls in a range of weights, widths, and weave densities to suit the full spectrum of end uses — from lightweight decorative and craft fabric to heavy-duty sacking and industrial lining material. The natural tan colour of undyed burlap is commonly used as a visual signal of natural, sustainable, and artisan product positioning at retail.</p>
 <p><strong>Fabric Weight:</strong> 150 GSM – 400 GSM</p>
 <p><strong>Roll Width:</strong> Custom — standard widths and cut-toorder available</p>
 <p><strong>Colour: </strong>Natural tan — undyed</p>

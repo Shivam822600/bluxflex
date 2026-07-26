@@ -25,7 +25,7 @@ export default function ProductJuteWoodCarrierBag() {
                     <h1 class="entry-title">Jute Wood Carrier Bag</h1>                </div>
     	                <div class="page-content">
         <p><strong>Rustic Strength. Refined Purpose.</strong></p>
-<p>Our Jute Wood Carrier Bag is a heavy-duty, eco-friendly bag designed to carry firewood, logs, and timber with ease and natural elegance. Crafted from thick, tightly woven jute/burlap fabric, it delivers the rugged strength needed for rough and heavy materials while offering a warm, rustic aesthetic that appeals to modern eco-conscious consumers.</p>
+<p>Our Jute Wood Carrier Bag is a heavy-duty, eco-friendly bag designed to carry firewood, logs, and timber. Crafted from thick, tightly woven jute/burlap fabric, it's built for the weight and rough edges of wood, with a natural, rustic appearance.</p>
 <p>The sturdy construction withstands the sharp edges and weight of wood, making it a practical daily-use product for households, outdoor enthusiasts, and retailers. The open-weave fabric naturally allows dust and debris to fall through, keeping spaces clean during use. Reinforced handles ensure a safe, comfortable grip even when fully loaded.</p>
 <p>Fully biodegradable and reusable, the Jute Wood Carrier Bag is an ideal alternative to plastic or synthetic carriers popular with eco-lifestyle brands, home décor retailers, and camping product suppliers worldwide.</p>
 <p><strong>Ideal For:</strong> Firewood carrying, log storage, indoor fireplace use, outdoor and camping, home décor retail, eco-lifestyle product lines.</p>
