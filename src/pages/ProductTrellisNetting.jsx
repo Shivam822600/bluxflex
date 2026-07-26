@@ -26,7 +26,7 @@ export default function ProductTrellisNetting() {
     	                <div class="page-content">
         <p><strong>Grow Greener. Grow Smarter.</strong></p>
 <p>Our Jute Trellis Netting is a sustainable and plastic-free solution for farmers and gardeners who need strong, reliable plant support without leaving waste behind. Made from 100% biodegradable jute fiber, this netting provides sturdy vertical and horizontal support for a wide range of climbing plants and crops throughout the growing season.</p>
-<p>The open mesh design improves air circulation and sunlight exposure, promoting healthier plant growth, better yields, and reduced risk of disease. At the end of the season, the netting can be composted directly along with plant matter — no plastic sorting, no landfill, no environmental impact.</p>
+<p>The open mesh design improves air circulation and sunlight exposure, supporting healthier plant growth and reduced risk of disease. At the end of the season, the netting can be composted directly along with plant matter, with no plastic sorting or landfill disposal needed.</p>
 <p>Strong enough to support heavy crops like tomatoes, cucumbers, and melons, yet gentle enough not to damage delicate stems and vines. Available in bulk rolls for both small-scale gardens and large commercial farming operations.</p>
 <p><strong>Ideal For:</strong> Vegetable farms, organic gardens, flower cultivation, greenhouse operations, pea and bean crops, eco-farming projects.</p>
 <p><strong>Key Features:</strong></p>

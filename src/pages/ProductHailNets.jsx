@@ -26,7 +26,7 @@ export default function ProductHailNets() {
                     <h1 class="entry-title">Hail Nets</h1>                </div>
     	                <div class="page-content">
         <p><strong>The One Threat That Gives No Warning</strong></p>
-<p>Drought develops over weeks. Frost comes with a forecast. Insects build over a season. Hail arrives in fifteen minutes and leaves a commercial harvest unmarketable in the same time.</p>
+<p>Unlike drought, frost, or insect pressure — which develop gradually and with some warning — hail arrives suddenly and can leave a commercial harvest unmarketable within minutes.</p>
 <p>A single moderate hail event on an apple, pear, cherry, or grape crop at or near harvest can downgrade fresh market fruit to processing grade, significantly reducing its value for that season. For premium fruit production targeting fresh market and export channels, there is typically no recovery within the same season.</p>
 <p>Hail nets are the only commercially practical intervention that prevents this outcome at the crop level.</p>
 <p><strong>➤ Knitted HDPE Hail Net</strong></p>

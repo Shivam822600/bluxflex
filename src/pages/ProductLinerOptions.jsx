@@ -30,7 +30,7 @@ export default function ProductLinerOptions() {
 <p>For products with no moisture sensitivity, no food contact requirement, and no fine-particle migration risk through the woven fabric. Sand, gravel, coarse aggregates, non-food minerals, and construction materials need no liner.</p>
 <p><strong>Best For:</strong> Sand, aggregates, construction materials, coarse non-food products</p>
 <p>➤&nbsp;<strong>Loosely Inserted PE Liner</strong></p>
-<p>A polyethylene inner bag placed loosely inside the woven PP sack before filling the most widely used liner configuration globally. The liner provides a complete moisture and contamination barrier without being attached to the outer bag. After filling the liner is tied off, heat-sealed, or twisted and tucked.</p>
+<p>A polyethylene inner bag placed loosely inside the woven PP sack before filling — a common liner configuration. The liner provides a complete moisture and contamination barrier without being attached to the outer bag. After filling the liner is tied off, heat-sealed, or twisted and tucked.</p>
 <p>Because the liner is independent of the outer bag, the PE grade, thickness, and colour can be specified separately. Available in 50 to 150 micron depending on the product’s moisture sensitivity and handling requirements. The liner can be removed independently useful where the liner is despatched forward with the product and the outer bag is retained or returned.</p>
 <p><strong>Liner Thickness:</strong> 50 – 150 micron Attachment: None — loosely placed Best For: Granular food products, hygroscopic materials, fine powders requiring moisture barrier inside a standard woven sack</p>
 <p>➤&nbsp;<strong>Liner Stitched at Top</strong></p>
