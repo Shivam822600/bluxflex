@@ -1,4 +1,26 @@
+@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  /* Official Brand Identity — DO NOT DEVIATE. Exposed as Tailwind utilities
+     (e.g. bg-brand-dark, text-brand-green, font-heading) so new components
+     built with Tailwind stay on the same design system as the existing CSS. */
+  --color-brand-dark: #142E3D;
+  --color-brand-navy: #0F2531;
+  --color-brand-green: #8DC63F;
+  --color-brand-green-light: #F0F7E4;
+  --color-bg-beige: #FBF1E6;
+  --color-text-main: #1E293B;
+  --color-text-muted: #5B6B76;
+  --color-border: #E4DCD0;
+
+  --font-heading: 'Manrope', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --shadow-card: 0 10px 30px rgba(20, 46, 61, 0.06);
+  --shadow-hover: 0 20px 40px rgba(20, 46, 61, 0.12);
+  --radius-card: 1rem;
+}
 
 :root {
   /* Official Brand Identity — DO NOT DEVIATE */
