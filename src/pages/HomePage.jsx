@@ -2,15 +2,9 @@ import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../components/Layout';
 import { useLanguage } from '../context/LanguageContext';
-import Reveal, { RevealGroup, revealItemVariants } from '../components/ui/Reveal';
 import { motion } from 'framer-motion';
+import Reveal from '../components/ui/Reveal';
 import Counter from '../components/ui/Counter';
-import AdvantageCard from '../components/ui/AdvantageCard';
-import ProcessTimeline from '../components/ui/ProcessTimeline';
-import ComparisonTable from '../components/ui/ComparisonTable';
-import CertificationStrip from '../components/ui/CertificationStrip';
-import FaqAccordion from '../components/ui/FaqAccordion';
-import { CostRow, FloatingStatCard, ProblemSolutionCard } from '../components/ui/MiscCards';
 import { 
   ArrowRight, 
   ChevronDown, 
@@ -27,12 +21,8 @@ import {
   Sprout, 
   Factory, 
   Building2,
-  Zap,
-  Clock,
-  Search,
-  PackageX,
-  HeartCrack,
-  FileWarning
+  MapPin,
+  Sparkles
 } from 'lucide-react';
 
 // Product Image Assets
@@ -185,209 +175,101 @@ export default function HomePage() {
 
   return (
     <Layout>
-      {/* 1. HERO SECTION — "Your Extended Arm in Asia" */}
-      <section className="relative overflow-hidden" style={{ background: 'var(--color-brand-dark)', paddingTop: 'clamp(56px, 8vw, 96px)', paddingBottom: 'clamp(64px, 9vw, 120px)' }}>
-        <div className="container relative z-10">
-          <div className="max-w-3xl">
-            <Reveal>
-              <span className="inline-flex items-center gap-2 text-[13px] font-bold uppercase tracking-wide" style={{ color: 'var(--color-brand-green)' }}>
-                <span className="w-6 h-px" style={{ background: 'var(--color-brand-green)' }} />
-                Global Sourcing &amp; Industrial Packaging
-              </span>
-            </Reveal>
-            <Reveal delay={0.08}>
-              <h1 className="font-heading font-extrabold text-white mt-5" style={{ fontSize: 'clamp(34px, 5vw, 54px)', lineHeight: 1.1 }}>
-                Your <span style={{ color: 'var(--color-brand-green)' }}>extended arm</span> in Asia.<br />
-                One contact. Zero compromise.
-              </h1>
-            </Reveal>
-            <Reveal delay={0.16}>
-              <p className="mt-6 text-white/75 text-lg max-w-xl leading-relaxed">
-                We are not a middleman — we are your procurement team on the ground. 30+ audited factories across India and Vietnam, managed through a single relationship, governed by your standards.
-              </p>
-            </Reveal>
-            <Reveal delay={0.24}>
-              <div className="flex flex-wrap gap-4 mt-8">
-                <Link to="/contact-us" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-lg font-semibold text-sm" style={{ background: 'var(--color-brand-green)', color: 'var(--color-brand-dark)' }}>
-                  Request a Quote <ArrowRight size={16} />
-                </Link>
-                <Link to="/products" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-lg font-semibold text-sm border border-white/25 text-white">
-                  Explore Products
-                </Link>
+      {/* 1. HERO SECTION */}
+      <section style={{ background: 'linear-gradient(180deg, #FBF1E6 0%, #FFFFFF 100%)', paddingTop: 'clamp(56px, 7vw, 88px)', paddingBottom: 'clamp(56px, 7vw, 88px)' }}>
+        <div className="container">
+          <div className="grid gap-14 lg:grid-cols-[1.05fr_1fr] items-center">
+
+            {/* Hero Left Content */}
+            <div>
+              <Reveal>
+                <span className="inline-flex items-center gap-2 text-[13px] font-bold uppercase tracking-wider" style={{ color: 'var(--color-brand-green)' }}>
+                  <span className="w-6 h-px" style={{ background: 'var(--color-brand-green)' }} />
+                  {t('heroTag')}
+                </span>
+              </Reveal>
+
+              <Reveal delay={0.08}>
+                <h1
+                  className="font-heading font-extrabold mt-5"
+                  style={{ fontSize: 'clamp(34px, 4.6vw, 52px)', lineHeight: 1.12, color: 'var(--color-brand-dark)' }}
+                >
+                  {t('heroTitle')}
+                </h1>
+              </Reveal>
+
+              <Reveal delay={0.16}>
+                <p className="mt-6 max-w-lg text-lg leading-relaxed" style={{ color: '#475569' }}>
+                  {t('heroDesc')}
+                </p>
+              </Reveal>
+
+              <Reveal delay={0.22}>
+                <p className="mt-4 font-heading font-bold text-[15px]" style={{ color: 'var(--color-brand-dark)' }}>
+                  {t('heroTagline')}
+                </p>
+              </Reveal>
+
+              <Reveal delay={0.3}>
+                <div className="flex flex-wrap gap-4 mt-8">
+                  <Link
+                    to="/about-us"
+                    className="inline-flex items-center gap-2 rounded-lg font-bold text-[15px] px-7 py-3.5 transition-transform hover:-translate-y-0.5"
+                    style={{ background: 'var(--color-brand-dark)', color: '#FFFFFF' }}
+                  >
+                    {t('heroCtaPrimary')}
+                  </Link>
+                  <Link
+                    to="/products"
+                    className="inline-flex items-center gap-2 rounded-lg font-bold text-[15px] px-7 py-3.5 border transition-colors hover:bg-white"
+                    style={{ borderColor: 'var(--color-brand-dark)', color: 'var(--color-brand-dark)' }}
+                  >
+                    {t('heroCtaSecondary')}
+                  </Link>
+                </div>
+              </Reveal>
+            </div>
+
+            {/* Hero Right — Global Network Graphic (no single country emphasized) */}
+            <Reveal delay={0.2}>
+              <div
+                className="relative rounded-2xl p-6"
+                style={{ background: '#FFFFFF', border: '1px solid var(--color-border)', boxShadow: 'var(--shadow-card)' }}
+              >
+                <svg viewBox="0 0 800 520" className="w-full h-auto">
+                  {/* World dot texture — neutral, no country emphasized */}
+                  <circle cx="400" cy="260" r="200" fill="none" stroke="rgba(20,46,61,0.06)" strokeWidth="1.5" strokeDasharray="1 7" />
+
+                  {/* Connection routes between equal-weight regional nodes */}
+                  <path d="M 160 190 Q 280 140 400 260 T 630 210" fill="none" stroke="var(--color-brand-green)" strokeWidth="1.5" strokeDasharray="4 5" opacity="0.5" />
+                  <path d="M 400 260 Q 300 360 220 340" fill="none" stroke="var(--color-brand-green)" strokeWidth="1.5" strokeDasharray="4 5" opacity="0.4" />
+                  <path d="M 400 260 Q 520 130 610 160" fill="none" stroke="var(--color-brand-green)" strokeWidth="1.5" strokeDasharray="4 5" opacity="0.4" />
+                  <path d="M 400 260 Q 450 350 540 380" fill="none" stroke="var(--color-brand-green)" strokeWidth="1.5" strokeDasharray="4 5" opacity="0.4" />
+
+                  {/* Regional nodes — equal size, equal visual weight */}
+                  {[
+                    { x: 400, y: 260, label: 'SOURCING NETWORK' },
+                    { x: 160, y: 190, label: 'EUROPE' },
+                    { x: 630, y: 210, label: 'AMERICAS' },
+                    { x: 220, y: 340, label: 'MIDDLE EAST' },
+                    { x: 540, y: 380, label: 'APAC' },
+                  ].map((node, i) => (
+                    <g key={i} transform={`translate(${node.x}, ${node.y})`}>
+                      <circle r={i === 0 ? 9 : 7} fill={i === 0 ? 'var(--color-brand-dark)' : 'var(--color-brand-green)'} stroke="#FFFFFF" strokeWidth="2.5" />
+                      <text y={i === 0 ? -18 : 22} textAnchor="middle" fill="#64748B" fontSize="11" fontWeight="700" fontFamily="Manrope, sans-serif">{node.label}</text>
+                    </g>
+                  ))}
+                </svg>
+
+                {/* Simple factual badge, consistent with existing card language site-wide */}
+                <div className="flex items-center gap-3 rounded-xl px-4 py-3 mt-2" style={{ background: 'var(--color-bg-beige)' }}>
+                  <ShieldCheck size={18} style={{ color: 'var(--color-brand-green)' }} />
+                  <span className="text-sm font-semibold" style={{ color: 'var(--color-brand-dark)' }}>ISO 9001:2015 Certified Facility</span>
+                </div>
               </div>
             </Reveal>
+
           </div>
-
-          <Reveal delay={0.3}>
-            <div className="mt-14 pt-8 flex flex-wrap gap-x-10 gap-y-5" style={{ borderTop: '1px solid rgba(255,255,255,0.12)' }}>
-              <div>
-                <div className="font-heading font-extrabold text-white text-2xl">
-                  <Counter value={30} suffix="+" />
-                </div>
-                <div className="text-white/55 text-xs mt-1">Audited Factories — India &amp; Vietnam</div>
-              </div>
-              <div>
-                <div className="font-heading font-extrabold text-white text-2xl">
-                  <Counter value={20} suffix="+" />
-                </div>
-                <div className="text-white/55 text-xs mt-1">Years Industrial Experience</div>
-              </div>
-              <div>
-                <div className="font-heading font-extrabold text-white text-2xl">11-Step</div>
-                <div className="text-white/55 text-xs mt-1">Structured QC Process</div>
-              </div>
-            </div>
-          </Reveal>
-        </div>
-        {/* soft background graphic */}
-        <div className="absolute -right-24 -top-24 w-[420px] h-[420px] rounded-full pointer-events-none" style={{ background: 'radial-gradient(circle, rgba(141,198,63,0.10) 0%, transparent 70%)' }} aria-hidden="true" />
-      </section>
-
-      {/* CERTIFICATION STRIP */}
-      <section style={{ background: 'var(--color-bg-beige)', borderBottom: '1px solid var(--color-border)' }} className="py-6">
-        <div className="container">
-          <CertificationStrip items={['ISO 22000', 'ISO 9001', 'BRCGSS Food Grade', 'SEDEX / SA 8000', 'SGS & EBV Audit-Friendly']} className="justify-center" />
-        </div>
-      </section>
-
-      {/* BULKFLEX ADVANTAGE — 01-06 */}
-      <section style={{ padding: 'clamp(64px, 8vw, 96px) 0', background: '#FFFFFF' }}>
-        <div className="container">
-          <Reveal>
-            <div className="max-w-xl mb-12">
-              <span className="text-[13px] font-bold uppercase tracking-wide inline-flex items-center gap-2" style={{ color: 'var(--color-brand-green)' }}>
-                <span className="w-6 h-px" style={{ background: 'var(--color-brand-green)' }} />
-                The BulkFlex Advantage
-              </span>
-              <h2 className="font-heading font-extrabold mt-3" style={{ color: 'var(--color-brand-dark)', fontSize: 'clamp(26px, 3.5vw, 36px)' }}>
-                Multi-Supplier Strength. Single-Contact Simplicity.
-              </h2>
-              <p className="mt-3 text-sm" style={{ color: 'var(--color-text-muted)' }}>
-                Global procurement from Asia doesn't have to be complex. BulkFlex gives you the network, the systems, and the people — so you get the results without the overhead.
-              </p>
-            </div>
-          </Reveal>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <AdvantageCard number="01" title="One Contact. Many Audited Suppliers." tag="Multi-Supplier Access"
-              description="You deal with one BulkFlex relationship manager who coordinates across our entire pre-audited supplier network — multi-supplier optionality, competitive pricing, and backup capacity, all through a single contact." />
-            <AdvantageCard number="02" title="Your Extended Arm in Asia" tag="On-Ground Presence"
-              description="BulkFlex operates on the ground in Asia, not from a desk overseas — real factory visits, in-person pre-shipment inspections, and face-to-face supplier accountability." />
-            <AdvantageCard number="03" title="Audited Factories — No Unknowns" tag="Zero Unverified Vendors"
-              description="Every manufacturing facility in our network has passed a structured factory audit covering production capacity, quality systems, compliance certifications, and export capability." />
-            <AdvantageCard number="04" title="Compliance Built In — Not Bolted On" tag="Full Compliance Coverage"
-              description="Documentation, batch traceability, certificate of origin, and pre-shipment inspection reports are embedded into every engagement, aligned to your import market requirements." />
-            <AdvantageCard number="05" title="Buyer-Specific SOPs at Factory Level" tag="Repeatability"
-              description="Your specifications and packaging standards are implemented at the factory as standard operating procedure — consistent across every order, not just the first one." />
-            <AdvantageCard number="06" title="End-to-End Procurement Management" tag="Full-Cycle Management"
-              description="From specification review through shortlisting, sampling, QC, compliance, and final container dispatch — we manage every stage and keep you informed at every milestone." />
-          </div>
-        </div>
-      </section>
-
-      {/* HOW IT WORKS — 5-STEP TIMELINE */}
-      <section style={{ padding: 'clamp(64px, 8vw, 96px) 0', background: 'var(--color-brand-dark)' }}>
-        <div className="container max-w-3xl">
-          <Reveal>
-            <span className="text-[13px] font-bold uppercase tracking-wide inline-flex items-center gap-2" style={{ color: 'var(--color-brand-green)' }}>
-              <span className="w-6 h-px" style={{ background: 'var(--color-brand-green)' }} />
-              How It Works
-            </span>
-            <h2 className="font-heading font-extrabold text-white mt-3 mb-10" style={{ fontSize: 'clamp(26px, 3.5vw, 36px)' }}>
-              5 Steps From Enquiry to Cleared Container.
-            </h2>
-          </Reveal>
-          <ProcessTimeline steps={[
-            { title: 'Buyer Specs & Use-Case Review', tags: ['Specification Mapping', 'Compliance Assessment', 'Volume Planning'],
-              description: 'Every engagement begins with a structured specification review, going deep on product requirements, end-use application, target markets, compliance obligations, and delivery timelines.' },
-            { title: 'Factory Shortlisting — Audited Only', tags: ['Pre-Audited Network', 'Buyer Approval Required'],
-              description: 'We filter our pre-audited supplier network against your specifications and present a transparent shortlist with production capacity, certifications, lead times, and pricing.' },
-            { title: 'Sampling & Pre-Shipment Quality Control', tags: ['Sample Review', 'Photo Documentation', 'Dual Sign-Off'],
-              description: 'Samples are reviewed against your approved specifications before bulk production. A physical pre-shipment inspection follows, with a full report before anything dispatches.' },
-            { title: 'Contract, Compliance & Batch Traceability', tags: ['Batch Traceability', 'Export Compliance'],
-              description: 'Full batch traceability from raw material through finished goods, export/import compliance verification, and buyer-specific SOPs implemented at factory level.' },
-            { title: 'Container Dispatch & Full Documentation', tags: ['Bill of Lading', 'Certificate of Origin', 'PSI Report'],
-              description: 'Your shipment is loaded, sealed, and dispatched with a complete, buyer-aligned documentation package, coordinated with freight partners through to port clearance.' },
-          ]} />
-        </div>
-      </section>
-
-      {/* WHAT QA FAILURES ACTUALLY COST */}
-      <section style={{ padding: 'clamp(56px, 7vw, 80px) 0', background: 'var(--color-brand-navy)' }}>
-        <div className="container max-w-2xl">
-          <Reveal>
-            <h2 className="font-heading font-extrabold text-white mb-3" style={{ fontSize: 'clamp(22px, 2.8vw, 28px)' }}>What QA Failures Actually Cost</h2>
-            <p className="text-white/70 text-sm mb-6">Quality and compliance issues translate directly into real, measurable costs — often ones that are difficult to recover.</p>
-          </Reveal>
-          <RevealGroup className="space-y-3">
-            <motion.div variants={revealItemVariants}><CostRow icon={PackageX} label="Rejected containers" description="full return or re-export costs, plus replacement lead time" /></motion.div>
-            <motion.div variants={revealItemVariants}><CostRow icon={Clock} label="Port demurrage" description="documentation failures hold containers; the clock runs at your cost" /></motion.div>
-            <motion.div variants={revealItemVariants}><CostRow icon={Search} label="Regulatory penalties" description="compliance failures at import can trigger fines and repeat inspection regimes" /></motion.div>
-            <motion.div variants={revealItemVariants}><CostRow icon={HeartCrack} label="Customer relationship damage" description="a quality failure passed downstream is rarely a recoverable event" /></motion.div>
-            <motion.div variants={revealItemVariants}><CostRow icon={FileWarning} label="Rework and re-labelling costs" description="often treated as a normal cost of direct sourcing, when they shouldn't be" /></motion.div>
-          </RevealGroup>
-        </div>
-      </section>
-
-      {/* DIRECT SOURCING VS BULKFLEX */}
-      <section style={{ padding: 'clamp(64px, 8vw, 96px) 0', background: 'var(--color-bg-beige)' }}>
-        <div className="container">
-          <ComparisonTable
-            title="Side-by-Side: Direct Sourcing vs. Working With BulkFlex"
-            subtitle="For buyers who have been importing directly, this is what changes — and what doesn't."
-            rows={[
-              { label: 'Supplier contacts to manage', direct: 'Multiple — each with different contacts, MOQs, lead times', directStatus: 'no', bulkflex: 'One BulkFlex contact manages all suppliers' },
-              { label: 'Factory verification', direct: 'You rely on supplier-provided info and references', directStatus: 'no', bulkflex: 'Every factory pre-audited by BulkFlex before shortlisting' },
-              { label: 'Pre-shipment inspection', direct: 'Arranged separately at your cost and coordination', directStatus: 'partial', bulkflex: 'Conducted by our on-ground team, included in every order' },
-              { label: 'Batch traceability', direct: 'Typically absent or incomplete', directStatus: 'no', bulkflex: 'Full lot-level documentation from production to dispatch' },
-              { label: 'Compliance documentation', direct: 'Variable — depends on factory capability and your follow-up', directStatus: 'partial', bulkflex: 'Complete, buyer-aligned package every shipment' },
-              { label: 'Backup supply options', direct: "Single supplier — if they can't deliver, you can't ship", directStatus: 'no', bulkflex: 'Multiple audited alternatives across our network' },
-              { label: 'Your existing supplier relationships', direct: 'These stay intact', directStatus: 'partial', bulkflex: "BulkFlex adds infrastructure around them, doesn't replace them" },
-            ]}
-          />
-        </div>
-      </section>
-
-      {/* WE INVITE YOU INTO THE FACTORY */}
-      <section style={{ padding: 'clamp(64px, 8vw, 96px) 0', background: '#FFFFFF' }}>
-        <div className="container grid gap-10 lg:grid-cols-2 items-start">
-          <Reveal>
-            <span className="text-[13px] font-bold uppercase tracking-wide inline-flex items-center gap-2" style={{ color: 'var(--color-brand-green)' }}>
-              <span className="w-6 h-px" style={{ background: 'var(--color-brand-green)' }} />
-              Transparency First
-            </span>
-            <h2 className="font-heading font-extrabold mt-3 mb-4" style={{ color: 'var(--color-brand-dark)', fontSize: 'clamp(24px, 3vw, 32px)' }}>
-              We Invite You Into the Factory.
-            </h2>
-            <p className="text-sm leading-relaxed mb-3" style={{ color: 'var(--color-text-muted)' }}>
-              BulkFlex actively encourages and fully coordinates buyer factory visits across our supplier network — whether you want to assess a new facility, align on specification details, or verify a certification firsthand.
-            </p>
-            <ul className="space-y-2 mt-5">
-              {['Full facility walk-through with production team access', 'Specification alignment directly on the production floor', 'BulkFlex team present for translation and coordination', 'Compliance and certification verification in person'].map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-sm" style={{ color: 'var(--color-text-main)' }}>
-                  <CheckCircle2 size={16} className="mt-0.5 shrink-0" style={{ color: 'var(--color-brand-green)' }} />{item}
-                </li>
-              ))}
-            </ul>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <div className="rounded-2xl p-7" style={{ background: 'var(--color-brand-dark)' }}>
-              <div className="text-[11px] font-bold uppercase tracking-wide text-white/60 mb-4">How We Coordinate Your Visit</div>
-              {[
-                ['You Tell Us What You Want to See', 'Share your objectives — new facility assessment, spec review, certification audit.'],
-                ['BulkFlex Handles Logistics', 'Factory scheduling, local transport, translation, and briefing of production teams.'],
-                ['We Accompany You Throughout', 'A BulkFlex team member is with you for the entire visit.'],
-                ['Post-Visit Report & Next Steps', 'A summary of findings and recommendations following your visit.'],
-              ].map(([title, desc], i) => (
-                <div key={i} className="flex gap-3 mb-4 last:mb-0">
-                  <div className="w-6 h-6 rounded-full shrink-0 flex items-center justify-center text-xs font-bold" style={{ background: 'var(--color-brand-green)', color: 'var(--color-brand-dark)' }}>{i + 1}</div>
-                  <div>
-                    <div className="text-white font-semibold text-sm">{title}</div>
-                    <div className="text-white/60 text-xs mt-0.5">{desc}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </Reveal>
         </div>
       </section>
 

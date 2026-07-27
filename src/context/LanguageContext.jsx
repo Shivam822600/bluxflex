@@ -17,8 +17,11 @@ export const translations = {
 
     // Hero & Home Section
     heroTag: 'GLOBAL PACKAGING & INDUSTRIAL SOURCING',
-    heroTitle: 'Direct Sourcing Network Across India & Vietnam',
-    heroDesc: 'Connecting global buyers with pre-audited, high-capacity manufacturing facilities. Zero middleman markup, total transparency.',
+    heroTitle: 'Global Procurement Simplified',
+    heroDesc: 'BulkFlex enables global buyers to source from India and Asia with confidence, continuity, and full supply chain visibility.',
+    heroTagline: 'Multi-Supplier Strength. One Contact. Total Execution Control.',
+    heroCtaPrimary: 'Know More',
+    heroCtaSecondary: 'View Products',
     getQuote: 'Request Specs Consultation',
     ourProducts: 'Our Core Product Categories',
     viewAll: 'View All Products',
