@@ -23,7 +23,7 @@ export default function NorthAmericaPaperBag2() {
           <Link to="/products" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: '#8DC63F', fontSize: '13px', fontWeight: '600', marginBottom: '16px' }}>
             <ChevronLeft size={16} /> Back to Products
           </Link>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(0, 194, 168, 0.15)', color: '#8DC63F', padding: '6px 16px', borderRadius: '50px', fontSize: '12.5px', fontWeight: '700', marginBottom: '20px', border: '1px solid rgba(0, 194, 168, 0.3)' }}>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(141, 198, 63, 0.15)', color: '#8DC63F', padding: '6px 16px', borderRadius: '50px', fontSize: '12.5px', fontWeight: '700', marginBottom: '20px', border: '1px solid rgba(141, 198, 63, 0.3)' }}>
             🇨🇦 Canadian Manufactured Food-Grade Packaging
           </div>
           <h1 style={{ fontSize: 'clamp(28px, 4vw, 40px)', color: '#FFFFFF', fontWeight: '800', fontFamily: 'var(--font-heading)', marginBottom: '16px', lineHeight: '1.2' }}>

@@ -49,7 +49,7 @@ export default function SplashScreen({ onFinish }) {
           width: '650px',
           height: '650px',
           borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(0, 194, 168, 0.16) 0%, rgba(7, 40, 52, 0) 70%)',
+          background: 'radial-gradient(circle, rgba(141, 198, 63, 0.16) 0%, rgba(7, 40, 52, 0) 70%)',
           animation: 'pulseGlow 2.5s infinite ease-in-out',
           pointerEvents: 'none'
         }}
@@ -89,7 +89,7 @@ export default function SplashScreen({ onFinish }) {
             maxWidth: '90vw',
             objectFit: 'contain',
             marginBottom: '28px',
-            filter: 'drop-shadow(0 14px 28px rgba(0, 194, 168, 0.35))'
+            filter: 'drop-shadow(0 14px 28px rgba(141, 198, 63, 0.35))'
           }}
         />
 

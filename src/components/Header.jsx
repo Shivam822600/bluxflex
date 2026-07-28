@@ -412,7 +412,7 @@ export default function Header() {
                 fontWeight: '700',
                 padding: '12px 14px',
                 borderRadius: '8px',
-                background: location.pathname === '/' ? 'rgba(0, 194, 168, 0.1)' : 'transparent',
+                background: location.pathname === '/' ? 'rgba(141, 198, 63, 0.1)' : 'transparent',
                 display: 'block'
               }}
             >

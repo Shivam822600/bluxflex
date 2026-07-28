@@ -50,7 +50,7 @@ export default function ContactUs2() {
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                 <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-                  <div style={{ background: 'rgba(0, 194, 168, 0.2)', padding: '12px', borderRadius: '10px', color: '#8DC63F', flexShrink: 0 }}>
+                  <div style={{ background: 'rgba(141, 198, 63, 0.2)', padding: '12px', borderRadius: '10px', color: '#8DC63F', flexShrink: 0 }}>
                     <MapPin size={22} />
                   </div>
                   <div>
@@ -62,7 +62,7 @@ export default function ContactUs2() {
                 </div>
 
                 <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
-                  <div style={{ background: 'rgba(0, 194, 168, 0.2)', padding: '12px', borderRadius: '10px', color: '#8DC63F', flexShrink: 0 }}>
+                  <div style={{ background: 'rgba(141, 198, 63, 0.2)', padding: '12px', borderRadius: '10px', color: '#8DC63F', flexShrink: 0 }}>
                     <Phone size={22} />
                   </div>
                   <div>
@@ -72,7 +72,7 @@ export default function ContactUs2() {
                 </div>
 
                 <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
-                  <div style={{ background: 'rgba(0, 194, 168, 0.2)', padding: '12px', borderRadius: '10px', color: '#8DC63F', flexShrink: 0 }}>
+                  <div style={{ background: 'rgba(141, 198, 63, 0.2)', padding: '12px', borderRadius: '10px', color: '#8DC63F', flexShrink: 0 }}>
                     <Mail size={22} />
                   </div>
                   <div>

@@ -32,7 +32,7 @@ export default function BuyerTools() {
       <section style={{ padding: 'clamp(36px, 6vw, 72px) 0', background: '#FFFFFF' }}>
         <div className="container">
           <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 44px auto' }}>
-            <span style={{ display: 'inline-block', background: '#F0F7E4', color: '#8DC63F', padding: '6px 20px', borderRadius: '50px', fontSize: '12px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1.5px', marginBottom: '12px', border: '1px solid rgba(0, 194, 168, 0.3)' }}>
+            <span style={{ display: 'inline-block', background: '#F0F7E4', color: '#8DC63F', padding: '6px 20px', borderRadius: '50px', fontSize: '12px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1.5px', marginBottom: '12px', border: '1px solid rgba(141, 198, 63, 0.3)' }}>
               YOUR BUYER JOURNEY
             </span>
             <h2 style={{ fontSize: 'clamp(24px, 3.5vw, 34px)', color: '#142E3D', fontWeight: '800', margin: '8px 0 14px 0', fontFamily: 'var(--font-heading)' }}>
@@ -169,7 +169,7 @@ export default function BuyerTools() {
             </div>
           </div>
 
-          <div style={{ background: '#F0F7E4', border: '1px solid rgba(0, 194, 168, 0.3)', padding: '20px 28px', borderRadius: '20px', textAlign: 'center', maxWidth: '880px', margin: '0 auto' }}>
+          <div style={{ background: '#F0F7E4', border: '1px solid rgba(141, 198, 63, 0.3)', padding: '20px 28px', borderRadius: '20px', textAlign: 'center', maxWidth: '880px', margin: '0 auto' }}>
             <p style={{ fontSize: '14px', color: '#142E3D', margin: 0, lineHeight: '1.75', fontWeight: '600' }}>
               These aren’t beginner mistakes. They’re structural gaps and BulkFlex is built to close them. You don’t need to start over. You need to add infrastructure around what you’re already doing. That’s exactly what BulkFlex provides without replacing your procurement knowledge or your existing supplier relationships.
             </p>
@@ -181,7 +181,7 @@ export default function BuyerTools() {
       <section style={{ padding: 'clamp(44px, 6vw, 80px) 0', background: '#142E3D', color: '#FFFFFF', borderTop: '1px solid #E2E8F0' }}>
         <div className="container">
           <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 44px auto' }}>
-            <span style={{ display: 'inline-block', background: 'rgba(0, 194, 168, 0.15)', color: '#8DC63F', padding: '6px 18px', borderRadius: '50px', fontSize: '12px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1.5px', marginBottom: '12px', border: '1px solid rgba(0, 194, 168, 0.3)' }}>
+            <span style={{ display: 'inline-block', background: 'rgba(141, 198, 63, 0.15)', color: '#8DC63F', padding: '6px 18px', borderRadius: '50px', fontSize: '12px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1.5px', marginBottom: '12px', border: '1px solid rgba(141, 198, 63, 0.3)' }}>
               THE BULKFLEX ADVANTAGE
             </span>
             <h2 style={{ fontSize: 'clamp(26px, 3.5vw, 34px)', color: '#FFFFFF', fontWeight: '800', margin: '8px 0 14px 0', fontFamily: 'var(--font-heading)' }}>
@@ -236,7 +236,7 @@ export default function BuyerTools() {
       <section style={{ padding: 'clamp(44px, 6vw, 80px) 0', background: '#FFFFFF', borderTop: '1px solid #E2E8F0' }}>
         <div className="container">
           <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 44px auto' }}>
-            <span style={{ display: 'inline-block', background: '#F0F7E4', color: '#8DC63F', padding: '6px 20px', borderRadius: '50px', fontSize: '12px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1.5px', marginBottom: '12px', border: '1px solid rgba(0, 194, 168, 0.3)' }}>
+            <span style={{ display: 'inline-block', background: '#F0F7E4', color: '#8DC63F', padding: '6px 20px', borderRadius: '50px', fontSize: '12px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1.5px', marginBottom: '12px', border: '1px solid rgba(141, 198, 63, 0.3)' }}>
               HOW IT WORKS
             </span>
             <h2 style={{ fontSize: 'clamp(26px, 3.5vw, 34px)', color: '#142E3D', fontWeight: '800', margin: '8px 0 14px 0', fontFamily: 'var(--font-heading)' }}>
@@ -304,7 +304,7 @@ export default function BuyerTools() {
                   alignItems: 'center',
                   justifyContent: 'center',
                   lineHeight: 1,
-                  border: '1px solid rgba(0, 194, 168, 0.3)',
+                  border: '1px solid rgba(141, 198, 63, 0.3)',
                   flexShrink: 0
                 }}>
                   {item.step}

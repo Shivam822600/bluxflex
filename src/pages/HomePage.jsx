@@ -886,7 +886,7 @@ export default function HomePage() {
                 fontSize: '15px',
                 border: 'none',
                 cursor: 'pointer',
-                boxShadow: '0 10px 30px rgba(0, 194, 168, 0.35)',
+                boxShadow: '0 10px 30px rgba(141, 198, 63, 0.35)',
                 transition: 'transform 0.2s'
               }}
             >
