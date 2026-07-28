@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown, Menu, X, Clock, Phone, Mail } from 'lucide-react';
 import { useLanguage, languages } from '../context/LanguageContext';
+import logo from '../assets/images/Bulk_Flex_Brand_white-1024x293.png?url';
 
 export default function Header() {
   const { language, changeLanguage, t, currentLangObj } = useLanguage();
@@ -114,8 +115,8 @@ export default function Header() {
 
           {/* Direct Support Contact */}
           <div className="desktop-only" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-            <a href="tel:+919876543210" style={{ display: 'flex', alignItems: 'center', gap: '5px', color: '#CBD5E1' }}>
-              <Phone size={12} color="#8DC63F" /> +91 98765 43210
+            <a href="tel:+18001234567" style={{ display: 'flex', alignItems: 'center', gap: '5px', color: '#CBD5E1' }}>
+              <Phone size={12} color="#8DC63F" /> +1 (800) 123-4567
             </a>
             <a href="mailto:info@bulkflex.com" style={{ display: 'flex', alignItems: 'center', gap: '5px', color: '#CBD5E1' }}>
               <Mail size={12} color="#8DC63F" /> info@bulkflex.com
@@ -129,9 +130,7 @@ export default function Header() {
         
         {/* Logo Left */}
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '8px' }} aria-label="BulkFlex Home">
-          <span style={{ fontSize: 'clamp(20px, 3.5vw, 24px)', fontWeight: '800', letterSpacing: '-0.5px', color: '#FFFFFF', fontFamily: 'var(--font-heading)' }}>
-            BULK <span style={{ color: '#8DC63F' }}>FLEX</span>
-          </span>
+          <img src={logo} alt="BulkFlex" style={{ height: '38px', width: 'auto' }} />
         </Link>
 
         {/* Centered Navigation Links (Desktop 1025px+) */}

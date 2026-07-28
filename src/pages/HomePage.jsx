@@ -156,20 +156,36 @@ export default function HomePage() {
 
   const faqs = [
     {
-      q: 'What is the Minimum Order Quantity (MOQ) for bulk packaging?',
-      a: 'Our MOQs depend on product customization. Standard FIBC bulk bags usually start at 1,000 units, while custom printed PP woven sacks start at 5,000 units. Container load consolidations are also available for multi-SKU orders.'
+      q: 'What is an FIBC?',
+      a: 'FIBC stands for Flexible Intermediate Bulk Container. They are more commonly known as Bulk Bags, BIG BAGS, FIBC, or JUMBO BAGS. The packages are classified as intermediate containers because of their size, typically having filled weights between about 500 kgs to 2000 kgs. Use of FIBCs today permeates nearly all industries where dry bulk solids are handled, including food, chemicals, and pharmaceuticals.'
     },
     {
-      q: 'Can BulkFlex handle multi-supplier order consolidation in India/Asia?',
-      a: 'Yes, absolutely. We specialize in single-point procurement. We manage quality checks, production scheduling, and container optimization across multiple manufacturing facilities so you receive a single consolidated shipment.'
+      q: 'What is a bulk bag made from?',
+      a: 'The most common material used in FIBC construction is 100% virgin polypropylene as per international standards.'
     },
     {
-      q: 'Are your FIBC bags UN Certified for dangerous chemicals?',
-      a: 'Yes, we supply UN Certified Type A, B, C (Conductive), and D FIBC bulk bags tested for hazardous cargo in compliance with international maritime and transport regulations.'
+      q: 'What is woven polypropylene made from?',
+      a: 'Woven polypropylene is made from extruded resin turned into tapes, which are then woven to make the fabric.'
     },
     {
-      q: 'What are your standard lead times for international freight?',
-      a: 'Production lead time typically ranges from 2 to 4 weeks depending on order volume and custom specifications. Shipping duration varies by destination port (e.g., 18–25 days to Europe/US East Coast).'
+      q: 'What sizes do bulk bags come in?',
+      a: 'Bulk bags come in many different sizes and styles and can be customized as per your needs. For suggestions, contact Bulk Flex at info@bulkflex.com.'
+    },
+    {
+      q: 'What does SWL mean?',
+      a: 'SWL is an abbreviation for safe working load. A bulk bag’s safe working load is the amount of weight that the bag is rated and tested to hold and function safely.'
+    },
+    {
+      q: 'What does 5:1 SF mean?',
+      a: 'A standard bulk bag is rated at a 5:1 Safety Factor Ratio, which means that the bag is specified to hold 5 times the amount of the bag\'s safe working load or withstand 5 times the force during transportation. A 5:1 Safety Ratio is for single use. Bags designed for multi-use or multi-trip applications are made with an increased SF ratio (typically 6:1).'
+    },
+    {
+      q: 'Can bulk bags be stored outside?',
+      a: 'Yes, however, bulk bags will degrade as a result of UV exposure. A standard bulk bag has a UV inhibitor/mix added into the fabric during manufacturing. It is always advisable to specify the outdoor exposure requirements when placing your order.'
+    },
+    {
+      q: 'What types of FIBCs are available and what applications are FIBCs (bulk bags) typically used for?',
+      a: 'There are many common types of FIBCs available in the market. The most commonly used bulk bags are constructed in the U-Panel or Circular configurations and might incorporate a simple PE liner or no liner at all.'
     }
   ];
 
@@ -199,13 +215,23 @@ export default function HomePage() {
               </Reveal>
 
               <Reveal delay={0.16}>
-                <p className="mt-6 max-w-lg text-lg leading-relaxed" style={{ color: '#475569' }}>
+                <p className="mt-6 max-w-lg text-[17px] font-semibold leading-relaxed" style={{ color: 'var(--color-brand-dark)' }}>
                   {t('heroDesc')}
                 </p>
+                {t('heroDescSub1') && (
+                  <p className="mt-4 max-w-lg text-[14px] leading-relaxed" style={{ color: '#64748B' }}>
+                    {t('heroDescSub1')}
+                  </p>
+                )}
+                {t('heroDescSub2') && (
+                  <p className="mt-2 max-w-lg text-[14px] leading-relaxed" style={{ color: '#64748B' }}>
+                    {t('heroDescSub2')}
+                  </p>
+                )}
               </Reveal>
 
               <Reveal delay={0.22}>
-                <p className="mt-4 font-heading font-bold text-[15px]" style={{ color: 'var(--color-brand-dark)' }}>
+                <p className="mt-4 font-heading font-medium text-[14px]" style={{ color: '#64748B' }}>
                   {t('heroTagline')}
                 </p>
               </Reveal>
@@ -261,11 +287,7 @@ export default function HomePage() {
                   ))}
                 </svg>
 
-                {/* Simple factual badge, consistent with existing card language site-wide */}
-                <div className="flex items-center gap-3 rounded-xl px-4 py-3 mt-2" style={{ background: 'var(--color-bg-beige)' }}>
-                  <ShieldCheck size={18} style={{ color: 'var(--color-brand-green)' }} />
-                  <span className="text-sm font-semibold" style={{ color: 'var(--color-brand-dark)' }}>ISO 9001:2015 Certified Facility</span>
-                </div>
+
               </div>
             </Reveal>
 
@@ -559,8 +581,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. STORYTELLING SECTION (Full-Width Organic Wave Background) */}
-      <section style={{ position: 'relative', background: '#142E3D', color: '#FFFFFF', padding: '96px 0' }}>
+      {/* 4. STORYTELLING SECTION (Hidden legacy) */}
+      <section style={{ display: 'none', position: 'relative', background: '#142E3D', color: '#FFFFFF', padding: '96px 0' }}>
         
         {/* Top Organic SVG Wave Divider */}
         <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', overflow: 'hidden', lineHeight: 0, transform: 'rotate(180deg)' }}>
@@ -670,16 +692,16 @@ export default function HomePage() {
 
       </section>
 
-      {/* 5. VISION & VALUES */}
+      {/* 5. SOURCING MANAGED END TO END */}
       <section style={{ padding: 'clamp(64px, 8vw, 96px) 0', background: '#FFFFFF' }}>
         <div className="container">
           
           <div style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto 52px auto' }}>
             <h2 style={{ fontSize: 'clamp(30px, 3.8vw, 42px)', fontWeight: '800', color: '#142E3D', marginBottom: '12px' }}>
-              Vision & Core Values
+              Sourcing Managed End to End
             </h2>
             <p style={{ color: '#64748B', fontSize: '16px' }}>
-              Guiding principles that drive our global packaging supply network.
+              BulkFlex manages sourcing and supply — matching buyers to vetted manufacturing partners and coordinating quality checks.
             </p>
           </div>
 
@@ -692,8 +714,7 @@ export default function HomePage() {
             {[
               { title: 'Quality Assurance', desc: 'Inspection and compliance checks aligned with international dangerous goods & food-grade packaging standards.', icon: <ShieldCheck size={26} color="#8DC63F" /> },
               { title: 'Supply Chain Continuity', desc: 'Multi-plant sourcing designed to support consistent delivery timelines.', icon: <RefreshCw size={26} color="#8DC63F" /> },
-              { title: 'Cost Optimization', desc: 'Direct mill pricing with container space optimization to help reduce landed costs.', icon: <Target size={26} color="#8DC63F" /> },
-              { title: 'Sustainable Innovation', desc: 'Sourcing eco-friendly rPET fabrics and recyclable mono-material bulk bags.', icon: <Sprout size={26} color="#8DC63F" /> }
+              { title: 'Cost Optimization', desc: 'Direct mill pricing with container space optimization to help reduce landed costs.', icon: <Target size={26} color="#8DC63F" /> }
             ].map((val, i) => (
               <div key={i} style={{
                 background: '#FBF1E6',
@@ -996,7 +1017,7 @@ export default function HomePage() {
                     />
                   </div>
 
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div>
                       <label style={{ display: 'block', fontSize: '12px', fontWeight: '700', color: '#142E3D', marginBottom: '6px' }}>
                         Business Email *

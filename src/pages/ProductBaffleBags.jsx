@@ -29,7 +29,7 @@ export default function ProductBaffleBags() {
       {/* Details */}
       <section style={{ padding: '56px 0', background: '#FBF1E6' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '40px', alignItems: 'start' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-10 items-start">
             {/* Image */}
             <div className="card-clean" style={{ padding: '24px', textAlign: 'center', background: '#FFFFFF' }}>
               <img src={asset_Diaper_Bag_jpg_1} alt="Baffle Bags" style={{ maxHeight: '340px', objectFit: 'contain', margin: '0 auto' }} />
@@ -48,7 +48,7 @@ export default function ProductBaffleBags() {
                 Made from durable woven polypropylene fabric, our baffle bags are perfect for fine and flowable materials like powders and granules. If you are looking for better space utilization and safer bulk handling, our baffle bags are the ideal solution.
               </p>
 
-              <div style={{ display: 'flex', gap: '16px' }}>
+              <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/contact-us-2" className="btn-dark" style={{ flex: 1, justifyContent: 'center' }}>
                   Request RFQ Quote <ArrowRight size={16} />
                 </Link>

@@ -18,7 +18,9 @@ export const translations = {
     // Hero & Home Section
     heroTag: 'GLOBAL PACKAGING & INDUSTRIAL SOURCING',
     heroTitle: 'Global Procurement Simplified',
-    heroDesc: 'BulkFlex enables global buyers to source from India and Asia with confidence, continuity, and full supply chain visibility.',
+    heroDesc: 'Bulk Flex enables global buyers to source from India and Asia with confidence, continuity, and full supply chain visibility.',
+    heroDescSub1: 'Through a vetted network of specialized manufacturers, production is aligned based on capacity, capability, compliance, and delivery timelines.',
+    heroDescSub2: 'From supplier alignment and production monitoring to container optimization and shipment coordination, Bulk Flex introduces structure and reliability to global sourcing.',
     heroTagline: 'Multi-Supplier Strength. One Contact. Total Execution Control.',
     heroCtaPrimary: 'Know More',
     heroCtaSecondary: 'View Products',

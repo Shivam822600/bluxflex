@@ -147,24 +147,6 @@ export default function Products() {
         position: 'relative'
       }}>
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
-          <div style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '8px',
-            background: 'rgba(0, 194, 168, 0.15)',
-            border: '1px solid rgba(0, 194, 168, 0.3)',
-            color: '#8DC63F',
-            padding: '6px 16px',
-            borderRadius: '50px',
-            fontSize: '12px',
-            fontWeight: '700',
-            textTransform: 'uppercase',
-            letterSpacing: '1px',
-            marginBottom: '16px'
-          }}>
-            ISO 9001:2015 & BRC Certified
-          </div>
-
           <h1 style={{ fontSize: 'clamp(32px, 4vw, 52px)', color: '#FFFFFF', fontWeight: '800', fontFamily: 'var(--font-heading)', lineHeight: '1.15', marginBottom: '16px' }}>
             All Products & Specifications
           </h1>
@@ -222,7 +204,7 @@ export default function Products() {
             </div>
 
             {/* Search Box */}
-            <div style={{ position: 'relative', width: '280px' }}>
+            <div style={{ position: 'relative', width: '100%', maxWidth: '280px' }}>
               <input
                 type="text"
                 value={searchQuery}

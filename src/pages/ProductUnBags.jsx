@@ -27,7 +27,7 @@ export default function ProductUnBags() {
 
       <section style={{ padding: '56px 0', background: '#FBF1E6' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '40px', alignItems: 'start' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-10 items-start">
             <div className="card-clean" style={{ padding: '24px', textAlign: 'center', background: '#FFFFFF' }}>
               <img src={asset_Un_Bags_jpg_1} alt="Conductive Bag" style={{ maxHeight: '340px', objectFit: 'contain', margin: '0 auto' }} />
             </div>
@@ -44,7 +44,7 @@ export default function ProductUnBags() {
                 Widely used in chemical and industrial applications, our conductive bags ensure maximum safety, compliance, and peace of mind in environments where static discharge can be hazardous.
               </p>
 
-              <div style={{ display: 'flex', gap: '16px' }}>
+              <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/contact-us-2" className="btn-dark" style={{ flex: 1, justifyContent: 'center' }}>
                   Request RFQ Quote <ArrowRight size={16} />
                 </Link>
