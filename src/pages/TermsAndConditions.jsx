@@ -133,31 +133,22 @@ export default function TermsAndConditions() {
                         </div>
                         
                         <div class="elementor-element elementor-element-2c8dd56 elementor-widget elementor-widget-heading" data-id="2c8dd56" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-                            <h2 class="elementor-heading-title elementor-size-default" style="color: #142E3D; font-weight: 800; margin-top: 32px; margin-bottom: 16px;">10. Product Quality &amp; Exclusive Remedy</h2>
+                            <h2 class="elementor-heading-title elementor-size-default" style="color: #142E3D; font-weight: 800; margin-top: 32px; margin-bottom: 16px;">10. Disclaimer of Warranties &amp; Guarantees</h2>
                         </div>
                         <div class="elementor-element elementor-element-dda8bdd elementor-widget elementor-widget-heading" data-id="dda8bdd" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-                            <h2 class="elementor-heading-title elementor-size-default" style="color: #142E3D; font-weight: 700; margin-top: 16px; margin-bottom: 12px;">10.1 Replacement as Exclusive Remedy</h2>
+                            <h2 class="elementor-heading-title elementor-size-default" style="color: #142E3D; font-weight: 700; margin-top: 16px; margin-bottom: 12px;">10.1 No Warranty or Guarantee</h2>
                         </div>
                         <div class="elementor-element elementor-element-533bf16 elementor-widget elementor-widget-text-editor" data-id="533bf16" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-                            <p dir="auto">If goods are verified to contain a manufacturing defect in accordance with the documented claim procedure, Bulk Flex’s obligation shall be limited strictly to replacement of the defective quantity.</p>
-                            <p dir="auto">Replacement constitutes the exclusive remedy available to Buyer.</p>
-                            <p dir="auto">No monetary compensation, refund beyond defective goods, or price reduction shall apply.</p>
-                        </div>
-                        
-                        <div class="elementor-element elementor-element-874ba4b elementor-widget elementor-widget-heading" data-id="874ba4b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-                            <h2 class="elementor-heading-title elementor-size-default" style="color: #142E3D; font-weight: 700; margin-top: 16px; margin-bottom: 12px;">10.2 Cost Allocation for Replacement</h2>
-                        </div>
-                        <div class="elementor-element elementor-element-2a7e0e6 elementor-widget elementor-widget-text-editor" data-id="2a7e0e6" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-                            <p dir="auto">Replacement goods shall be supplied at origin.</p>
-                            <p dir="auto">All freight, insurance, duties, taxes, port handling, inland transport, and related costs associated with replacement shall be borne by the Buyer.</p>
-                            <p dir="auto">Any variation in cost arising from currency exchange fluctuation, freight rate changes, market adjustments, or production cost differences between original shipment and replacement shall be the responsibility of the Buyer.</p>
+                            <p dir="auto">Bulk Flex operates strictly as a sourcing partner and supplier. All goods are procured from third-party manufacturers and supplied to the Buyer strictly on an "AS-IS" basis.</p>
+                            <p dir="auto">Bulk Flex expressly disclaims all warranties, guarantees, or representations of any kind, whether express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or quality.</p>
+                            <p dir="auto">Bulk Flex provides no guarantees regarding product performance, lifespan, or durability. No replacement, refund, or price reduction will be offered for any goods supplied.</p>
                         </div>
                         
                         <div class="elementor-element elementor-element-3a7c60b elementor-widget elementor-widget-heading" data-id="3a7c60b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-                            <h2 class="elementor-heading-title elementor-size-default" style="color: #142E3D; font-weight: 700; margin-top: 16px; margin-bottom: 12px;">10.3 Limitation of Liability</h2>
+                            <h2 class="elementor-heading-title elementor-size-default" style="color: #142E3D; font-weight: 700; margin-top: 16px; margin-bottom: 12px;">10.2 Limitation of Liability</h2>
                         </div>
                         <div class="elementor-element elementor-element-5f8b7b0 elementor-widget elementor-widget-text-editor" data-id="5f8b7b0" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-                            <p dir="auto">Bulk Flex’s total aggregate liability in connection with any transaction shall not exceed the invoice value of the defective goods only.</p>
+                            <p dir="auto">Bulk Flex’s total aggregate liability in connection with any transaction shall under no circumstances exceed the invoice value of the goods.</p>
                             <p dir="auto">Bulk Flex, its directors, employees, agents, and affiliates shall not be liable for:</p>
                             <ul dir="auto" style="margin-left: 20px; margin-bottom: 16px;">
                                 <li><p dir="auto">Consequential or indirect losses</p></li>
@@ -173,7 +164,7 @@ export default function TermsAndConditions() {
                         </div>
                         
                         <div class="elementor-element elementor-element-ce16cee elementor-widget elementor-widget-heading" data-id="ce16cee" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-                            <h2 class="elementor-heading-title elementor-size-default" style="color: #142E3D; font-weight: 700; margin-top: 16px; margin-bottom: 12px;">10.4 Application &amp; Integration Disclaimer</h2>
+                            <h2 class="elementor-heading-title elementor-size-default" style="color: #142E3D; font-weight: 700; margin-top: 16px; margin-bottom: 12px;">10.3 Application &amp; Integration Disclaimer</h2>
                         </div>
                         <div class="elementor-element elementor-element-dc86ffe elementor-widget elementor-widget-text-editor" data-id="dc86ffe" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
                             <p dir="auto">Products supplied are industrial and commercial packaging materials.</p>
@@ -182,7 +173,7 @@ export default function TermsAndConditions() {
                         </div>
                         
                         <div class="elementor-element elementor-element-b547e11 elementor-widget elementor-widget-heading" data-id="b547e11" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-                            <h2 class="elementor-heading-title elementor-size-default" style="color: #142E3D; font-weight: 700; margin-top: 16px; margin-bottom: 12px;">10.5 Container &amp; Shipping Preferences</h2>
+                            <h2 class="elementor-heading-title elementor-size-default" style="color: #142E3D; font-weight: 700; margin-top: 16px; margin-bottom: 12px;">10.4 Container &amp; Shipping Preferences</h2>
                         </div>
                         <div class="elementor-element elementor-element-ce32cd9 elementor-widget elementor-widget-text-editor" data-id="ce32cd9" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
                             <p dir="auto">Any Buyer preference for specific container type, carrier, shipping line, vessel, routing, port, or loading schedule must be communicated in writing at the time of order finalization.</p>
@@ -193,20 +184,12 @@ export default function TermsAndConditions() {
                         </div>
                         
                         <div class="elementor-element elementor-element-82b5ed2 elementor-widget elementor-widget-heading" data-id="82b5ed2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-                            <h2 class="elementor-heading-title elementor-size-default" style="color: #142E3D; font-weight: 800; margin-top: 32px; margin-bottom: 16px;">11. Claims Procedure</h2>
+                            <h2 class="elementor-heading-title elementor-size-default" style="color: #142E3D; font-weight: 800; margin-top: 32px; margin-bottom: 16px;">11. No Claims Policy</h2>
                         </div>
                         <div class="elementor-element elementor-element-e7a37a8 elementor-widget elementor-widget-text-editor" data-id="e7a37a8" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-                            <p dir="auto"><b>Buyer must inspect goods immediately upon receipt.</b></p>
-                            <p dir="auto">Any claim must be submitted in writing within <b>fifteen (15) days</b> of receipt and must include:</p>
-                            <ul dir="auto" style="margin-left: 20px; margin-bottom: 16px;">
-                                <li><p dir="auto">Detailed written description</p></li>
-                                <li><p dir="auto">Clear photographic evidence</p></li>
-                                <li><p dir="auto">Continuous, unedited video evidence</p></li>
-                                <li><p dir="auto">Batch traceability information</p></li>
-                                <li><p dir="auto">Inspection documentation if requested</p></li>
-                            </ul>
-                            <p dir="auto">Failure to comply with these requirements may render the claim ineligible for review.</p>
-                            <p dir="auto">Claims submitted after the 15-day period shall be deemed waived.</p>
+                            <p dir="auto">Because Bulk Flex acts solely as a sourcing supplier connecting buyers to manufacturers, <b>Bulk Flex does not accept, process, or entertain any claims for damages, defects, shortages, or non-conformity</b> once the goods have been dispatched from the manufacturing facility.</p>
+                            <p dir="auto">The Buyer assumes all risks associated with the goods upon dispatch or handover to the carrier. It is the Buyer's responsibility to arrange pre-shipment inspections if they wish to verify the goods prior to dispatch.</p>
+                            <p dir="auto">Under no circumstances will Bulk Flex issue refunds, credit notes, or free replacements for goods supplied.</p>
                         </div>
                         
                         <div class="elementor-element elementor-element-d8264f9 elementor-widget elementor-widget-heading" data-id="d8264f9" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
@@ -215,7 +198,7 @@ export default function TermsAndConditions() {
                         <div class="elementor-element elementor-element-dff4bfa elementor-widget elementor-widget-text-editor" data-id="dff4bfa" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
                             <p dir="auto">Payments shall be made strictly in accordance with agreed payment terms.</p>
                             <p dir="auto">Delayed payments shall attract interest at 6% per month calculated from due date until full settlement.</p>
-                            <p dir="auto">Buyer shall not withhold or deduct payment due to pending claims unless defect is formally verified in writing by Bulk Flex.</p>
+                            <p dir="auto">Buyer shall not withhold or deduct payment for any reason, including perceived defects, damages, or disputes.</p>
                         </div>
                         
                         <div class="elementor-element elementor-element-12cd8d3 elementor-widget elementor-widget-heading" data-id="12cd8d3" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
