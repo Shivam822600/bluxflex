@@ -24,7 +24,7 @@ export default function ProductJuteSacks() {
 			                 <div class="page-header">
                     <h1 class="entry-title">Jute Sacks</h1>                </div>
     	                <div class="page-content">
-        
+        <p><em>Detailed specifications for Jute Sacks are being finalized and will be added shortly. Contact our team for current product information, availability, and pricing.</em></p>
         
             </div>
 			</div>

@@ -24,7 +24,7 @@ export default function ProductBurlapTwins() {
 			                 <div class="page-header">
                     <h1 class="entry-title">Burlap Twins</h1>                </div>
     	                <div class="page-content">
-        
+        <p><em>Detailed specifications for Burlap Twins are being finalized and will be added shortly. Contact our team for current product information, availability, and pricing.</em></p>
         
             </div>
 			</div>

@@ -24,7 +24,7 @@ export default function ProductJuteSacksTreeCover() {
 			                 <div class="page-header">
                     <h1 class="entry-title">Jute Sacks Tree Cover</h1>                </div>
     	                <div class="page-content">
-        
+        <p><em>Detailed specifications for Jute Sacks Tree Cover are being finalized and will be added shortly. Contact our team for current product information, availability, and pricing.</em></p>
         
             </div>
 			</div>

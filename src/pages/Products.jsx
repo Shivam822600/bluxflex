@@ -120,7 +120,7 @@ export default function Products() {
       category: 'Retail Shopping Bags',
       desc: 'Reusable grocery and shopping totes designed with heavy load handles and brand printing.',
       image: asset_PP_shopping_bag,
-      link: '/product/pp-shopping-bag'
+      link: '/product/retail-shopping-bag-d'
     },
     {
       title: 'Agro Crop Protection Nets',
