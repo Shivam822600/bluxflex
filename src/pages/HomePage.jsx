@@ -22,7 +22,9 @@ import {
   Factory,
   Building2,
   MapPin,
-  Sparkles
+  Sparkles,
+  Check,
+  X
 } from 'lucide-react';
 
 // Product Image Assets
@@ -156,36 +158,12 @@ export default function HomePage() {
 
   const faqs = [
     {
-      q: 'What is an FIBC?',
-      a: 'FIBC stands for Flexible Intermediate Bulk Container. They are more commonly known as Bulk Bags, BIG BAGS, FIBC, or JUMBO BAGS. The packages are classified as intermediate containers because of their size, typically having filled weights between about 500 kgs to 2000 kgs. Use of FIBCs today permeates nearly all industries where dry bulk solids are handled, including food, chemicals, and pharmaceuticals.'
+      q: 'I already have direct factory relationships. Why would I need BulkFlex?',
+      a: 'BulkFlex doesn\'t ask you to abandon relationships that are working. We provide infrastructure around your existing procurement — adding on-ground QC, backup supply options, compliance documentation, and a single coordination layer. Most of our buyers continue working with factories they know; they simply stop carrying the risks and administrative overhead alone. The question isn\'t whether your relationships are good. It\'s whether the systems around them are good enough.'
     },
     {
-      q: 'What is a bulk bag made from?',
-      a: 'The most common material used in FIBC construction is 100% virgin polypropylene as per international standards.'
-    },
-    {
-      q: 'What is woven polypropylene made from?',
-      a: 'Woven polypropylene is made from extruded resin turned into tapes, which are then woven to make the fabric.'
-    },
-    {
-      q: 'What sizes do bulk bags come in?',
-      a: 'Bulk bags come in many different sizes and styles and can be customized as per your needs. For suggestions, contact Bulk Flex at info@bulkflex.com.'
-    },
-    {
-      q: 'What does SWL mean?',
-      a: 'SWL is an abbreviation for safe working load. A bulk bag’s safe working load is the amount of weight that the bag is rated and tested to hold and function safely.'
-    },
-    {
-      q: 'What does 5:1 SF mean?',
-      a: 'A standard bulk bag is rated at a 5:1 Safety Factor Ratio, which means that the bag is specified to hold 5 times the amount of the bag\'s safe working load or withstand 5 times the force during transportation. A 5:1 Safety Ratio is for single use. Bags designed for multi-use or multi-trip applications are made with an increased SF ratio (typically 6:1).'
-    },
-    {
-      q: 'Can bulk bags be stored outside?',
-      a: 'Yes, however, bulk bags will degrade as a result of UV exposure. A standard bulk bag has a UV inhibitor/mix added into the fabric during manufacturing. It is always advisable to specify the outdoor exposure requirements when placing your order.'
-    },
-    {
-      q: 'What types of FIBCs are available and what applications are FIBCs (bulk bags) typically used for?',
-      a: 'There are many common types of FIBCs available in the market. The most commonly used bulk bags are constructed in the U-Panel or Circular configurations and might incorporate a simple PE liner or no liner at all.'
+      q: 'Does working through BulkFlex add cost to my orders?',
+      a: 'BulkFlex\'s multi-supplier network often delivers competitive or improved pricing compared to single-factory direct relationships — because you now have a market benchmark and negotiating leverage you didn\'t have before. Factor in the costs you currently absorb independently — QC coordination, documentation management, compliance failures, rework — and the commercial case for BulkFlex typically improves further. We are structured to be a commercially sound decision, not an additional overhead.'
     }
   ];
 
@@ -218,40 +196,42 @@ export default function HomePage() {
                 <p className="mt-6 max-w-lg text-[17px] font-semibold leading-relaxed" style={{ color: 'var(--color-brand-dark)' }}>
                   {t('heroDesc')}
                 </p>
-                {t('heroDescSub1') && (
-                  <p className="mt-4 max-w-lg text-[14px] leading-relaxed" style={{ color: '#64748B' }}>
-                    {t('heroDescSub1')}
-                  </p>
-                )}
-                {t('heroDescSub2') && (
-                  <p className="mt-2 max-w-lg text-[14px] leading-relaxed" style={{ color: '#64748B' }}>
-                    {t('heroDescSub2')}
-                  </p>
-                )}
-              </Reveal>
-
-              <Reveal delay={0.22}>
-                <p className="mt-4 font-heading font-medium text-[14px]" style={{ color: '#64748B' }}>
-                  {t('heroTagline')}
-                </p>
               </Reveal>
 
               <Reveal delay={0.3}>
                 <div className="flex flex-wrap gap-4 mt-8">
                   <Link
                     to="/about-us"
-                    className="inline-flex items-center gap-2 rounded-lg font-bold text-[15px] px-7 py-3.5 transition-transform hover:-translate-y-0.5"
-                    style={{ background: 'var(--color-brand-dark)', color: '#FFFFFF' }}
+                    className="inline-flex items-center justify-center gap-2 rounded-lg font-bold text-[15px] px-8 py-4 transition-transform hover:-translate-y-0.5"
+                    style={{ background: '#116B58', color: '#FFFFFF' }}
                   >
                     {t('heroCtaPrimary')}
                   </Link>
                   <Link
                     to="/products"
-                    className="inline-flex items-center gap-2 rounded-lg font-bold text-[15px] px-7 py-3.5 border transition-colors hover:bg-white"
-                    style={{ borderColor: 'var(--color-brand-dark)', color: 'var(--color-brand-dark)' }}
+                    className="inline-flex items-center justify-center gap-2 rounded-lg font-bold text-[15px] px-8 py-4 border transition-colors hover:bg-gray-50"
+                    style={{ borderColor: 'var(--color-brand-dark)', color: 'var(--color-brand-dark)', background: 'transparent' }}
                   >
                     {t('heroCtaSecondary')}
                   </Link>
+                </div>
+              </Reveal>
+
+              <Reveal delay={0.4}>
+                <div className="mt-10 flex flex-wrap gap-x-4 gap-y-2 items-center text-[12px] font-bold uppercase tracking-wider text-gray-800" style={{ maxWidth: '600px' }}>
+                  <span>ISO 22000</span>
+                  <span className="text-gray-300">|</span>
+                  <span>ISO 9001</span>
+                  <span className="text-gray-300">|</span>
+                  <span>BRCGSS Food Grade</span>
+                  <span className="text-gray-300">|</span>
+                  <span>SEDEX / SA 8000</span>
+                  <span className="text-gray-300">|</span>
+                  <span>SGS & EBV Audit-Friendly</span>
+                  <span className="text-gray-300">|</span>
+                  <span>8+ Audited Factories</span>
+                  <span className="text-gray-300">|</span>
+                  <span>Structured 11-Step QC</span>
                 </div>
               </Reveal>
             </div>
@@ -692,72 +672,144 @@ export default function HomePage() {
 
       </section>
 
-      {/* 5. SOURCING MANAGED END TO END */}
+      {/* 5. LOGISTICAL INTELLIGENCE */}
       <section style={{ padding: 'clamp(64px, 8vw, 96px) 0', background: '#FFFFFF' }}>
         <div className="container">
 
-          <div style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto 52px auto' }}>
-            <h2 style={{ fontSize: 'clamp(30px, 3.8vw, 42px)', fontWeight: '800', color: '#142E3D', marginBottom: '12px' }}>
-              Sourcing Managed End to End
+          <div style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto 52px auto' }}>
+            <h2 style={{ fontSize: 'clamp(30px, 3.8vw, 42px)', fontWeight: '800', color: '#142E3D', marginBottom: '16px' }}>
+              Gain an Advantage with Logistical Intelligence
             </h2>
-            <p style={{ color: '#64748B', fontSize: '16px' }}>
-              BulkFlex manages sourcing and supply — matching buyers to vetted manufacturing partners and coordinating quality checks.
+            <p style={{ color: '#64748B', fontSize: '17px', lineHeight: '1.6' }}>
+              While you focus on your market, we control your packaging supply chain as your single trusted sourcing partner.
             </p>
           </div>
 
-          {/* 4-Column Card Grid */}
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-            gap: '28px'
+            gap: '24px',
+            marginBottom: '40px'
           }}>
             {[
-              { title: 'Quality Assurance', desc: 'Inspection and compliance checks aligned with international dangerous goods & food-grade packaging standards.', icon: <ShieldCheck size={26} color="#8DC63F" /> },
-              { title: 'Supply Chain Continuity', desc: 'Multi-plant sourcing designed to support consistent delivery timelines.', icon: <RefreshCw size={26} color="#8DC63F" /> },
-              { title: 'Cost Optimization', desc: 'Direct mill pricing with container space optimization to help reduce landed costs.', icon: <Target size={26} color="#8DC63F" /> }
+              { title: 'Predictive supply planning' },
+              { title: 'Freight optimization' },
+              { title: 'Unified communication' },
+              { title: 'Transparent visibility' }
             ].map((val, i) => (
               <div key={i} style={{
-                background: '#FBF1E6',
-                borderRadius: '20px',
-                padding: '36px 28px',
-                border: '1px solid #E2E8F0',
-                transition: 'transform 0.3s, box-shadow 0.3s'
-              }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-6px)';
-                  e.currentTarget.style.boxShadow = '0 16px 36px rgba(7,40,52,0.08)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'none';
-                  e.currentTarget.style.boxShadow = 'none';
-                }}
-              >
-                <div style={{
-                  width: '56px',
-                  height: '56px',
-                  borderRadius: '16px',
-                  background: '#F0F7E4',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  marginBottom: '22px'
-                }}>
-                  {val.icon}
-                </div>
-                <h3 style={{ fontSize: '19px', fontWeight: '800', color: '#142E3D', marginBottom: '10px' }}>
-                  {val.title}
-                </h3>
-                <p style={{ fontSize: '14px', color: '#64748B', lineHeight: '1.65' }}>
-                  {val.desc}
-                </p>
+                display: 'flex',
+                alignItems: 'center',
+                gap: '12px',
+                padding: '16px 20px',
+                background: '#F8FAFC',
+                borderRadius: '12px',
+                border: '1px solid #E2E8F0'
+              }}>
+                <Check size={20} color="#116B58" strokeWidth={3} style={{ flexShrink: 0 }} />
+                <span style={{ fontSize: '16px', fontWeight: '700', color: '#142E3D' }}>{val.title}</span>
               </div>
             ))}
+          </div>
+
+          <div style={{ textAlign: 'center' }}>
+            <Link to="/about-us" style={{
+              color: '#116B58',
+              fontWeight: '800',
+              fontSize: '16px',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '8px'
+            }}>
+              See how we simplify your global packaging logistics →
+            </Link>
           </div>
 
         </div>
       </section>
 
-      {/* 6. INDUSTRIES WE SERVE */}
+      {/* 6. HOW WE WORK (Image 3) */}
+      <section style={{ padding: 'clamp(64px, 8vw, 96px) 0', background: '#142E3D' }}>
+        <div className="container">
+          <div style={{ marginBottom: '48px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: '24px' }}>
+            <div>
+              <h2 style={{ fontSize: 'clamp(32px, 4vw, 42px)', fontWeight: '800', color: '#FFFFFF', marginBottom: '16px' }}>
+                How We Work
+              </h2>
+              <p style={{ color: '#94A3B8', fontSize: '16px', maxWidth: '500px', lineHeight: '1.6' }}>
+                Our structured approach ensures absolute clarity from initial specification review through to final container delivery.
+              </p>
+            </div>
+            <Link to="/contact" style={{
+              background: '#116B58',
+              color: '#FFFFFF',
+              fontWeight: '800',
+              padding: '16px 32px',
+              borderRadius: '8px',
+              display: 'inline-flex',
+              alignItems: 'center'
+            }}>
+              Request Sample Analysis
+            </Link>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px' }}>
+            {[
+              { title: 'Specification Review', desc: 'Detailed analysis of your packaging needs, SWL, SF, and compliance requirements.', icon: <CheckCircle2 size={24} color="#116B58" /> },
+              { title: 'Factory Matching', desc: 'Selecting the right audited facility based on capacity, capability, and timeline.', icon: <Factory size={24} color="#116B58" /> },
+              { title: 'Sample Approval', desc: 'Physical sample production and rigorous testing before bulk manufacturing begins.', icon: <ShieldCheck size={24} color="#116B58" /> },
+              { title: 'Production & QC', desc: 'On-ground monitoring and step-by-step quality control during manufacturing.', icon: <Award size={24} color="#116B58" /> },
+              { title: 'Compliance Docs', desc: 'Generating batch traceability, certificates of origin, and testing reports.', icon: <Package size={24} color="#116B58" /> },
+              { title: 'Global Logistics', desc: 'Container optimization, freight booking, and transparent dispatch tracking.', icon: <Truck size={24} color="#116B58" /> }
+            ].map((step, i) => (
+              <div key={i} style={{ background: '#FFFFFF', borderRadius: '16px', padding: '32px', border: '1px solid rgba(255,255,255,0.1)' }}>
+                <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: '#F0F7F4', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20px' }}>
+                  {step.icon}
+                </div>
+                <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#142E3D', marginBottom: '12px' }}>{step.title}</h3>
+                <p style={{ fontSize: '14px', color: '#64748B', lineHeight: '1.6' }}>{step.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 7. WHAT MAKES BULK FLEX DIFFERENT (Image 3) */}
+      <section style={{ padding: 'clamp(64px, 8vw, 96px) 0', background: '#FBF1E6' }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: '56px' }}>
+            <h2 style={{ fontSize: 'clamp(32px, 4vw, 42px)', fontWeight: '800', color: '#142E3D' }}>
+              What Makes Bulk Flex Different
+            </h2>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '24px' }}>
+            {[
+              { title: 'Detailed Compliance Analysis', icon: <ShieldCheck size={20} color="#142E3D" /> },
+              { title: 'Structured Factory Audits', icon: <Building2 size={20} color="#142E3D" /> },
+              { title: 'On-ground Factory Visits', icon: <MapPin size={20} color="#142E3D" /> },
+              { title: 'Buyer-Specific SOP Implementation', icon: <CheckCircle2 size={20} color="#142E3D" /> },
+              { title: 'Secure Supply Options', icon: <RefreshCw size={20} color="#142E3D" /> },
+              { title: 'Factory-Direct Pricing', icon: <Target size={20} color="#142E3D" /> }
+            ].map((item, i) => (
+              <div key={i} style={{
+                background: '#FFFFFF',
+                borderRadius: '16px',
+                padding: '24px',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '16px',
+                boxShadow: '0 4px 20px rgba(0,0,0,0.03)'
+              }}>
+                <div style={{ padding: '12px', background: '#F8FAFC', borderRadius: '12px' }}>
+                  {item.icon}
+                </div>
+                <h3 style={{ fontSize: '16px', fontWeight: '800', color: '#142E3D' }}>{item.title}</h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       <section style={{ padding: 'clamp(56px, 7vw, 80px) 0', background: '#FBF1E6', borderTop: '1px solid #E2E8F0' }}>
         <div className="container">
 
@@ -814,15 +866,39 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 8. INTERACTIVE FAQ ACCORDION */}
+      {/* 8. FACTORY & COMPLIANCE BADGES (Image 3) */}
+      <section style={{ padding: '48px 0', background: '#FFFFFF', borderTop: '1px solid #E2E8F0' }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: '32px' }}>
+            <h2 style={{ fontSize: '24px', fontWeight: '800', color: '#142E3D' }}>Factory & Compliance</h2>
+          </div>
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '32px' }}>
+            {[
+              { label: 'Detailed Pre-Order Checklist' },
+              { label: 'Structured Sample Evaluation' },
+              { label: 'QC Protection' },
+              { label: 'Factory Audit Suite' }
+            ].map((badge, i) => (
+              <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px' }}>
+                <div style={{ width: '48px', height: '48px', borderRadius: '50%', background: '#F0F7F4', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <ShieldCheck size={24} color="#116B58" />
+                </div>
+                <span style={{ fontSize: '13px', fontWeight: '700', color: '#64748B', maxWidth: '120px', textAlign: 'center' }}>{badge.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 9. INTERACTIVE FAQ ACCORDION */}
       <section style={{ padding: 'clamp(64px, 8vw, 96px) 0', background: '#FBF1E6', borderTop: '1px solid #E2E8F0' }}>
         <div className="container" style={{ maxWidth: '860px' }}>
           <div style={{ textAlign: 'center', marginBottom: '48px' }}>
-            <h2 style={{ fontSize: 'clamp(30px, 3.8vw, 42px)', fontWeight: '800', color: '#142E3D', marginBottom: '12px' }}>
-              Frequently Asked Questions
+            <h2 style={{ fontSize: 'clamp(30px, 3.8vw, 42px)', fontWeight: '800', color: '#142E3D', marginBottom: '16px' }}>
+              Questions Experienced Importers Ask Us
             </h2>
-            <p style={{ color: '#64748B', fontSize: '16px' }}>
-              Everything you need to know about our sourcing, quality, and shipping workflow.
+            <p style={{ color: '#64748B', fontSize: '17px', lineHeight: '1.6' }}>
+              These are the questions we hear most from buyers who have been sourcing directly and are evaluating whether BulkFlex can add genuine value.
             </p>
           </div>
 
@@ -832,9 +908,8 @@ export default function HomePage() {
                 key={idx}
                 style={{
                   background: '#FFFFFF',
-                  borderRadius: '16px',
                   border: '1px solid #E2E8F0',
-                  overflow: 'hidden',
+                  borderLeft: openFaq === idx ? '5px solid #116B58' : '1px solid #E2E8F0',
                   boxShadow: '0 4px 14px rgba(0,0,0,0.02)'
                 }}
               >
@@ -842,7 +917,7 @@ export default function HomePage() {
                   onClick={() => toggleFaq(idx)}
                   style={{
                     width: '100%',
-                    padding: '22px 28px',
+                    padding: '24px 28px',
                     display: 'flex',
                     justifyContent: 'space-between',
                     alignItems: 'center',
@@ -856,20 +931,15 @@ export default function HomePage() {
                   }}
                 >
                   <span>{faq.q}</span>
-                  <ChevronDown
-                    size={20}
-                    color="#8DC63F"
-                    style={{
-                      transform: openFaq === idx ? 'rotate(180deg)' : 'none',
-                      transition: 'transform 0.25s ease',
-                      flexShrink: 0,
-                      marginLeft: '16px'
-                    }}
-                  />
+                  {openFaq === idx ? (
+                    <X size={20} color="#116B58" style={{ flexShrink: 0, marginLeft: '16px' }} />
+                  ) : (
+                    <ChevronDown size={20} color="#94A3B8" style={{ flexShrink: 0, marginLeft: '16px' }} />
+                  )}
                 </button>
 
                 {openFaq === idx && (
-                  <div style={{ padding: '0 28px 24px 28px', color: '#475569', fontSize: '15px', lineHeight: '1.65', borderTop: '1px solid #F1F5F9', paddingTop: '18px' }}>
+                  <div style={{ padding: '0 28px 24px 28px', color: '#475569', fontSize: '15px', lineHeight: '1.7', paddingTop: '8px' }}>
                     {faq.a}
                   </div>
                 )}
@@ -879,56 +949,80 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 9. RFQ CTA BANNER */}
+      {/* 10. DIRECT FACTORY SAMPLE AUDITS CTA (Image 3) */}
       <section style={{
-        background: 'linear-gradient(135deg, #142E3D 0%, #0D3B43 100%)',
+        background: '#142E3D',
         color: '#FFFFFF',
         padding: '80px 0',
-        textAlign: 'center',
         position: 'relative',
         overflow: 'hidden'
       }}>
-        <div className="container" style={{ maxWidth: '760px', position: 'relative', zIndex: 2 }}>
-          <h2 style={{ fontSize: 'clamp(30px, 4.5vw, 46px)', color: '#fff', fontWeight: '800', marginBottom: '18px', fontFamily: 'var(--font-heading)' }}>
-            Ready to Optimize Your Industrial Packaging Supply?
-          </h2>
-          <p style={{ color: '#94A3B8', fontSize: '17px', lineHeight: '1.65', marginBottom: '36px' }}>
-            Get factory-direct quotes, custom engineering specs, and full container shipping schedules within 24 hours.
-          </p>
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '18px', flexWrap: 'wrap' }}>
-            <button
-              onClick={() => handleOpenQuote()}
-              style={{
-                background: '#8DC63F',
-                color: '#142E3D',
-                padding: '16px 36px',
-                borderRadius: '50px',
-                fontWeight: '800',
-                fontSize: '15px',
-                border: 'none',
-                cursor: 'pointer',
-                boxShadow: '0 10px 30px rgba(0, 194, 168, 0.35)',
-                transition: 'transform 0.2s'
-              }}
-            >
-              Request Quick Inquiry
-            </button>
-            <Link
-              to="/buyer-tools"
-              style={{
-                background: 'rgba(255, 255, 255, 0.1)',
-                color: '#FFFFFF',
-                border: '1px solid rgba(255, 255, 255, 0.25)',
-                padding: '16px 36px',
-                borderRadius: '50px',
-                fontWeight: '700',
-                fontSize: '15px',
-                backdropFilter: 'blur(8px)',
-                transition: 'all 0.2s'
-              }}
-            >
-              Explore Buyer Tools
-            </Link>
+        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+          <div className="grid gap-14 lg:grid-cols-2 items-center">
+            
+            {/* World Map SVG Graphic */}
+            <div className="relative">
+              <svg viewBox="0 0 800 520" className="w-full h-auto">
+                <path d="M 160 190 Q 280 140 400 260 T 630 210" fill="none" stroke="var(--color-brand-green)" strokeWidth="1.5" strokeDasharray="4 5" opacity="0.5" />
+                <path d="M 400 260 Q 300 360 220 340" fill="none" stroke="var(--color-brand-green)" strokeWidth="1.5" strokeDasharray="4 5" opacity="0.4" />
+                <path d="M 400 260 Q 520 130 610 160" fill="none" stroke="var(--color-brand-green)" strokeWidth="1.5" strokeDasharray="4 5" opacity="0.4" />
+                <path d="M 400 260 Q 450 350 540 380" fill="none" stroke="var(--color-brand-green)" strokeWidth="1.5" strokeDasharray="4 5" opacity="0.4" />
+                {[
+                  { x: 400, y: 260, label: 'SOURCING NETWORK' },
+                  { x: 160, y: 190, label: 'EUROPE' },
+                  { x: 630, y: 210, label: 'AMERICAS' },
+                  { x: 220, y: 340, label: 'MIDDLE EAST' },
+                  { x: 540, y: 380, label: 'APAC' },
+                ].map((node, i) => (
+                  <g key={i} transform={`translate(${node.x}, ${node.y})`}>
+                    <circle r={i === 0 ? 9 : 7} fill={i === 0 ? 'var(--color-brand-dark)' : 'var(--color-brand-green)'} stroke="#FFFFFF" strokeWidth="2.5" />
+                  </g>
+                ))}
+              </svg>
+            </div>
+
+            {/* Text Content */}
+            <div>
+              <h2 style={{ fontSize: 'clamp(30px, 4.5vw, 42px)', color: '#fff', fontWeight: '800', marginBottom: '18px', fontFamily: 'var(--font-heading)' }}>
+                Direct Factory Sample Audits
+              </h2>
+              <p style={{ color: '#94A3B8', fontSize: '17px', lineHeight: '1.65', marginBottom: '36px' }}>
+                These independent factory evaluations ensure your products are manufactured in environments receiving active oversight and strictly adhering to pre-agreed specifications.
+              </p>
+              <div style={{ display: 'flex', gap: '18px', flexWrap: 'wrap' }}>
+                <button
+                  onClick={() => handleOpenQuote()}
+                  style={{
+                    background: '#116B58',
+                    color: '#FFFFFF',
+                    padding: '16px 36px',
+                    borderRadius: '8px',
+                    fontWeight: '800',
+                    fontSize: '15px',
+                    border: 'none',
+                    cursor: 'pointer',
+                    transition: 'transform 0.2s'
+                  }}
+                >
+                  Request Specs
+                </button>
+                <Link
+                  to="/about-us"
+                  style={{
+                    background: '#FFFFFF',
+                    color: '#142E3D',
+                    padding: '16px 36px',
+                    borderRadius: '8px',
+                    fontWeight: '700',
+                    fontSize: '15px',
+                    transition: 'all 0.2s'
+                  }}
+                >
+                  View Branches
+                </Link>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
