@@ -164,6 +164,18 @@ export default function HomePage() {
     {
       q: 'Does working through BulkFlex add cost to my orders?',
       a: 'BulkFlex\'s multi-supplier network often delivers competitive or improved pricing compared to single-factory direct relationships — because you now have a market benchmark and negotiating leverage you didn\'t have before. Factor in the costs you currently absorb independently — QC coordination, documentation management, compliance failures, rework — and the commercial case for BulkFlex typically improves further. We are structured to be a commercially sound decision, not an additional overhead.'
+    },
+    {
+      q: 'What product categories does BulkFlex cover?',
+      a: 'BulkFlex works across a broad range of bulk and manufactured product categories sourced from Asia. Rather than list categories here and risk misleading you, we recommend contacting us directly with your product specifics. We will tell you honestly and immediately whether it falls within our current supplier network capability — and if it doesn\'t, we won\'t waste your time.'
+    },
+    {
+      q: 'Can BulkFlex work with my existing freight forwarder and logistics setup?',
+      a: 'Yes. BulkFlex manages the origin-side of your supply chain — factory coordination, QC, compliance, and documentation. Your freight and import arrangements remain exactly as they are. We work with your logistics setup, not around it. If you want freight recommendations, we can provide them, but it\'s never a requirement.'
+    },
+    {
+      q: 'How do I know the factories you shortlist are genuinely audited?',
+      a: 'We provide full audit documentation for every factory we shortlist for your order — covering the audit scope, findings, certifications held, and production capability assessment. We also encourage buyers to visit shortlisted factories in person, and we actively coordinate those visits. Our audit credentials are not claims — they are documented and verifiable. If you want to bring your own inspector or audit firm, we fully accommodate that.'
     }
   ];
 
