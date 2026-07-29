@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_fd6ea04a_aca5_4e3d_b574_738ee945af82_md_jpg_1 from '../assets/images/fd6ea04a-aca5-4e3d-b574-738ee945af82-md.jpg?url';
-import asset_fd6ea04a_aca5_4e3d_b574_738ee945af82_md_jpeg_2 from '../assets/images/fd6ea04a-aca5-4e3d-b574-738ee945af82-md.jpeg?url';
+import asset_fd6ea04a_aca5_4e3d_b574_738ee945af82_md_jpg_1 from '../assets/images/official/fd6ea04a-aca5-4e3d-b574-738ee945af82.jpeg?url';
+import asset_fd6ea04a_aca5_4e3d_b574_738ee945af82_md_jpeg_2 from '../assets/images/official/fd6ea04a-aca5-4e3d-b574-738ee945af82.jpeg?url';
 
 export default function ProductLinerOptions() {
     useEffect(() => {

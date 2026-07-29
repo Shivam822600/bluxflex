@@ -3,12 +3,12 @@ import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 
-import asset_roofing_underlayment_png_1 from '../assets/images/roofing_underlayment.png?url';
-import asset_house_wrap_png_3 from '../assets/images/house_wrap.png?url';
-import asset_hail_nets_png_5 from '../assets/images/hail_nets.png?url';
-import asset_SILAGE_WRAP_BALE_WRAP_jpg_7 from '../assets/images/SILAGE-WRAP-BALE-WRAP.jpg?url';
-import asset_woven_ground_cover_png_9 from '../assets/images/woven_ground_cover.png?url';
-import asset_shade_nets_jpg_14 from '../assets/images/shade_nets.jpg?url';
+import asset_roofing_underlayment_png_1 from '../assets/images/official/roofing_underlayment.png?url';
+import asset_house_wrap_png_3 from '../assets/images/official/house_wrap.png?url';
+import asset_hail_nets_png_5 from '../assets/images/official/hail_nets.png?url';
+import asset_SILAGE_WRAP_BALE_WRAP_jpg_7 from '../assets/images/official/SILAGE-WRAP-BALE-WRAP.jpg?url';
+import asset_woven_ground_cover_png_9 from '../assets/images/official/woven_ground_cover.png?url';
+import asset_shade_nets_jpg_14 from '../assets/images/official/shade_nets.jpg?url';
 
 export default function ProductCategoryAgroTextiles() {
   useEffect(() => {

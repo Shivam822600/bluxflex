@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_Leno_flat_fabric_jpg_1 from '../assets/images/Leno-flat-fabric.jpg?url';
+import asset_Leno_flat_fabric_jpg_1 from '../assets/images/official/Leno-flat-fabric.png?url';
 
 export default function ProductLenoFlatFabric() {
     useEffect(() => {

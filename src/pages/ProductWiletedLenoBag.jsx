@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_wileted_leno_bag_jpg_1 from '../assets/images/wileted-leno-bag.jpg?url';
-import asset_wileted_leno_bag_jpeg_2 from '../assets/images/wileted-leno-bag-297x300.jpeg?url';
+import asset_wileted_leno_bag_jpg_1 from '../assets/images/official/wileted-leno-bag.jpeg?url';
+import asset_wileted_leno_bag_jpeg_2 from '../assets/images/official/wileted-leno-bag.jpeg?url';
 
 export default function ProductWiletedLenoBag() {
     useEffect(() => {

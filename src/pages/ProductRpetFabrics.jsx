@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_rPET_Fabrics_jpg_1 from '../assets/images/rPET-Fabrics.jpg?url';
-import asset_rPET_Fabrics_297x300_jpg_2 from '../assets/images/rPET-Fabrics-297x300.jpg?url';
+import asset_rPET_Fabrics_jpg_1 from '../assets/images/official/rPET-Fabrics.jpg?url';
+import asset_rPET_Fabrics_297x300_jpg_2 from '../assets/images/official/rPET-Fabrics.jpg?url';
 
 export default function ProductRpetFabrics() {
     useEffect(() => {

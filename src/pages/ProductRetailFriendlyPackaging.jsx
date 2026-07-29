@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_Retail_Friendly_Packaging_jpg_1 from '../assets/images/Retail-Friendly-Packaging.jpg?url';
+import asset_Retail_Friendly_Packaging_jpg_1 from '../assets/images/official/Retail-Friendly-Packaging.jpg?url';
 
 export default function ProductRetailFriendlyPackaging() {
     useEffect(() => {

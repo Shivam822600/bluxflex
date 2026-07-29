@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_bulk3_png_1 from '../assets/images/bulk3.png?url';
-import asset_bulk3_297x300_png_2 from '../assets/images/bulk3-297x300.png?url';
+import asset_bulk3_png_1 from '../assets/images/official/bulk3.png?url';
+import asset_bulk3_297x300_png_2 from '../assets/images/official/bulk3.png?url';
 
 export default function ProductRetailShoppingBagC() {
     useEffect(() => {

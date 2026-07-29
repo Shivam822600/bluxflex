@@ -3,11 +3,11 @@ import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ChevronLeft } from 'lucide-react';
 
-import asset_gusseted_jpg_1 from '../assets/images/gusseted.jpg?url';
-import asset_open_top_jpg_2 from '../assets/images/open-top.jpg?url';
-import asset_top_spout_jpg_3 from '../assets/images/top-spout.jpg?url';
-import asset_top_and_bottom_jpg_4 from '../assets/images/top_and_bottom.jpg?url';
-import asset_cubic_jpg_5 from '../assets/images/cubic.jpg?url';
+import asset_gusseted_jpg_1 from '../assets/images/official/gusseted.jpg?url';
+import asset_open_top_jpg_2 from '../assets/images/official/open-top.jpg?url';
+import asset_top_spout_jpg_3 from '../assets/images/official/top-spout.jpg?url';
+import asset_top_and_bottom_jpg_4 from '../assets/images/official/top_and_bottom.jpg?url';
+import asset_cubic_jpg_5 from '../assets/images/official/cubic.jpg?url';
 
 export default function FibcLiners() {
   useEffect(() => {

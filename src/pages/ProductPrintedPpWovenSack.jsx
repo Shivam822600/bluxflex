@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_printed_pp_woven_sack_upto_six_colors_png_1 from '../assets/images/printed-pp-woven-sack-upto-six-colors.png?url';
-import asset_printed_pp_woven_sack_upto_six_colors_297x300_png_2 from '../assets/images/printed-pp-woven-sack-upto-six-colors-297x300.png?url';
+import asset_printed_pp_woven_sack_upto_six_colors_png_1 from '../assets/images/official/printed-pp-woven-sack-upto-six-colors.png?url';
+import asset_printed_pp_woven_sack_upto_six_colors_297x300_png_2 from '../assets/images/official/printed-pp-woven-sack-upto-six-colors.png?url';
 
 export default function ProductPrintedPpWovenSack() {
     useEffect(() => {

@@ -3,12 +3,12 @@ import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 
-import asset_paper_bags_png_1 from '../assets/images/paper_bags.png?url';
-import asset_cotton_bags_jpg_2 from '../assets/images/cotton_bags.jpg?url';
-import asset_ppwovwnnonvowen_bags_png_4 from '../assets/images/ppwovwnnonvowen_bags.png?url';
-import asset_winebeverage_bags_jpg_5 from '../assets/images/winebeverage_bags.jpg?url';
-import asset_cooler_bags_jpg_7 from '../assets/images/cooler_bags.jpg?url';
-import asset_PP_shopping_bag_jpg_9 from '../assets/images/PP-shopping-bag.jpg?url';
+import asset_paper_bags_png_1 from '../assets/images/official/paper_bags.png?url';
+import asset_cotton_bags_jpg_2 from '../assets/images/official/cotton_bags.jpeg?url';
+import asset_ppwovwnnonvowen_bags_png_4 from '../assets/images/official/ppwovwnnonvowen_bags.png?url';
+import asset_winebeverage_bags_jpg_5 from '../assets/images/official/winebeverage_bags.jpeg?url';
+import asset_cooler_bags_jpg_7 from '../assets/images/official/cooler_bags.jpeg?url';
+import asset_PP_shopping_bag_jpg_9 from '../assets/images/official/PP-shopping-bag.jpg?url';
 
 export default function ProductCategoryRetailShopingBags() {
   useEffect(() => {

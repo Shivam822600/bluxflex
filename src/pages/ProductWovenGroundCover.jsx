@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_woven_ground_cover_png_1 from '../assets/images/woven_ground_cover.png?url';
+import asset_woven_ground_cover_png_1 from '../assets/images/official/woven_ground_cover.png?url';
 
 export default function ProductWovenGroundCover() {
     useEffect(() => {

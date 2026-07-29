@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_Shared_Net_jpg_1 from '../assets/images/Shared-Net.jpg?url';
+import asset_Shared_Net_jpg_1 from '../assets/images/official/Shared-Net.jpg?url';
 
 export default function ProductSharedNet() {
     useEffect(() => {

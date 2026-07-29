@@ -3,12 +3,12 @@ import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 
-import asset_printed_pp_woven_sack_upto_six_colors_png_1 from '../assets/images/printed-pp-woven-sack-upto-six-colors.png?url';
-import asset_fd6ea04a_aca5_4e3d_b574_738ee945af82_md_jpg_3 from '../assets/images/fd6ea04a-aca5-4e3d-b574-738ee945af82-md.jpg?url';
-import asset_a4da6e12_8b22_4896_929b_815191c46974_1024x1024_png_5 from '../assets/images/a4da6e12-8b22-4896-929b-815191c46974-1024x1024.png?url';
-import asset_2eb7cfac_a931_4772_9c11_d52f91da846e_1024x1024_png_8 from '../assets/images/2eb7cfac-a931-4772-9c11-d52f91da846e-1024x1024.png?url';
-import asset_pp_woven_png_12 from '../assets/images/pp-woven.png?url';
-import asset_unprinted_png_13 from '../assets/images/unprinted.png?url';
+import asset_printed_pp_woven_sack_upto_six_colors_png_1 from '../assets/images/official/printed-pp-woven-sack-upto-six-colors.png?url';
+import asset_fd6ea04a_aca5_4e3d_b574_738ee945af82_md_jpg_3 from '../assets/images/official/fd6ea04a-aca5-4e3d-b574-738ee945af82.jpeg?url';
+import asset_a4da6e12_8b22_4896_929b_815191c46974_1024x1024_png_5 from '../assets/images/official/a4da6e12-8b22-4896-929b-815191c46974.png?url';
+import asset_2eb7cfac_a931_4772_9c11_d52f91da846e_1024x1024_png_8 from '../assets/images/official/2eb7cfac-a931-4772-9c11-d52f91da846e.png?url';
+import asset_pp_woven_png_12 from '../assets/images/official/pp-woven.png?url';
+import asset_unprinted_png_13 from '../assets/images/official/unprinted.png?url';
 
 export default function ProductCategoryPpWovenSacks() {
   useEffect(() => {

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_juteburlap_bags_png_1 from '../assets/images/juteburlap_bags.png?url';
-import asset_juteburlap_bags_300x300_png_2 from '../assets/images/juteburlap_bags-300x300.png?url';
+import asset_juteburlap_bags_png_1 from '../assets/images/official/juteburlap_bags.png?url';
+import asset_juteburlap_bags_300x300_png_2 from '../assets/images/official/juteburlap_bags.png?url';
 
 export default function ProductJuteBurlapBags() {
     useEffect(() => {

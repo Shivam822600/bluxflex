@@ -3,12 +3,12 @@ import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ChevronLeft } from 'lucide-react';
 
-import asset_filling_a01_gif_1 from '../assets/images/filling_a01.gif?url';
-import asset_filling_a02_gif_2 from '../assets/images/filling_a02.gif?url';
-import asset_filling_a03_gif_3 from '../assets/images/filling_a03.gif?url';
-import asset_filling_a04_gif_4 from '../assets/images/filling_a04.gif?url';
-import asset_filling_a05_gif_5 from '../assets/images/filling_a05.gif?url';
-import asset_filling_a06_gif_6 from '../assets/images/filling_a06.gif?url';
+import asset_filling_a01_gif_1 from '../assets/images/official/filling_a01.gif?url';
+import asset_filling_a02_gif_2 from '../assets/images/official/filling_a02.gif?url';
+import asset_filling_a03_gif_3 from '../assets/images/official/filling_a03.gif?url';
+import asset_filling_a04_gif_4 from '../assets/images/official/filling_a04.gif?url';
+import asset_filling_a05_gif_5 from '../assets/images/official/filling_a05.gif?url';
+import asset_filling_a06_gif_6 from '../assets/images/official/filling_a06.gif?url';
 
 export default function FibcFilling() {
   useEffect(() => {

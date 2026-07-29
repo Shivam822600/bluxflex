@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_9e742bd7_c239_40c0_b23a_4dc7325f456d_1024x1024_png_1 from '../assets/images/9e742bd7-c239-40c0-b23a-4dc7325f456d-1024x1024.png?url';
-import asset_9e742bd7_c239_40c0_b23a_4dc7325f456d_300x300_png_2 from '../assets/images/9e742bd7-c239-40c0-b23a-4dc7325f456d-300x300.png?url';
-import asset_9e742bd7_c239_40c0_b23a_4dc7325f456d_150x150_png_3 from '../assets/images/9e742bd7-c239-40c0-b23a-4dc7325f456d.png?url';
+import asset_9e742bd7_c239_40c0_b23a_4dc7325f456d_1024x1024_png_1 from '../assets/images/official/9e742bd7-c239-40c0-b23a-4dc7325f456d.png?url';
+import asset_9e742bd7_c239_40c0_b23a_4dc7325f456d_300x300_png_2 from '../assets/images/official/9e742bd7-c239-40c0-b23a-4dc7325f456d.png?url';
+import asset_9e742bd7_c239_40c0_b23a_4dc7325f456d_150x150_png_3 from '../assets/images/official/9e742bd7-c239-40c0-b23a-4dc7325f456d.png?url';
 
 export default function ProductPeContainerLinersDryBulkLiquid() {
     useEffect(() => {

@@ -3,12 +3,12 @@ import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 
-import asset_RASCHEL_BAGS_FABRIC_png_1 from '../assets/images/RASCHEL-BAGS-FABRIC.png?url';
-import asset_LENO_FLAT_FABRIC___ROLLS_png_4 from '../assets/images/LENO-FLAT-FABRIC-—-ROLLS.png?url';
-import asset_leno_bag_jpg_6 from '../assets/images/leno-bag.jpg?url';
-import asset_wileted_leno_bag_jpg_8 from '../assets/images/wileted-leno-bag.jpg?url';
-import asset_leno_fabric_jpg_10 from '../assets/images/leno-fabric.jpg?url';
-import asset_Leno_flat_fabric_jpg_12 from '../assets/images/Leno-flat-fabric.jpg?url';
+import asset_RASCHEL_BAGS_FABRIC_png_1 from '../assets/images/official/RASCHEL-BAGS-FABRIC.png?url';
+import asset_LENO_FLAT_FABRIC___ROLLS_png_4 from '../assets/images/official/LENO-FLAT-FABRIC-_-ROLLS.png?url';
+import asset_leno_bag_jpg_6 from '../assets/images/official/leno-bag.jpeg?url';
+import asset_wileted_leno_bag_jpg_8 from '../assets/images/official/wileted-leno-bag.jpeg?url';
+import asset_leno_fabric_jpg_10 from '../assets/images/official/leno-fabric.jpeg?url';
+import asset_Leno_flat_fabric_jpg_12 from '../assets/images/official/Leno-flat-fabric.png?url';
 
 export default function ProductCategoryLenoBagsFebric() {
   useEffect(() => {

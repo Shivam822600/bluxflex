@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_Trellis_Netting_png_1 from '../assets/images/Trellis-Netting.png?url';
+import asset_Trellis_Netting_png_1 from '../assets/images/official/Trellis-Netting.png?url';
 
 export default function ProductTrellisNetting() {
     useEffect(() => {

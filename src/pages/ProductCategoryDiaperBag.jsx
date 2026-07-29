@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 
-import asset_Diaper_Bag_1_jpg_3 from '../assets/images/Diaper-Bag-1.jpg?url';
+import asset_Diaper_Bag_1_jpg_3 from '../assets/images/official/Diaper-Bag-1.jpg?url';
 
 export default function ProductCategoryDiaperBag() {
   useEffect(() => {

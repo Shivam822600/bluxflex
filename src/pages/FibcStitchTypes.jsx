@@ -3,10 +3,10 @@ import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ChevronLeft } from 'lucide-react';
 
-import asset_box_jpg_1 from '../assets/images/box.jpg?url';
-import asset_dustproof_jpg_2 from '../assets/images/dustproof.jpg?url';
-import asset_lock_jpg_3 from '../assets/images/lock.jpg?url';
-import asset_scord_jpg_4 from '../assets/images/scord.jpg?url';
+import asset_box_jpg_1 from '../assets/images/official/box.jpg?url';
+import asset_dustproof_jpg_2 from '../assets/images/official/dustproof.jpg?url';
+import asset_lock_jpg_3 from '../assets/images/official/lock.jpg?url';
+import asset_scord_jpg_4 from '../assets/images/official/scord.jpg?url';
 
 export default function FibcStitchTypes() {
   useEffect(() => {

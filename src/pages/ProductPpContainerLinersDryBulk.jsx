@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_8f21b94e_0d1a_4770_bf8a_3399ef293774_md_jpg_1 from '../assets/images/8f21b94e-0d1a-4770-bf8a-3399ef293774-md.jpg?url';
-import asset_8f21b94e_0d1a_4770_bf8a_3399ef293774_md_jpeg_2 from '../assets/images/8f21b94e-0d1a-4770-bf8a-3399ef293774-md.jpeg?url';
+import asset_8f21b94e_0d1a_4770_bf8a_3399ef293774_md_jpg_1 from '../assets/images/official/8f21b94e-0d1a-4770-bf8a-3399ef293774.jpeg?url';
+import asset_8f21b94e_0d1a_4770_bf8a_3399ef293774_md_jpeg_2 from '../assets/images/official/8f21b94e-0d1a-4770-bf8a-3399ef293774.jpeg?url';
 
 export default function ProductPpContainerLinersDryBulk() {
     useEffect(() => {

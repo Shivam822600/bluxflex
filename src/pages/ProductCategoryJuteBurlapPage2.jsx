@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_jute_wood_carrier_bag_png_1 from '../assets/images/jute_wood_carrier_bag.png?url';
-import asset_jute_sacks_treecover_png_2 from '../assets/images/jute_sacks_treecover.png?url';
-import asset_jute_sacks_png_3 from '../assets/images/jute_sacks.png?url';
-import asset_burlap_twins_png_4 from '../assets/images/burlap_twins.png?url';
+import asset_jute_wood_carrier_bag_png_1 from '../assets/images/official/jute_wood_carrier_bag.png?url';
+import asset_jute_sacks_treecover_png_2 from '../assets/images/official/jute_sacks_treecover.png?url';
+import asset_jute_sacks_png_3 from '../assets/images/official/jute_sacks.png?url';
+import asset_burlap_twins_png_4 from '../assets/images/official/burlap_twins.png?url';
 
 export default function ProductCategoryJuteBurlapPage2() {
     useEffect(() => {

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ChevronLeft, ShieldCheck, ArrowRight } from 'lucide-react';
-import asset_C_Conductive_Bag_jpg_1 from '../assets/images/C-Conductive-Bag.jpg?url';
+import asset_C_Conductive_Bag_jpg_1 from '../assets/images/official/C-Conductive-Bag.jpg?url';
 
 export default function ProductCConductiveBag() {
   useEffect(() => {

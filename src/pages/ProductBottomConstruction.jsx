@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_a4da6e12_8b22_4896_929b_815191c46974_1024x1024_png_1 from '../assets/images/a4da6e12-8b22-4896-929b-815191c46974-1024x1024.png?url';
-import asset_a4da6e12_8b22_4896_929b_815191c46974_300x300_png_2 from '../assets/images/a4da6e12-8b22-4896-929b-815191c46974-300x300.png?url';
-import asset_a4da6e12_8b22_4896_929b_815191c46974_150x150_png_3 from '../assets/images/a4da6e12-8b22-4896-929b-815191c46974.png?url';
+import asset_a4da6e12_8b22_4896_929b_815191c46974_1024x1024_png_1 from '../assets/images/official/a4da6e12-8b22-4896-929b-815191c46974.png?url';
+import asset_a4da6e12_8b22_4896_929b_815191c46974_300x300_png_2 from '../assets/images/official/a4da6e12-8b22-4896-929b-815191c46974.png?url';
+import asset_a4da6e12_8b22_4896_929b_815191c46974_150x150_png_3 from '../assets/images/official/a4da6e12-8b22-4896-929b-815191c46974.png?url';
 
 export default function ProductBottomConstruction() {
     useEffect(() => {

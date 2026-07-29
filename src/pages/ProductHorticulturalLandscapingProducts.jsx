@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_horticultural__landscaping_png_1 from '../assets/images/horticultural__landscaping.png?url';
-import asset_horticultural__landscaping_300x300_png_2 from '../assets/images/horticultural__landscaping-300x300.png?url';
+import asset_horticultural__landscaping_png_1 from '../assets/images/official/horticultural__landscaping.png?url';
+import asset_horticultural__landscaping_300x300_png_2 from '../assets/images/official/horticultural__landscaping.png?url';
 
 export default function ProductHorticulturalLandscapingProducts() {
     useEffect(() => {

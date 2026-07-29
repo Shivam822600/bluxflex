@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_specialty_fabrics_png_1 from '../assets/images/specialty_fabrics.png?url';
-import asset_specialty_fabrics_300x300_png_2 from '../assets/images/specialty_fabrics-300x300.png?url';
+import asset_specialty_fabrics_png_1 from '../assets/images/official/specialty_fabrics.png?url';
+import asset_specialty_fabrics_300x300_png_2 from '../assets/images/official/specialty_fabrics.png?url';
 
 export default function ProductWovenSpecialtyFabrics() {
     useEffect(() => {

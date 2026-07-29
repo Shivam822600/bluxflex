@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_bopp_sacks_png_1 from '../assets/images/bopp-sacks.png?url';
+import asset_bopp_sacks_png_1 from '../assets/images/official/bopp-sacks.png?url';
 
 export default function ProductPpWovenSacksA() {
     useEffect(() => {

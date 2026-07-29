@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_5d087881_43a6_4ccc_8a1b_7ca8002f6ff8_1024x1024_png_1 from '../assets/images/5d087881-43a6-4ccc-8a1b-7ca8002f6ff8-1024x1024.png?url';
+import asset_5d087881_43a6_4ccc_8a1b_7ca8002f6ff8_1024x1024_png_1 from '../assets/images/official/5d087881-43a6-4ccc-8a1b-7ca8002f6ff8.png?url';
 
 export default function ProductFabricOptions() {
     useEffect(() => {

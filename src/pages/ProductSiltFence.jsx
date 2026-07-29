@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_Silt_Fence_jpg_1 from '../assets/images/Silt-Fence.jpg?url';
+import asset_Silt_Fence_jpg_1 from '../assets/images/official/Silt-Fence.jpg?url';
 
 export default function ProductSiltFence() {
     useEffect(() => {

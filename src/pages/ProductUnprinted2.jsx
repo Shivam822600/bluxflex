@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_unprinted_png_1 from '../assets/images/unprinted.png?url';
+import asset_unprinted_png_1 from '../assets/images/official/unprinted.png?url';
 
 export default function ProductUnprinted2() {
     useEffect(() => {

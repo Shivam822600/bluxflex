@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import asset_Bulk_Flex_Brand_white_1024x293_png_1 from '../assets/images/Bulk_Flex_Brand_white-1024x293.png?url';
 import asset_Bulk_Flex_Brand_white_300x86_png_2 from '../assets/images/Bulk_Flex_Brand_white-300x86.png?url';
 import asset_Bulk_Flex_Brand_white_768x220_png_3 from '../assets/images/Bulk_Flex_Brand_white.png?url';
-import asset_simplified_text_1024x146_png_4 from '../assets/images/simplified_text-1024x146.png?url';
+import asset_simplified_text_1024x146_png_4 from '../assets/images/official/simplified_text.png?url';
 
 export default function Welcome() {
   useEffect(() => {

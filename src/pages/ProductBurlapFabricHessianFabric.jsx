@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_burlap_fabric_png_1 from '../assets/images/burlap_fabric.png?url';
+import asset_burlap_fabric_png_1 from '../assets/images/official/burlap_fabric.png?url';
 
 export default function ProductBurlapFabricHessianFabric() {
     useEffect(() => {

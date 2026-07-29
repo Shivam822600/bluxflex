@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import { ChevronRight, ShieldCheck, CheckCircle2 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
-import asset_baffle_bag_png_1 from '../assets/images/baffle-bag.png?url';
-import asset_single_loop_png_2 from '../assets/images/single-loop.png?url';
+import asset_baffle_bag_png_1 from '../assets/images/official/baffle-bag.png?url';
+import asset_single_loop_png_2 from '../assets/images/official/single-loop.png?url';
 
 export default function RpetFibc() {
   const { t } = useLanguage();

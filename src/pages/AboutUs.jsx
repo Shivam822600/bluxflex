@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import { CheckCircle2, ShieldCheck, Target, Eye, HeartHandshake, ArrowRight, Award } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
-import asset_Company_Overview_png_1 from '../assets/images/Company-Overview.png?url';
-import asset_Manufacturing_png_2 from '../assets/images/Manufacturing.png?url';
+import asset_Company_Overview_png_1 from '../assets/images/official/Company-Overview.png?url';
+import asset_Manufacturing_png_2 from '../assets/images/official/Manufacturing.png?url';
 
 export default function AboutUs() {
   const { t } = useLanguage();

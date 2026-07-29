@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_with_liners_png_1 from '../assets/images/with-liners.png?url';
+import asset_with_liners_png_1 from '../assets/images/official/with-liners.png?url';
 
 export default function ProductUnprinted() {
     useEffect(() => {

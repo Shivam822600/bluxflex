@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_winebeverage_bags_jpg_1 from '../assets/images/winebeverage_bags.jpg?url';
-import asset_winebeverage_bags_jpeg_2 from '../assets/images/winebeverage_bags.jpeg?url';
+import asset_winebeverage_bags_jpg_1 from '../assets/images/official/winebeverage_bags.jpeg?url';
+import asset_winebeverage_bags_jpeg_2 from '../assets/images/official/winebeverage_bags.jpeg?url';
 
 export default function ProductWineBeverageBags() {
     useEffect(() => {

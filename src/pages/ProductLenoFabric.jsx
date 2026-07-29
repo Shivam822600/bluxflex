@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_leno_fabric_jpg_1 from '../assets/images/leno-fabric.jpg?url';
-import asset_leno_fabric_jpeg_2 from '../assets/images/leno-fabric.jpeg?url';
+import asset_leno_fabric_jpg_1 from '../assets/images/official/leno-fabric.jpeg?url';
+import asset_leno_fabric_jpeg_2 from '../assets/images/official/leno-fabric.jpeg?url';
 
 export default function ProductLenoFabric() {
     useEffect(() => {

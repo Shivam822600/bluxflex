@@ -3,12 +3,12 @@ import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 
-import asset_juteburlap_bags_png_1 from '../assets/images/juteburlap_bags.png?url';
-import asset_jutesacks__printedbags_png_3 from '../assets/images/jutesacks__printedbags.png?url';
-import asset_horticultural__landscaping_png_5 from '../assets/images/horticultural__landscaping.png?url';
-import asset_jutetwine__cord_png_7 from '../assets/images/jutetwine__cord.png?url';
-import asset_burlap_fabric_png_10 from '../assets/images/burlap_fabric.png?url';
-import asset_soil_saver_png_11 from '../assets/images/soil-saver.png?url';
+import asset_juteburlap_bags_png_1 from '../assets/images/official/juteburlap_bags.png?url';
+import asset_jutesacks__printedbags_png_3 from '../assets/images/official/jutesacks__printedbags.png?url';
+import asset_horticultural__landscaping_png_5 from '../assets/images/official/horticultural__landscaping.png?url';
+import asset_jutetwine__cord_png_7 from '../assets/images/official/jutetwine__cord.png?url';
+import asset_burlap_fabric_png_10 from '../assets/images/official/burlap_fabric.png?url';
+import asset_soil_saver_png_11 from '../assets/images/official/soil-saver.png?url';
 
 export default function ProductCategoryJuteBurlap() {
   useEffect(() => {

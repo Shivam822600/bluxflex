@@ -3,11 +3,11 @@ import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 
-import asset_specialty_fabrics_png_1 from '../assets/images/specialty_fabrics.png?url';
-import asset_Monofilament_Fabrics_jpg_3 from '../assets/images/Monofilament-Fabrics.jpg?url';
-import asset_rPET_Fabrics_jpg_5 from '../assets/images/rPET-Fabrics.jpg?url';
-import asset_Lumber_Cover_Fabrics_jpg_7 from '../assets/images/Lumber-Cover-Fabrics.jpg?url';
-import asset_Silt_Fence_jpg_9 from '../assets/images/Silt-Fence.jpg?url';
+import asset_specialty_fabrics_png_1 from '../assets/images/official/specialty_fabrics.png?url';
+import asset_Monofilament_Fabrics_jpg_3 from '../assets/images/official/Monofilament-Fabrics.jpg?url';
+import asset_rPET_Fabrics_jpg_5 from '../assets/images/official/rPET-Fabrics.jpg?url';
+import asset_Lumber_Cover_Fabrics_jpg_7 from '../assets/images/official/Lumber-Cover-Fabrics.jpg?url';
+import asset_Silt_Fence_jpg_9 from '../assets/images/official/Silt-Fence.jpg?url';
 
 export default function ProductCategorySpecialtyFebrics() {
   useEffect(() => {

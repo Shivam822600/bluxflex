@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_ppwovwnnonvowen_bags_png_1 from '../assets/images/ppwovwnnonvowen_bags.png?url';
+import asset_ppwovwnnonvowen_bags_png_1 from '../assets/images/official/ppwovwnnonvowen_bags.png?url';
 
 export default function ProductPpWovenNonWovenBags() {
     useEffect(() => {

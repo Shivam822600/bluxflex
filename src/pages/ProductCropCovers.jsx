@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_crop_covers_jpg_1 from '../assets/images/crop_covers.jpg?url';
+import asset_crop_covers_jpg_1 from '../assets/images/official/crop_covers.jpg?url';
 
 export default function ProductCropCovers() {
     useEffect(() => {

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_paper_bags_png_1 from '../assets/images/paper_bags.png?url';
+import asset_paper_bags_png_1 from '../assets/images/official/paper_bags.png?url';
 
 export default function ProductPaperBags() {
     useEffect(() => {

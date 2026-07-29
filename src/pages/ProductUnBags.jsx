@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ChevronLeft, ShieldCheck, ArrowRight } from 'lucide-react';
-import asset_Un_Bags_jpg_1 from '../assets/images/Un-Bags-297x300.jpg?url';
+import asset_Un_Bags_jpg_1 from '../assets/images/official/Un-Bags.jpg?url';
 
 export default function ProductUnBags() {
   useEffect(() => {

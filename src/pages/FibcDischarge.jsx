@@ -3,12 +3,12 @@ import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ChevronLeft } from 'lucide-react';
 
-import asset_discharge_01_gif_1 from '../assets/images/discharge_01.gif?url';
-import asset_discharge_02_gif_2 from '../assets/images/discharge_02.gif?url';
-import asset_discharge_03_gif_3 from '../assets/images/discharge_03.gif?url';
-import asset_discharge_04_gif_4 from '../assets/images/discharge_04.gif?url';
-import asset_discharge_05_gif_5 from '../assets/images/discharge_05.gif?url';
-import asset_discharge_06_gif_6 from '../assets/images/discharge_06.gif?url';
+import asset_discharge_01_gif_1 from '../assets/images/official/discharge_01.gif?url';
+import asset_discharge_02_gif_2 from '../assets/images/official/discharge_02.gif?url';
+import asset_discharge_03_gif_3 from '../assets/images/official/discharge_03.gif?url';
+import asset_discharge_04_gif_4 from '../assets/images/official/discharge_04.gif?url';
+import asset_discharge_05_gif_5 from '../assets/images/official/discharge_05.gif?url';
+import asset_discharge_06_gif_6 from '../assets/images/official/discharge_06.gif?url';
 
 export default function FibcDischarge() {
   useEffect(() => {

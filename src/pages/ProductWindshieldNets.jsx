@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_wind_shield_nets_jpg_1 from '../assets/images/wind_shield_nets.jpg?url';
+import asset_wind_shield_nets_jpg_1 from '../assets/images/official/wind_shield_nets.jpg?url';
 
 export default function ProductWindshieldNets() {
     useEffect(() => {

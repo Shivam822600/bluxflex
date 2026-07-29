@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_burlap_twins_png_1 from '../assets/images/burlap_twins.png?url';
+import asset_burlap_twins_png_1 from '../assets/images/official/burlap_twins.png?url';
 
 export default function ProductBurlapTwins() {
     useEffect(() => {

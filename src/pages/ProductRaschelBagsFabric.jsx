@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_RASCHEL_BAGS_FABRIC_png_1 from '../assets/images/RASCHEL-BAGS-FABRIC.png?url';
-import asset_RASCHEL_BAGS_FABRIC_300x300_png_2 from '../assets/images/RASCHEL-BAGS-FABRIC-300x300.png?url';
+import asset_RASCHEL_BAGS_FABRIC_png_1 from '../assets/images/official/RASCHEL-BAGS-FABRIC.png?url';
+import asset_RASCHEL_BAGS_FABRIC_300x300_png_2 from '../assets/images/official/RASCHEL-BAGS-FABRIC.png?url';
 
 export default function ProductRaschelBagsFabric() {
     useEffect(() => {

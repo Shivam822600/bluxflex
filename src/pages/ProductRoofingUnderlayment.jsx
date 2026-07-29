@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_roofing_underlayment_png_1 from '../assets/images/roofing_underlayment.png?url';
-import asset_roofing_underlayment_300x300_png_2 from '../assets/images/roofing_underlayment-300x300.png?url';
+import asset_roofing_underlayment_png_1 from '../assets/images/official/roofing_underlayment.png?url';
+import asset_roofing_underlayment_300x300_png_2 from '../assets/images/official/roofing_underlayment.png?url';
 
 export default function ProductRoofingUnderlayment() {
     useEffect(() => {

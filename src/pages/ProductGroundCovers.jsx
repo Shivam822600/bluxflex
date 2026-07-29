@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_Ground_Covers_jpg_1 from '../assets/images/Ground-Covers.jpg?url';
+import asset_Ground_Covers_jpg_1 from '../assets/images/official/Ground-Covers.jpg?url';
 
 export default function ProductGroundCovers() {
     useEffect(() => {

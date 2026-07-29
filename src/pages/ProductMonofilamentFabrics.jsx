@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_Monofilament_Fabrics_jpg_1 from '../assets/images/Monofilament-Fabrics.jpg?url';
-import asset_Monofilament_Fabrics_297x300_jpg_2 from '../assets/images/Monofilament-Fabrics-297x300.jpg?url';
+import asset_Monofilament_Fabrics_jpg_1 from '../assets/images/official/Monofilament-Fabrics.jpg?url';
+import asset_Monofilament_Fabrics_297x300_jpg_2 from '../assets/images/official/Monofilament-Fabrics.jpg?url';
 
 export default function ProductMonofilamentFabrics() {
     useEffect(() => {

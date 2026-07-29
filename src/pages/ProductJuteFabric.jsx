@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_jute_fabric_png_1 from '../assets/images/jute-fabric.png?url';
+import asset_jute_fabric_png_1 from '../assets/images/official/jute-fabric.png?url';
 
 export default function ProductJuteFabric() {
     useEffect(() => {

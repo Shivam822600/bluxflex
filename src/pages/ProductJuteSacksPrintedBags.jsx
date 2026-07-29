@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_jutesacks__printedbags_png_1 from '../assets/images/jutesacks__printedbags.png?url';
-import asset_jutesacks__printedbags_300x300_png_2 from '../assets/images/jutesacks__printedbags-300x300.png?url';
+import asset_jutesacks__printedbags_png_1 from '../assets/images/official/jutesacks__printedbags.png?url';
+import asset_jutesacks__printedbags_300x300_png_2 from '../assets/images/official/jutesacks__printedbags.png?url';
 
 export default function ProductJuteSacksPrintedBags() {
     useEffect(() => {

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_plant_nets_jpg_1 from '../assets/images/plant_nets.jpg?url';
+import asset_plant_nets_jpg_1 from '../assets/images/official/plant_nets.jpg?url';
 
 export default function ProductPlantNets() {
     useEffect(() => {

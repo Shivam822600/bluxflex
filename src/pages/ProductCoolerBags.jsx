@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_cooler_bags_jpg_1 from '../assets/images/cooler_bags.jpg?url';
-import asset_cooler_bags_jpeg_2 from '../assets/images/cooler_bags.jpeg?url';
+import asset_cooler_bags_jpg_1 from '../assets/images/official/cooler_bags.jpeg?url';
+import asset_cooler_bags_jpeg_2 from '../assets/images/official/cooler_bags.jpeg?url';
 
 export default function ProductCoolerBags() {
     useEffect(() => {

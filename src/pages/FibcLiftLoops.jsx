@@ -3,14 +3,14 @@ import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ChevronLeft } from 'lucide-react';
 
-import asset_g01_jpg_1 from '../assets/images/g01.jpg?url';
-import asset_g02_jpg_2 from '../assets/images/g02.jpg?url';
-import asset_albbag_jpg_3 from '../assets/images/albbag.jpg?url';
-import asset_streav_jpg_4 from '../assets/images/streav.jpg?url';
-import asset_cloops_jpg_5 from '../assets/images/cloops.jpg?url';
-import asset_stevdor_jpg_6 from '../assets/images/stevdor.jpg?url';
-import asset_four_1_jpg_7 from '../assets/images/four-1.jpg?url';
-import asset_auxillary_jpg_8 from '../assets/images/auxillary.jpg?url';
+import asset_g01_jpg_1 from '../assets/images/official/g01.jpg?url';
+import asset_g02_jpg_2 from '../assets/images/official/g02.jpg?url';
+import asset_albbag_jpg_3 from '../assets/images/official/albbag.jpg?url';
+import asset_streav_jpg_4 from '../assets/images/official/streav.jpg?url';
+import asset_cloops_jpg_5 from '../assets/images/official/cloops.jpg?url';
+import asset_stevdor_jpg_6 from '../assets/images/official/stevdor.jpg?url';
+import asset_four_1_jpg_7 from '../assets/images/official/four-1.jpg?url';
+import asset_auxillary_jpg_8 from '../assets/images/official/auxillary.jpg?url';
 
 export default function FibcLiftLoops() {
   useEffect(() => {

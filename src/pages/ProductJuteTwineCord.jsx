@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_jutetwine__cord_png_1 from '../assets/images/jutetwine__cord.png?url';
-import asset_jutetwine__cord_300x300_png_2 from '../assets/images/jutetwine__cord-300x300.png?url';
+import asset_jutetwine__cord_png_1 from '../assets/images/official/jutetwine__cord.png?url';
+import asset_jutetwine__cord_300x300_png_2 from '../assets/images/official/jutetwine__cord.png?url';
 
 export default function ProductJuteTwineCord() {
     useEffect(() => {

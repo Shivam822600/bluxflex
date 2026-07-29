@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_shade_nets_jpg_1 from '../assets/images/shade_nets.jpg?url';
+import asset_shade_nets_jpg_1 from '../assets/images/official/shade_nets.jpg?url';
 
 export default function ProductShadesNet() {
     useEffect(() => {

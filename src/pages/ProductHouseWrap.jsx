@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_house_wrap_png_1 from '../assets/images/house_wrap.png?url';
-import asset_house_wrap_300x300_png_2 from '../assets/images/house_wrap-300x300.png?url';
+import asset_house_wrap_png_1 from '../assets/images/official/house_wrap.png?url';
+import asset_house_wrap_300x300_png_2 from '../assets/images/official/house_wrap.png?url';
 
 export default function ProductHouseWrap() {
     useEffect(() => {

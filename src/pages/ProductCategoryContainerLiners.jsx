@@ -3,8 +3,8 @@ import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 
-import asset_9e742bd7_c239_40c0_b23a_4dc7325f456d_1024x1024_png_1 from '../assets/images/9e742bd7-c239-40c0-b23a-4dc7325f456d-1024x1024.png?url';
-import asset_8f21b94e_0d1a_4770_bf8a_3399ef293774_md_jpg_4 from '../assets/images/8f21b94e-0d1a-4770-bf8a-3399ef293774-md.jpg?url';
+import asset_9e742bd7_c239_40c0_b23a_4dc7325f456d_1024x1024_png_1 from '../assets/images/official/9e742bd7-c239-40c0-b23a-4dc7325f456d.png?url';
+import asset_8f21b94e_0d1a_4770_bf8a_3399ef293774_md_jpg_4 from '../assets/images/official/8f21b94e-0d1a-4770-bf8a-3399ef293774.jpeg?url';
 
 export default function ProductCategoryContainerLiners() {
   useEffect(() => {

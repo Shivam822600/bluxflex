@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_jute_wood_carrier_bag_png_1 from '../assets/images/jute_wood_carrier_bag.png?url';
+import asset_jute_wood_carrier_bag_png_1 from '../assets/images/official/jute_wood_carrier_bag.png?url';
 
 export default function ProductJuteWoodCarrierBag() {
     useEffect(() => {

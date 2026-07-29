@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_jute_gardening_fabric_png_1 from '../assets/images/jute_gardening_fabric.png?url';
+import asset_jute_gardening_fabric_png_1 from '../assets/images/official/jute_gardening_fabric.png?url';
 
 export default function ProductJuteGardeningFabricLandscapingFabric() {
     useEffect(() => {

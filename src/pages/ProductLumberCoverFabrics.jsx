@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_Lumber_Cover_Fabrics_jpg_1 from '../assets/images/Lumber-Cover-Fabrics.jpg?url';
-import asset_Lumber_Cover_Fabrics_297x300_jpg_2 from '../assets/images/Lumber-Cover-Fabrics-297x300.jpg?url';
+import asset_Lumber_Cover_Fabrics_jpg_1 from '../assets/images/official/Lumber-Cover-Fabrics.jpg?url';
+import asset_Lumber_Cover_Fabrics_297x300_jpg_2 from '../assets/images/official/Lumber-Cover-Fabrics.jpg?url';
 
 export default function ProductLumberCoverFabrics() {
     useEffect(() => {

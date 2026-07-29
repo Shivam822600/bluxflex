@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_SILAGE_WRAP_BALE_WRAP_jpg_1 from '../assets/images/SILAGE-WRAP-BALE-WRAP.jpg?url';
-import asset_SILAGE_WRAP_BALE_WRAP_300x300_jpg_2 from '../assets/images/SILAGE-WRAP-BALE-WRAP-300x300.jpg?url';
+import asset_SILAGE_WRAP_BALE_WRAP_jpg_1 from '../assets/images/official/SILAGE-WRAP-BALE-WRAP.jpg?url';
+import asset_SILAGE_WRAP_BALE_WRAP_300x300_jpg_2 from '../assets/images/official/SILAGE-WRAP-BALE-WRAP.jpg?url';
 
 export default function ProductSilageWrapBaleWrap() {
     useEffect(() => {

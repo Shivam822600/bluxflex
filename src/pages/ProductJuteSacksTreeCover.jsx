@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_jute_sacks_treecover_png_1 from '../assets/images/jute_sacks_treecover.png?url';
+import asset_jute_sacks_treecover_png_1 from '../assets/images/official/jute_sacks_treecover.png?url';
 
 export default function ProductJuteSacksTreeCover() {
     useEffect(() => {

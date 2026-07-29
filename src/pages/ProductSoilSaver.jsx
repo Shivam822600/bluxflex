@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_soil_saver_png_1 from '../assets/images/soil-saver.png?url';
+import asset_soil_saver_png_1 from '../assets/images/official/soil-saver.png?url';
 
 export default function ProductSoilSaver() {
     useEffect(() => {

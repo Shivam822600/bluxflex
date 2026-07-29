@@ -3,19 +3,19 @@ import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ShieldCheck, ChevronRight, Filter, Search } from 'lucide-react';
 
-import asset_9e742bd7_c239_40c0_b23a_4dc7325f456d_300x300_png_1 from '../assets/images/9e742bd7-c239-40c0-b23a-4dc7325f456d-300x300.png?url';
-import asset_8f21b94e_0d1a_4770_bf8a_3399ef293774_md_300x300_jpg_4 from '../assets/images/8f21b94e-0d1a-4770-bf8a-3399ef293774-md-300x300.jpg?url';
-import asset_printed_pp_woven_sack_upto_six_colors_297x300_png_6 from '../assets/images/printed-pp-woven-sack-upto-six-colors-297x300.png?url';
-import asset_fd6ea04a_aca5_4e3d_b574_738ee945af82_md_300x300_jpg_8 from '../assets/images/fd6ea04a-aca5-4e3d-b574-738ee945af82-md-300x300.jpg?url';
-import asset_C_Conductive_Bag from '../assets/images/C-Conductive-Bag-297x300.jpg?url';
-import asset_Diaper_Bag_1 from '../assets/images/Diaper-Bag-1-297x300.jpg?url';
-import asset_Un_Bags from '../assets/images/Un-Bags-297x300.jpg?url';
-import asset_RASCHEL_BAGS from '../assets/images/RASCHEL-BAGS-FABRIC-300x300.png?url';
-import asset_LENO_FLAT_FABRIC from '../assets/images/LENO-FLAT-FABRIC-—-ROLLS-300x300.png?url';
-import asset_juteburlap_bags from '../assets/images/juteburlap_bags-300x300.png?url';
-import asset_specialty_fabrics from '../assets/images/specialty_fabrics-300x300.png?url';
-import asset_PP_shopping_bag from '../assets/images/PP-shopping-bag-297x300.jpg?url';
-import asset_horticultural from '../assets/images/horticultural__landscaping-300x300.png?url';
+import asset_9e742bd7_c239_40c0_b23a_4dc7325f456d_300x300_png_1 from '../assets/images/official/9e742bd7-c239-40c0-b23a-4dc7325f456d.png?url';
+import asset_8f21b94e_0d1a_4770_bf8a_3399ef293774_md_300x300_jpg_4 from '../assets/images/official/8f21b94e-0d1a-4770-bf8a-3399ef293774.jpeg?url';
+import asset_printed_pp_woven_sack_upto_six_colors_297x300_png_6 from '../assets/images/official/printed-pp-woven-sack-upto-six-colors.png?url';
+import asset_fd6ea04a_aca5_4e3d_b574_738ee945af82_md_300x300_jpg_8 from '../assets/images/official/fd6ea04a-aca5-4e3d-b574-738ee945af82.jpeg?url';
+import asset_C_Conductive_Bag from '../assets/images/official/C-Conductive-Bag.jpg?url';
+import asset_Diaper_Bag_1 from '../assets/images/official/Diaper-Bag-1.jpg?url';
+import asset_Un_Bags from '../assets/images/official/Un-Bags.jpg?url';
+import asset_RASCHEL_BAGS from '../assets/images/official/RASCHEL-BAGS-FABRIC.png?url';
+import asset_LENO_FLAT_FABRIC from '../assets/images/official/LENO-FLAT-FABRIC-_-ROLLS.png?url';
+import asset_juteburlap_bags from '../assets/images/official/juteburlap_bags.png?url';
+import asset_specialty_fabrics from '../assets/images/official/specialty_fabrics.png?url';
+import asset_PP_shopping_bag from '../assets/images/official/PP-shopping-bag.jpg?url';
+import asset_horticultural from '../assets/images/official/horticultural__landscaping.png?url';
 
 export default function Products() {
   const [activeCategory, setActiveCategory] = useState('All');

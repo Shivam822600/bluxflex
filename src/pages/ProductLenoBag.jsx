@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_leno_bag_jpg_1 from '../assets/images/leno-bag.jpg?url';
-import asset_leno_bag_jpeg_2 from '../assets/images/leno-bag-297x300.jpeg?url';
+import asset_leno_bag_jpg_1 from '../assets/images/official/leno-bag.jpeg?url';
+import asset_leno_bag_jpeg_2 from '../assets/images/official/leno-bag.jpeg?url';
 
 export default function ProductLenoBag() {
     useEffect(() => {

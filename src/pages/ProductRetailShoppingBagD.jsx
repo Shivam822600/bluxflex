@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_PP_shopping_bag_jpg_1 from '../assets/images/PP-shopping-bag.jpg?url';
-import asset_PP_shopping_bag_297x300_jpg_2 from '../assets/images/PP-shopping-bag-297x300.jpg?url';
+import asset_PP_shopping_bag_jpg_1 from '../assets/images/official/PP-shopping-bag.jpg?url';
+import asset_PP_shopping_bag_297x300_jpg_2 from '../assets/images/official/PP-shopping-bag.jpg?url';
 
 export default function ProductRetailShoppingBagD() {
     useEffect(() => {

@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 import { ChevronLeft, ShieldCheck, ArrowRight, Download, CheckCircle2 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
-import asset_image_flour_png_1 from '../assets/images/image_flour.png?url';
-import asset_image0_1_1024x683_png_2 from '../assets/images/image0-1-1024x683.png?url';
-import asset_65d7bcaa_8606_45f6_b3e9_dfe376cc5326_1024x683_png_3 from '../assets/images/65d7bcaa-8606-45f6-b3e9-dfe376cc5326-1024x683.png?url';
+import asset_image_flour_png_1 from '../assets/images/official/image_flour.png?url';
+import asset_image0_1_1024x683_png_2 from '../assets/images/official/image0-1.png?url';
+import asset_65d7bcaa_8606_45f6_b3e9_dfe376cc5326_1024x683_png_3 from '../assets/images/official/65d7bcaa-8606-45f6-b3e9-dfe376cc5326.png?url';
 
 export default function NorthAmericaPaperBag2() {
   const { t } = useLanguage();

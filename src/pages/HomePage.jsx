@@ -26,28 +26,28 @@ import {
 } from 'lucide-react';
 
 // Product Image Assets
-import asset_C_Conductive_Bag from '../assets/images/C-Conductive-Bag-297x300.jpg?url';
-import asset_Diaper_Bag_1 from '../assets/images/Diaper-Bag-1-297x300.jpg?url';
-import asset_Un_Bags from '../assets/images/Un-Bags-297x300.jpg?url';
-import asset_Diaper_Bag from '../assets/images/Diaper-Bag-297x300.jpg?url';
-import asset_RASCHEL_BAGS from '../assets/images/RASCHEL-BAGS-FABRIC-300x300.png?url';
-import asset_LENO_FLAT_FABRIC from '../assets/images/LENO-FLAT-FABRIC-—-ROLLS-300x300.png?url';
-import asset_leno_bag from '../assets/images/leno-bag.jpg?url';
-import asset_wileted_leno_bag from '../assets/images/wileted-leno-bag.jpg?url';
-import asset_printed_pp_woven from '../assets/images/printed-pp-woven-sack-upto-six-colors-297x300.png?url';
-import asset_liner_options from '../assets/images/fd6ea04a-aca5-4e3d-b574-738ee945af82-md-300x300.jpg?url';
-import asset_bottom_construction from '../assets/images/a4da6e12-8b22-4896-929b-815191c46974-300x300.png?url';
-import asset_juteburlap_bags from '../assets/images/juteburlap_bags-300x300.png?url';
-import asset_jutesacks_printed from '../assets/images/jutesacks__printedbags-300x300.png?url';
-import asset_horticultural from '../assets/images/horticultural__landscaping-300x300.png?url';
-import asset_specialty_fabrics from '../assets/images/specialty_fabrics-300x300.png?url';
-import asset_Monofilament_Fabrics from '../assets/images/Monofilament-Fabrics-297x300.jpg?url';
-import asset_rPET_Fabrics from '../assets/images/rPET-Fabrics-297x300.jpg?url';
-import asset_Lumber_Cover_Fabrics from '../assets/images/Lumber-Cover-Fabrics-297x300.jpg?url';
-import asset_PP_shopping_bag from '../assets/images/PP-shopping-bag-297x300.jpg?url';
-import asset_roofing_underlayment from '../assets/images/roofing_underlayment-300x300.png?url';
-import asset_Company_Overview from '../assets/images/Company-Overview.png?url';
-import asset_Manufacturing from '../assets/images/Manufacturing.png?url';
+import asset_C_Conductive_Bag from '../assets/images/official/C-Conductive-Bag.jpg?url';
+import asset_Diaper_Bag_1 from '../assets/images/official/Diaper-Bag-1.jpg?url';
+import asset_Un_Bags from '../assets/images/official/Un-Bags.jpg?url';
+import asset_Diaper_Bag from '../assets/images/official/Diaper-Bag.jpg?url';
+import asset_RASCHEL_BAGS from '../assets/images/official/RASCHEL-BAGS-FABRIC.png?url';
+import asset_LENO_FLAT_FABRIC from '../assets/images/official/LENO-FLAT-FABRIC-_-ROLLS.png?url';
+import asset_leno_bag from '../assets/images/official/leno-bag.jpeg?url';
+import asset_wileted_leno_bag from '../assets/images/official/wileted-leno-bag.jpeg?url';
+import asset_printed_pp_woven from '../assets/images/official/printed-pp-woven-sack-upto-six-colors.png?url';
+import asset_liner_options from '../assets/images/official/fd6ea04a-aca5-4e3d-b574-738ee945af82.jpeg?url';
+import asset_bottom_construction from '../assets/images/official/a4da6e12-8b22-4896-929b-815191c46974.png?url';
+import asset_juteburlap_bags from '../assets/images/official/juteburlap_bags.png?url';
+import asset_jutesacks_printed from '../assets/images/official/jutesacks__printedbags.png?url';
+import asset_horticultural from '../assets/images/official/horticultural__landscaping.png?url';
+import asset_specialty_fabrics from '../assets/images/official/specialty_fabrics.png?url';
+import asset_Monofilament_Fabrics from '../assets/images/official/Monofilament-Fabrics.jpg?url';
+import asset_rPET_Fabrics from '../assets/images/official/rPET-Fabrics.jpg?url';
+import asset_Lumber_Cover_Fabrics from '../assets/images/official/Lumber-Cover-Fabrics.jpg?url';
+import asset_PP_shopping_bag from '../assets/images/official/PP-shopping-bag.jpg?url';
+import asset_roofing_underlayment from '../assets/images/official/roofing_underlayment.png?url';
+import asset_Company_Overview from '../assets/images/official/Company-Overview.png?url';
+import asset_Manufacturing from '../assets/images/official/Manufacturing.png?url';
 
 export default function HomePage() {
   const { t } = useLanguage();

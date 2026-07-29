@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_crop_covers_jpg_1 from '../assets/images/crop_covers.jpg?url';
-import asset_wind_shield_nets_jpg_2 from '../assets/images/wind_shield_nets.jpg?url';
-import asset_plant_nets_jpg_3 from '../assets/images/plant_nets.jpg?url';
+import asset_crop_covers_jpg_1 from '../assets/images/official/crop_covers.jpg?url';
+import asset_wind_shield_nets_jpg_2 from '../assets/images/official/wind_shield_nets.jpg?url';
+import asset_plant_nets_jpg_3 from '../assets/images/official/plant_nets.jpg?url';
 
 export default function ProductCategoryAgroTextilesPage2() {
     useEffect(() => {

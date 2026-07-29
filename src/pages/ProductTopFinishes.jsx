@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_2eb7cfac_a931_4772_9c11_d52f91da846e_1024x1024_png_1 from '../assets/images/2eb7cfac-a931-4772-9c11-d52f91da846e-1024x1024.png?url';
-import asset_2eb7cfac_a931_4772_9c11_d52f91da846e_300x300_png_2 from '../assets/images/2eb7cfac-a931-4772-9c11-d52f91da846e-300x300.png?url';
-import asset_2eb7cfac_a931_4772_9c11_d52f91da846e_150x150_png_3 from '../assets/images/2eb7cfac-a931-4772-9c11-d52f91da846e.png?url';
+import asset_2eb7cfac_a931_4772_9c11_d52f91da846e_1024x1024_png_1 from '../assets/images/official/2eb7cfac-a931-4772-9c11-d52f91da846e.png?url';
+import asset_2eb7cfac_a931_4772_9c11_d52f91da846e_300x300_png_2 from '../assets/images/official/2eb7cfac-a931-4772-9c11-d52f91da846e.png?url';
+import asset_2eb7cfac_a931_4772_9c11_d52f91da846e_150x150_png_3 from '../assets/images/official/2eb7cfac-a931-4772-9c11-d52f91da846e.png?url';
 
 export default function ProductTopFinishes() {
     useEffect(() => {

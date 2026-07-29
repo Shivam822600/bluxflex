@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_pp_woven_png_1 from '../assets/images/pp-woven.png?url';
+import asset_pp_woven_png_1 from '../assets/images/official/pp-woven.png?url';
 
 export default function ProductBagTypes() {
     useEffect(() => {

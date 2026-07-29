@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_hail_nets_png_1 from '../assets/images/hail_nets.png?url';
-import asset_hail_nets_300x300_png_2 from '../assets/images/hail_nets-300x300.png?url';
+import asset_hail_nets_png_1 from '../assets/images/official/hail_nets.png?url';
+import asset_hail_nets_300x300_png_2 from '../assets/images/official/hail_nets.png?url';
 
 export default function ProductHailNets() {
     useEffect(() => {

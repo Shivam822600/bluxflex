@@ -3,10 +3,10 @@ import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 
-import asset_C_Conductive_Bag_jpg_1 from '../assets/images/C-Conductive-Bag.jpg?url';
-import asset_Diaper_Bag_1_jpg_3 from '../assets/images/Diaper-Bag-1.jpg?url';
-import asset_Un_Bags_jpg_5 from '../assets/images/Un-Bags-297x300.jpg?url';
-import asset_Diaper_Bag_jpg_6 from '../assets/images/Diaper-Bag.jpg?url';
+import asset_C_Conductive_Bag_jpg_1 from '../assets/images/official/C-Conductive-Bag.jpg?url';
+import asset_Diaper_Bag_1_jpg_3 from '../assets/images/official/Diaper-Bag-1.jpg?url';
+import asset_Un_Bags_jpg_5 from '../assets/images/official/Un-Bags.jpg?url';
+import asset_Diaper_Bag_jpg_6 from '../assets/images/official/Diaper-Bag.jpg?url';
 
 export default function ProductCategoryFibc() {
   useEffect(() => {

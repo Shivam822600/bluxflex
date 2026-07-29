@@ -3,16 +3,16 @@ import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ChevronLeft } from 'lucide-react';
 
-import asset_oneloop_jpg_1 from '../assets/images/oneloop.jpg?url';
-import asset_twoloops_jpg_2 from '../assets/images/twoloops.jpg?url';
-import asset_tubue_2_jpg_3 from '../assets/images/tubue-2.jpg?url';
-import asset_utype_jpg_4 from '../assets/images/utype.jpg?url';
-import asset_liner_1_jpg_5 from '../assets/images/liner-1.jpg?url';
-import asset_conductivebags_jpg_6 from '../assets/images/conductivebags.jpg?url';
-import asset_conical_jpg_7 from '../assets/images/conical.jpg?url';
-import asset_unbags_jpg_8 from '../assets/images/unbags.jpg?url';
-import asset_baffbag_jpg_9 from '../assets/images/baffbag.jpg?url';
-import asset_doublewall_jpg_10 from '../assets/images/doublewall.jpg?url';
+import asset_oneloop_jpg_1 from '../assets/images/official/oneloop.jpg?url';
+import asset_twoloops_jpg_2 from '../assets/images/official/twoloops.jpg?url';
+import asset_tubue_2_jpg_3 from '../assets/images/official/tubue-2.jpg?url';
+import asset_utype_jpg_4 from '../assets/images/official/utype.jpg?url';
+import asset_liner_1_jpg_5 from '../assets/images/official/liner-1.jpg?url';
+import asset_conductivebags_jpg_6 from '../assets/images/official/conductivebags.jpg?url';
+import asset_conical_jpg_7 from '../assets/images/official/conical.jpg?url';
+import asset_unbags_jpg_8 from '../assets/images/official/unbags.jpg?url';
+import asset_baffbag_jpg_9 from '../assets/images/official/baffbag.jpg?url';
+import asset_doublewall_jpg_10 from '../assets/images/official/doublewall.jpg?url';
 
 export default function FibcTypes() {
   useEffect(() => {
