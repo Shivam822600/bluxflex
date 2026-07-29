@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
-import asset_LENO_FLAT_FABRIC__e2_80_94_ROLLS_png_1 from '../assets/images/LENO-FLAT-FABRIC-%e2%80%94-ROLLS.png?url';
+import asset_LENO_FLAT_FABRIC__e2_80_94_ROLLS_png_1 from '../assets/images/official/LENO-FLAT-FABRIC-_-ROLLS.png?url';
 import asset_LENO_FLAT_FABRIC___ROLLS_png_2 from '../assets/images/official/LENO-FLAT-FABRIC-_-ROLLS.png?url';
 import asset_LENO_FLAT_FABRIC___ROLLS_300x300_png_3 from '../assets/images/official/LENO-FLAT-FABRIC-_-ROLLS.png?url';
 

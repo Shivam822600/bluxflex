@@ -25,7 +25,7 @@ import productAsset24 from '../assets/images/jute_wood_carrier_bag.png';
 import productAsset25 from '../assets/images/leno-bag.jpg';
 import productAsset26 from '../assets/images/leno-fabric.jpg';
 import productAsset27 from '../assets/images/Leno-flat-fabric.jpg';
-import productAsset28 from '../assets/images/LENO-FLAT-FABRIC-%e2%80%94-ROLLS.png';
+import productAsset28 from '../assets/images/official/LENO-FLAT-FABRIC-_-ROLLS.png';
 import productAsset29 from '../assets/images/fd6ea04a-aca5-4e3d-b574-738ee945af82-md.jpg';
 import productAsset30 from '../assets/images/Lumber-Cover-Fabrics.jpg';
 import productAsset31 from '../assets/images/Monofilament-Fabrics.jpg';
@@ -256,7 +256,7 @@ export const products = [
         "id": "leno-flat-fabric-rolls",
         "slug": "leno-flat-fabric-rolls",
         "title": "Leno Flat Fabric – Rolls",
-        "image": productAsset28,
+        "image": 'productAsset28',
         "description": ""
     },
     {

@@ -5,21 +5,21 @@ import { useLanguage } from '../context/LanguageContext';
 import { motion } from 'framer-motion';
 import Reveal from '../components/ui/Reveal';
 import Counter from '../components/ui/Counter';
-import { 
-  ArrowRight, 
-  ChevronDown, 
+import {
+  ArrowRight,
+  ChevronDown,
   ChevronLeft,
   ChevronRight,
-  Globe, 
-  Award, 
-  ShieldCheck, 
-  Truck, 
-  CheckCircle2, 
-  Package, 
-  RefreshCw, 
-  Target, 
-  Sprout, 
-  Factory, 
+  Globe,
+  Award,
+  ShieldCheck,
+  Truck,
+  CheckCircle2,
+  Package,
+  RefreshCw,
+  Target,
+  Sprout,
+  Factory,
   Building2,
   MapPin,
   Sparkles
@@ -318,14 +318,14 @@ export default function HomePage() {
                 border: '1px solid #E2E8F0',
                 transition: 'transform 0.3s, box-shadow 0.3s'
               }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-4px)';
-                e.currentTarget.style.boxShadow = '0 12px 28px rgba(7,40,52,0.06)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'none';
-                e.currentTarget.style.boxShadow = 'none';
-              }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-4px)';
+                  e.currentTarget.style.boxShadow = '0 12px 28px rgba(7,40,52,0.06)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'none';
+                  e.currentTarget.style.boxShadow = 'none';
+                }}
               >
                 <div style={{
                   width: '60px',
@@ -356,7 +356,7 @@ export default function HomePage() {
       {/* 3. PRODUCTS SECTION */}
       <section style={{ padding: 'clamp(64px, 8vw, 96px) 0', background: '#FBF1E6' }}>
         <div className="container">
-          
+
           {/* Centered Heading */}
           <div style={{ textAlign: 'center', maxWidth: '640px', margin: '0 auto 44px auto' }}>
             <span style={{ color: '#8DC63F', fontWeight: '700', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px' }}>
@@ -372,7 +372,7 @@ export default function HomePage() {
 
           {/* Horizontal Scrollable Filter Pills with Carousel Navigation Controls */}
           <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '44px' }}>
-            
+
             {/* Left Carousel Arrow */}
             <button
               onClick={() => {
@@ -410,7 +410,7 @@ export default function HomePage() {
             </button>
 
             {/* Scrollable Container for Pills */}
-            <div 
+            <div
               ref={scrollContainerRef}
               className="categories-scroll-wrapper"
               style={{
@@ -492,14 +492,14 @@ export default function HomePage() {
             gap: '28px'
           }}>
             {productsData[activeTab]?.map((prod, idx) => (
-              <div 
+              <div
                 key={idx}
                 className="product-card-premium"
               >
                 {/* Product Image Container */}
                 <div className="img-container" style={{ height: '230px', background: '#F1F5F9', position: 'relative' }}>
-                  <img 
-                    src={prod.image} 
+                  <img
+                    src={prod.image}
                     alt={prod.title}
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   />
@@ -547,7 +547,7 @@ export default function HomePage() {
                     >
                       Get Spec & Quote →
                     </button>
-                    <Link 
+                    <Link
                       to={prod.link}
                       style={{
                         width: '38px',
@@ -583,7 +583,7 @@ export default function HomePage() {
 
       {/* 4. STORYTELLING SECTION (Hidden legacy) */}
       <section style={{ display: 'none', position: 'relative', background: '#142E3D', color: '#FFFFFF', padding: '96px 0' }}>
-        
+
         {/* Top Organic SVG Wave Divider */}
         <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', overflow: 'hidden', lineHeight: 0, transform: 'rotate(180deg)' }}>
           <svg viewBox="0 0 1200 120" preserveAspectRatio="none" style={{ width: '100%', height: '40px', fill: '#FBF1E6' }}>
@@ -592,7 +592,7 @@ export default function HomePage() {
         </div>
 
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
-          
+
           {/* Row 1: Image Left, Text Right */}
           <div style={{
             display: 'grid',
@@ -602,12 +602,12 @@ export default function HomePage() {
             marginBottom: '80px'
           }}>
             <div style={{ position: 'relative' }}>
-              <img 
-                src={asset_Company_Overview} 
-                alt="BulkFlex Manufacturing Facility" 
+              <img
+                src={asset_Company_Overview}
+                alt="BulkFlex Manufacturing Facility"
                 style={{ width: '100%', borderRadius: '24px', boxShadow: '0 25px 50px rgba(0,0,0,0.4)', border: '1px solid rgba(255,255,255,0.12)' }}
               />
-              <div 
+              <div
                 className="glass-card-dark"
                 style={{
                   position: 'absolute',
@@ -652,9 +652,9 @@ export default function HomePage() {
             alignItems: 'center'
           }}>
             <div style={{ order: 2 }}>
-              <img 
-                src={asset_Manufacturing} 
-                alt="Quality Assurance and Testing" 
+              <img
+                src={asset_Manufacturing}
+                alt="Quality Assurance and Testing"
                 style={{ width: '100%', borderRadius: '24px', boxShadow: '0 25px 50px rgba(0,0,0,0.4)', border: '1px solid rgba(255,255,255,0.12)' }}
               />
             </div>
@@ -695,7 +695,7 @@ export default function HomePage() {
       {/* 5. SOURCING MANAGED END TO END */}
       <section style={{ padding: 'clamp(64px, 8vw, 96px) 0', background: '#FFFFFF' }}>
         <div className="container">
-          
+
           <div style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto 52px auto' }}>
             <h2 style={{ fontSize: 'clamp(30px, 3.8vw, 42px)', fontWeight: '800', color: '#142E3D', marginBottom: '12px' }}>
               Sourcing Managed End to End
@@ -723,14 +723,14 @@ export default function HomePage() {
                 border: '1px solid #E2E8F0',
                 transition: 'transform 0.3s, box-shadow 0.3s'
               }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-6px)';
-                e.currentTarget.style.boxShadow = '0 16px 36px rgba(7,40,52,0.08)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'none';
-                e.currentTarget.style.boxShadow = 'none';
-              }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-6px)';
+                  e.currentTarget.style.boxShadow = '0 16px 36px rgba(7,40,52,0.08)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'none';
+                  e.currentTarget.style.boxShadow = 'none';
+                }}
               >
                 <div style={{
                   width: '56px',
@@ -760,7 +760,7 @@ export default function HomePage() {
       {/* 6. INDUSTRIES WE SERVE */}
       <section style={{ padding: 'clamp(56px, 7vw, 80px) 0', background: '#FBF1E6', borderTop: '1px solid #E2E8F0' }}>
         <div className="container">
-          
+
           <div style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto 44px auto' }}>
             <h2 style={{ fontSize: 'clamp(28px, 3.5vw, 38px)', fontWeight: '800', color: '#142E3D', marginBottom: '10px' }}>
               Industries We Serve
@@ -828,7 +828,7 @@ export default function HomePage() {
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
             {faqs.map((faq, idx) => (
-              <div 
+              <div
                 key={idx}
                 style={{
                   background: '#FFFFFF',
@@ -856,15 +856,15 @@ export default function HomePage() {
                   }}
                 >
                   <span>{faq.q}</span>
-                  <ChevronDown 
-                    size={20} 
-                    color="#8DC63F" 
-                    style={{ 
-                      transform: openFaq === idx ? 'rotate(180deg)' : 'none', 
+                  <ChevronDown
+                    size={20}
+                    color="#8DC63F"
+                    style={{
+                      transform: openFaq === idx ? 'rotate(180deg)' : 'none',
                       transition: 'transform 0.25s ease',
                       flexShrink: 0,
                       marginLeft: '16px'
-                    }} 
+                    }}
                   />
                 </button>
 
@@ -880,7 +880,7 @@ export default function HomePage() {
       </section>
 
       {/* 9. RFQ CTA BANNER */}
-      <section style={{ 
+      <section style={{
         background: 'linear-gradient(135deg, #142E3D 0%, #0D3B43 100%)',
         color: '#FFFFFF',
         padding: '80px 0',
@@ -889,7 +889,7 @@ export default function HomePage() {
         overflow: 'hidden'
       }}>
         <div className="container" style={{ maxWidth: '760px', position: 'relative', zIndex: 2 }}>
-          <h2 style={{ fontSize: 'clamp(30px, 4.5vw, 46px)', fontWeight: '800', marginBottom: '18px', fontFamily: 'var(--font-heading)' }}>
+          <h2 style={{ fontSize: 'clamp(30px, 4.5vw, 46px)', color: '#fff', fontWeight: '800', marginBottom: '18px', fontFamily: 'var(--font-heading)' }}>
             Ready to Optimize Your Industrial Packaging Supply?
           </h2>
           <p style={{ color: '#94A3B8', fontSize: '17px', lineHeight: '1.65', marginBottom: '36px' }}>
@@ -988,8 +988,8 @@ export default function HomePage() {
                     Request B2B Quote
                   </h3>
                   <p style={{ fontSize: '13px', color: '#64748B' }}>
-                    {selectedProductForQuote 
-                      ? `Inquiring for: ${selectedProductForQuote}` 
+                    {selectedProductForQuote
+                      ? `Inquiring for: ${selectedProductForQuote}`
                       : 'Fill in your requirements for rapid pricing & specifications.'}
                   </p>
                 </div>
@@ -1002,10 +1002,10 @@ export default function HomePage() {
                     <label style={{ display: 'block', fontSize: '12px', fontWeight: '700', color: '#142E3D', marginBottom: '6px' }}>
                       Full Name *
                     </label>
-                    <input 
-                      type="text" 
-                      required 
-                      placeholder="e.g. John Doe" 
+                    <input
+                      type="text"
+                      required
+                      placeholder="e.g. John Doe"
                       style={{
                         width: '100%',
                         padding: '12px 16px',
@@ -1022,10 +1022,10 @@ export default function HomePage() {
                       <label style={{ display: 'block', fontSize: '12px', fontWeight: '700', color: '#142E3D', marginBottom: '6px' }}>
                         Business Email *
                       </label>
-                      <input 
-                        type="email" 
-                        required 
-                        placeholder="john@company.com" 
+                      <input
+                        type="email"
+                        required
+                        placeholder="john@company.com"
                         style={{
                           width: '100%',
                           padding: '12px 16px',
@@ -1040,9 +1040,9 @@ export default function HomePage() {
                       <label style={{ display: 'block', fontSize: '12px', fontWeight: '700', color: '#142E3D', marginBottom: '6px' }}>
                         Phone Number
                       </label>
-                      <input 
-                        type="tel" 
-                        placeholder="+1 (555) 000-0000" 
+                      <input
+                        type="tel"
+                        placeholder="+1 (555) 000-0000"
                         style={{
                           width: '100%',
                           padding: '12px 16px',
@@ -1059,8 +1059,8 @@ export default function HomePage() {
                     <label style={{ display: 'block', fontSize: '12px', fontWeight: '700', color: '#142E3D', marginBottom: '6px' }}>
                       Packaging Requirements / Estimated Quantity
                     </label>
-                    <textarea 
-                      rows="3" 
+                    <textarea
+                      rows="3"
                       placeholder="Describe bag specifications, dimensions, quantity, or target port..."
                       style={{
                         width: '100%',
