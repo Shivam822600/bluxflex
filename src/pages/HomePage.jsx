@@ -230,20 +230,14 @@ export default function HomePage() {
               </Reveal>
 
               <Reveal delay={0.4}>
-                <div className="mt-10 flex flex-wrap gap-x-4 gap-y-2 items-center text-[12px] font-bold uppercase tracking-wider text-gray-800" style={{ maxWidth: '600px' }}>
-                  <span>ISO 22000</span>
-                  <span className="text-gray-300">|</span>
-                  <span>ISO 9001</span>
-                  <span className="text-gray-300">|</span>
-                  <span>BRCGSS Food Grade</span>
-                  <span className="text-gray-300">|</span>
-                  <span>SEDEX / SA 8000</span>
-                  <span className="text-gray-300">|</span>
-                  <span>SGS & EBV Audit-Friendly</span>
-                  <span className="text-gray-300">|</span>
-                  <span>8+ Audited Factories</span>
-                  <span className="text-gray-300">|</span>
-                  <span>Structured 11-Step QC</span>
+                <div className="mt-10 flex flex-wrap gap-2 items-center text-[11px] sm:text-[12px] font-bold uppercase tracking-wider text-gray-700" style={{ maxWidth: '600px' }}>
+                  <span className="bg-gray-100 px-3 py-1.5 rounded-full border border-gray-200">ISO 22000</span>
+                  <span className="bg-gray-100 px-3 py-1.5 rounded-full border border-gray-200">ISO 9001</span>
+                  <span className="bg-gray-100 px-3 py-1.5 rounded-full border border-gray-200">BRCGSS Food Grade</span>
+                  <span className="bg-gray-100 px-3 py-1.5 rounded-full border border-gray-200">SEDEX / SA 8000</span>
+                  <span className="bg-gray-100 px-3 py-1.5 rounded-full border border-gray-200">SGS & EBV Audit-Friendly</span>
+                  <span className="bg-gray-100 px-3 py-1.5 rounded-full border border-gray-200">8+ Audited Factories</span>
+                  <span className="bg-gray-100 px-3 py-1.5 rounded-full border border-gray-200">Structured 11-Step QC</span>
                 </div>
               </Reveal>
             </div>
@@ -942,11 +936,11 @@ export default function HomePage() {
                     color: '#142E3D'
                   }}
                 >
-                  <span>{faq.q}</span>
+                  <span style={{ flex: 1, paddingRight: '16px' }}>{faq.q}</span>
                   {openFaq === idx ? (
-                    <X size={20} color="#116B58" style={{ flexShrink: 0, marginLeft: '16px' }} />
+                    <X size={20} color="#116B58" style={{ flexShrink: 0 }} />
                   ) : (
-                    <ChevronDown size={20} color="#94A3B8" style={{ flexShrink: 0, marginLeft: '16px' }} />
+                    <ChevronDown size={20} color="#94A3B8" style={{ flexShrink: 0 }} />
                   )}
                 </button>
 
