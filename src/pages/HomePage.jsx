@@ -933,10 +933,12 @@ export default function HomePage() {
                     cursor: 'pointer',
                     fontSize: '17px',
                     fontWeight: '800',
-                    color: '#142E3D'
+                    color: '#142E3D',
+                    whiteSpace: 'normal',
+                    wordWrap: 'break-word'
                   }}
                 >
-                  <span style={{ flex: 1, paddingRight: '16px' }}>{faq.q}</span>
+                  <span style={{ flex: 1, paddingRight: '16px', minWidth: 0, wordBreak: 'break-word' }}>{faq.q}</span>
                   {openFaq === idx ? (
                     <X size={20} color="#116B58" style={{ flexShrink: 0 }} />
                   ) : (
