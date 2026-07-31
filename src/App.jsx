@@ -95,6 +95,7 @@ import TermsAndConditions from './pages/TermsAndConditions';
 import Welcome from './pages/Welcome';
 import SplashScreen from './components/SplashScreen';
 import { LanguageProvider } from './context/LanguageContext';
+import Chatbot from './components/Chatbot/Chatbot';
 
 
 function ScrollToTop() {
@@ -112,6 +113,7 @@ function App() {
     <LanguageProvider>
       {loading && <SplashScreen onFinish={() => setLoading(false)} />}
       <Router>
+        <Chatbot />
         <ScrollToTop />
         <Routes>
           <Route path="/about-us" element={<AboutUs />} />
