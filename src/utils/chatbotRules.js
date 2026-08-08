@@ -26,7 +26,7 @@ export const processMessage = (message) => {
     return {
       type: 'text',
       text: "👋 Hello! Welcome to BulkFlex Packaging.\n\nI can help you with:\n• Finding the right packaging products\n• Shipping & export information\n• MOQ & pricing guidance\n• Custom printing options\n• Sample requests\n\nHow can I assist you today?",
-      quickReplies: ["Browse Products", "Shipping", "MOQ", "Contact Sales"]
+      quickReplies: ["Browse Products", "Shipping", "MOQ", "WhatsApp", "Contact Sales"]
     };
   }
 
@@ -91,6 +91,16 @@ export const processMessage = (message) => {
       type: 'text',
       text: faqData.samples.content,
       quickReplies: faqData.samples.quickReplies
+    };
+  }
+
+  // WhatsApp Redirect
+  if (text === 'whatsapp' || hasAny(text, ['whats app', 'chat on whatsapp', 'whatsapp chat', 'message on whatsapp'])) {
+    return {
+      type: 'text',
+      text: "🟢 Redirecting you to WhatsApp (+91 98983 98989)...",
+      redirectUrl: "https://wa.me/919898398989",
+      quickReplies: ["Contact Sales", "Browse Products"]
     };
   }
 

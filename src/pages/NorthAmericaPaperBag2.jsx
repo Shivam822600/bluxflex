@@ -37,7 +37,7 @@ export default function NorthAmericaPaperBag2() {
               Request Custom Quote <ArrowRight size={18} />
             </Link>
             <a
-              href="/src/assets/wp-content/uploads/2026/02/Bulk-Flex-Pvt-Ltd-brochure-.pdf"
+              href="/Bulk_Flex_Brochure_Compressed.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline-dark"

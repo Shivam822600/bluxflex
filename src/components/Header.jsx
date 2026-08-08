@@ -50,6 +50,7 @@ export default function Header() {
 
   const productCategories = [
     { name: 'FIBC Jumbo Bag', path: '/product_category/fibc' },
+    { name: 'RPET FIBC', path: '/rpet-fibc' },
     { name: 'Leno Bags & Fabric', path: '/product_category/leno-bags-febric' },
     { name: 'PP Woven Sacks', path: '/product_category/pp-woven-sacks' },
     { name: 'Jute / Burlap', path: '/product_category/jute-burlap' },
@@ -118,9 +119,9 @@ export default function Header() {
             {/* <a href="tel:+18001234567" style={{ display: 'flex', alignItems: 'center', gap: '5px', color: '#CBD5E1' }}>
               <Phone size={12} color="#8DC63F" /> +1 (800) 123-4567
             </a> */}
-            <a href="mailto:info@bulkflex.com" style={{ display: 'flex', alignItems: 'center', gap: '5px', color: '#CBD5E1' }}>
+            {/* <a href="mailto:info@bulkflex.com" style={{ display: 'flex', alignItems: 'center', gap: '5px', color: '#CBD5E1' }}>
               <Mail size={12} color="#8DC63F" /> info@bulkflex.com
-            </a>
+            </a> */}
           </div>
 
         </div>
@@ -146,7 +147,7 @@ export default function Header() {
             onMouseLeave={() => setProductDropdownOpen(false)}
           >
             <Link to="/products" style={{
-              color: location.pathname.startsWith('/product') ? '#8DC63F' : '#FFFFFF',
+              color: (location.pathname.startsWith('/product') || location.pathname === '/rpet-fibc') ? '#8DC63F' : '#FFFFFF',
               display: 'flex',
               alignItems: 'center',
               gap: '5px',
@@ -199,9 +200,6 @@ export default function Header() {
             )}
           </div>
 
-          <Link to="/rpet-fibc" style={{ color: location.pathname === '/rpet-fibc' ? '#8DC63F' : '#FFFFFF', padding: '8px 0', transition: 'color 0.2s' }}>
-            {t('rpetFibc')}
-          </Link>
           <Link to="/north-america-paper-bag-2" style={{ color: location.pathname === '/north-america-paper-bag-2' ? '#8DC63F' : '#FFFFFF', padding: '8px 0', transition: 'color 0.2s' }}>
             {t('paperBag')}
           </Link>
@@ -221,7 +219,7 @@ export default function Header() {
 
           {/* Brochure Download Button */}
           <a
-            href="/src/assets/wp-content/uploads/2026/02/Bulk-Flex-Pvt-Ltd-brochure-.pdf"
+            href="/Bulk_Flex_Brochure_Compressed.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="desktop-only"
@@ -423,7 +421,7 @@ export default function Header() {
               <div
                 onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
                 style={{
-                  color: location.pathname.startsWith('/product') ? '#8DC63F' : '#FFFFFF',
+                  color: (location.pathname.startsWith('/product') || location.pathname === '/rpet-fibc') ? '#8DC63F' : '#FFFFFF',
                   fontSize: '16px',
                   fontWeight: '700',
                   padding: '12px 14px',
@@ -460,21 +458,6 @@ export default function Header() {
                 </div>
               )}
             </div>
-
-            <Link
-              to="/rpet-fibc"
-              onClick={() => setSidebarOpen(false)}
-              style={{
-                color: location.pathname === '/rpet-fibc' ? '#8DC63F' : '#FFFFFF',
-                fontSize: '16px',
-                fontWeight: '700',
-                padding: '12px 14px',
-                borderRadius: '8px',
-                display: 'block'
-              }}
-            >
-              {t('rpetFibc')}
-            </Link>
 
             <Link
               to="/north-america-paper-bag-2"
@@ -541,7 +524,7 @@ export default function Header() {
         {/* Sidebar Bottom CTA & Language Pill */}
         <div style={{ paddingTop: '20px', borderTop: '1px solid rgba(255, 255, 255, 0.12)', display: 'flex', flexDirection: 'column', gap: '12px' }}>
           <a
-            href="/src/assets/wp-content/uploads/2026/02/Bulk-Flex-Pvt-Ltd-brochure-.pdf"
+            href="/Bulk_Flex_Brochure_Compressed.pdf"
             target="_blank"
             rel="noopener noreferrer"
             style={{

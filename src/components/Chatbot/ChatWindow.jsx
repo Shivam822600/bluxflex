@@ -16,14 +16,14 @@ const ChatWindow = ({ isOpen, onClose }) => {
         {
           id: Date.now().toString(),
           sender: 'bot',
-          text: "👋 Welcome to BulkFlex Packaging Assistant\n\nI'm here to help you with:\n\n• Finding products\n• Packaging recommendations\n• Shipping information\n• MOQ\n• Bulk Orders",
+          text: "👋 Welcome to BulkFlex Packaging Assistant\n\nI'm here to help you with:\n\n• Finding products\n• Packaging recommendations\n• MOQ\n• Bulk Orders",
           timestamp: new Date().toISOString(),
           quickReplies: [
             "📦 Browse Products",
             "🏷 Categories",
             "🚚 Shipping",
-            "🏭 Industries",
             "💰 MOQ",
+            "💬 WhatsApp",
             "📞 Contact Sales",
             "⭐ Best Sellers"
           ]
@@ -45,6 +45,12 @@ const ChatWindow = ({ isOpen, onClose }) => {
 
     setTimeout(() => {
       const response = processMessage(text);
+
+      // Handle external redirect if specified by the bot rule
+      if (response.redirectUrl) {
+        window.open(response.redirectUrl, '_blank');
+      }
+
       const botMessage = {
         id: (Date.now() + 1).toString(),
         sender: 'bot',

@@ -26,8 +26,8 @@ export const faqData = {
   },
   contact: {
     title: "Contact BulkFlex",
-    content: "📞 Reach our team directly:\n\n📧 Email: info@bulkflex.com\n🌐 Website: www.bulkflex.com\n⏰ Business Hours: Mon–Fri, 9AM–6PM IST\n\n🇺🇸 US Desk: Available EST hours\n🇬🇧 EU Desk: Available CET hours\n🇮🇳 IN Desk: Available IST hours\n\nWe typically respond within 4 business hours.",
-    quickReplies: ["Shipping", "MOQ", "Browse Products"]
+    content: "📞 Reach our team directly:\n\n💬 WhatsApp: +91 98983 98989\n📧 Email: info@bulkflex.com\n🌐 Website: www.bulkflex.com\n⏰ Business Hours: Mon–Fri, 9AM–6PM IST\n\n🇺🇸 US Desk: Available EST hours\n🇬🇧 EU Desk: Available CET hours\n🇮🇳 IN Desk: Available IST hours\n\nWe typically respond within 4 business hours.",
+    quickReplies: ["WhatsApp", "Shipping", "MOQ", "Browse Products"]
   },
   default: {
     title: "Help",
