@@ -13,17 +13,17 @@ export const translations = {
     aboutUs: 'About Us',
     contactUs: 'Contact Us',
     brochure: 'Brochure',
-    liveDesks: 'LIVE REGIONAL DESKS:',
+    liveDesks: 'GLOBAL TIME:',
 
     // Hero & Home Section
-    heroTag: 'GLOBAL PACKAGING & INDUSTRIAL SOURCING',
-    heroTitle: 'Zero Surprises. Zero Stress. Just Reliable Packaging Supply.',
-    heroDesc: 'Bulk Flex manages factories, QC, compliance, and freight - giving you consistent quality, transparent timelines, and strong communication from sample analysis to final delivery.',
+    heroTag: 'INDIA & ASIA SOURCING PARTNER',
+    heroTitle: 'Global Procurement Simplified',
+    heroDesc: 'BulkFlex enables global buyers to source from India & Asia with confidence, continuity and full supply chain visibility.',
     heroDescSub1: '',
     heroDescSub2: '',
     heroTagline: '',
-    heroCtaPrimary: 'Request Sample Analysis',
-    heroCtaSecondary: 'View How We Work',
+    heroCtaPrimary: 'How We Work',
+    heroCtaSecondary: 'View Products',
     getQuote: 'Request Specs Consultation',
     ourProducts: 'Our Core Product Categories',
     viewAll: 'View All Products',
@@ -71,7 +71,7 @@ export const translations = {
     downloadPdf: 'Download Specification PDF',
 
     // Footer & Miscellaneous
-    footerDesc: 'Your reliable partner for flexible packaging and logistics solutions. Building relationships and delivering value every container.',
+    footerDesc: 'Global procurement partner enabling buyers to source from India & Asia with confidence and full supply chain visibility.',
     footerRights: 'All Rights Reserved.',
     quickNav: 'Navigation',
     globalHubs: 'Global Hubs',

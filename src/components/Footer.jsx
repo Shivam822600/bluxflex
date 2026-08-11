@@ -30,7 +30,7 @@ export default function Footer() {
               BULK <span style={{ color: '#8DC63F' }}>FLEX</span>
             </div>
             <p style={{ color: '#94A3B8', fontSize: '13px', lineHeight: '1.6', marginBottom: '20px', maxWidth: '280px' }}>
-              Your reliable partner for flexible packaging and logistics solutions. Building relationships and delivering value every container.
+              Global procurement partner enabling buyers to source from India & Asia with confidence and full supply chain visibility.
             </p>
 
             {/* Social Circle Icons */}

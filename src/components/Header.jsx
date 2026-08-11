@@ -10,7 +10,7 @@ export default function Header() {
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
   const [productDropdownOpen, setProductDropdownOpen] = useState(false);
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
-  const [time, setTime] = useState({ ny: '', london: '', mumbai: '' });
+  const [time, setTime] = useState({ ny: '', la: '', london: '', mumbai: '' });
 
   const location = useLocation();
 
@@ -38,6 +38,7 @@ export default function Header() {
       const now = new Date();
       setTime({
         ny: now.toLocaleTimeString('en-US', { timeZone: 'America/New_York', hour: '2-digit', minute: '2-digit', hour12: true }),
+        la: now.toLocaleTimeString('en-US', { timeZone: 'America/Los_Angeles', hour: '2-digit', minute: '2-digit', hour12: true }),
         london: now.toLocaleTimeString('en-GB', { timeZone: 'Europe/London', hour: '2-digit', minute: '2-digit', hour12: false }),
         mumbai: now.toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit', hour12: true })
       });
@@ -70,7 +71,7 @@ export default function Header() {
       borderBottom: '1px solid rgba(255, 255, 255, 0.08)'
     }}>
 
-      {/* Top Live Global Desk & Timezone Bar */}
+      {/* Top Global Time Bar */}
       <div style={{
         background: '#041B23',
         borderBottom: '1px solid rgba(255, 255, 255, 0.06)',
@@ -81,18 +82,18 @@ export default function Header() {
       }}>
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
 
-          {/* Live Regional Desks & Local Times */}
+          {/* Global Time — hub cities */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#8DC63F', fontWeight: '700' }}>
               <Clock size={13} color="#8DC63F" />
               <span>{t('liveDesks')}</span>
             </div>
 
-            {/* Americas Hub */}
+            {/* India / Mumbai — Primary Hub */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-              <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#10B981' }}></span>
-              <span style={{ color: '#E2E8F0', fontWeight: '700' }}>US:</span>
-              <span>{time.ny || '07:11 AM'}</span>
+              <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#8DC63F' }}></span>
+              <span style={{ color: '#8DC63F', fontWeight: '700' }}>IN Mumbai:</span>
+              <span style={{ color: '#E2E8F0' }}>{time.mumbai || '—'}</span>
             </div>
 
             <span className="desktop-only" style={{ opacity: 0.3 }}>|</span>
@@ -100,28 +101,27 @@ export default function Header() {
             {/* Europe Hub */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
               <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#10B981' }}></span>
-              <span style={{ color: '#E2E8F0', fontWeight: '700' }}>EU:</span>
-              <span>{time.london || '12:11'}</span>
+              <span style={{ color: '#E2E8F0', fontWeight: '700' }}>London/Paris:</span>
+              <span>{time.london || '—'}</span>
             </div>
 
             <span className="desktop-only" style={{ opacity: 0.3 }}>|</span>
 
-            {/* Asia Sourcing Hub */}
+            {/* US East Coast */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
               <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#10B981' }}></span>
-              <span style={{ color: '#E2E8F0', fontWeight: '700' }}>IN:</span>
-              <span>{time.mumbai || '04:41 PM'}</span>
+              <span style={{ color: '#E2E8F0', fontWeight: '700' }}>New York:</span>
+              <span>{time.ny || '—'}</span>
             </div>
-          </div>
 
-          {/* Direct Support Contact */}
-          <div className="desktop-only" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-            {/* <a href="tel:+18001234567" style={{ display: 'flex', alignItems: 'center', gap: '5px', color: '#CBD5E1' }}>
-              <Phone size={12} color="#8DC63F" /> +1 (800) 123-4567
-            </a> */}
-            {/* <a href="mailto:info@bulkflex.com" style={{ display: 'flex', alignItems: 'center', gap: '5px', color: '#CBD5E1' }}>
-              <Mail size={12} color="#8DC63F" /> info@bulkflex.com
-            </a> */}
+            <span className="desktop-only" style={{ opacity: 0.3 }}>|</span>
+
+            {/* US West Coast */}
+            <div className="desktop-only" style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+              <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#10B981' }}></span>
+              <span style={{ color: '#E2E8F0', fontWeight: '700' }}>Los Angeles:</span>
+              <span>{time.la || '—'}</span>
+            </div>
           </div>
 
         </div>

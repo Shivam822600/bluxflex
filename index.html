@@ -2,69 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="/fdavicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BulkFlex - Global Industrial Packaging &amp; Sourcing Hub</title>
+    <title>BulkFlex — Global Procurement Simplified | India & Asia Sourcing Partner</title>
+    <meta
+      name="description"
+      content="BulkFlex enables global buyers to source from India and Asia with confidence, continuity and full supply chain visibility. 20+ years, 30+ audited manufacturers."
+    />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-  <script src="https://cdn.tailwindcss.com/"></script>
-<script>
-        const centerHub = { x: 480, y: 280 }; 
-        
-        const worldNodes = [
-            { x: 465, y: 110 }, { x: 560, y: 210 },
-            { x: 470, y: 1440 }, { x: 840, y: 180 },
-            { x: 1200, y: 160 }, { x: 760, y: 310 },
-            { x: 880, y: 430 }, { x: 260, y: 380 },
-            { x: 80, y: 110 },   { x: 460, y: 140 },
-            { x: 770, y: 270 }, { x: 810, y: 360 },
-            { x: 500, y: 200 }, { x: 520, y: 150 },
-            { x: 240, y: 450 }, { x: 200, y: 430 },
-            { x: 450, y: 320 }
-        ];
-
-        function initLogistics() {
-            const container = document.getElementById('master-routes');
-            if (!container) return;
-            
-            worldNodes.forEach((node) => {
-                const dx = node.x - centerHub.x;
-                const dy = node.y - centerHub.y;
-                const cp1x = centerHub.x + dx * 0.5 - (dy * 0.15);
-                const cp1y = centerHub.y + dy * 0.5 + (dx * 0.15);
-                const pathData = `M ${centerHub.x} ${centerHub.y} Q ${cp1x} ${cp1y} ${node.x} ${node.y}`;
-
-                const line = document.createElementNS("http://www.w3.org/2000/svg", "path");
-                line.setAttribute("d", pathData);
-                line.setAttribute("class", "route-line");
-                container.appendChild(line);
-
-                const pointGroup = document.createElementNS("http://www.w3.org/2000/svg", "g");
-                pointGroup.setAttribute("class", "data-point");
-                pointGroup.style.setProperty('--path', `"${pathData}"`);
-                pointGroup.style.animationDelay = `${Math.random() * 5}s`;
-
-                const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-                circle.setAttribute("r", "5.5");
-                circle.setAttribute("fill", "#0284c7");
-                circle.setAttribute("style", "filter: drop-shadow(0 0 3px #0ea5e9);");
-                
-                pointGroup.appendChild(circle);
-                container.appendChild(pointGroup);
-
-                const term = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-                term.setAttribute("cx", node.x);
-                term.setAttribute("cy", node.y);
-                term.setAttribute("r", "1.5");
-                term.setAttribute("fill", "#94a3b8");
-                container.appendChild(term);
-            });
-        }
-
-        window.onload = initLogistics;
-    </script>
 <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
   </body>
 </html>
