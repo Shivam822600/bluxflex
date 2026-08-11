@@ -135,10 +135,10 @@ export default function Footer() {
                 <Phone size={16} color="#8DC63F" style={{ flexShrink: 0 }} />
                 <a href="tel:+919898398989" style={{ color: '#CBD5E1' }}>+91 98983 98989</a>
               </div>
-              <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+              {/* <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
                 <Mail size={16} color="#8DC63F" style={{ flexShrink: 0 }} />
                 <a href="mailto:info@bulkflex.com" style={{ color: '#CBD5E1' }}>info@bulkflex.com</a>
-              </div>
+              </div> */}
             </div>
           </div>
 
