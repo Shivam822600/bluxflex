@@ -42,105 +42,124 @@ export default function BuyerTools() {
   return (
     <Layout>
       {/* Hero Banner Header */}
-      <section style={{ background: 'linear-gradient(135deg, #142E3D 0%, #0F3A4A 100%)', color: '#FFFFFF', padding: 'clamp(44px, 6vw, 64px) 0', textAlign: 'center' }}>
+      <section style={{
+        background: 'linear-gradient(135deg, #142E3D 0%, #0F3A4A 100%)',
+        color: '#FFFFFF',
+        padding: 'clamp(36px, 5vw, 60px) 0',
+        textAlign: 'center'
+      }}>
         <div className="container" style={{ maxWidth: '850px' }}>
-          <span style={{ color: '#8DC63F', fontSize: '13px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1px' }}>
+          <span style={{ color: '#8DC63F', fontSize: 'clamp(11.5px, 1.5vw, 13px)', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1.5px' }}>
             PROCUREMENT INFRASTRUCTURE
           </span>
-          <h1 style={{ fontSize: 'clamp(28px, 4vw, 40px)', fontWeight: '800', color: '#FFFFFF', margin: '12px 0 16px 0', fontFamily: 'var(--font-heading)', lineHeight: '1.2' }}>
+          <h1 style={{ fontSize: 'clamp(26px, 3.8vw, 40px)', fontWeight: '800', color: '#FFFFFF', margin: '10px 0 14px 0', fontFamily: 'var(--font-heading)', lineHeight: 1.2, wordBreak: 'break-word' }}>
             Buyer Corner
           </h1>
-          <p style={{ fontSize: '16px', color: '#94A3B8', lineHeight: '1.6', margin: 0 }}>
+          <p style={{ fontSize: 'clamp(14px, 1.8vw, 16px)', color: '#94A3B8', lineHeight: 1.65, margin: 0 }}>
             Your extended arm in Asia. One contact. Zero compromise. We are not a middleman — we are your procurement team on the ground.
           </p>
         </div>
       </section>
 
       {/* SECTION 1: YOUR BUYER JOURNEY */}
-      <section style={{ padding: 'clamp(36px, 6vw, 72px) 0', background: '#FFFFFF' }}>
+      <section style={{ padding: 'clamp(32px, 5vw, 64px) 0', background: '#FFFFFF' }}>
         <div className="container">
-          <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 44px auto' }}>
-            <span style={{ display: 'inline-block', background: '#F0F7E4', color: '#8DC63F', padding: '6px 20px', borderRadius: '50px', fontSize: '12px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1.5px', marginBottom: '12px', border: '1px solid rgba(0, 194, 168, 0.3)' }}>
+          <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto clamp(28px, 4vw, 44px) auto' }}>
+            <span style={{ display: 'inline-block', background: '#F0F7E4', color: '#8DC63F', padding: '6px 18px', borderRadius: '50px', fontSize: '11.5px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1.5px', marginBottom: '10px', border: '1px solid rgba(141, 198, 63, 0.3)' }}>
               YOUR BUYER JOURNEY
             </span>
-            <h2 style={{ fontSize: 'clamp(24px, 3.5vw, 34px)', color: '#142E3D', fontWeight: '800', margin: '8px 0 14px 0', fontFamily: 'var(--font-heading)' }}>
+            <h2 style={{ fontSize: 'clamp(22px, 3vw, 32px)', color: '#142E3D', fontWeight: '800', margin: '6px 0 12px 0', fontFamily: 'var(--font-heading)', lineHeight: 1.25, wordBreak: 'break-word' }}>
               A Transparent, Step-by-Step Process from First Contact to Final Delivery
             </h2>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
+            gap: 'clamp(16px, 2.5vw, 24px)'
+          }}>
             {/* Journey Card 01 */}
-            <div className="card-clean" style={{ padding: 'clamp(20px, 3.5vw, 32px)', position: 'relative' }}>
-              <span style={{ position: 'absolute', top: '16px', right: '20px', fontSize: '32px', fontWeight: '900', color: 'rgba(7, 40, 52, 0.08)' }}>01</span>
-              <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: '#F0F7E4', color: '#8DC63F', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '16px' }}>
-                <UserPlus size={22} />
+            <div className="card-clean" style={{ padding: 'clamp(18px, 3vw, 28px)', position: 'relative', display: 'flex', flexDirection: 'column' }}>
+              <span style={{ position: 'absolute', top: '14px', right: '18px', fontSize: '28px', fontWeight: '900', color: 'rgba(7, 40, 52, 0.08)' }}>01</span>
+              <div style={{ width: '42px', height: '42px', borderRadius: '12px', background: '#F0F7E4', color: '#8DC63F', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '14px', flexShrink: 0 }}>
+                <UserPlus size={20} />
               </div>
-              <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#142E3D', marginBottom: '10px' }}>Buyer Specs &amp; Use-Case Review</h3>
-              <p style={{ fontSize: '14px', color: '#475569', lineHeight: '1.65', marginBottom: '16px' }}>
+              <h3 style={{ fontSize: 'clamp(16px, 2vw, 18px)', fontWeight: '800', color: '#142E3D', marginBottom: '8px', lineHeight: 1.3 }}>Buyer Specs &amp; Use-Case Review</h3>
+              <p style={{ fontSize: '13.5px', color: '#475569', lineHeight: 1.65, marginBottom: '14px', flexGrow: 1 }}>
                 We start by understanding your application, not just your dimensions. SWL requirements, GSM, UV stabilisation hours, loop type, liner spec, certification needs all captured into a structured brief. We ask the right questions so factories receive the right spec.
               </p>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginTop: 'auto' }}>
                 {['Technical brief', 'Compliance mapping', 'Application review'].map((tag, tIdx) => (
-                  <span key={tIdx} style={{ background: '#FFFFFF', border: '1px solid #CBD5E1', color: '#142E3D', padding: '4px 10px', borderRadius: '50px', fontSize: '11.5px', fontWeight: '700' }}>✓ {tag}</span>
+                  <span key={tIdx} style={{ background: '#FFFFFF', border: '1px solid #CBD5E1', color: '#142E3D', padding: '3px 9px', borderRadius: '50px', fontSize: '11px', fontWeight: '700' }}>✓ {tag}</span>
                 ))}
               </div>
             </div>
 
             {/* Journey Card 02 */}
-            <div className="card-clean" style={{ padding: 'clamp(20px, 3.5vw, 32px)', position: 'relative' }}>
-              <span style={{ position: 'absolute', top: '16px', right: '20px', fontSize: '32px', fontWeight: '900', color: 'rgba(7, 40, 52, 0.08)' }}>02</span>
-              <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: '#F0F7E4', color: '#8DC63F', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '16px' }}>
-                <ClipboardCheck size={22} />
+            <div className="card-clean" style={{ padding: 'clamp(18px, 3vw, 28px)', position: 'relative', display: 'flex', flexDirection: 'column' }}>
+              <span style={{ position: 'absolute', top: '14px', right: '18px', fontSize: '28px', fontWeight: '900', color: 'rgba(7, 40, 52, 0.08)' }}>02</span>
+              <div style={{ width: '42px', height: '42px', borderRadius: '12px', background: '#F0F7E4', color: '#8DC63F', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '14px', flexShrink: 0 }}>
+                <ClipboardCheck size={20} />
               </div>
-              <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#142E3D', marginBottom: '10px' }}>Sampling &amp; Pre-Shipment QC</h3>
-              <p style={{ fontSize: '14px', color: '#475569', lineHeight: '1.65', marginBottom: '16px' }}>
+              <h3 style={{ fontSize: 'clamp(16px, 2vw, 18px)', fontWeight: '800', color: '#142E3D', marginBottom: '8px', lineHeight: 1.3 }}>Sampling &amp; Pre-Shipment QC</h3>
+              <p style={{ fontSize: '13.5px', color: '#475569', lineHeight: 1.65, marginBottom: '14px', flexGrow: 1 }}>
                 Samples are produced, reviewed against your spec, and dispatched for your approval. Pre-shipment inspection is conducted during live production not after with photographic evidence at each stage of our 11-stage QC protocol. Lab testing available on request.
               </p>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginTop: 'auto' }}>
                 {['Physical sampling', '11-stage QC', 'Lab testing on request', 'Photographic evidence'].map((tag, tIdx) => (
-                  <span key={tIdx} style={{ background: '#FFFFFF', border: '1px solid #CBD5E1', color: '#142E3D', padding: '4px 10px', borderRadius: '50px', fontSize: '11.5px', fontWeight: '700' }}>✓ {tag}</span>
+                  <span key={tIdx} style={{ background: '#FFFFFF', border: '1px solid #CBD5E1', color: '#142E3D', padding: '3px 9px', borderRadius: '50px', fontSize: '11px', fontWeight: '700' }}>✓ {tag}</span>
                 ))}
               </div>
             </div>
 
             {/* Journey Card 03 */}
-            <div className="card-clean" style={{ padding: 'clamp(20px, 3.5vw, 32px)', position: 'relative' }}>
-              <span style={{ position: 'absolute', top: '16px', right: '20px', fontSize: '32px', fontWeight: '900', color: 'rgba(7, 40, 52, 0.08)' }}>03</span>
-              <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: '#F0F7E4', color: '#8DC63F', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '16px' }}>
-                <FileText size={22} />
+            <div className="card-clean" style={{ padding: 'clamp(18px, 3vw, 28px)', position: 'relative', display: 'flex', flexDirection: 'column' }}>
+              <span style={{ position: 'absolute', top: '14px', right: '18px', fontSize: '28px', fontWeight: '900', color: 'rgba(7, 40, 52, 0.08)' }}>03</span>
+              <div style={{ width: '42px', height: '42px', borderRadius: '12px', background: '#F0F7E4', color: '#8DC63F', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '14px', flexShrink: 0 }}>
+                <FileText size={20} />
               </div>
-              <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#142E3D', marginBottom: '10px' }}>Contract, Compliance &amp; Traceability</h3>
-              <p style={{ fontSize: '14px', color: '#475569', lineHeight: '1.65', marginBottom: '16px' }}>
+              <h3 style={{ fontSize: 'clamp(16px, 2vw, 18px)', fontWeight: '800', color: '#142E3D', marginBottom: '8px', lineHeight: 1.3 }}>Contract, Compliance &amp; Traceability</h3>
+              <p style={{ fontSize: '13.5px', color: '#475569', lineHeight: 1.65, marginBottom: '14px', flexGrow: 1 }}>
                 Buyer-specific SOPs, batch traceability records, and compliance documentation including certifications relevant to your end application (food-grade, hazmat, pharma, social audit) are prepared and provided alongside your order.
               </p>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginTop: 'auto' }}>
                 {['Buyer SOPs', 'Batch traceability', 'Certification alignment'].map((tag, tIdx) => (
-                  <span key={tIdx} style={{ background: '#FFFFFF', border: '1px solid #CBD5E1', color: '#142E3D', padding: '4px 10px', borderRadius: '50px', fontSize: '11.5px', fontWeight: '700' }}>✓ {tag}</span>
+                  <span key={tIdx} style={{ background: '#FFFFFF', border: '1px solid #CBD5E1', color: '#142E3D', padding: '3px 9px', borderRadius: '50px', fontSize: '11px', fontWeight: '700' }}>✓ {tag}</span>
                 ))}
               </div>
             </div>
 
             {/* Journey Card 04 */}
-            <div className="card-clean" style={{ padding: 'clamp(20px, 3.5vw, 32px)', position: 'relative' }}>
-              <span style={{ position: 'absolute', top: '16px', right: '20px', fontSize: '32px', fontWeight: '900', color: 'rgba(7, 40, 52, 0.08)' }}>04</span>
-              <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: '#F0F7E4', color: '#8DC63F', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '16px' }}>
-                <FileSpreadsheet size={22} />
+            <div className="card-clean" style={{ padding: 'clamp(18px, 3vw, 28px)', position: 'relative', display: 'flex', flexDirection: 'column' }}>
+              <span style={{ position: 'absolute', top: '14px', right: '18px', fontSize: '28px', fontWeight: '900', color: 'rgba(7, 40, 52, 0.08)' }}>04</span>
+              <div style={{ width: '42px', height: '42px', borderRadius: '12px', background: '#F0F7E4', color: '#8DC63F', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '14px', flexShrink: 0 }}>
+                <FileSpreadsheet size={20} />
               </div>
-              <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#142E3D', marginBottom: '10px' }}>Container Dispatch &amp; Documentation</h3>
-              <p style={{ fontSize: '14px', color: '#475569', lineHeight: '1.65', marginBottom: '16px' }}>
+              <h3 style={{ fontSize: 'clamp(16px, 2vw, 18px)', fontWeight: '800', color: '#142E3D', marginBottom: '8px', lineHeight: 1.3 }}>Container Dispatch &amp; Documentation</h3>
+              <p style={{ fontSize: '13.5px', color: '#475569', lineHeight: 1.65, marginBottom: '14px', flexGrow: 1 }}>
                 We independently optimise container loading including multi-SKU containers combining different product lines to reduce your freight cost per unit. Full export documentation, port handling from all major Indian and Vietnam gateways, and invoicing in your preferred currency: USD, CAD, EUR, AUD, or NZD.
               </p>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginTop: 'auto' }}>
                 {['Multi-SKU optimisation', 'All major ports', 'USD · CAD · EUR · AUD · NZD'].map((tag, tIdx) => (
-                  <span key={tIdx} style={{ background: '#FFFFFF', border: '1px solid #CBD5E1', color: '#142E3D', padding: '4px 10px', borderRadius: '50px', fontSize: '11.5px', fontWeight: '700' }}>✓ {tag}</span>
+                  <span key={tIdx} style={{ background: '#FFFFFF', border: '1px solid #CBD5E1', color: '#142E3D', padding: '3px 9px', borderRadius: '50px', fontSize: '11px', fontWeight: '700' }}>✓ {tag}</span>
                 ))}
               </div>
             </div>
 
             {/* Journey Banner Card 05 */}
-            <div style={{ background: '#142E3D', color: '#FFFFFF', borderRadius: '24px', padding: 'clamp(20px, 4vw, 32px)', gridColumn: '1 / -1', display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
-              <div style={{ fontSize: '32px', fontWeight: '900', color: '#8DC63F', flexShrink: 0 }}>05</div>
-              <p style={{ fontSize: '15px', lineHeight: '1.6', margin: 0, color: '#E2E8F0', flex: 1 }}>
+            <div style={{
+              background: '#142E3D',
+              color: '#FFFFFF',
+              borderRadius: '20px',
+              padding: 'clamp(18px, 3.5vw, 28px)',
+              gridColumn: '1 / -1',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '16px',
+              flexWrap: 'wrap'
+            }}>
+              <div style={{ fontSize: 'clamp(26px, 3.5vw, 32px)', fontWeight: '900', color: '#8DC63F', flexShrink: 0 }}>05</div>
+              <p style={{ fontSize: 'clamp(13.5px, 1.7vw, 15px)', lineHeight: 1.6, margin: 0, color: '#E2E8F0', flex: '1 1 260px', minWidth: 0 }}>
                 <strong style={{ color: '#FFFFFF' }}>Your extended arm in Asia. One contact. Zero compromise.</strong> We are not a middleman — we are your procurement team on the ground. 30+ audited factories across India and Vietnam, managed through a single relationship, governed by your standards.
               </p>
             </div>
@@ -149,56 +168,61 @@ export default function BuyerTools() {
       </section>
 
       {/* SECTION 2: FOR EXPERIENCED IMPORTERS */}
-      <section style={{ padding: 'clamp(36px, 6vw, 64px) 0', background: '#FBF1E6', borderTop: '1px solid #E2E8F0' }}>
+      <section style={{ padding: 'clamp(32px, 5vw, 60px) 0', background: '#FBF1E6', borderTop: '1px solid #E2E8F0' }}>
         <div className="container">
-          <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 40px auto' }}>
-            <span style={{ color: '#8DC63F', fontSize: '13px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1px' }}>
+          <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto clamp(24px, 3.5vw, 36px) auto' }}>
+            <span style={{ color: '#8DC63F', fontSize: '11.5px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1.5px' }}>
               FOR EXPERIENCED IMPORTERS
             </span>
-            <h2 style={{ fontSize: 'clamp(24px, 3.5vw, 32px)', color: '#142E3D', fontWeight: '800', margin: '8px 0 14px 0', fontFamily: 'var(--font-heading)' }}>
+            <h2 style={{ fontSize: 'clamp(22px, 3vw, 30px)', color: '#142E3D', fontWeight: '800', margin: '6px 0 12px 0', fontFamily: 'var(--font-heading)', lineHeight: 1.25, wordBreak: 'break-word' }}>
               You Know How to Buy. BulkFlex Fixes What Still Goes Wrong.
             </h2>
-            <p style={{ fontSize: '14.5px', color: '#475569', lineHeight: '1.7', margin: 0 }}>
+            <p style={{ fontSize: 'clamp(13.5px, 1.7vw, 14.5px)', color: '#475569', lineHeight: 1.65, margin: 0 }}>
               If you’ve been importing directly from Asia for years, you already understand the landscape. But even seasoned buyers deal with the same recurring problems — problems that cost real money.
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px', marginBottom: '32px' }}>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
+            gap: 'clamp(16px, 2.5vw, 24px)',
+            marginBottom: '28px'
+          }}>
             {/* Problem 1 */}
-            <div className="card-clean" style={{ padding: 'clamp(20px, 3.5vw, 32px)' }}>
-              <div style={{ width: '38px', height: '38px', background: '#F0F7E4', color: '#8DC63F', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: '800', marginBottom: '14px' }}>
+            <div className="card-clean" style={{ padding: 'clamp(18px, 3vw, 28px)' }}>
+              <div style={{ width: '36px', height: '36px', background: '#F0F7E4', color: '#8DC63F', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: '800', marginBottom: '12px', fontSize: '14px' }}>
                 01
               </div>
-              <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#142E3D', marginBottom: '10px' }}>
+              <h3 style={{ fontSize: 'clamp(16px, 2vw, 18px)', fontWeight: '800', color: '#142E3D', marginBottom: '8px', lineHeight: 1.3 }}>
                 Quality That Varies Batch to Batch
               </h3>
-              <p style={{ fontSize: '14px', color: '#475569', lineHeight: '1.65', marginBottom: '16px' }}>
+              <p style={{ fontSize: '13.5px', color: '#475569', lineHeight: 1.65, marginBottom: '14px' }}>
                 Your first order was flawless. Your third wasn’t. Without on-ground QC at the factory before dispatch, you’re relying on hope — and finding out the problem after it arrives at your port.
               </p>
-              <div style={{ background: '#FBF1E6', padding: '12px 16px', borderRadius: '12px', border: '1px solid #CBD5E1', fontSize: '13px', fontWeight: '700', color: '#142E3D' }}>
+              <div style={{ background: '#FBF1E6', padding: '10px 14px', borderRadius: '10px', border: '1px solid #CBD5E1', fontSize: '12.5px', fontWeight: '700', color: '#142E3D' }}>
                 <span style={{ color: '#8DC63F' }}>BulkFlex:</span> Pre-shipment inspection on every order, every time.
               </div>
             </div>
 
             {/* Problem 2 */}
-            <div className="card-clean" style={{ padding: 'clamp(20px, 3.5vw, 32px)' }}>
-              <div style={{ width: '38px', height: '38px', background: '#F0F7E4', color: '#8DC63F', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: '800', marginBottom: '14px' }}>
+            <div className="card-clean" style={{ padding: 'clamp(18px, 3vw, 28px)' }}>
+              <div style={{ width: '36px', height: '36px', background: '#F0F7E4', color: '#8DC63F', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: '800', marginBottom: '12px', fontSize: '14px' }}>
                 02
               </div>
-              <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#142E3D', marginBottom: '10px' }}>
+              <h3 style={{ fontSize: 'clamp(16px, 2vw, 18px)', fontWeight: '800', color: '#142E3D', marginBottom: '8px', lineHeight: 1.3 }}>
                 Supplier Dependency Risk
               </h3>
-              <p style={{ fontSize: '14px', color: '#475569', lineHeight: '1.65', marginBottom: '16px' }}>
+              <p style={{ fontSize: '13.5px', color: '#475569', lineHeight: 1.65, marginBottom: '14px' }}>
                 When your primary factory goes dark — capacity issues, factory holidays, export restrictions — your entire supply chain stops. Single-supplier dependency is the most expensive vulnerability in direct procurement.
               </p>
-              <div style={{ background: '#FBF1E6', padding: '12px 16px', borderRadius: '12px', border: '1px solid #CBD5E1', fontSize: '13px', fontWeight: '700', color: '#142E3D' }}>
+              <div style={{ background: '#FBF1E6', padding: '10px 14px', borderRadius: '10px', border: '1px solid #CBD5E1', fontSize: '12.5px', fontWeight: '700', color: '#142E3D' }}>
                 <span style={{ color: '#8DC63F' }}>BulkFlex:</span> Multiple audited alternatives, instantly accessible.
               </div>
             </div>
           </div>
 
-          <div style={{ background: '#F0F7E4', border: '1px solid rgba(0, 194, 168, 0.3)', padding: '20px 28px', borderRadius: '20px', textAlign: 'center', maxWidth: '880px', margin: '0 auto' }}>
-            <p style={{ fontSize: '14px', color: '#142E3D', margin: 0, lineHeight: '1.75', fontWeight: '600' }}>
+          <div style={{ background: '#F0F7E4', border: '1px solid rgba(141, 198, 63, 0.3)', padding: 'clamp(16px, 2.5vw, 24px)', borderRadius: '16px', textAlign: 'center', maxWidth: '880px', margin: '0 auto' }}>
+            <p style={{ fontSize: 'clamp(13px, 1.6vw, 14px)', color: '#142E3D', margin: 0, lineHeight: 1.7, fontWeight: '600' }}>
               These aren’t beginner mistakes. They’re structural gaps and BulkFlex is built to close them. You don’t need to start over. You need to add infrastructure around what you’re already doing. That’s exactly what BulkFlex provides without replacing your procurement knowledge or your existing supplier relationships.
             </p>
           </div>
@@ -206,21 +230,25 @@ export default function BuyerTools() {
       </section>
 
       {/* SECTION 3: THE BULKFLEX ADVANTAGE */}
-      <section style={{ padding: 'clamp(44px, 6vw, 80px) 0', background: '#142E3D', color: '#FFFFFF', borderTop: '1px solid #E2E8F0' }}>
+      <section style={{ padding: 'clamp(36px, 5vw, 64px) 0', background: '#142E3D', color: '#FFFFFF', borderTop: '1px solid #E2E8F0' }}>
         <div className="container">
-          <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 44px auto' }}>
-            <span style={{ display: 'inline-block', background: 'rgba(0, 194, 168, 0.15)', color: '#8DC63F', padding: '6px 18px', borderRadius: '50px', fontSize: '12px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1.5px', marginBottom: '12px', border: '1px solid rgba(0, 194, 168, 0.3)' }}>
+          <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto clamp(28px, 4vw, 40px) auto' }}>
+            <span style={{ display: 'inline-block', background: 'rgba(141, 198, 63, 0.15)', color: '#8DC63F', padding: '6px 18px', borderRadius: '50px', fontSize: '11.5px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1.5px', marginBottom: '10px', border: '1px solid rgba(141, 198, 63, 0.3)' }}>
               THE BULKFLEX ADVANTAGE
             </span>
-            <h2 style={{ fontSize: 'clamp(26px, 3.5vw, 34px)', color: '#FFFFFF', fontWeight: '800', margin: '8px 0 14px 0', fontFamily: 'var(--font-heading)' }}>
+            <h2 style={{ fontSize: 'clamp(22px, 3vw, 32px)', color: '#FFFFFF', fontWeight: '800', margin: '6px 0 12px 0', fontFamily: 'var(--font-heading)', lineHeight: 1.25, wordBreak: 'break-word' }}>
               Multi-Supplier Strength. Single-Contact Simplicity.
             </h2>
-            <p style={{ fontSize: '15px', color: '#94A3B8', margin: 0, lineHeight: '1.6' }}>
+            <p style={{ fontSize: 'clamp(13.5px, 1.7vw, 15px)', color: '#94A3B8', margin: 0, lineHeight: 1.6 }}>
               Global procurement from Asia doesn’t have to be complex. BulkFlex gives you the network, the systems, and the people so you get the results without the overhead.
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
+            gap: 'clamp(16px, 2.5vw, 24px)'
+          }}>
             {[
               {
                 title: '01. One Contact. Many Audited Suppliers.',
@@ -247,11 +275,11 @@ export default function BuyerTools() {
                 desc: 'From your first specification review through factory shortlisting, sampling, QC, compliance, and final container dispatch — BulkFlex manages every stage and keeps you informed at every milestone. You make the decisions. We handle the execution. Nothing moves without your approval, and nothing gets lost in the process.'
               }
             ].map((adv, idx) => (
-              <div key={idx} style={{ background: 'rgba(255, 255, 255, 0.06)', border: '1px solid rgba(255, 255, 255, 0.12)', borderRadius: '20px', padding: 'clamp(20px, 3.5vw, 28px)' }}>
-                <h3 style={{ fontSize: '17px', fontWeight: '800', color: '#8DC63F', marginBottom: '10px' }}>
+              <div key={idx} style={{ background: 'rgba(255, 255, 255, 0.06)', border: '1px solid rgba(255, 255, 255, 0.12)', borderRadius: '18px', padding: 'clamp(18px, 3vw, 26px)' }}>
+                <h3 style={{ fontSize: 'clamp(15.5px, 2vw, 17px)', fontWeight: '800', color: '#8DC63F', marginBottom: '8px', lineHeight: 1.3 }}>
                   {adv.title}
                 </h3>
-                <p style={{ fontSize: '13.5px', color: '#94A3B8', lineHeight: '1.65', margin: 0 }}>
+                <p style={{ fontSize: '13px', color: '#94A3B8', lineHeight: 1.65, margin: 0 }}>
                   {adv.desc}
                 </p>
               </div>
@@ -261,21 +289,21 @@ export default function BuyerTools() {
       </section>
 
       {/* SECTION 4: HOW IT WORKS */}
-      <section style={{ padding: 'clamp(44px, 6vw, 80px) 0', background: '#FFFFFF', borderTop: '1px solid #E2E8F0' }}>
+      <section style={{ padding: 'clamp(36px, 5vw, 64px) 0', background: '#FFFFFF', borderTop: '1px solid #E2E8F0' }}>
         <div className="container">
-          <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 44px auto' }}>
-            <span style={{ display: 'inline-block', background: '#F0F7E4', color: '#8DC63F', padding: '6px 20px', borderRadius: '50px', fontSize: '12px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1.5px', marginBottom: '12px', border: '1px solid rgba(0, 194, 168, 0.3)' }}>
+          <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto clamp(28px, 4vw, 40px) auto' }}>
+            <span style={{ display: 'inline-block', background: '#F0F7E4', color: '#8DC63F', padding: '6px 18px', borderRadius: '50px', fontSize: '11.5px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1.5px', marginBottom: '10px', border: '1px solid rgba(141, 198, 63, 0.3)' }}>
               HOW IT WORKS
             </span>
-            <h2 style={{ fontSize: 'clamp(26px, 3.5vw, 34px)', color: '#142E3D', fontWeight: '800', margin: '8px 0 14px 0', fontFamily: 'var(--font-heading)' }}>
+            <h2 style={{ fontSize: 'clamp(22px, 3vw, 32px)', color: '#142E3D', fontWeight: '800', margin: '6px 0 12px 0', fontFamily: 'var(--font-heading)', lineHeight: 1.25, wordBreak: 'break-word' }}>
               5 Steps From Enquiry to Cleared Container
             </h2>
-            <p style={{ fontSize: '15px', color: '#64748B', margin: 0, lineHeight: '1.6' }}>
+            <p style={{ fontSize: 'clamp(13.5px, 1.7vw, 15px)', color: '#64748B', margin: 0, lineHeight: 1.6 }}>
               A structured procurement process designed for experienced buyers — transparent at every stage, with your approval required before anything moves forward.
             </p>
           </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '28px' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(16px, 2.5vw, 24px)' }}>
             {[
               {
                 step: '01',
@@ -298,13 +326,13 @@ export default function BuyerTools() {
               {
                 step: '04',
                 title: 'Contract, Compliance & Batch Traceability',
-                desc: 'All commercial documentation is structured to protect your position as the buyer. We ensure full batch traceability from raw material through to finished goods, verify export and import compliance requirements for your destination market, and arrange third-party lab testing where required. Buyer-specific SOPs are implemented at factory level — making your production standards repeatable, verifiable, and consistent across every future order.',
-                pills: ['BATCH TRACEABILITY', 'LAB TESTING ON REQUEST', 'BUYER SOPs', 'EXPORT COMPLIANCE']
+                desc: 'Once production is complete, we provide a complete compliance dossier — buyer SOPs, lab test results, batch traceability records, and regulatory certifications aligned to your destination market. Everything is documented, signed off, and stored for full auditability. No missing paperwork at customs. No regulatory surprises at port.',
+                pills: ['BUYER SOPS', 'LAB TEST RESULTS', 'BATCH TRACEABILITY', 'CUSTOMS DOSSIER']
               },
               {
                 step: '05',
-                title: 'Container Dispatch & Full Documentation',
-                desc: 'Your shipment is loaded, sealed, and dispatched with a complete, buyer-aligned documentation package — Bill of Lading, Certificate of Origin, Pre-Shipment Inspection report, packing list, test certificates, and all buyer-mandated compliance documents. We coordinate with freight partners and track your shipment through to port clearance. Your cargo arrives with zero documentation gaps, zero compliance surprises, and zero excuses.',
+                title: 'Container Dispatch & End-to-End Tracking',
+                desc: 'We independently plan and optimize container loading — including multi-SKU loads combining different product lines into a single container to minimise freight costs. We manage origin port handling across all major gateways in India and Vietnam, track shipments end-to-end, and provide full export documentation for seamless customs clearance at your destination port.',
                 pills: ['BILL OF LADING', 'CERTIFICATE OF ORIGIN', 'PSI REPORT', 'END-TO-END TRACKING']
               }
             ].map((item, idx) => (
@@ -312,42 +340,42 @@ export default function BuyerTools() {
                 key={idx}
                 className="card-clean"
                 style={{
-                  padding: 'clamp(20px, 4vw, 32px)',
+                  padding: 'clamp(18px, 3vw, 28px)',
                   display: 'flex',
                   flexDirection: 'row',
                   alignItems: 'flex-start',
-                  gap: 'clamp(16px, 3vw, 24px)',
+                  gap: 'clamp(14px, 2.5vw, 24px)',
                   flexWrap: 'wrap'
                 }}
               >
                 <div style={{
-                  fontSize: '24px',
+                  fontSize: 'clamp(20px, 2.5vw, 24px)',
                   fontWeight: '900',
                   color: '#142E3D',
                   background: '#F0F7E4',
-                  borderRadius: '16px',
-                  height: '64px',
-                  width: '64px',
+                  borderRadius: '14px',
+                  height: 'clamp(48px, 6vw, 58px)',
+                  width: 'clamp(48px, 6vw, 58px)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   lineHeight: 1,
-                  border: '1px solid rgba(0, 194, 168, 0.3)',
+                  border: '1px solid rgba(141, 198, 63, 0.3)',
                   flexShrink: 0
                 }}>
                   {item.step}
                 </div>
 
-                <div style={{ flex: '1 1 260px' }}>
-                  <h3 style={{ fontSize: 'clamp(18px, 2.5vw, 22px)', fontWeight: '800', color: '#142E3D', marginBottom: '10px' }}>
+                <div style={{ flex: '1 1 240px', minWidth: 0 }}>
+                  <h3 style={{ fontSize: 'clamp(16px, 2.2vw, 20px)', fontWeight: '800', color: '#142E3D', marginBottom: '8px', wordBreak: 'break-word', lineHeight: 1.3 }}>
                     {item.title}
                   </h3>
-                  <p style={{ fontSize: '14px', color: '#475569', lineHeight: '1.65', marginBottom: '16px' }}>
+                  <p style={{ fontSize: '13.5px', color: '#475569', lineHeight: 1.65, marginBottom: '14px' }}>
                     {item.desc}
                   </p>
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
                     {item.pills.map((pill, pIdx) => (
-                      <span key={pIdx} style={{ background: '#FFFFFF', border: '1px solid #CBD5E1', color: '#142E3D', padding: '4px 12px', borderRadius: '50px', fontSize: '11.5px', fontWeight: '800', letterSpacing: '0.5px' }}>
+                      <span key={pIdx} style={{ background: '#FFFFFF', border: '1px solid #CBD5E1', color: '#142E3D', padding: '3px 10px', borderRadius: '50px', fontSize: '11px', fontWeight: '800', letterSpacing: '0.4px' }}>
                         ✓ {pill}
                       </span>
                     ))}
@@ -360,26 +388,28 @@ export default function BuyerTools() {
           {/* ═══════════════════════════════════════════════════════════════════
               BUYER'S CORNER FAQ ACCORDION
           ═══════════════════════════════════════════════════════════════════ */}
-          <div style={{ marginTop: 'clamp(48px, 6vw, 72px)', maxWidth: '880px', margin: 'clamp(48px, 6vw, 72px) auto 0 auto' }}>
-            <div style={{ textAlign: 'center', marginBottom: '36px' }}>
-              <span style={{ color: '#8DC63F', fontWeight: '800', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1.5px' }}>
+          <div style={{ marginTop: 'clamp(36px, 5vw, 56px)', maxWidth: '880px', margin: 'clamp(36px, 5vw, 56px) auto 0 auto', width: '100%' }}>
+            <div style={{ textAlign: 'center', marginBottom: '28px' }}>
+              <span style={{ color: '#8DC63F', fontWeight: '800', fontSize: '11.5px', textTransform: 'uppercase', letterSpacing: '1.5px' }}>
                 Buyer FAQs
               </span>
               <h2 style={{
-                fontSize: 'clamp(24px, 3.2vw, 36px)',
+                fontSize: 'clamp(22px, 3vw, 32px)',
                 fontWeight: '800',
                 color: '#142E3D',
-                marginTop: '8px',
-                marginBottom: '12px'
+                marginTop: '6px',
+                marginBottom: '10px',
+                lineHeight: 1.25,
+                wordBreak: 'break-word'
               }}>
                 Questions Experienced Importers Ask Us
               </h2>
-              <p style={{ color: '#64748B', fontSize: '15px', lineHeight: 1.6 }}>
+              <p style={{ color: '#64748B', fontSize: 'clamp(13.5px, 1.7vw, 15px)', lineHeight: 1.6 }}>
                 Clear, transparent answers to help you evaluate how BulkFlex integrates with your current procurement.
               </p>
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
               {faqs.map((faq, idx) => (
                 <div
                   key={idx}
@@ -388,7 +418,7 @@ export default function BuyerTools() {
                     border: openFaq === idx ? '1.5px solid #8DC63F' : '1.5px solid #E2E8F0',
                     borderRadius: '14px',
                     overflow: 'hidden',
-                    boxShadow: openFaq === idx ? '0 8px 24px rgba(20,46,61,0.06)' : '0 2px 8px rgba(0,0,0,0.02)',
+                    boxShadow: openFaq === idx ? '0 6px 20px rgba(20,46,61,0.06)' : '0 2px 8px rgba(0,0,0,0.02)',
                     transition: 'border-color 0.2s, box-shadow 0.2s'
                   }}
                 >
@@ -396,7 +426,7 @@ export default function BuyerTools() {
                     onClick={() => toggleFaq(idx)}
                     style={{
                       width: '100%',
-                      padding: '18px 22px',
+                      padding: 'clamp(14px, 2.5vw, 18px) clamp(16px, 3vw, 22px)',
                       display: 'flex',
                       justifyContent: 'space-between',
                       alignItems: 'center',
@@ -404,15 +434,15 @@ export default function BuyerTools() {
                       border: 'none',
                       textAlign: 'left',
                       cursor: 'pointer',
-                      gap: '16px'
+                      gap: '12px'
                     }}
                   >
                     <span style={{
                       flex: 1,
-                      fontSize: '15.5px',
+                      fontSize: 'clamp(14px, 1.8vw, 15.5px)',
                       fontWeight: '800',
                       color: '#142E3D',
-                      lineHeight: 1.4,
+                      lineHeight: 1.35,
                       wordBreak: 'break-word'
                     }}>
                       {faq.q}
@@ -423,7 +453,7 @@ export default function BuyerTools() {
                     }
                   </button>
                   {openFaq === idx && (
-                    <div style={{ padding: '0 22px 20px 22px', color: '#475569', fontSize: '14px', lineHeight: 1.7, borderTop: '1px solid #F1F5F9', paddingTop: '14px' }}>
+                    <div style={{ padding: '0 clamp(16px, 3vw, 22px) clamp(14px, 2.5vw, 18px) clamp(16px, 3vw, 22px)', color: '#475569', fontSize: 'clamp(13px, 1.6vw, 14px)', lineHeight: 1.65, borderTop: '1px solid #F1F5F9', paddingTop: '12px' }}>
                       {faq.a}
                     </div>
                   )}
@@ -432,9 +462,9 @@ export default function BuyerTools() {
             </div>
           </div>
 
-          <div style={{ textAlign: 'center', marginTop: '48px' }}>
-            <Link to="/contact-us-2" className="btn-dark" style={{ padding: '16px 36px', fontSize: '15px', fontWeight: '800', display: 'inline-flex', alignItems: 'center', gap: '10px', borderRadius: '50px', minHeight: '44px' }}>
-              Start Sourcing Consultation <ArrowRight size={18} />
+          <div style={{ textAlign: 'center', marginTop: 'clamp(32px, 4.5vw, 44px)' }}>
+            <Link to="/contact-us-2" className="btn-dark" style={{ padding: 'clamp(12px, 2vw, 16px) clamp(24px, 4vw, 36px)', fontSize: 'clamp(14px, 1.8vw, 15px)', fontWeight: '800', display: 'inline-flex', alignItems: 'center', gap: '10px', borderRadius: '50px', minHeight: '44px', maxWidth: '100%', whiteSpace: 'normal', textAlign: 'center' }}>
+              Start Sourcing Consultation <ArrowRight size={18} style={{ flexShrink: 0 }} />
             </Link>
           </div>
         </div>

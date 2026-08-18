@@ -408,7 +408,7 @@ export default function HomePage() {
           {/* Stats Credibility Strip — inside hero */}
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 160px), 1fr))',
             gap: '10px',
             marginTop: 'clamp(12px, 1.5vw, 18px)'
           }}>
@@ -469,7 +469,8 @@ export default function HomePage() {
               fontSize: 'clamp(28px, 3.5vw, 40px)',
               fontWeight: '800',
               color: '#142E3D',
-              marginBottom: '8px'
+              marginBottom: '8px',
+              marginTop: '5px'
             }}>
               Our Product Portfolio
             </h2>
@@ -616,10 +617,10 @@ export default function HomePage() {
       <section style={{
         background: '#142E3D',
         color: '#FFFFFF',
-        padding: 'clamp(36px, 4vw, 54px) 0'
+        padding: 'clamp(28px, 3.5vw, 40px) 0'
       }}>
         <div className="container">
-          <div style={{ textAlign: 'center', maxWidth: '680px', margin: '0 auto 36px auto' }}>
+          <div style={{ textAlign: 'center', maxWidth: '680px', margin: '0 auto 28px auto' }}>
             <span style={{ color: '#8DC63F', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1.5px' }}>
               Built on Trust
             </span>
@@ -627,31 +628,30 @@ export default function HomePage() {
               fontSize: 'clamp(28px, 3.8vw, 42px)',
               fontWeight: '800',
               color: '#FFFFFF',
-              // marginTop: '10px',
-              marginBottom: '14px',
+              marginBottom: '10px',
               lineHeight: 1.15
             }}>
               Why Buyers Trust BulkFlex
             </h2>
             <p style={{
-              fontSize: 'clamp(28px, 2.8vw, 34px)',
+              fontSize: 'clamp(22px, 2.5vw, 28px)',
               fontWeight: '800',
               color: '#8DC63F',
-              marginBottom: '16px',
+              marginBottom: '12px',
               lineHeight: 1.2
             }}>
               Zero Surprises. Zero Stress.
             </p>
-            <p style={{ color: '#94A3B8', fontSize: '16px', lineHeight: 1.7 }}>
+            <p style={{ color: '#94A3B8', fontSize: '15px', lineHeight: 1.65 }}>
               Reliable packaging supply means your operations never stop because your packaging didn't arrive. BulkFlex is structured so that predictability, transparency, and continuity are the default — not the exception.
             </p>
           </div>
 
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-            gap: '20px',
-            marginBottom: '48px'
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
+            gap: '16px',
+            marginBottom: '0px'
           }}>
             {[
               {
@@ -718,7 +718,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════════════════════════════
           SECTION 5 — HOW WE WORK
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section id="how-we-work" style={{ padding: 'clamp(36px, 4vw, 54px) 0', background: '#FFFFFF' }}>
+      <section id="how-we-work" style={{ padding: 'clamp(28px, 3.5vw, 40px) 0', background: '#FFFFFF' }}>
         <div className="container">
           <div style={{
             marginBottom: '44px',
@@ -828,7 +828,7 @@ export default function HomePage() {
 
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 180px), 1fr))',
             gap: '16px'
           }}>
             {[
@@ -944,13 +944,13 @@ export default function HomePage() {
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
             gap: 'clamp(32px, 5vw, 60px)',
             alignItems: 'center'
           }}>
 
             {/* Compact sourcing map */}
-            <div style={{ maxWidth: '380px' }}>
+            <div style={{ maxWidth: '380px', margin: '0 auto', width: '100%' }}>
               <GlobalSourcingGraphic />
             </div>
 
