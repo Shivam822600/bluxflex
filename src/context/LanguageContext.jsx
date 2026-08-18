@@ -17,9 +17,9 @@ export const translations = {
 
     // Hero & Home Section
     heroTag: 'INDIA & ASIA SOURCING PARTNER',
-    heroTitle: 'Global Procurement Simplified',
-    heroDesc: 'BulkFlex enables global buyers to source from India & Asia with confidence, continuity and full supply chain visibility.',
-    heroDescSub1: '',
+    heroTitle: 'Global Packaging Sourced. Factory to Port, Fully Coordinated.',
+    heroDesc: 'BulkFlex connects global buyers with a structured sourcing network across India and Asia — covering factory selection, production coordination, and supply chain oversight.',
+    heroDescSub1: 'Through a curated pool of specialized manufacturers, production is coordinated based on capacity, capability, compliance readiness, and delivery timelines. From specification review and factory shortlisting to quality follow-up, documentation, and freight facilitation, BulkFlex brings process and structure to cross-border sourcing. Multiple Suppliers. Single Point of Contact. Full Sourcing Coordination.',
     heroDescSub2: '',
     heroTagline: '',
     heroCtaPrimary: 'How We Work',

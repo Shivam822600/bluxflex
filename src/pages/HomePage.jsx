@@ -144,7 +144,7 @@ function GlobalSourcingGraphic() {
           transform-origin: 400px 280px;
         }
       `}</style>
-      <svg viewBox="0 0 780 480" style={{ width: '100%', height: 'auto', maxHeight: '360px' }} aria-label="BulkFlex Global Sourcing Network — India and Asia to global buyers">
+      <svg viewBox="0 0 780 480" style={{ width: '100%', height: 'auto', maxHeight: '260px' }} aria-label="BulkFlex Global Sourcing Network — India and Asia to global buyers">
 
         {/* Subtle background circle */}
         <circle cx="400" cy="280" r="195" fill="none" stroke="rgba(20,46,61,0.07)" strokeWidth="1.5" strokeDasharray="2 8" />
@@ -346,14 +346,14 @@ export default function HomePage() {
       ═══════════════════════════════════════════════════════════════════════ */}
       <section style={{
         background: 'linear-gradient(170deg, #F0F7E4 0%, #FBF1E6 45%, #FFFFFF 100%)',
-        paddingTop: 'clamp(32px, 4vw, 56px)',
-        paddingBottom: 'clamp(32px, 4vw, 52px)'
+        paddingTop: 'clamp(20px, 2.5vw, 36px)',
+        paddingBottom: 'clamp(16px, 2vw, 28px)'
       }}>
         <div className="container">
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-            gap: 'clamp(32px, 5vw, 56px)',
+            gap: 'clamp(24px, 3vw, 40px)',
             alignItems: 'center'
           }}>
 
@@ -378,12 +378,12 @@ export default function HomePage() {
 
               <Reveal delay={0.07}>
                 <h1 style={{
-                  fontSize: 'clamp(32px, 4.5vw, 54px)',
+                  fontSize: 'clamp(28px, 3.5vw, 42px)',
                   fontWeight: '800',
                   lineHeight: 1.1,
                   color: '#142E3D',
                   fontFamily: 'Manrope, sans-serif',
-                  marginBottom: '18px'
+                  marginBottom: '12px'
                 }}>
                   {t('heroTitle')}
                 </h1>
@@ -396,14 +396,29 @@ export default function HomePage() {
                   lineHeight: 1.65,
                   color: '#334155',
                   maxWidth: '520px',
-                  marginBottom: '28px'
+                  marginBottom: t('heroDescSub1') ? '10px' : '20px'
                 }}>
                   {t('heroDesc')}
                 </p>
               </Reveal>
 
+              {t('heroDescSub1') && (
+                <Reveal delay={0.18}>
+                  <p style={{
+                    fontSize: 'clamp(13.5px, 1.5vw, 15px)',
+                    fontWeight: '400',
+                    lineHeight: 1.7,
+                    color: '#475569',
+                    maxWidth: '520px',
+                    marginBottom: '16px'
+                  }}>
+                    {t('heroDescSub1')}
+                  </p>
+                </Reveal>
+              )}
+
               <Reveal delay={0.22}>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginBottom: '28px' }}>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginBottom: '0px' }}>
                   <a
                     href="#how-we-work"
                     style={{
@@ -413,8 +428,8 @@ export default function HomePage() {
                       background: '#142E3D',
                       color: '#FFFFFF',
                       fontWeight: '700',
-                      fontSize: '15px',
-                      padding: '13px 28px',
+                      fontSize: '13.5px',
+                      padding: '10px 22px',
                       borderRadius: '8px',
                       textDecoration: 'none',
                       transition: 'background 0.2s, transform 0.2s'
@@ -433,8 +448,8 @@ export default function HomePage() {
                       background: 'transparent',
                       color: '#142E3D',
                       fontWeight: '700',
-                      fontSize: '15px',
-                      padding: '13px 28px',
+                      fontSize: '13.5px',
+                      padding: '10px 22px',
                       borderRadius: '8px',
                       border: '1.5px solid #142E3D',
                       textDecoration: 'none',
@@ -447,32 +462,6 @@ export default function HomePage() {
                   </Link>
                 </div>
               </Reveal>
-
-              {/* Compliance badges */}
-              <Reveal delay={0.3}>
-                <div style={{
-                  display: 'flex',
-                  flexWrap: 'wrap',
-                  gap: '8px',
-                  alignItems: 'center'
-                }}>
-                  {['ISO 9001', 'ISO 22000', 'BRCGSS Food Grade', 'SEDEX / SA 8000', '8+ Audited Factories', 'Structured 11-Step QC'].map((badge) => (
-                    <span key={badge} style={{
-                      background: 'rgba(20,46,61,0.06)',
-                      border: '1px solid rgba(20,46,61,0.12)',
-                      color: '#334155',
-                      fontSize: '11px',
-                      fontWeight: '700',
-                      padding: '4px 10px',
-                      borderRadius: '50px',
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.5px'
-                    }}>
-                      {badge}
-                    </span>
-                  ))}
-                </div>
-              </Reveal>
             </div>
 
             {/* ── Right: Global Sourcing Graphic ── */}
@@ -480,7 +469,7 @@ export default function HomePage() {
               <div style={{
                 background: '#FFFFFF',
                 borderRadius: '20px',
-                padding: 'clamp(16px, 3vw, 28px)',
+                padding: 'clamp(12px, 2vw, 18px)',
                 border: '1px solid #E4DCD0',
                 boxShadow: '0 10px 40px rgba(20,46,61,0.06)'
               }}>
@@ -499,23 +488,13 @@ export default function HomePage() {
             </Reveal>
 
           </div>
-        </div>
-      </section>
 
-      {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 2 — STATS CREDIBILITY STRIP
-      ═══════════════════════════════════════════════════════════════════════ */}
-      <section style={{
-        background: '#FFFFFF',
-        padding: '36px 0',
-        borderBottom: '1px solid #F1F5F9',
-        borderTop: '1px solid #F1F5F9'
-      }}>
-        <div className="container">
+          {/* Stats Credibility Strip — inside hero */}
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-            gap: '20px'
+            gap: '10px',
+            marginTop: 'clamp(12px, 1.5vw, 18px)'
           }}>
             {[
               { number: '20+', label: 'Years of Industrial Experience', icon: <Award color="#8DC63F" size={24} /> },
@@ -526,9 +505,9 @@ export default function HomePage() {
               <div key={i} style={{
                 display: 'flex',
                 alignItems: 'center',
-                gap: '16px',
-                padding: '16px 20px',
-                background: '#F8FAFC',
+                gap: '10px',
+                padding: '8px 12px',
+                background: 'rgba(255,255,255,0.7)',
                 borderRadius: '14px',
                 border: '1px solid #E8EFF5',
                 transition: 'box-shadow 0.2s'
@@ -537,8 +516,8 @@ export default function HomePage() {
                 onMouseLeave={(e) => { e.currentTarget.style.boxShadow = 'none'; }}
               >
                 <div style={{
-                  width: '48px', height: '48px',
-                  borderRadius: '12px',
+                  width: '32px', height: '32px',
+                  borderRadius: '8px',
                   background: '#F0F7E4',
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
                   flexShrink: 0
@@ -546,10 +525,10 @@ export default function HomePage() {
                   {stat.icon}
                 </div>
                 <div>
-                  <div style={{ fontSize: '24px', fontWeight: '800', color: '#142E3D', lineHeight: 1.1 }}>
+                  <div style={{ fontSize: '16px', fontWeight: '800', color: '#142E3D', lineHeight: 1.1 }}>
                     {stat.number}
                   </div>
-                  <div style={{ fontSize: '12px', color: '#64748B', fontWeight: '600', marginTop: '2px' }}>
+                  <div style={{ fontSize: '10.5px', color: '#64748B', fontWeight: '600', marginTop: '1px' }}>
                     {stat.label}
                   </div>
                 </div>
@@ -562,19 +541,19 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════════════════════════════
           SECTION 3 — PRODUCTS
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section style={{ padding: 'clamp(56px, 7vw, 88px) 0', background: '#FBF1E6' }}>
+      <section style={{ padding: 'clamp(20px, 2.5vw, 32px) 0', background: '#FBF1E6' }}>
         <div className="container">
 
           {/* Section header with FIBC emphasis */}
           <div style={{ textAlign: 'center', maxWidth: '640px', margin: '0 auto 36px auto' }}>
-            <span style={{ color: '#8DC63F', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1.5px' }}>
+            {/* <span style={{ color: '#8DC63F', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1.5px' }}>
               Industrial Grade Range
-            </span>
+            </span> */}
             <h2 style={{
               fontSize: 'clamp(28px, 3.5vw, 40px)',
               fontWeight: '800',
               color: '#142E3D',
-              marginTop: '8px',
+              // marginTop: '2px',
               marginBottom: '10px'
             }}>
               Our Product Portfolio
