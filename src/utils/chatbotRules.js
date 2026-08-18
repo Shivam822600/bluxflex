@@ -126,20 +126,20 @@ export const processMessage = (message) => {
 
   // ── 3. PRODUCT CATEGORY QUICK SEARCHES ───────────────────────────────────
   const categoryMap = [
-    { keys: ['fibc', 'fibc bags', 'jumbo bags', 'jumbo bag', 'bulk bag', 'bulk container'], query: 'fibc', label: 'FIBC / Jumbo Bags' },
+    { keys: ['bopp bags', 'bopp sacks', 'bopp', 'printed sacks', 'laminated bags'], query: 'bopp', label: 'BOPP Bags' },
+    { keys: ['fibc bags', 'fibc', 'jumbo bags', 'jumbo bag', 'bulk bag', 'bulk container'], query: 'fibc', label: 'FIBC / Jumbo Bags' },
     { keys: ['jute bags', 'jute bag', 'jute', 'burlap bags', 'burlap', 'hessian'], query: 'jute burlap', label: 'Jute & Burlap Bags' },
     { keys: ['pp woven bags', 'pp woven', 'pp bags', 'woven sacks', 'polypropylene bags'], query: 'pp woven', label: 'PP Woven Bags' },
-    { keys: ['bopp bags', 'bopp sacks', 'bopp', 'printed sacks', 'laminated bags'], query: 'bopp', label: 'BOPP Bags' },
     { keys: ['paper bags', 'kraft bags', 'multiwall bags', 'paper sacks'], query: 'paper', label: 'Paper Bags' },
     { keys: ['agro textiles', 'agriculture nets', 'crop covers', 'shade nets', 'silage', 'hail nets', 'trellis', 'agro'], query: 'net crop silage shade', label: 'Agro Textiles' },
     { keys: ['cotton bags', 'cotton', 'reusable bags'], query: 'cotton', label: 'Cotton Bags' },
-    { keys: ['rpet', 'rpet bags', 'recycled bags', 'sustainable bags', 'eco bags'], query: 'rpet', label: 'rPET / Eco Bags' },
+    { keys: ['rpet bags', 'rpet', 'recycled bags', 'sustainable bags', 'eco bags'], query: 'rpet', label: 'rPET / Eco Bags' },
     { keys: ['leno bags', 'leno', 'raschel'], query: 'leno raschel', label: 'Leno / Raschel Bags' },
-    { keys: ['liner', 'liners', 'container liner', 'pe liner'], query: 'liner', label: 'Container Liners' },
+    { keys: ['container liner', 'pe liner', 'liner', 'liners'], query: 'liner', label: 'Container Liners' },
   ];
 
   for (const cat of categoryMap) {
-    if (cat.keys.some(k => text === k || text.includes(k))) {
+    if (cat.keys.some(k => text === k || new RegExp(`\\b${k}\\b`, 'i').test(text))) {
       const results = searchProducts(cat.query);
       if (results.length > 0) {
         return {

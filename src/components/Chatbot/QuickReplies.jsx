@@ -4,12 +4,47 @@ const QuickReplies = ({ replies, onSelect }) => {
   if (!replies || replies.length === 0) return null;
 
   return (
-    <div className="flex flex-wrap gap-2 mt-2 mb-3">
+    <div style={{
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: '8px',
+      marginTop: '8px',
+      marginBottom: '10px'
+    }}>
       {replies.map((reply, i) => (
         <button
           key={i}
           onClick={() => onSelect(reply)}
-          className="px-3.5 py-2 bg-white border border-gray-200 text-gray-700 text-[12.5px] font-medium rounded-full hover:bg-[#142E3D] hover:text-white hover:border-[#142E3D] hover:shadow-md transition-all duration-150 whitespace-nowrap min-h-[34px]"
+          style={{
+            background: '#FFFFFF',
+            border: '1.5px solid #E2E8F0',
+            color: '#142E3D',
+            fontSize: '12px',
+            fontWeight: '700',
+            padding: '7px 14px',
+            borderRadius: '50px',
+            cursor: 'pointer',
+            boxShadow: '0 2px 5px rgba(0, 0, 0, 0.04)',
+            transition: 'all 0.2s',
+            whiteSpace: 'nowrap',
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '4px'
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.background = '#142E3D';
+            e.currentTarget.style.color = '#FFFFFF';
+            e.currentTarget.style.borderColor = '#142E3D';
+            e.currentTarget.style.transform = 'translateY(-1px)';
+            e.currentTarget.style.boxShadow = '0 4px 12px rgba(20, 46, 61, 0.15)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.background = '#FFFFFF';
+            e.currentTarget.style.color = '#142E3D';
+            e.currentTarget.style.borderColor = '#E2E8F0';
+            e.currentTarget.style.transform = 'none';
+            e.currentTarget.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.04)';
+          }}
         >
           {reply}
         </button>

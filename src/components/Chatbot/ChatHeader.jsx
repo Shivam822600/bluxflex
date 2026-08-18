@@ -1,80 +1,125 @@
-import React, { useState } from 'react';
-import { X, Maximize2, Minimize2, MoreHorizontal, ThumbsUp, ThumbsDown, Bot } from 'lucide-react';
+import React from 'react';
+import { X, Maximize2, Minimize2, Bot } from 'lucide-react';
 
 const ChatHeader = ({ onClose, isMaximized, onToggleMaximize }) => {
-  const [feedback, setFeedback] = useState(null); // 'up' | 'down' | null
-
   return (
-    <div className="bg-white border-b border-gray-100 flex flex-col shadow-sm relative z-10 flex-shrink-0">
-
-      {/* Top bar: controls */}
-      <div className="flex items-center justify-between px-4 pt-3 pb-2">
-        <div className="flex items-center gap-2">
-          {/* Resize icon */}
-
-
+    <div style={{
+      background: 'linear-gradient(135deg, #142E3D 0%, #091C26 100%)',
+      padding: '12px 16px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+      flexShrink: 0,
+      zIndex: 10
+    }}>
+      {/* Agent Identity */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', minWidth: 0 }}>
+        <div style={{ position: 'relative', flexShrink: 0 }}>
+          <div style={{
+            width: '38px',
+            height: '38px',
+            borderRadius: '50%',
+            background: '#04131A',
+            border: '2px solid #8DC63F',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            boxShadow: '0 0 10px rgba(141, 198, 63, 0.25)'
+          }}>
+            <Bot size={20} color="#8DC63F" />
+          </div>
+          {/* Live pulsing online dot */}
+          <span style={{
+            position: 'absolute',
+            bottom: '0',
+            right: '0',
+            width: '10px',
+            height: '10px',
+            borderRadius: '50%',
+            background: '#8DC63F',
+            border: '2px solid #142E3D'
+          }} />
         </div>
 
-        {/* Close button */}
-
+        <div style={{ minWidth: 0 }}>
+          <div style={{
+            color: '#FFFFFF',
+            fontSize: '14.5px',
+            fontWeight: '800',
+            lineHeight: 1.2,
+            fontFamily: 'Manrope, sans-serif',
+            whiteSpace: 'nowrap',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis'
+          }}>
+            Packaging Assistant
+          </div>
+          <div style={{
+            color: '#94A3B8',
+            fontSize: '11px',
+            fontWeight: '600',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px',
+            marginTop: '2px'
+          }}>
+            <span style={{
+              width: '6px',
+              height: '6px',
+              borderRadius: '50%',
+              background: '#8DC63F',
+              display: 'inline-block'
+            }} />
+            Active · Instant AI Sourcing Support
+          </div>
+        </div>
       </div>
 
-      {/* Agent identity row */}
-      <div className="flex items-center gap-3 px-4 pb-3">
-        {/* Avatar with ring */}
-        <div className="relative flex-shrink-0">
-          <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-[#142E3D] to-[#1a3f52] flex items-center justify-center shadow-md ring-2 ring-[#8DC63F]/30">
-            <Bot size={22} className="text-[#8DC63F]" />
-          </div>
-          {/* Online dot */}
-          <span className="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 bg-[#8DC63F] rounded-full border-2 border-white" />
-        </div>
-
-        {/* Name + subtitle */}
-        <div className="flex-1 min-w-0">
-          <h3 className="text-[#142E3D] font-bold text-[15px] leading-tight tracking-tight">
-            Packaging Assistant
-          </h3>
-          <p className="text-gray-400 text-xs mt-0.5 font-medium">AI assistant · Typically replies instantly</p>
-        </div>
-
-        {/* Feedback thumbs */}
-        <div className="flex items-center gap-1 ml-auto">
-          <button
-            onClick={onToggleMaximize}
-            className="hidden sm:flex text-gray-400 hover:text-[#142E3D] w-8 h-8 items-center justify-center rounded-lg transition-colors hover:bg-gray-100"
-            aria-label={isMaximized ? 'Minimize chat' : 'Maximize chat'}
-          >
-            {isMaximized ? <Minimize2 size={16} /> : <Maximize2 size={16} />}
-          </button>
-          <button
-            onClick={onClose}
-            className="text-gray-400 hover:text-[#142E3D] w-9 h-9 flex items-center justify-center rounded-xl transition-all hover:bg-gray-100"
-            aria-label="Close chat"
-          >
-            <X size={20} />
-          </button>
-          {/* <button
-            onClick={() => setFeedback('up')}
-            className={`w-8 h-8 flex items-center justify-center rounded-lg transition-all ${feedback === 'up'
-                ? 'bg-[#8DC63F]/15 text-[#8DC63F]'
-                : 'text-gray-300 hover:text-[#8DC63F] hover:bg-[#8DC63F]/10'
-              }`}
-            aria-label="Helpful"
-          >
-            <ThumbsUp size={15} />
-          </button>
-          <button
-            onClick={() => setFeedback('down')}
-            className={`w-8 h-8 flex items-center justify-center rounded-lg transition-all ${feedback === 'down'
-                ? 'bg-red-50 text-red-400'
-                : 'text-gray-300 hover:text-red-400 hover:bg-red-50'
-              }`}
-            aria-label="Not helpful"
-          >
-            <ThumbsDown size={15} />
-          </button> */}
-        </div>
+      {/* Controls */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexShrink: 0, marginLeft: '8px' }}>
+        <button
+          onClick={onToggleMaximize}
+          aria-label={isMaximized ? 'Minimize chat' : 'Maximize chat'}
+          style={{
+            background: 'rgba(255, 255, 255, 0.08)',
+            border: 'none',
+            color: '#E2E8F0',
+            width: '32px',
+            height: '32px',
+            borderRadius: '8px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            cursor: 'pointer',
+            transition: 'background 0.2s'
+          }}
+          onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.18)'; }}
+          onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.08)'; }}
+        >
+          {isMaximized ? <Minimize2 size={15} /> : <Maximize2 size={15} />}
+        </button>
+        <button
+          onClick={onClose}
+          aria-label="Close chat"
+          style={{
+            background: 'rgba(255, 255, 255, 0.08)',
+            border: 'none',
+            color: '#E2E8F0',
+            width: '32px',
+            height: '32px',
+            borderRadius: '8px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            cursor: 'pointer',
+            transition: 'background 0.2s'
+          }}
+          onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(239, 68, 68, 0.25)'; e.currentTarget.style.color = '#FCA5A5'; }}
+          onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.08)'; e.currentTarget.style.color = '#E2E8F0'; }}
+        >
+          <X size={18} />
+        </button>
       </div>
     </div>
   );

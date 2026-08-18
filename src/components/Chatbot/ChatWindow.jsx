@@ -78,10 +78,11 @@ const ChatWindow = ({ isOpen, onClose }) => {
 
         /* sm+ (640px+): floating panel */
         sm:inset-auto sm:bottom-6 sm:right-6
-        sm:h-[680px] sm:max-h-[calc(100vh-48px)]
-        sm:rounded-2xl sm:border sm:border-gray-200
-        ${isMaximized ? 'sm:w-[560px]' : 'sm:w-[400px]'}
+        sm:h-[620px] sm:max-h-[calc(100vh-48px)]
+        sm:rounded-2xl sm:border sm:border-gray-200/80
+        ${isMaximized ? 'sm:w-[560px]' : 'sm:w-[410px]'}
         sm:max-w-[calc(100vw-3rem)]
+        sm:shadow-[0_20px_60px_-10px_rgba(20,46,61,0.25)]
 
         /* Open/close animation */
         ${isOpen

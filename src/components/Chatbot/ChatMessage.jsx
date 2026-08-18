@@ -7,33 +7,55 @@ const ChatMessage = ({ message, onClose, onAction }) => {
   const hasProducts = message.products && message.products.length > 0;
 
   return (
-    // Outer wrapper is full-width — carousel can use it directly
-    <div className={`flex flex-col w-full mb-2 ${isUser ? 'items-end' : 'items-start'}`}>
-
-      {/* Bubble row — constrained to 82% max */}
-      <div className={`flex max-w-[82%] ${isUser ? 'flex-row-reverse' : 'flex-row'} items-end gap-2`}>
-
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      width: '100%',
+      marginBottom: '14px',
+      alignItems: isUser ? 'flex-end' : 'flex-start'
+    }}>
+      {/* Bubble Row */}
+      <div style={{
+        display: 'flex',
+        flexDirection: isUser ? 'row-reverse' : 'row',
+        alignItems: 'flex-start',
+        gap: '8px',
+        maxWidth: '88%'
+      }}>
         {/* Avatar */}
-        <div className="w-7 h-7 rounded-full flex-shrink-0 flex items-center justify-center mb-0.5">
+        <div style={{
+          width: '28px',
+          height: '28px',
+          borderRadius: '50%',
+          flexShrink: 0,
+          background: isUser ? 'rgba(20, 46, 61, 0.08)' : '#142E3D',
+          border: isUser ? '1px solid rgba(20, 46, 61, 0.15)' : '1.5px solid #8DC63F',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          marginTop: '2px'
+        }}>
           {isUser ? (
-            <div className="w-full h-full bg-gray-200 rounded-full flex items-center justify-center">
-              <User size={14} className="text-gray-500" />
-            </div>
+            <User size={14} color="#142E3D" />
           ) : (
-            <div className="w-full h-full bg-[#142E3D] rounded-full flex items-center justify-center shadow-sm">
-              <Bot size={14} className="text-[#8DC63F]" />
-            </div>
+            <Bot size={14} color="#8DC63F" />
           )}
         </div>
 
-        {/* Text bubble only */}
-        <div
-          className={`px-3.5 py-2.5 text-[14px] leading-relaxed break-words whitespace-pre-wrap shadow-sm ${
-            isUser
-              ? 'bg-[#142E3D] text-white rounded-2xl rounded-br-[5px]'
-              : 'bg-[#F4F5F7] text-gray-800 rounded-2xl rounded-bl-[5px]'
-          }`}
-        >
+        {/* Text Bubble */}
+        <div style={{
+          background: isUser ? '#142E3D' : '#FFFFFF',
+          color: isUser ? '#FFFFFF' : '#1E293B',
+          border: isUser ? 'none' : '1px solid #E2E8F0',
+          borderRadius: isUser ? '16px 16px 4px 16px' : '16px 16px 16px 4px',
+          padding: '12px 16px',
+          fontSize: '13.5px',
+          lineHeight: '1.6',
+          boxShadow: isUser ? '0 4px 12px rgba(20, 46, 61, 0.15)' : '0 2px 8px rgba(0, 0, 0, 0.04)',
+          wordBreak: 'break-word',
+          whiteSpace: 'pre-wrap',
+          fontFamily: 'inherit'
+        }}>
           {message.text && message.text.split('\n').map((line, i, arr) => (
             <React.Fragment key={i}>
               {line}
@@ -43,9 +65,9 @@ const ChatMessage = ({ message, onClose, onAction }) => {
         </div>
       </div>
 
-      {/* Product carousel — full width, outside the 82% constraint */}
+      {/* Product carousel */}
       {hasProducts && (
-        <div className="w-full mt-1">
+        <div style={{ width: '100%', marginTop: '8px' }}>
           <ProductCarousel
             products={message.products}
             onClose={onClose}
@@ -54,8 +76,15 @@ const ChatMessage = ({ message, onClose, onAction }) => {
         </div>
       )}
 
-      {/* Timestamp — aligned to correct side */}
-      <span className={`text-[10px] text-gray-400 mt-1 ${isUser ? 'mr-1' : 'ml-9'}`}>
+      {/* Timestamp */}
+      <span style={{
+        fontSize: '10px',
+        color: '#94A3B8',
+        fontWeight: '500',
+        marginTop: '4px',
+        marginLeft: isUser ? '0' : '36px',
+        marginRight: isUser ? '36px' : '0'
+      }}>
         {message.timestamp
           ? new Date(message.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
           : ''}

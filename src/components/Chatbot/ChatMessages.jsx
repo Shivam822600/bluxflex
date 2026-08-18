@@ -6,14 +6,12 @@ import QuickReplies from './QuickReplies';
 const ChatMessages = ({ messages, isTyping, onQuickReplySelect, onClose }) => {
   const containerRef = useRef(null);
 
-  // Instantly snap to bottom — no smooth scroll animation
   const scrollToBottom = () => {
     if (containerRef.current) {
       containerRef.current.scrollTop = containerRef.current.scrollHeight;
     }
   };
 
-  // Run immediately + again after a tick to catch quick replies rendering
   useEffect(() => {
     scrollToBottom();
     const t = setTimeout(scrollToBottom, 150);
@@ -21,7 +19,20 @@ const ChatMessages = ({ messages, isTyping, onQuickReplySelect, onClose }) => {
   }, [messages, isTyping]);
 
   return (
-    <div ref={containerRef} className="flex-1 overflow-y-auto px-4 py-4 bg-white hide-scrollbar">
+    <div
+      ref={containerRef}
+      className="hide-scrollbar"
+      style={{
+        flex: 1,
+        overflowY: 'auto',
+        padding: '16px 14px 10px 14px',
+        background: '#F8FAFC',
+        display: 'flex',
+        flexDirection: 'column',
+        scrollbarWidth: 'none',
+        msOverflowStyle: 'none'
+      }}
+    >
       {messages.map((msg) => (
         <React.Fragment key={msg.id}>
           <ChatMessage message={msg} onClose={onClose} onAction={onQuickReplySelect} />
@@ -31,7 +42,7 @@ const ChatMessages = ({ messages, isTyping, onQuickReplySelect, onClose }) => {
             msg.quickReplies?.length > 0 &&
             msg.id === messages[messages.length - 1].id &&
             !isTyping && (
-              <div className="ml-9 mb-1">
+              <div style={{ marginLeft: '36px', marginBottom: '8px' }}>
                 <QuickReplies replies={msg.quickReplies} onSelect={onQuickReplySelect} />
               </div>
             )}
@@ -39,13 +50,13 @@ const ChatMessages = ({ messages, isTyping, onQuickReplySelect, onClose }) => {
       ))}
 
       {isTyping && (
-        <div className="mb-2">
+        <div style={{ marginBottom: '8px' }}>
           <TypingIndicator />
         </div>
       )}
 
       {/* Bottom anchor */}
-      <div className="h-2" />
+      <div style={{ height: '4px' }} />
     </div>
   );
 };

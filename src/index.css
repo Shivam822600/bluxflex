@@ -626,3 +626,14 @@ a {
     gap: 20px !important;
   }
 }
+
+/* Clean Chatbot & Carousel Scrollbar Utilities */
+.hide-scrollbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}

@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import ProductCard from './ProductCard';
 
-const ProductCarousel = ({ products, onClose, onAction }) => {
+const ProductCarousel = ({ products, onClose }) => {
   const scrollContainerRef = useRef(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(false);
@@ -10,13 +10,12 @@ const ProductCarousel = ({ products, onClose, onAction }) => {
   const checkScroll = () => {
     if (scrollContainerRef.current) {
       const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef.current;
-      setCanScrollLeft(scrollLeft > 0);
-      setCanScrollRight(Math.ceil(scrollLeft + clientWidth) < scrollWidth - 2);
+      setCanScrollLeft(scrollLeft > 5);
+      setCanScrollRight(Math.ceil(scrollLeft + clientWidth) < scrollWidth - 5);
     }
   };
 
   useEffect(() => {
-    // Small delay to allow layout to settle before checking scroll state
     const t = setTimeout(checkScroll, 100);
     window.addEventListener('resize', checkScroll);
     return () => {
@@ -25,11 +24,10 @@ const ProductCarousel = ({ products, onClose, onAction }) => {
     };
   }, [products]);
 
-  // Card width = 160px, gap = 10px → scroll by one card at a time
   const scroll = (direction) => {
     if (scrollContainerRef.current) {
       scrollContainerRef.current.scrollBy({
-        left: direction === 'left' ? -170 : 170,
+        left: direction === 'left' ? -160 : 160,
         behavior: 'smooth'
       });
       setTimeout(checkScroll, 350);
@@ -37,51 +35,98 @@ const ProductCarousel = ({ products, onClose, onAction }) => {
   };
 
   return (
-    <div className="relative w-full mt-2 mb-1 pl-9">
-      {/* pl-9 aligns carousel left edge with the text bubble (past avatar width) */}
+    <div style={{
+      position: 'relative',
+      width: '100%',
+      marginTop: '8px',
+      marginBottom: '6px',
+      paddingLeft: '36px'
+    }}>
 
-      {/* Left arrow */}
+      {/* Left scroll arrow */}
       {canScrollLeft && (
         <button
           onClick={() => scroll('left')}
-          className="absolute left-7 top-1/2 -translate-y-1/2 z-10 w-7 h-7 flex items-center justify-center bg-white rounded-full shadow-md border border-gray-100 text-[#142E3D] hover:text-[#8DC63F] hover:shadow-lg transition-all"
           aria-label="Scroll left"
+          style={{
+            position: 'absolute',
+            left: '26px',
+            top: '50%',
+            transform: 'translateY(-50%)',
+            zIndex: 10,
+            width: '28px',
+            height: '28px',
+            borderRadius: '50%',
+            background: '#142E3D',
+            color: '#FFFFFF',
+            border: '2px solid #FFFFFF',
+            boxShadow: '0 4px 12px rgba(20,46,61,0.25)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            cursor: 'pointer',
+            transition: 'transform 0.15s'
+          }}
+          onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-50%) scale(1.1)'; }}
+          onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(-50%) scale(1)'; }}
         >
           <ChevronLeft size={16} />
         </button>
       )}
 
-      {/* Scroll container — uses full available width, shows ~1.3 cards so user knows to scroll */}
+      {/* Scroll container */}
       <div
         ref={scrollContainerRef}
         onScroll={checkScroll}
-        className="flex overflow-x-auto gap-2.5 pb-2 hide-scrollbar scroll-smooth"
-        style={{ scrollSnapType: 'x mandatory' }}
+        style={{
+          display: 'flex',
+          overflowX: 'auto',
+          gap: '10px',
+          paddingBottom: '6px',
+          paddingRight: '6px',
+          scrollSnapType: 'x mandatory',
+          scrollbarWidth: 'none',
+          msOverflowStyle: 'none'
+        }}
       >
         {products.map(product => (
           <ProductCard
             key={product.id}
             product={product}
             onClose={onClose}
-            onAction={onAction}
           />
         ))}
       </div>
 
-      {/* Right arrow */}
+      {/* Right scroll arrow */}
       {canScrollRight && (
         <button
           onClick={() => scroll('right')}
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-7 h-7 flex items-center justify-center bg-white rounded-full shadow-md border border-gray-100 text-[#142E3D] hover:text-[#8DC63F] hover:shadow-lg transition-all"
           aria-label="Scroll right"
+          style={{
+            position: 'absolute',
+            right: '-4px',
+            top: '50%',
+            transform: 'translateY(-50%)',
+            zIndex: 10,
+            width: '28px',
+            height: '28px',
+            borderRadius: '50%',
+            background: '#142E3D',
+            color: '#FFFFFF',
+            border: '2px solid #FFFFFF',
+            boxShadow: '0 4px 12px rgba(20,46,61,0.25)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            cursor: 'pointer',
+            transition: 'transform 0.15s'
+          }}
+          onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-50%) scale(1.1)'; }}
+          onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(-50%) scale(1)'; }}
         >
           <ChevronRight size={16} />
         </button>
-      )}
-
-      {/* Right fade hint — shows when more cards exist */}
-      {canScrollRight && (
-        <div className="absolute right-0 top-0 h-full w-10 bg-gradient-to-l from-white/80 to-transparent pointer-events-none" />
       )}
     </div>
   );

@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Send, Plus, Smile } from 'lucide-react';
+import { Send } from 'lucide-react';
 import { getSearchSuggestions } from '../../utils/productSearch';
 
 const ChatInput = ({ onSendMessage, disabled }) => {
@@ -25,7 +25,7 @@ const ChatInput = ({ onSendMessage, disabled }) => {
     const el = inputRef.current;
     if (el) {
       el.style.height = 'auto';
-      el.style.height = `${Math.min(el.scrollHeight, 110)}px`;
+      el.style.height = `${Math.min(el.scrollHeight, 100)}px`;
     }
   };
 
@@ -60,84 +60,149 @@ const ChatInput = ({ onSendMessage, disabled }) => {
   const hasText = message.trim().length > 0;
 
   return (
-    <div className="relative bg-white px-3 pt-2.5 pb-4 flex-shrink-0">
+    <div style={{
+      position: 'relative',
+      background: '#FFFFFF',
+      padding: '10px 14px 12px 14px',
+      borderTop: '1px solid #E8EFF5',
+      flexShrink: 0
+    }}>
 
       {/* Search suggestions dropdown */}
       {suggestions.length > 0 && (
-        <div className="absolute bottom-full left-0 w-full px-3 mb-1.5">
-          <div className="bg-white rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.10)] border border-gray-100 overflow-hidden">
-            {suggestions.map((s, i) => (
-              <button
-                key={i}
-                onClick={() => handleSuggestionClick(s)}
-                className="w-full text-left px-4 py-2.5 text-[13px] text-gray-700 hover:bg-gray-50 hover:text-[#142E3D] transition-colors flex items-center gap-2 min-h-[44px]"
-              >
-                <span className="text-gray-400 text-xs">🔍</span>
-                {s}
-              </button>
-            ))}
-          </div>
+        <div style={{
+          position: 'absolute',
+          bottom: '100%',
+          left: '12px',
+          right: '12px',
+          marginBottom: '8px',
+          background: '#FFFFFF',
+          borderRadius: '14px',
+          boxShadow: '0 10px 30px rgba(0,0,0,0.12)',
+          border: '1px solid #E2E8F0',
+          overflow: 'hidden',
+          zIndex: 20
+        }}>
+          {suggestions.map((s, i) => (
+            <button
+              key={i}
+              onClick={() => handleSuggestionClick(s)}
+              style={{
+                width: '100%',
+                textAlign: 'left',
+                padding: '10px 14px',
+                fontSize: '12.5px',
+                color: '#142E3D',
+                background: 'transparent',
+                border: 'none',
+                borderBottom: i !== suggestions.length - 1 ? '1px solid #F1F5F9' : 'none',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px'
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = '#F8FAFC'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; }}
+            >
+              <span style={{ fontSize: '11px', color: '#94A3B8' }}>🔍</span>
+              {s}
+            </button>
+          ))}
         </div>
       )}
 
-      {/* Input row */}
-      <div className="flex items-end gap-1.5">
-
-        {/* + button (left) */}
-        {/* <button
-          type="button"
-          className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full text-gray-400 hover:text-[#142E3D] hover:bg-gray-100 transition-all mb-0.5"
-          aria-label="Add attachment"
-          style={{ border: 'none' }}
-        >
-          <Plus size={20} />
-        </button> */}
-
-        {/* Text input container */}
-        <div className="flex-1 flex items-end bg-gray-50 border border-gray-200 rounded-[22px] focus-within:border-gray-400 focus-within:bg-white transition-all duration-150">
+      {/* Input Row */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+        {/* Text Input Container */}
+        <div style={{
+          flex: 1,
+          display: 'flex',
+          alignItems: 'center',
+          background: '#F1F5F9',
+          border: '1.5px solid #E2E8F0',
+          borderRadius: '24px',
+          padding: '2px 14px',
+          transition: 'all 0.2s'
+        }}>
           <textarea
             ref={inputRef}
             value={message}
             onChange={handleChange}
             onKeyDown={handleKeyDown}
-            placeholder="Write a message..."
+            placeholder="Ask about products, MOQ, specs..."
             disabled={disabled}
             rows={1}
-            style={{ minHeight: '44px', maxHeight: '110px' }}
-            className="flex-grow bg-transparent px-4 py-[11px] outline-none border-none focus:border-none focus:outline-none focus:ring-0 text-[14px] text-gray-800 placeholder-gray-400 resize-none hide-scrollbar self-end leading-relaxed"
+            style={{
+              flexGrow: 1,
+              background: 'transparent',
+              padding: '8px 0',
+              outline: 'none',
+              border: 'none',
+              boxShadow: 'none',
+              fontSize: '13px',
+              color: '#142E3D',
+              resize: 'none',
+              minHeight: '36px',
+              maxHeight: '90px',
+              lineHeight: '1.4',
+              fontFamily: 'inherit'
+            }}
           />
-
-          {/* Emoji button (inside input, right) */}
-          {/* <button
-            type="button"
-            className="flex-shrink-0 w-9 h-9 mb-[3px] mr-0.5 flex items-center justify-center rounded-full text-gray-400 hover:text-[#142E3D] hover:bg-gray-100 transition-all"
-            aria-label="Emoji"
-            style={{ border: 'none' }}
-          >
-            <Smile size={18} />
-          </button> */}
         </div>
 
-        {/* Send button (right, always visible) */}
+        {/* Send button */}
         <button
           type="button"
           onClick={handleSubmit}
           disabled={!hasText || disabled}
-          className={`flex-shrink-0 w-11 h-11 mb-0.5 flex items-center justify-center rounded-full transition-all duration-200 shadow-sm ${hasText && !disabled
-              ? 'bg-[#142E3D] text-white hover:bg-[#0F2531] hover:shadow-md hover:-translate-y-0.5 scale-100'
-              : 'bg-gray-100 text-gray-300 cursor-not-allowed scale-95'
-            }`}
-          style={{ border: 'none' }}
           aria-label="Send message"
+          style={{
+            flexShrink: 0,
+            width: '38px',
+            height: '38px',
+            borderRadius: '50%',
+            background: hasText && !disabled ? '#142E3D' : '#E2E8F0',
+            color: hasText && !disabled ? '#8DC63F' : '#94A3B8',
+            border: 'none',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            cursor: hasText && !disabled ? 'pointer' : 'not-allowed',
+            boxShadow: hasText && !disabled ? '0 4px 12px rgba(20, 46, 61, 0.25)' : 'none',
+            transition: 'all 0.2s'
+          }}
+          onMouseEnter={(e) => {
+            if (hasText && !disabled) {
+              e.currentTarget.style.background = '#091C26';
+              e.currentTarget.style.transform = 'scale(1.05)';
+            }
+          }}
+          onMouseLeave={(e) => {
+            if (hasText && !disabled) {
+              e.currentTarget.style.background = '#142E3D';
+              e.currentTarget.style.transform = 'none';
+            }
+          }}
         >
-          <Send size={17} className={hasText && !disabled ? 'translate-x-0.5 -translate-y-0.5' : ''} />
+          <Send size={16} />
         </button>
       </div>
 
       {/* Powered by footer */}
-      <div className="text-center mt-2.5 flex items-center justify-center gap-1 opacity-60">
-        <span className="text-[10px] text-gray-400 font-medium">Powered by</span>
-        <span className="text-[10px] text-[#8DC63F] font-bold tracking-wide">BULKFLEX AI</span>
+      <div style={{
+        textAlign: 'center',
+        marginTop: '6px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: '4px',
+        opacity: 0.75
+      }}>
+        <span style={{ fontSize: '10px', color: '#94A3B8', fontWeight: '500' }}>Powered by</span>
+        <span style={{ fontSize: '10px', color: '#142E3D', fontWeight: '800', letterSpacing: '0.4px', display: 'inline-flex', alignItems: 'center', gap: '3px' }}>
+          <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: '#8DC63F' }} />
+          BULKFLEX AI
+        </span>
       </div>
     </div>
   );
