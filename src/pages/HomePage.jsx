@@ -22,7 +22,7 @@ import {
 } from 'lucide-react';
 
 // ─── Hero Graphic (Pure Cutout Packaging: FIBC Jumbo Bag, Boxes, Kraft Sacks) ─
-import heroPackagingCutout from '../../../../../../.gemini/antigravity-ide/brain/a3127571-965d-4574-bd69-a4c75e439fe4/bulkflex_packaging_cutout_1787088844791.jpg?url';
+import heroPackagingCutout from '../assets/images/bulkflex_hero_cutout.jpg?url';
 
 // ─── Product Image Assets (official folder) ───────────────────────────────────
 // FIBC / Jumbo Bags
