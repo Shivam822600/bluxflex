@@ -22,6 +22,9 @@ import {
   X
 } from 'lucide-react';
 
+// ─── Hero Graphic (Pure Cutout Packaging: FIBC Jumbo Bag, Boxes, Kraft Sacks) ─
+import heroPackagingCutout from '../../../../../../.gemini/antigravity-ide/brain/a3127571-965d-4574-bd69-a4c75e439fe4/bulkflex_packaging_cutout_1787088844791.jpg?url';
+
 // ─── Product Image Assets (official folder) ───────────────────────────────────
 // FIBC / Jumbo Bags
 import asset_un_bag_actual from '../assets/images/official/C-Conductive-Bag.jpg?url';
@@ -114,103 +117,32 @@ function WhatsAppButton() {
 }
 
 
-// ─── Animated SVG Global Sourcing Graphic ─────────────────────────────────────
+// ─── Clean Packaging Visual (Pure Transparent Cutout) ─────────────────────────
 function GlobalSourcingGraphic() {
   return (
-    <>
-      <style>{`
-        @keyframes dashflow {
-          to { stroke-dashoffset: -48; }
-        }
-        @keyframes pulseNode {
-          0%, 100% { opacity: 1; transform: scale(1); }
-          50% { opacity: 0.7; transform: scale(1.15); }
-        }
-        .route-animated {
-          stroke-dasharray: 8 6;
-          animation: dashflow 2.4s linear infinite;
-        }
-        .route-animated-slow {
-          stroke-dasharray: 8 6;
-          animation: dashflow 3.2s linear infinite;
-        }
-        .route-animated-slower {
-          stroke-dasharray: 8 6;
-          animation: dashflow 4s linear infinite;
-        }
-        .india-pulse {
-          animation: pulseNode 2s ease-in-out infinite;
-          transform-origin: 400px 280px;
-        }
-      `}</style>
-      <svg viewBox="0 0 780 480" style={{ width: '100%', height: 'auto', maxHeight: '260px' }} aria-label="BulkFlex Global Sourcing Network — India and Asia to global buyers">
-
-        {/* Subtle background circle */}
-        <circle cx="400" cy="280" r="195" fill="none" stroke="rgba(20,46,61,0.07)" strokeWidth="1.5" strokeDasharray="2 8" />
-        <circle cx="400" cy="280" r="130" fill="none" stroke="rgba(141,198,63,0.08)" strokeWidth="1" />
-
-        {/* ─── Routes from India to global hubs ─── */}
-        {/* India → Europe */}
-        <path d="M 400 280 Q 310 160 185 165" fill="none" stroke="#8DC63F" strokeWidth="1.8" className="route-animated" opacity="0.65" />
-        {/* India → Americas (East) */}
-        <path d="M 400 280 Q 490 160 630 175" fill="none" stroke="#8DC63F" strokeWidth="1.8" className="route-animated-slow" opacity="0.55" />
-        {/* India → Americas (West) */}
-        <path d="M 400 280 Q 530 100 695 130" fill="none" stroke="#8DC63F" strokeWidth="1.4" className="route-animated-slower" opacity="0.45" />
-        {/* India → Middle East */}
-        <path d="M 400 280 Q 340 340 240 355" fill="none" stroke="#8DC63F" strokeWidth="1.6" className="route-animated-slow" opacity="0.55" />
-        {/* India → APAC */}
-        <path d="M 400 280 Q 490 360 580 370" fill="none" stroke="#8DC63F" strokeWidth="1.6" className="route-animated" opacity="0.55" />
-
-        {/* ─── Destination nodes (buyers) ─── */}
-        {/* Europe — London/Paris */}
-        <g transform="translate(185, 165)">
-          <circle r="7" fill="#FFFFFF" stroke="#8DC63F" strokeWidth="2.5" />
-          <circle r="3.5" fill="#8DC63F" />
-          <text y="-16" textAnchor="middle" fill="#475569" fontSize="10.5" fontWeight="700" fontFamily="Manrope, sans-serif">London / Paris</text>
-        </g>
-
-        {/* US East — New York */}
-        <g transform="translate(630, 175)">
-          <circle r="7" fill="#FFFFFF" stroke="#8DC63F" strokeWidth="2.5" />
-          <circle r="3.5" fill="#8DC63F" />
-          <text y="-16" textAnchor="middle" fill="#475569" fontSize="10.5" fontWeight="700" fontFamily="Manrope, sans-serif">New York</text>
-        </g>
-
-        {/* US West — Los Angeles */}
-        <g transform="translate(695, 130)">
-          <circle r="6" fill="#FFFFFF" stroke="#8DC63F" strokeWidth="2" />
-          <circle r="3" fill="#8DC63F" />
-          <text y="-14" textAnchor="middle" fill="#475569" fontSize="10" fontWeight="700" fontFamily="Manrope, sans-serif">Los Angeles</text>
-        </g>
-
-        {/* Middle East */}
-        <g transform="translate(240, 355)">
-          <circle r="7" fill="#FFFFFF" stroke="#8DC63F" strokeWidth="2.5" />
-          <circle r="3.5" fill="#8DC63F" />
-          <text y="20" textAnchor="middle" fill="#475569" fontSize="10.5" fontWeight="700" fontFamily="Manrope, sans-serif">Middle East</text>
-        </g>
-
-        {/* APAC */}
-        <g transform="translate(580, 370)">
-          <circle r="7" fill="#FFFFFF" stroke="#8DC63F" strokeWidth="2.5" />
-          <circle r="3.5" fill="#8DC63F" />
-          <text y="20" textAnchor="middle" fill="#475569" fontSize="10.5" fontWeight="700" fontFamily="Manrope, sans-serif">APAC</text>
-        </g>
-
-        {/* ─── India — Primary Source Node ─── */}
-        <g className="india-pulse">
-          <circle cx="400" cy="280" r="26" fill="rgba(141,198,63,0.12)" />
-          <circle cx="400" cy="280" r="18" fill="rgba(141,198,63,0.2)" />
-          <circle cx="400" cy="280" r="12" fill="#142E3D" stroke="#8DC63F" strokeWidth="3" />
-          <circle cx="400" cy="280" r="5" fill="#8DC63F" />
-        </g>
-        <text x="400" y="316" textAnchor="middle" fill="#142E3D" fontSize="12" fontWeight="800" fontFamily="Manrope, sans-serif">India & Asia</text>
-        <text x="400" y="330" textAnchor="middle" fill="#64748B" fontSize="9.5" fontWeight="600" fontFamily="Manrope, sans-serif">Sourcing Hub</text>
-
-        {/* Direction label */}
-        <text x="400" y="430" textAnchor="middle" fill="#94A3B8" fontSize="10" fontWeight="600" fontFamily="Manrope, sans-serif" letterSpacing="1.5">GLOBAL SUPPLY NETWORK</text>
-      </svg>
-    </>
+    <div style={{
+      position: 'relative',
+      width: '100%',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    }}>
+      <img
+        src={heroPackagingCutout}
+        alt="BulkFlex Industrial Packaging Products - FIBC Jumbo Bag, Kraft Sacks, Corrugated Boxes"
+        style={{
+          width: '100%',
+          maxWidth: '580px',
+          height: 'auto',
+          maxHeight: '380px',
+          objectFit: 'contain',
+          display: 'block',
+          mixBlendMode: 'multiply',
+          filter: 'contrast(1.04) brightness(1.01)'
+        }}
+        loading="eager"
+      />
+    </div>
   );
 }
 
@@ -464,25 +396,7 @@ export default function HomePage() {
 
             {/* ── Right: Global Sourcing Graphic ── */}
             <Reveal delay={0.18}>
-              <div style={{
-                background: '#FFFFFF',
-                borderRadius: '20px',
-                padding: 'clamp(12px, 2vw, 18px)',
-                border: '1px solid #E4DCD0',
-                boxShadow: '0 10px 40px rgba(20,46,61,0.06)'
-              }}>
-                <GlobalSourcingGraphic />
-                <div style={{
-                  marginTop: '12px',
-                  paddingTop: '12px',
-                  borderTop: '1px solid #F1F5F9',
-                  textAlign: 'center'
-                }}>
-                  <p style={{ fontSize: '12px', fontWeight: '700', color: '#64748B', textTransform: 'uppercase', letterSpacing: '1px' }}>
-                    India & Asia → Global Buyers
-                  </p>
-                </div>
-              </div>
+              <GlobalSourcingGraphic />
             </Reveal>
 
           </div>

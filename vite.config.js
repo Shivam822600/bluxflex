@@ -21,9 +21,17 @@ try {
     } else {
       console.log('Source brochure PDF not found in root.');
     }
+  // Copy generated hero graphic to assets and public
+  const heroImgSrc = 'C:/Users/ASUS/.gemini/antigravity-ide/brain/a3127571-965d-4574-bd69-a4c75e439fe4/bulkflex_packaging_cutout_1787088844791.jpg';
+  const heroImgDest = path.join(process.cwd(), 'src', 'assets', 'images', 'bulkflex_hero_cutout.jpg');
+  const heroImgPublic = path.join(process.cwd(), 'public', 'bulkflex_hero_cutout.jpg');
+  if (fs.existsSync(heroImgSrc)) {
+    fs.copyFileSync(heroImgSrc, heroImgDest);
+    fs.copyFileSync(heroImgSrc, heroImgPublic);
+    console.log('Successfully copied pure cutout packaging hero graphic.');
   }
 } catch (err) {
-  console.error('Error copying brochure:', err);
+  console.error('Error copying brochure or hero image:', err);
 }
 
 // https://vite.dev/config/
