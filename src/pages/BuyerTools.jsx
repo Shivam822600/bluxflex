@@ -1,11 +1,39 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
-import { UserPlus, ClipboardCheck, FileText, FileSpreadsheet, Truck, CheckCircle2, ArrowRight } from 'lucide-react';
+import { UserPlus, ClipboardCheck, FileText, FileSpreadsheet, Truck, CheckCircle2, ArrowRight, ChevronDown, X, HelpCircle } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 export default function BuyerTools() {
   const { t } = useLanguage();
+  const [openFaq, setOpenFaq] = useState(null);
+
+  const toggleFaq = (idx) => {
+    setOpenFaq(openFaq === idx ? null : idx);
+  };
+
+  const faqs = [
+    {
+      q: 'I already have direct factory relationships. Why would I need BulkFlex?',
+      a: "BulkFlex doesn't ask you to abandon relationships that are working. We provide infrastructure around your existing procurement — adding on-ground QC, backup supply options, compliance documentation, and a single coordination layer. Most of our buyers continue working with factories they know; they simply stop carrying the risks and administrative overhead alone. The question isn't whether your relationships are good. It's whether the systems around them are good enough."
+    },
+    {
+      q: 'Does working through BulkFlex add cost to my orders?',
+      a: "BulkFlex's multi-supplier network often delivers competitive or improved pricing compared to single-factory direct relationships — because you now have a market benchmark and negotiating leverage you didn't have before. Factor in the costs you currently absorb independently — QC coordination, documentation management, compliance failures, rework — and the commercial case for BulkFlex typically improves further."
+    },
+    {
+      q: 'What product categories does BulkFlex cover?',
+      a: "BulkFlex works across a broad range of bulk and manufactured product categories sourced from India and Asia — including FIBC jumbo bags, multiwall paper sacks, BOPP bags, PP woven sacks, agro textiles, container liners, and custom industrial packaging. Contact us with your product specifics for immediate feasibility verification."
+    },
+    {
+      q: 'Can BulkFlex work with my existing freight forwarder and logistics setup?',
+      a: "Yes. BulkFlex manages the origin-side of your supply chain — factory coordination, QC, compliance, and documentation. Your freight and import arrangements remain exactly as they are. We work with your logistics setup, not around it."
+    },
+    {
+      q: 'How do I know the factories you shortlist are genuinely audited?',
+      a: "We provide full audit documentation for every factory we shortlist for your order — covering the audit scope, findings, certifications held, and production capability assessment. We also encourage buyers to visit shortlisted factories in person, and we actively coordinate those visits. Our audit credentials are not claims — they are documented and verifiable."
+    }
+  ];
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -327,6 +355,81 @@ export default function BuyerTools() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* ═══════════════════════════════════════════════════════════════════
+              BUYER'S CORNER FAQ ACCORDION
+          ═══════════════════════════════════════════════════════════════════ */}
+          <div style={{ marginTop: 'clamp(48px, 6vw, 72px)', maxWidth: '880px', margin: 'clamp(48px, 6vw, 72px) auto 0 auto' }}>
+            <div style={{ textAlign: 'center', marginBottom: '36px' }}>
+              <span style={{ color: '#8DC63F', fontWeight: '800', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1.5px' }}>
+                Buyer FAQs
+              </span>
+              <h2 style={{
+                fontSize: 'clamp(24px, 3.2vw, 36px)',
+                fontWeight: '800',
+                color: '#142E3D',
+                marginTop: '8px',
+                marginBottom: '12px'
+              }}>
+                Questions Experienced Importers Ask Us
+              </h2>
+              <p style={{ color: '#64748B', fontSize: '15px', lineHeight: 1.6 }}>
+                Clear, transparent answers to help you evaluate how BulkFlex integrates with your current procurement.
+              </p>
+            </div>
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+              {faqs.map((faq, idx) => (
+                <div
+                  key={idx}
+                  style={{
+                    background: '#FFFFFF',
+                    border: openFaq === idx ? '1.5px solid #8DC63F' : '1.5px solid #E2E8F0',
+                    borderRadius: '14px',
+                    overflow: 'hidden',
+                    boxShadow: openFaq === idx ? '0 8px 24px rgba(20,46,61,0.06)' : '0 2px 8px rgba(0,0,0,0.02)',
+                    transition: 'border-color 0.2s, box-shadow 0.2s'
+                  }}
+                >
+                  <button
+                    onClick={() => toggleFaq(idx)}
+                    style={{
+                      width: '100%',
+                      padding: '18px 22px',
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      alignItems: 'center',
+                      background: 'none',
+                      border: 'none',
+                      textAlign: 'left',
+                      cursor: 'pointer',
+                      gap: '16px'
+                    }}
+                  >
+                    <span style={{
+                      flex: 1,
+                      fontSize: '15.5px',
+                      fontWeight: '800',
+                      color: '#142E3D',
+                      lineHeight: 1.4,
+                      wordBreak: 'break-word'
+                    }}>
+                      {faq.q}
+                    </span>
+                    {openFaq === idx
+                      ? <X size={18} color="#8DC63F" style={{ flexShrink: 0 }} />
+                      : <ChevronDown size={18} color="#94A3B8" style={{ flexShrink: 0 }} />
+                    }
+                  </button>
+                  {openFaq === idx && (
+                    <div style={{ padding: '0 22px 20px 22px', color: '#475569', fontSize: '14px', lineHeight: 1.7, borderTop: '1px solid #F1F5F9', paddingTop: '14px' }}>
+                      {faq.a}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
 
           <div style={{ textAlign: 'center', marginTop: '48px' }}>

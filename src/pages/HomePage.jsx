@@ -5,7 +5,6 @@ import { useLanguage } from '../context/LanguageContext';
 import Reveal from '../components/ui/Reveal';
 import {
   ArrowRight,
-  ChevronDown,
   ChevronLeft,
   ChevronRight,
   Globe,
@@ -183,7 +182,6 @@ function GlobalSourcingGraphic() {
 export default function HomePage() {
   const { t } = useLanguage();
   const [activeTab, setActiveTab] = useState(0);
-  const [openFaq, setOpenFaq] = useState(null);
   const [inquiryModalOpen, setInquiryModalOpen] = useState(false);
   const [selectedProductForQuote, setSelectedProductForQuote] = useState('');
   const [quoteSubmitted, setQuoteSubmitted] = useState(false);
@@ -203,10 +201,6 @@ export default function HomePage() {
   };
   const handleNextCategory = () => {
     setActiveTab((prev) => (prev < categories.length - 1 ? prev + 1 : 0));
-  };
-
-  const toggleFaq = (idx) => {
-    setOpenFaq(openFaq === idx ? null : idx);
   };
 
   const handleOpenQuote = (productName = '') => {
@@ -276,29 +270,6 @@ export default function HomePage() {
       { title: 'Silage Bale Wrap', desc: 'Airtight stretch film for fodder preservation and storage.', image: asset_silage_wrap, link: '/product/silage-wrap' },
       { title: 'Woven Ground Cover', desc: 'Heavy-duty ground cover for weed control with good drainage.', image: asset_ground_cover, link: '/product/house-wrap' },
     ]
-  ];
-
-  const faqs = [
-    {
-      q: 'I already have direct factory relationships. Why would I need BulkFlex?',
-      a: "BulkFlex doesn't ask you to abandon relationships that are working. We provide infrastructure around your existing procurement — adding on-ground QC, backup supply options, compliance documentation, and a single coordination layer. Most of our buyers continue working with factories they know; they simply stop carrying the risks and administrative overhead alone. The question isn't whether your relationships are good. It's whether the systems around them are good enough."
-    },
-    {
-      q: 'Does working through BulkFlex add cost to my orders?',
-      a: "BulkFlex's multi-supplier network often delivers competitive or improved pricing compared to single-factory direct relationships — because you now have a market benchmark and negotiating leverage you didn't have before. Factor in the costs you currently absorb independently — QC coordination, documentation management, compliance failures, rework — and the commercial case for BulkFlex typically improves further."
-    },
-    {
-      q: 'What product categories does BulkFlex cover?',
-      a: "BulkFlex works across a broad range of bulk and manufactured product categories sourced from India and Asia. Rather than list categories here and risk misleading you, we recommend contacting us directly with your product specifics. We will tell you honestly and immediately whether it falls within our current supplier network capability."
-    },
-    {
-      q: 'Can BulkFlex work with my existing freight forwarder and logistics setup?',
-      a: "Yes. BulkFlex manages the origin-side of your supply chain — factory coordination, QC, compliance, and documentation. Your freight and import arrangements remain exactly as they are. We work with your logistics setup, not around it."
-    },
-    {
-      q: 'How do I know the factories you shortlist are genuinely audited?',
-      a: "We provide full audit documentation for every factory we shortlist for your order — covering the audit scope, findings, certifications held, and production capability assessment. We also encourage buyers to visit shortlisted factories in person, and we actively coordinate those visits. Our audit credentials are not claims — they are documented and verifiable."
-    }
   ];
 
   return (
@@ -898,91 +869,57 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
-          SECTION 7 — BUYER'S CORNER / FAQ
+          SECTION 7 — BUYER'S CORNER BANNER STRIP
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section id="buyers-corner" style={{ padding: 'clamp(36px, 4vw, 54px) 0', background: '#FFFFFF' }}>
-        <div className="container" style={{ maxWidth: '840px' }}>
-          <div style={{ textAlign: 'center', marginBottom: '44px' }}>
-            <span style={{ color: '#8DC63F', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1.5px' }}>
-              Buyer's Corner
-            </span>
-            <h2 style={{
-              fontSize: 'clamp(26px, 3.5vw, 40px)',
-              fontWeight: '800',
-              color: '#142E3D',
-              marginTop: '8px',
-              marginBottom: '14px'
-            }}>
-              Questions Experienced Importers Ask Us
-            </h2>
-            <p style={{ color: '#64748B', fontSize: '16px', lineHeight: 1.65 }}>
-              These are the questions we hear most from buyers who have been sourcing directly and are evaluating whether BulkFlex adds genuine value.
-            </p>
-          </div>
+      <section style={{ padding: 'clamp(28px, 3.5vw, 40px) 0', background: '#F8FAFC', borderTop: '1px solid #E2E8F0', borderBottom: '1px solid #E2E8F0' }}>
+        <div className="container">
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '20px',
+            background: '#FFFFFF',
+            borderRadius: '16px',
+            padding: 'clamp(20px, 3vw, 28px) clamp(20px, 3.5vw, 36px)',
+            border: '1.5px solid #E2E8F0',
+            boxShadow: '0 4px 16px rgba(20,46,61,0.04)'
+          }}>
+            <div style={{ maxWidth: '640px' }}>
+              <span style={{ color: '#8DC63F', fontWeight: '800', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1.5px', display: 'inline-block', marginBottom: '6px' }}>
+                Buyer's Corner & Sourcing Intelligence
+              </span>
+              <h3 style={{ fontSize: 'clamp(18px, 2.2vw, 24px)', fontWeight: '800', color: '#142E3D', margin: '0 0 6px 0', lineHeight: 1.25 }}>
+                Questions About Sourcing, QC, or Factory Audits?
+              </h3>
+              <p style={{ color: '#64748B', fontSize: '14px', margin: 0, lineHeight: 1.5 }}>
+                Get clear answers on factory matching, pre-shipment inspections, multi-SKU optimization, and compliance documentation in our Buyer's Corner.
+              </p>
+            </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-            {faqs.map((faq, idx) => (
-              <div
-                key={idx}
+            <div>
+              <Link
+                to="/buyer-tools"
                 style={{
-                  background: '#FFFFFF',
-                  border: openFaq === idx ? '1.5px solid #116B58' : '1.5px solid #E2E8F0',
-                  borderRadius: '12px',
-                  overflow: 'hidden',
-                  boxShadow: openFaq === idx ? '0 6px 24px rgba(17,107,88,0.08)' : '0 2px 8px rgba(0,0,0,0.02)',
-                  transition: 'border-color 0.2s, box-shadow 0.2s'
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  background: '#142E3D',
+                  color: '#FFFFFF',
+                  padding: '12px 24px',
+                  borderRadius: '50px',
+                  fontSize: '14px',
+                  fontWeight: '700',
+                  textDecoration: 'none',
+                  whiteSpace: 'nowrap',
+                  transition: 'background 0.2s, color 0.2s'
                 }}
+                onMouseEnter={(e) => { e.currentTarget.style.background = '#091C26'; e.currentTarget.style.color = '#8DC63F'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.background = '#142E3D'; e.currentTarget.style.color = '#FFFFFF'; }}
               >
-                <button
-                  onClick={() => toggleFaq(idx)}
-                  style={{
-                    width: '100%',
-                    padding: '20px 24px',
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    background: 'none',
-                    border: 'none',
-                    textAlign: 'left',
-                    cursor: 'pointer',
-                    gap: '16px'
-                  }}
-                >
-                  <span style={{
-                    flex: 1,
-                    fontSize: '16px',
-                    fontWeight: '800',
-                    color: '#142E3D',
-                    lineHeight: 1.4,
-                    wordBreak: 'break-word'
-                  }}>
-                    {faq.q}
-                  </span>
-                  {openFaq === idx
-                    ? <X size={18} color="#116B58" style={{ flexShrink: 0 }} />
-                    : <ChevronDown size={18} color="#94A3B8" style={{ flexShrink: 0 }} />
-                  }
-                </button>
-                {openFaq === idx && (
-                  <div style={{ padding: '0 24px 22px 24px', color: '#475569', fontSize: '14.5px', lineHeight: 1.75 }}>
-                    {faq.a}
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-
-          <div style={{ textAlign: 'center', marginTop: '32px' }}>
-            <Link
-              to="/buyer-tools"
-              style={{
-                display: 'inline-flex', alignItems: 'center', gap: '8px',
-                color: '#116B58', fontWeight: '800', fontSize: '15px',
-                textDecoration: 'none'
-              }}
-            >
-              Visit Buyer's Corner for more resources <ArrowRight size={16} />
-            </Link>
+                Visit Buyer's Corner <ArrowRight size={16} />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
