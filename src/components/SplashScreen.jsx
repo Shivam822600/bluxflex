@@ -118,7 +118,7 @@ export default function SplashScreen({ onFinish }) {
           GLOBAL PACKAGING &amp; INDUSTRIAL SOURCING
         </h2>
 
-        <p
+        {/* <p
           style={{
             color: '#8DC63F',
             fontSize: '14px',
@@ -129,7 +129,7 @@ export default function SplashScreen({ onFinish }) {
           }}
         >
           Your Extended Arm In Asia · Audited Factory Network
-        </p>
+        </p> */}
       </div>
 
       <style>{`
