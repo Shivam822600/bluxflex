@@ -24,11 +24,10 @@ import {
 
 // ─── Product Image Assets (official folder) ───────────────────────────────────
 // FIBC / Jumbo Bags
-import asset_fibc_main from '../assets/images/official/unbags.jpg?url';
-import asset_Un_Bags from '../assets/images/official/Un-Bags.jpg?url';
-import asset_Diaper_Bag from '../assets/images/official/Diaper-Bag.jpg?url';
-import asset_C_Conductive from '../assets/images/official/conductivebags.jpg?url';
-import asset_baffle_bag from '../assets/images/official/baffbag.jpg?url';
+import asset_un_bag_actual from '../assets/images/official/C-Conductive-Bag.jpg?url';
+import asset_diaper_bag_actual from '../assets/images/official/Diaper-Bag-1.jpg?url';
+import asset_conductive_bag_actual from '../assets/images/official/Un-Bags.jpg?url';
+import asset_baffle_bag_actual from '../assets/images/official/Diaper-Bag.jpg?url';
 
 // Leno
 import asset_RASCHEL_BAGS from '../assets/images/official/RASCHEL-BAGS-FABRIC.png?url';
@@ -263,13 +262,12 @@ export default function HomePage() {
   ];
 
   const productsData = [
-    // FIBC (Jumbo Bags) — corrected image mapping
+    // FIBC (Jumbo Bags)
     [
-      { title: 'Standard FIBC / Jumbo Bag', desc: 'Heavy-duty bulk containers for industrial materials, food-grade and general cargo. Custom SWL, SF, and liner options.', image: asset_fibc_main, link: '/product_category/fibc' },
-      { title: 'UN Certified Bag', desc: 'UN-coded bags designed for safe transport of hazardous materials per international shipping standards.', image: asset_Un_Bags, link: '/product/un-bags' },
-      { title: 'Diaper Bag', desc: 'High-performance bags engineered for bulk absorbent media storage and industrial hygiene product transport.', image: asset_Diaper_Bag, link: '/product/diaper-bag' },
-      { title: 'Type C Conductive Bag', desc: 'Electrostatic discharge protection for safe handling in volatile and flammable dust environments.', image: asset_C_Conductive, link: '/product/c-conductive-bag' },
-      { title: 'Baffle Bag', desc: 'Form-stable bulk containers with internal fabric baffles — maximise warehouse storage and container freight.', image: asset_baffle_bag, link: '/product/baffle-bags' },
+      { title: 'UN Bag', desc: 'UN Certified Bags designed for safe transport of hazardous materials.', image: asset_un_bag_actual, link: '/product/un-bags' },
+      { title: 'Diaper Bag', desc: 'High-performance Diaper Bags for bulk absorbent media storage.', image: asset_diaper_bag_actual, link: '/product/diaper-bag' },
+      { title: 'Conductive Bag', desc: 'Electrostatic discharge protection for flammable environments.', image: asset_conductive_bag_actual, link: '/product/c-conductive-bag' },
+      { title: 'Baffle Bags', desc: 'Form-stable bulk containers engineered to save storage & freight.', image: asset_baffle_bag_actual, link: '/product/baffle-bags' },
     ],
     // Leno Bags & Fabric
     [
@@ -651,15 +649,15 @@ export default function HomePage() {
                 onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = '0 16px 40px rgba(20,46,61,0.10)'; }}
                 onMouseLeave={(e) => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = '0 4px 16px rgba(20,46,61,0.04)'; }}
               >
-                <div style={{ height: '200px', background: '#F1F5F9', overflow: 'hidden' }}>
+                <div style={{ height: '240px', background: '#FFFFFF', padding: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
                   <img
                     src={prod.image}
                     alt={prod.title}
-                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                     loading="lazy"
                   />
                 </div>
-                <div style={{ padding: '18px 20px' }}>
+                <div style={{ padding: '0 20px 20px 20px' }}>
                   <h3 style={{ fontSize: '16px', fontWeight: '800', color: '#142E3D', marginBottom: '6px' }}>{prod.title}</h3>
                   <p style={{ fontSize: '12.5px', color: '#64748B', lineHeight: 1.6, marginBottom: '16px' }}>{prod.desc}</p>
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderTop: '1px solid #F1F5F9', paddingTop: '14px' }}>
