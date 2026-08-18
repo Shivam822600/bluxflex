@@ -68,9 +68,7 @@ import asset_ground_cover from '../assets/images/official/Ground-Covers.jpg?url'
 // Retail — additional
 import asset_retail_friendly from '../assets/images/official/Retail-Friendly-Packaging.jpg?url';
 
-// Company visuals (used in trust section)
-import asset_Company_Overview from '../assets/images/official/Company-Overview.png?url';
-import asset_Manufacturing from '../assets/images/official/Manufacturing.png?url';
+
 
 
 // ─── WhatsApp Floating Button ─────────────────────────────────────────────────
@@ -488,23 +486,23 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════════════════════════════
           SECTION 3 — PRODUCTS
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section style={{ padding: 'clamp(16px, 2vw, 24px) 0 clamp(44px, 5vw, 64px) 0', background: '#FBF1E6' }}>
+      <section style={{ padding: 'clamp(16px, 2vw, 24px) 0 clamp(20px, 2.5vw, 32px) 0', background: '#FBF1E6' }}>
         <div className="container">
 
           {/* Section header with FIBC emphasis */}
-          <div style={{ textAlign: 'center', maxWidth: '680px', margin: '0 auto 28px auto' }}>
-            <span style={{ color: '#8DC63F', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1.5px', display: 'inline-block', marginBottom: '8px' }}>
+          <div style={{ textAlign: 'center', maxWidth: '1100px', margin: '0 auto 24px auto' }}>
+            <span style={{ color: '#8DC63F', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1.5px', display: 'inline-block', marginBottom: '6px' }}>
               Industrial Grade Range
             </span>
             <h2 style={{
               fontSize: 'clamp(28px, 3.5vw, 40px)',
               fontWeight: '800',
               color: '#142E3D',
-              marginBottom: '10px'
+              marginBottom: '8px'
             }}>
               Our Product Portfolio
             </h2>
-            <p style={{ color: '#64748B', fontSize: '15px', lineHeight: 1.6 }}>
+            <p style={{ color: '#64748B', fontSize: '15px', lineHeight: 1.5, maxWidth: '100%' }}>
               Flexible packaging and technical fabric solutions engineered to global ISO & UN specifications — sourced from our audited India & Asia network.
             </p>
           </div>
@@ -647,10 +645,10 @@ export default function HomePage() {
       <section style={{
         background: '#142E3D',
         color: '#FFFFFF',
-        padding: 'clamp(56px, 7vw, 88px) 0'
+        padding: 'clamp(36px, 4vw, 54px) 0'
       }}>
         <div className="container">
-          <div style={{ textAlign: 'center', maxWidth: '680px', margin: '0 auto 52px auto' }}>
+          <div style={{ textAlign: 'center', maxWidth: '680px', margin: '0 auto 36px auto' }}>
             <span style={{ color: '#8DC63F', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1.5px' }}>
               Built on Trust
             </span>
@@ -658,7 +656,7 @@ export default function HomePage() {
               fontSize: 'clamp(28px, 3.8vw, 42px)',
               fontWeight: '800',
               color: '#FFFFFF',
-              marginTop: '10px',
+              // marginTop: '10px',
               marginBottom: '14px',
               lineHeight: 1.15
             }}>
@@ -743,60 +741,13 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-
-          {/* Imagery row */}
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-            gap: '24px',
-            alignItems: 'center'
-          }}>
-            <div>
-              <img
-                src={asset_Company_Overview}
-                alt="BulkFlex Supply Chain Overview"
-                style={{ width: '100%', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.1)' }}
-                loading="lazy"
-              />
-            </div>
-            <div>
-              <img
-                src={asset_Manufacturing}
-                alt="BulkFlex Manufacturing Quality"
-                style={{ width: '100%', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.1)' }}
-                loading="lazy"
-              />
-            </div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              {['Rigorous factory audits & quality checks', 'Multi-SKU container loading optimisation', 'Real-time production and shipment tracking', 'Transparent documentation on every shipment'].map((item, i) => (
-                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#E2E8F0', fontSize: '14.5px' }}>
-                  <CheckCircle2 size={18} color="#8DC63F" style={{ flexShrink: 0 }} />
-                  <span>{item}</span>
-                </div>
-              ))}
-              <Link
-                to="/about-us"
-                style={{
-                  marginTop: '8px',
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '8px',
-                  color: '#8DC63F',
-                  fontWeight: '800',
-                  fontSize: '14px'
-                }}
-              >
-                About BulkFlex <ArrowRight size={16} />
-              </Link>
-            </div>
-          </div>
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════════
           SECTION 5 — HOW WE WORK
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section id="how-we-work" style={{ padding: 'clamp(56px, 7vw, 88px) 0', background: '#FFFFFF' }}>
+      <section id="how-we-work" style={{ padding: 'clamp(36px, 4vw, 54px) 0', background: '#FFFFFF' }}>
         <div className="container">
           <div style={{
             marginBottom: '44px',
@@ -884,9 +835,9 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════════════════════════════
           SECTION 6 — INDUSTRIES WE SERVE
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section style={{ padding: 'clamp(56px, 7vw, 80px) 0', background: '#FBF1E6', borderTop: '1px solid #E2E8F0' }}>
+      <section style={{ padding: 'clamp(36px, 4vw, 54px) 0', background: '#FBF1E6', borderTop: '1px solid #E2E8F0' }}>
         <div className="container">
-          <div style={{ textAlign: 'center', maxWidth: '580px', margin: '0 auto 40px auto' }}>
+          <div style={{ textAlign: 'center', maxWidth: '580px', margin: '0 auto 32px auto' }}>
             <span style={{ color: '#8DC63F', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1.5px' }}>
               Sectors Served
             </span>
@@ -949,7 +900,7 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════════════════════════════
           SECTION 7 — BUYER'S CORNER / FAQ
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section id="buyers-corner" style={{ padding: 'clamp(56px, 7vw, 88px) 0', background: '#FFFFFF' }}>
+      <section id="buyers-corner" style={{ padding: 'clamp(36px, 4vw, 54px) 0', background: '#FFFFFF' }}>
         <div className="container" style={{ maxWidth: '840px' }}>
           <div style={{ textAlign: 'center', marginBottom: '44px' }}>
             <span style={{ color: '#8DC63F', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1.5px' }}>
@@ -1042,7 +993,7 @@ export default function HomePage() {
       <section style={{
         background: '#142E3D',
         color: '#FFFFFF',
-        padding: 'clamp(56px, 7vw, 80px) 0',
+        padding: 'clamp(40px, 5vw, 60px) 0',
         position: 'relative',
         overflow: 'hidden'
       }}>
