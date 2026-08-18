@@ -345,7 +345,7 @@ export default function HomePage() {
       <section style={{
         background: 'linear-gradient(170deg, #F0F7E4 0%, #FBF1E6 45%, #FFFFFF 100%)',
         paddingTop: 'clamp(20px, 2.5vw, 36px)',
-        paddingBottom: 'clamp(16px, 2vw, 28px)'
+        paddingBottom: 'clamp(8px, 1vw, 14px)'
       }}>
         <div className="container">
           <div style={{
@@ -393,7 +393,7 @@ export default function HomePage() {
                   fontWeight: '500',
                   lineHeight: 1.65,
                   color: '#334155',
-                  maxWidth: '520px',
+                  maxWidth: '620px',
                   marginBottom: t('heroDescSub1') ? '10px' : '20px'
                 }}>
                   {t('heroDesc')}
@@ -407,7 +407,7 @@ export default function HomePage() {
                     fontWeight: '400',
                     lineHeight: 1.7,
                     color: '#475569',
-                    maxWidth: '520px',
+                    maxWidth: '620px',
                     marginBottom: '16px'
                   }}>
                     {t('heroDescSub1')}
@@ -539,19 +539,18 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════════════════════════════════════
           SECTION 3 — PRODUCTS
       ═══════════════════════════════════════════════════════════════════════ */}
-      <section style={{ padding: 'clamp(20px, 2.5vw, 32px) 0', background: '#FBF1E6' }}>
+      <section style={{ padding: 'clamp(16px, 2vw, 24px) 0 clamp(44px, 5vw, 64px) 0', background: '#FBF1E6' }}>
         <div className="container">
 
           {/* Section header with FIBC emphasis */}
-          <div style={{ textAlign: 'center', maxWidth: '640px', margin: '0 auto 36px auto' }}>
-            {/* <span style={{ color: '#8DC63F', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1.5px' }}>
+          <div style={{ textAlign: 'center', maxWidth: '680px', margin: '0 auto 28px auto' }}>
+            <span style={{ color: '#8DC63F', fontWeight: '700', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1.5px', display: 'inline-block', marginBottom: '8px' }}>
               Industrial Grade Range
-            </span> */}
+            </span>
             <h2 style={{
               fontSize: 'clamp(28px, 3.5vw, 40px)',
               fontWeight: '800',
               color: '#142E3D',
-              // marginTop: '2px',
               marginBottom: '10px'
             }}>
               Our Product Portfolio
@@ -631,7 +630,7 @@ export default function HomePage() {
           {/* Product Cards Grid */}
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
             gap: '24px'
           }}>
             {productsData[activeTab]?.map((prod, idx) => (
