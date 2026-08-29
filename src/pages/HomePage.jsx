@@ -266,7 +266,7 @@ export default function HomePage() {
       { title: 'Print Options', desc: 'All woven PP bags are available with direct print on...', image: asset_printed_pp_woven, link: '/product/print-options' },
       { title: 'Liner Options', desc: 'A liner turns a woven PP bag into a moisture...', image: asset_liner_options, link: '/product/liner-options' },
       { title: 'Bottom Construction', desc: 'The bottom seam is the most load-stressed point in a...', image: asset_bottom_construction, link: '/product/bottom-construction' },
-      { title: 'Top Finishes', desc: 'The top finish determines how the bag behaves at the...', image: asset_top_finish, link: '/product_category/pp-woven-sacks' },
+      { title: 'Top Finishes', desc: 'The top finish determines how the bag behaves at the...', image: asset_top_finish, link: '/product/top-finishes' },
     ],
     // Jute / Burlap
     [

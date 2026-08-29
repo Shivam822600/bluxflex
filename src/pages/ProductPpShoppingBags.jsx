@@ -5,9 +5,9 @@ import {
   ArrowRight
 } from 'lucide-react';
 
-import asset_bulk3_png_1 from '../assets/images/official/bulk3.png?url';
+import asset_PP_shopping_bag_jpg_1 from '../assets/images/official/PP-shopping-bag.jpg?url';
 
-export default function ProductRetailShoppingBagC() {
+export default function ProductPpShoppingBags() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -42,8 +42,8 @@ export default function ProductRetailShoppingBagC() {
                 border: '1px solid #EDF2F7'
               }}>
                 <img
-                  src={asset_bulk3_png_1}
-                  alt="Jute Shopping Bag"
+                  src={asset_PP_shopping_bag_jpg_1}
+                  alt="PP Shopping Bags"
                   style={{
                     maxHeight: '380px',
                     width: '100%',
@@ -68,7 +68,7 @@ export default function ProductRetailShoppingBagC() {
             }}>
               <div>
                 <h1 style={{ fontSize: '34px', color: '#142E3D', fontWeight: '800', fontFamily: 'var(--font-heading)', margin: '0 0 4px 0', lineHeight: 1.2 }}>
-                  Jute Shopping Bag
+                  PP Shopping Bags
                 </h1>
                 <div style={{
                   color: '#8DC63F',
@@ -78,21 +78,21 @@ export default function ProductRetailShoppingBagC() {
                   letterSpacing: '0.5px',
                   marginBottom: '18px'
                 }}>
-                  Carry More Than Just Groceries. Carry a Statement.
+                  The Bag That Works As Hard As Your Business
                 </div>
 
                 <div style={{ color: '#475569', fontSize: '15px', lineHeight: '1.75', marginBottom: '20px' }}>
                   <p style={{ marginBottom: '12px' }}>
-                    There is something about a jute shopping bag that no other bag can replicate. It has texture, warmth, and a quiet confidence that says the person carrying it made a thoughtful choice. In a world saturated with plastic and synthetic materials, jute stands apart and that is exactly why brands around the world are choosing it.
+                    Ask any retailer what they want from a shopping bag and the answer is always the same something strong, something affordable, and something that keeps coming back. That is exactly what our PP Shopping Bags deliver, every single time.
                   </p>
                   <p style={{ marginBottom: '12px' }}>
-                    Our Jute Shopping Bags are made from 100% natural jute fiber, woven into a strong, breathable fabric that is genuinely capable of replacing single-use bags for years on end. A well-made jute bag does not just survive daily use it ages gracefully, developing a character that synthetic bags never could.
+                    Made from woven polypropylene, these bags are built to handle the weight of real shopping not just a couple of light items, but full grocery runs, heavy purchases, and daily use without giving way. They do not absorb water, they do not tear easily, and they hold their shape no matter how roughly they are handled. For a retailer, that kind of reliability is priceless.
                   </p>
                   <p style={{ marginBottom: '12px' }}>
-                    For retailers, the jute shopping bag is one of the smartest branding moves available today. It gives customers something they actually want to keep and reuse. It prints beautifully with screen printing or natural dyes. It signals that your brand cares about quality and sustainability values that are winning over shoppers faster than any marketing campaign could.
+                    What makes PP Shopping Bags truly stand out in the retail space is how well they work as a branding tool. The smooth woven surface takes high-quality, full-colour printing beautifully your logo, your colours, your message, printed sharp and vivid, staying that way through hundreds of uses. Every time a customer reuses the bag, they are carrying your brand around with them. That is marketing you do not have to pay for twice.
                   </p>
                   <p style={{ margin: 0 }}>
-                    These bags work equally well as a simple market tote, a boutique retail carrier, a grocery bag, or a gift bag. They are available in natural, bleached, and dyed finishes, with options for inner lining, reinforced handles, gussets, and custom sizing. If your customer base values the environment as much as they value quality, the jute shopping bag is not an optional extra it is the obvious choice.
+                    They are lightweight to carry, easy to store flat in bulk, and fully recyclable which increasingly matters to customers and governments alike as plastic bans expand across global markets. Available in a wide range of sizes, finishes including laminated or non-laminated, and fully customisable for bulk export orders.
                   </p>
                 </div>
 
@@ -106,7 +106,7 @@ export default function ProductRetailShoppingBagC() {
                   lineHeight: 1.6,
                   marginBottom: '20px'
                 }}>
-                  <strong>Ideal For:</strong> <span style={{ color: '#475569' }}>Organic and health stores, fashion boutiques, eco-conscious retail brands, farmers markets, corporate gifting, and export markets in Europe, Australia, and North America.</span>
+                  <strong>Ideal For:</strong> <span style={{ color: '#475569' }}>Supermarkets, grocery stores, fashion retail, pharmacies, promotional giveaways, trade events, and branded retail chains.</span>
                 </div>
               </div>
 
@@ -149,10 +149,10 @@ export default function ProductRetailShoppingBagC() {
       <section style={{ background: '#142E3D', color: '#FFFFFF', padding: '40px 0' }}>
         <div className="container" style={{ textAlign: 'center', maxWidth: '720px' }}>
           <h2 style={{ fontSize: '24px', color: '#FFFFFF', fontWeight: '800', marginBottom: '10px' }}>
-            Ready to Order Custom Jute Shopping Bags?
+            Ready to Order Custom PP Shopping Bags?
           </h2>
           <p style={{ color: '#94A3B8', fontSize: '14.5px', lineHeight: 1.6, marginBottom: '20px' }}>
-            Direct export from certified Indian mills with your logo printing, custom handle colors, and fast delivery.
+            Direct container shipping with full photographic cylinder proofing and custom handle matching.
           </p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '12px', flexWrap: 'wrap' }}>
             <Link to="/contact-us-2" className="btn-dark" style={{ background: '#8DC63F', color: '#142E3D', fontWeight: '800' }}>

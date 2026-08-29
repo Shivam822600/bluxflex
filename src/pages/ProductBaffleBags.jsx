@@ -40,7 +40,7 @@ export default function ProductBaffleBags() {
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: '#F0F7E4', color: '#8DC63F', padding: '6px 14px', borderRadius: '50px', fontSize: '12px', fontWeight: '700', marginBottom: '16px' }}>
                 <ShieldCheck size={14} /> Certified FIBC Specification
               </div>
-              <h2 style={{ fontSize: '26px', color: '#142E3D', marginBottom: '16px' }}>Form-Stable Baffle Jumbo Bags</h2>
+              <h2 style={{ fontSize: '26px', color: '#142E3D', marginBottom: '16px' }}>Baffle Bags</h2>
               <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.7', marginBottom: '16px' }}>
                 We offer premium-quality Baffle Bags that are specially engineered to maintain a square shape even after filling. With internal baffle panels, these bags optimize storage space, improve stacking efficiency, and reduce transportation costs.
               </p>

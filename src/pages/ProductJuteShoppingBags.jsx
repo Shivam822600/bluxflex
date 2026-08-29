@@ -7,7 +7,7 @@ import {
 
 import asset_bulk3_png_1 from '../assets/images/official/bulk3.png?url';
 
-export default function ProductRetailShoppingBagC() {
+export default function ProductJuteShoppingBags() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

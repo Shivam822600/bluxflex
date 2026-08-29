@@ -36,7 +36,7 @@ export default function ProductDiaperBag() {
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: '#F0F7E4', color: '#8DC63F', padding: '6px 14px', borderRadius: '50px', fontSize: '12px', fontWeight: '700', marginBottom: '16px' }}>
                 <ShieldCheck size={14} /> Leakage & Moisture Protection
               </div>
-              <h2 style={{ fontSize: '26px', color: '#142E3D', marginBottom: '16px' }}>Absorbent Diaper Bulk Container</h2>
+              <h2 style={{ fontSize: '26px', color: '#142E3D', marginBottom: '16px' }}>Diaper Bag</h2>
               <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.7', marginBottom: '16px' }}>
                 We provide high-performance Diaper Bags that are specially designed to handle moisture-rich or semi-liquid materials. These bags come with absorbent layers that effectively control leakage and maintain cleanliness during transport and storage.
               </p>

@@ -142,6 +142,7 @@ function App() {
           <Route path="/product/ground-covers" element={<ProductGroundCovers />} />
           <Route path="/product/hail-nets" element={<ProductHailNets />} />
           <Route path="/product/horticultural-landscaping-products" element={<ProductHorticulturalLandscapingProducts />} />
+          <Route path="/product/horticultural-landscaping" element={<ProductHorticulturalLandscapingProducts />} />
           <Route path="/product/house-wrap" element={<ProductHouseWrap />} />
           <Route path="/product/jute-burlap-bags" element={<ProductJuteBurlapBags />} />
           <Route path="/product/jute-fabric" element={<ProductJuteFabric />} />
@@ -149,6 +150,7 @@ function App() {
           <Route path="/product/jute-sacks" element={<ProductJuteSacks />} />
           <Route path="/product/jute-sacks-2" element={<ProductJuteSacks2 />} />
           <Route path="/product/jute-sacks-printed-bags" element={<ProductJuteSacksPrintedBags />} />
+          <Route path="/product/jute-sacks-printed" element={<ProductJuteSacksPrintedBags />} />
           <Route path="/product/jute-sacks-tree-cover" element={<ProductJuteSacksTreeCover />} />
           <Route path="/product/jute-twine-cord" element={<ProductJuteTwineCord />} />
           <Route path="/product/jute-wood-carrier-bag" element={<ProductJuteWoodCarrierBag />} />

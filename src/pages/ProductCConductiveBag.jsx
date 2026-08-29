@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ChevronLeft, ShieldCheck, ArrowRight } from 'lucide-react';
-import asset_C_Conductive_Bag_jpg_1 from '../assets/images/official/C-Conductive-Bag.jpg?url';
+import asset_Conductive_Bag_img from '../assets/images/official/Un-Bags.jpg?url';
 
 export default function ProductCConductiveBag() {
   useEffect(() => {
@@ -17,10 +17,10 @@ export default function ProductCConductiveBag() {
             <ChevronLeft size={16} /> Back to Products
           </Link>
           <h1 style={{ fontSize: '32px', color: '#FFFFFF', fontWeight: '800', fontFamily: 'var(--font-heading)' }}>
-            UN Certified Conductive Bag
+            Conductive Bag
           </h1>
           <p style={{ color: '#94A3B8', fontSize: '14px', marginTop: '4px' }}>
-            Safe transportation of hazardous and sensitive industrial materials
+            Our Conductive Bags are designed to eliminate the risks associated with static electricity during storage and transportation.
           </p>
         </div>
       </section>
@@ -29,19 +29,19 @@ export default function ProductCConductiveBag() {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-10 items-start">
             <div className="card-clean" style={{ padding: '24px', textAlign: 'center', background: '#FFFFFF' }}>
-              <img src={asset_C_Conductive_Bag_jpg_1} alt="UN Certified Bag" style={{ maxHeight: '340px', objectFit: 'contain', margin: '0 auto' }} />
+              <img src={asset_Conductive_Bag_img} alt="Conductive Bag" style={{ maxHeight: '340px', objectFit: 'contain', margin: '0 auto' }} />
             </div>
 
             <div className="card-clean" style={{ padding: '36px' }}>
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: '#F0F7E4', color: '#8DC63F', padding: '6px 14px', borderRadius: '50px', fontSize: '12px', fontWeight: '700', marginBottom: '16px' }}>
-                <ShieldCheck size={14} /> UN Certified & Tested
+                <ShieldCheck size={14} /> Type C Groundable Conductive
               </div>
-              <h2 style={{ fontSize: '26px', color: '#142E3D', marginBottom: '16px' }}>UN Hazardous Materials FIBC</h2>
+              <h2 style={{ fontSize: '26px', color: '#142E3D', marginBottom: '16px' }}>Conductive Bag</h2>
               <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.7', marginBottom: '16px' }}>
-                Our UN Certified Bags are designed for the safe and compliant transportation of hazardous and sensitive materials. Manufactured using high-quality woven polypropylene, these bags meet strict international UN standards, ensuring maximum strength, durability, and protection.
+                Our Conductive Bags are designed to eliminate the risks associated with static electricity during storage and transportation. Made from specialized conductive materials, these bags safely dissipate electrostatic charges, making them ideal for flammable or sensitive materials.
               </p>
               <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.7', marginBottom: '24px' }}>
-                They are rigorously tested for impact, load-bearing capacity, and leakage resistance. Ideal for chemical, pharmaceutical, and agro industries, our UN bags give you complete confidence in handling and shipping hazardous goods safely across global markets.
+                Widely used in chemical and industrial applications, our conductive bags ensure maximum safety, compliance, and peace of mind in environments where static discharge can be hazardous.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
