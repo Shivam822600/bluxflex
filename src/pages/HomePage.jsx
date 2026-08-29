@@ -41,7 +41,7 @@ import asset_wileted_leno_bag from '../assets/images/official/wileted-leno-bag.j
 import asset_printed_pp_woven from '../assets/images/official/printed-pp-woven-sack-upto-six-colors.png?url';
 import asset_liner_options from '../assets/images/official/fd6ea04a-aca5-4e3d-b574-738ee945af82.jpeg?url';
 import asset_bottom_construction from '../assets/images/official/a4da6e12-8b22-4896-929b-815191c46974.png?url';
-import asset_pp_woven_main from '../assets/images/official/pp-woven.png?url';
+import asset_top_finish from '../assets/images/top_finish.png?url';
 
 // Jute / Burlap
 import asset_juteburlap_bags from '../assets/images/official/juteburlap_bags.png?url';
@@ -53,16 +53,19 @@ import asset_jutetwine from '../assets/images/official/jutetwine__cord.png?url';
 import asset_Monofilament_Fabrics from '../assets/images/official/Monofilament-Fabrics.jpg?url';
 import asset_rPET_Fabrics from '../assets/images/official/rPET-Fabrics.jpg?url';
 import asset_Lumber_Cover_Fabrics from '../assets/images/official/Lumber-Cover-Fabrics.jpg?url';
-import asset_roofing_underlayment from '../assets/images/official/roofing_underlayment.png?url';
+import asset_woven_specialty_fabrics from '../assets/images/official/specialty_fabrics.png?url';
 
 // Retail
 import asset_PP_shopping_bag from '../assets/images/official/PP-shopping-bag.jpg?url';
+import asset_jute_shopping_bag from '../assets/images/juth_shopping_bag.png?url';
+import asset_paper_bag_twisted_handle from '../assets/images/paper_bag_with_twisted_handle.png?url';
+import asset_white_bleached_flat_handle from '../assets/images/white_bleached_flat_handle.png?url';
 
 // Agro Textiles
 import asset_hail_nets from '../assets/images/official/hail_nets.png?url';
-import asset_shade_nets from '../assets/images/official/shade_nets.jpg?url';
+import asset_roofing_underlayment from '../assets/images/official/roofing_underlayment.png?url';
+import asset_house_wrap from '../assets/images/official/house_wrap.png?url';
 import asset_silage_wrap from '../assets/images/official/SILAGE-WRAP-BALE-WRAP.jpg?url';
-import asset_ground_cover from '../assets/images/official/Ground-Covers.jpg?url';
 
 // Retail — additional
 import asset_retail_friendly from '../assets/images/official/Retail-Friendly-Packaging.jpg?url';
@@ -223,52 +226,122 @@ export default function HomePage() {
   const productsData = [
     // FIBC (Jumbo Bags)
     [
-      { title: 'UN Bag', desc: 'UN Certified Bags designed for safe transport of hazardous materials.', image: asset_un_bag_actual, link: '/product/un-bags' },
-      { title: 'Diaper Bag', desc: 'High-performance Diaper Bags for bulk absorbent media storage.', image: asset_diaper_bag_actual, link: '/product/diaper-bag' },
-      { title: 'Conductive Bag', desc: 'Electrostatic discharge protection for flammable environments.', image: asset_conductive_bag_actual, link: '/product/c-conductive-bag' },
-      { title: 'Baffle Bags', desc: 'Form-stable bulk containers engineered to save storage & freight.', image: asset_baffle_bag_actual, link: '/product/baffle-bags' },
+      {
+        title: 'UN Bag',
+        desc: 'Our UN Certified Bags are designed for the safe and...',
+        image: asset_un_bag_actual,
+        link: '/product/un-bags'
+      },
+
+      {
+        title: 'Diaper Bag',
+        desc: 'We provide high-performance Diaper Bags that are specially designed to...',
+        image: asset_diaper_bag_actual,
+        link: '/product/diaper-bag'
+      },
+
+      {
+        title: 'Conductive Bag',
+        desc: 'Our Conductive Bags are designed to eliminate the risks associated...',
+        image: asset_conductive_bag_actual,
+        link: '/product/c-conductive-bag'
+      },
+
+      {
+        title: 'Baffle Bags',
+        desc: 'We offer premium-quality Baffle Bags that are specially engineered to...',
+        image: asset_baffle_bag_actual,
+        link: '/product/baffle-bags'
+      },
     ],
     // Leno Bags & Fabric
     [
-      { title: 'Raschel Bags & Fabric', desc: 'Knitted breathable mesh bags ideal for fresh agricultural produce — onions, potatoes, citrus.', image: asset_RASCHEL_BAGS, link: '/product/raschel-bags-fabric' },
-      { title: 'Leno Flat Fabric – Rolls', desc: 'High-strength leno woven rolls for custom ventilation packaging.', image: asset_LENO_FLAT_FABRIC, link: '/product/leno-flat-fabric-rolls' },
-      { title: 'Leno Bag', desc: 'Durable mesh packaging for onions, potatoes, and fresh produce.', image: asset_leno_bag, link: '/product/leno-bag' },
-      { title: 'Wicketed Leno Bag', desc: 'Automated packing line mesh bags engineered for high-speed filling.', image: asset_wileted_leno_bag, link: '/product/wileted-leno-bag' },
+      { title: 'Raschel Bags & Fabric', desc: 'What is a Raschel Bag? Raschel bags are knitted —...', image: asset_RASCHEL_BAGS, link: '/product/raschel-bags-fabric' },
+      { title: 'Leno Flat Fabric – Rolls', desc: 'Leno Flat Fabric in Rolls Leno flat fabric is the...', image: asset_LENO_FLAT_FABRIC, link: '/product/leno-flat-fabric-rolls' },
+      { title: 'Leno Bag', desc: 'It is a long established fact that a reader will...', image: asset_leno_bag, link: '/product/leno-bag' },
+      { title: 'Wicketed Leno Bag', desc: 'Speed Meets Freshness on Every Packing Line When a packing...', image: asset_wileted_leno_bag, link: '/product/wileted-leno-bag' },
     ],
     // PP Woven Sacks
     [
-      { title: 'Printed PP Woven Sacks', desc: 'High-definition flexo printing up to 6 colors for retail branding.', image: asset_printed_pp_woven, link: '/product/print-options' },
-      { title: 'Moisture Barrier Liners', desc: 'Internal PE liners providing 100% moisture protection for sensitive cargo.', image: asset_liner_options, link: '/product/liner-options' },
-      { title: 'Reinforced Bottom Seams', desc: 'Double folded heavy-duty stitching for maximum load strength.', image: asset_bottom_construction, link: '/product/bottom-construction' },
-      { title: 'PP Woven Sacks', desc: 'Industrial-grade polypropylene woven sacks for bulk dry commodities.', image: asset_pp_woven_main, link: '/product_category/pp-woven-sacks' },
+      { title: 'Print Options', desc: 'All woven PP bags are available with direct print on...', image: asset_printed_pp_woven, link: '/product/print-options' },
+      { title: 'Liner Options', desc: 'A liner turns a woven PP bag into a moisture...', image: asset_liner_options, link: '/product/liner-options' },
+      { title: 'Bottom Construction', desc: 'The bottom seam is the most load-stressed point in a...', image: asset_bottom_construction, link: '/product/bottom-construction' },
+      { title: 'Top Finishes', desc: 'The top finish determines how the bag behaves at the...', image: asset_top_finish, link: '/product_category/pp-woven-sacks' },
     ],
     // Jute / Burlap
     [
-      { title: 'Jute Burlap Sacks', desc: '100% eco-friendly biodegradable natural fibre packaging for commodities and agricultural goods.', image: asset_juteburlap_bags, link: '/product/jute-burlap-bags' },
-      { title: 'Custom Printed Jute', desc: 'Organic brand presentation with non-toxic water-based inks on natural fibre.', image: asset_jutesacks_printed, link: '/product/jute-sacks-printed' },
-      { title: 'Soil & Nursery Bags', desc: 'Breathable burlap containers for landscaping and root protection.', image: asset_horticultural, link: '/product/horticultural-landscaping' },
-      { title: 'Jute Twine & Cordage', desc: 'Heavy-duty industrial natural binding and packaging cords.', image: asset_jutetwine, link: '/product/jute-twine-cord' },
+      { title: 'Jute & Burlap Bags', desc: 'No synthetic material replicates what natural burlap does in the...', image: asset_juteburlap_bags, link: '/product/jute-burlap-bags' },
+      { title: 'Jute Sacks & Printed Bags', desc: 'Standard Jute Sack The jute sack is the original sustainable...', image: asset_jutesacks_printed, link: '/product/jute-sacks-printed' },
+      { title: 'Horticultural & Landscaping', desc: 'Jute Soil Saver Topsoil is one of the most valuable...', image: asset_horticultural, link: '/product/horticultural-landscaping' },
+      { title: 'Jute Twin & Cord', desc: 'Why Jute Twine? Garden twine sounds simple. It is not...', image: asset_jutetwine, link: '/product/jute-twine-cord' },
     ],
     // Specialty Fabrics
     [
-      { title: 'Monofilament Fabrics', desc: 'High tensile mesh fabrics for industrial filtration & shading.', image: asset_Monofilament_Fabrics, link: '/product/monofilament-fabrics' },
-      { title: 'rPET Eco Fabrics', desc: '100% post-consumer recycled polyester woven packaging.', image: asset_rPET_Fabrics, link: '/product/rpet-fabrics' },
-      { title: 'Lumber Cover Fabrics', desc: 'Weatherproof UV-stabilised heavy wraps for timber protection.', image: asset_Lumber_Cover_Fabrics, link: '/product/lumber-cover-fabrics' },
-      { title: 'Roofing Underlayment', desc: 'Water-resistant synthetic membranes for modern roofing systems.', image: asset_roofing_underlayment, link: '/product/roofing-underlayment' },
+      { title: 'Monofilament Fabrics', desc: 'Single Strand. Superior Strength. Our Monofilament Fabrics are high-performance technical...', image: asset_Monofilament_Fabrics, link: '/product/monofilament-fabrics' },
+      { title: 'rPET Fabrics', desc: 'Recycled from Plastic. Reimagined for Industry. Our rPET Fabrics are...', image: asset_rPET_Fabrics, link: '/product/rpet-fabrics' },
+      { title: 'Lumber Cover Fabrics', desc: 'Protect Your Timber. Preserve Your Value. Our Lumber Cover Fabrics...', image: asset_Lumber_Cover_Fabrics, link: '/product/lumber-cover-fabrics' },
+      { title: 'Woven Specialty Fabrics', desc: 'HDPE Woven Fabric High-density polyethylene woven fabric is produced from...', image: asset_woven_specialty_fabrics, link: '/product/woven-specialty-fabrics' },
     ],
     // Retail Shopping Bags
+    // Retail Shopping Bags
     [
-      { title: 'PP Non-Woven Tote', desc: 'Reusable eco shopping totes designed for high-capacity retail.', image: asset_PP_shopping_bag, link: '/product/pp-shopping-bag' },
-      { title: 'Laminated PP Bags', desc: 'Waterproof full-colour photo printed retail shopping bags.', image: asset_retail_friendly, link: '/product/pp-shopping-bag' },
-      { title: 'Woven Non-Woven Retail Bags', desc: 'Compact durable bags with reinforced handles for retail use.', image: asset_PP_shopping_bag, link: '/product/pp-shopping-bag' },
-      { title: 'Heavy Duty Carrier Bags', desc: 'Multi-use retail packaging for hardware & bulk grocery.', image: asset_retail_friendly, link: '/product/pp-shopping-bag' },
+      {
+        title: 'Paper Bag With Twisted Handle',
+        desc: 'Simple to Hold. Hard to Forget. The paper bag with...',
+        image: asset_paper_bag_twisted_handle,
+        link: '/product/paper-bag-with-twisted-handle'
+      },
+
+      {
+        title: 'White Bleached Flat Handle',
+        desc: 'Clean, Confident, and Unmistakably Premium. First impressions in retail happen...',
+        image: asset_white_bleached_flat_handle,
+        link: '/product/white-bleached-flat-handle'
+      },
+
+      {
+        title: 'Jute Shopping Bag',
+        desc: 'Carry More Than Just Groceries. Carry a Statement. There is...',
+        image: asset_jute_shopping_bag,
+        link: '/product/jute-shopping-bag'
+      },
+
+      {
+        title: 'PP Shopping Bags',
+        desc: 'The Bag That Works As Hard As Your Business Ask...',
+        image: asset_PP_shopping_bag,
+        link: '/product/pp-shopping-bag'
+      },
     ],
     // Agro Textiles
     [
-      { title: 'Hail & Bird Protection Nets', desc: 'High-density poly netting for agricultural orchard safety.', image: asset_hail_nets, link: '/product/hail-nets' },
-      { title: 'Agro Shade Nets', desc: 'UV treated crop shading nets for optimal solar protection.', image: asset_shade_nets, link: '/product/hail-nets' },
-      { title: 'Silage Bale Wrap', desc: 'Airtight stretch film for fodder preservation and storage.', image: asset_silage_wrap, link: '/product/silage-wrap' },
-      { title: 'Woven Ground Cover', desc: 'Heavy-duty ground cover for weed control with good drainage.', image: asset_ground_cover, link: '/product/house-wrap' },
+      {
+        title: 'Roofing Underlayment',
+        desc: 'The Layer Between Structure and Weather. A roof covering –...',
+        image: asset_roofing_underlayment,
+        link: '/product/roofing-underlayment'
+      },
+
+      {
+        title: 'House Wrap',
+        desc: 'One Fabric. Two Jobs. A house wrap — also called...',
+        image: asset_house_wrap,
+        link: '/product/house-wrap'
+      },
+
+      {
+        title: 'Hail Nets',
+        desc: 'The One Threat That Gives No Warning. Drought develops over...',
+        image: asset_hail_nets,
+        link: '/product/hail-nets'
+      },
+
+      {
+        title: 'Silage Wrap & Bale Wrap',
+        desc: 'Preserving the Harvest Through Fermentation Silage is fermented forage —...',
+        image: asset_silage_wrap,
+        link: '/product/silage-wrap'
+      },
     ]
   ];
 
@@ -311,43 +384,69 @@ export default function HomePage() {
               </Reveal>
 
               <Reveal delay={0.07}>
-                <h1 style={{
-                  fontSize: 'clamp(28px, 3.5vw, 42px)',
-                  fontWeight: '800',
-                  lineHeight: 1.1,
-                  color: '#142E3D',
-                  fontFamily: 'Manrope, sans-serif',
-                  marginBottom: '12px'
-                }}>
-                  {t('heroTitle')}
-                </h1>
+                <div style={{ marginBottom: '16px' }}>
+                  <h1 style={{
+                    fontSize: 'clamp(32px, 4.2vw, 48px)',
+                    fontWeight: '800',
+                    lineHeight: 1.15,
+                    color: '#142E3D',
+                    fontFamily: 'Manrope, sans-serif',
+                    marginBottom: '10px'
+                  }}>
+                    {t('heroTitle')}
+                  </h1>
+                  <div style={{
+                    width: '100%',
+                    maxWidth: '480px',
+                    height: '4px',
+                    backgroundColor: '#BAE6FD',
+                    borderRadius: '2px'
+                  }} />
+                </div>
               </Reveal>
 
               <Reveal delay={0.14}>
                 <p style={{
-                  fontSize: 'clamp(15px, 1.7vw, 18px)',
-                  fontWeight: '500',
-                  lineHeight: 1.65,
-                  color: '#334155',
+                  fontSize: 'clamp(16px, 1.8vw, 18.5px)',
+                  fontWeight: '700',
+                  lineHeight: 1.5,
+                  color: '#142E3D',
                   maxWidth: '620px',
-                  marginBottom: t('heroDescSub1') ? '10px' : '20px'
+                  marginBottom: '14px'
                 }}>
                   {t('heroDesc')}
                 </p>
               </Reveal>
 
-              {t('heroDescSub1') && (
+              {(t('heroDescSub1') || t('heroDescSub2') || t('heroTagline')) && (
                 <Reveal delay={0.18}>
-                  <p style={{
-                    fontSize: 'clamp(13.5px, 1.5vw, 15px)',
+                  <div style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '10px',
+                    fontSize: 'clamp(13.5px, 1.45vw, 15px)',
                     fontWeight: '400',
-                    lineHeight: 1.7,
-                    color: '#475569',
+                    lineHeight: 1.6,
+                    color: '#64748B',
                     maxWidth: '620px',
-                    marginBottom: '16px'
+                    marginBottom: '20px'
                   }}>
-                    {t('heroDescSub1')}
-                  </p>
+                    {t('heroDescSub1') && (
+                      <p style={{ margin: 0 }}>
+                        {t('heroDescSub1')}
+                      </p>
+                    )}
+                    {t('heroDescSub2') && (
+                      <p style={{ margin: 0 }}>
+                        {t('heroDescSub2')}
+                      </p>
+                    )}
+                    {t('heroTagline') && (
+                      <p style={{ margin: 0, fontWeight: '500', color: '#475569' }}>
+                        {t('heroTagline')}
+                      </p>
+                    )}
+                  </div>
                 </Reveal>
               )}
 

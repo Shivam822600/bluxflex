@@ -170,15 +170,20 @@ function App() {
           <Route path="/product/raschel-bags-fabric" element={<ProductRaschelBagsFabric />} />
           <Route path="/product/retail-friendly-packaging" element={<ProductRetailFriendlyPackaging />} />
           <Route path="/product/retail-shopping-bag-a" element={<ProductRetailShoppingBagA />} />
+          <Route path="/product/paper-bag-with-twisted-handle" element={<ProductRetailShoppingBagA />} />
           <Route path="/product/retail-shopping-bag-b" element={<ProductRetailShoppingBagB />} />
+          <Route path="/product/white-bleached-flat-handle" element={<ProductRetailShoppingBagB />} />
           <Route path="/product/retail-shopping-bag-c" element={<ProductRetailShoppingBagC />} />
+          <Route path="/product/jute-shopping-bag" element={<ProductRetailShoppingBagC />} />
           <Route path="/product/retail-shopping-bag-d" element={<ProductRetailShoppingBagD />} />
+          <Route path="/product/pp-shopping-bag" element={<ProductRetailShoppingBagD />} />
           <Route path="/product/roofing-underlayment" element={<ProductRoofingUnderlayment />} />
           <Route path="/product/rpet-fabrics" element={<ProductRpetFabrics />} />
           <Route path="/product/shades-net" element={<ProductShadesNet />} />
           <Route path="/product/shared-net" element={<ProductSharedNet />} />
           <Route path="/product/silage-net" element={<ProductSilageNet />} />
           <Route path="/product/silage-wrap-bale-wrap" element={<ProductSilageWrapBaleWrap />} />
+          <Route path="/product/silage-wrap" element={<ProductSilageWrapBaleWrap />} />
           <Route path="/product/silt-fence" element={<ProductSiltFence />} />
           <Route path="/product/soil-saver" element={<ProductSoilSaver />} />
           <Route path="/product/top-finishes" element={<ProductTopFinishes />} />
