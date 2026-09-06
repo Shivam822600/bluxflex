@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ShieldCheck, ChevronRight, Filter, Search, Package } from 'lucide-react';
@@ -19,9 +19,14 @@ import asset_horticultural from '../assets/images/official/horticultural__landsc
 
 function ProductCardImage({ src, alt, category }) {
   const [isLoaded, setIsLoaded] = useState(false);
+  const imgRef = useRef(null);
 
   useEffect(() => {
-    setIsLoaded(false);
+    if (imgRef.current && imgRef.current.complete && imgRef.current.naturalWidth > 0) {
+      setIsLoaded(true);
+    } else {
+      setIsLoaded(false);
+    }
   }, [src]);
 
   return (
@@ -43,6 +48,8 @@ function ProductCardImage({ src, alt, category }) {
         </div>
       )}
       <img
+        ref={imgRef}
+        key={src}
         src={src}
         alt={alt}
         loading="eager"
@@ -53,8 +60,8 @@ function ProductCardImage({ src, alt, category }) {
           height: '100%',
           objectFit: 'contain',
           opacity: isLoaded ? 1 : 0,
-          transform: isLoaded ? 'scale(1)' : 'scale(0.96)',
-          transition: 'opacity 0.28s ease, transform 0.28s ease',
+          transform: isLoaded ? 'scale(1)' : 'scale(0.97)',
+          transition: 'opacity 0.2s ease, transform 0.2s ease',
           position: 'relative',
           zIndex: 2
         }}

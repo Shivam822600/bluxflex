@@ -24,48 +24,48 @@ import {
 // ─── Hero Graphic (Pure Cutout Packaging: FIBC Jumbo Bag, Boxes, Kraft Sacks) ─
 import heroPackagingCutout from '../assets/images/home-main-image.png?url';
 
-// ─── Product Image Assets (official folder) ───────────────────────────────────
+// ─── Product Image Assets (1-to-1 Exact Product Images, Fast-Loading Web Versions) ──
 // FIBC / Jumbo Bags
-import asset_un_bag_actual from '../assets/images/official/C-Conductive-Bag.jpg?url';
-import asset_diaper_bag_actual from '../assets/images/official/Diaper-Bag-1.jpg?url';
-import asset_conductive_bag_actual from '../assets/images/official/Un-Bags.jpg?url';
-import asset_baffle_bag_actual from '../assets/images/official/Diaper-Bag.jpg?url';
+import asset_un_bag_actual from '../assets/images/C-Conductive-Bag-297x300.jpg';
+import asset_diaper_bag_actual from '../assets/images/Diaper-Bag-1-297x300.jpg';
+import asset_conductive_bag_actual from '../assets/images/Un-Bags-297x300.jpg';
+import asset_baffle_bag_actual from '../assets/images/Diaper-Bag-297x300.jpg';
 
 // Leno
-import asset_RASCHEL_BAGS from '../assets/images/official/RASCHEL-BAGS-FABRIC.png?url';
-import asset_LENO_FLAT_FABRIC from '../assets/images/official/LENO-FLAT-FABRIC-_-ROLLS.png?url';
-import asset_leno_bag from '../assets/images/official/leno-bag.jpeg?url';
-import asset_wileted_leno_bag from '../assets/images/official/wileted-leno-bag.jpeg?url';
+import asset_RASCHEL_BAGS from '../assets/images/RASCHEL-BAGS-FABRIC-300x300.png';
+import asset_LENO_FLAT_FABRIC from '../assets/images/LENO-FLAT-FABRIC-—-ROLLS-300x300.png';
+import asset_leno_bag from '../assets/images/leno-bag-297x300.jpeg';
+import asset_wileted_leno_bag from '../assets/images/wileted-leno-bag-297x300.jpeg';
 
 // PP Woven
-import asset_printed_pp_woven from '../assets/images/official/printed-pp-woven-sack-upto-six-colors.png?url';
-import asset_liner_options from '../assets/images/official/fd6ea04a-aca5-4e3d-b574-738ee945af82.jpeg?url';
-import asset_bottom_construction from '../assets/images/official/a4da6e12-8b22-4896-929b-815191c46974.png?url';
-import asset_top_finish from '../assets/images/top_finish.png?url';
+import asset_printed_pp_woven from '../assets/images/printed-pp-woven-sack-upto-six-colors-297x300.png';
+import asset_liner_options from '../assets/images/fd6ea04a-aca5-4e3d-b574-738ee945af82-md-300x300.jpg';
+import asset_bottom_construction from '../assets/images/a4da6e12-8b22-4896-929b-815191c46974-300x300.png';
+import asset_top_finish from '../assets/images/2eb7cfac-a931-4772-9c11-d52f91da846e-300x300.png';
 
 // Jute / Burlap
-import asset_juteburlap_bags from '../assets/images/official/juteburlap_bags.png?url';
-import asset_jutesacks_printed from '../assets/images/official/jutesacks__printedbags.png?url';
-import asset_horticultural from '../assets/images/official/horticultural__landscaping.png?url';
-import asset_jutetwine from '../assets/images/official/jutetwine__cord.png?url';
+import asset_juteburlap_bags from '../assets/images/juteburlap_bags-300x300.png';
+import asset_jutesacks_printed from '../assets/images/jutesacks__printedbags-300x300.png';
+import asset_horticultural from '../assets/images/horticultural__landscaping-300x300.png';
+import asset_jutetwine from '../assets/images/jutetwine__cord-300x300.png';
 
 // Specialty Fabrics
-import asset_Monofilament_Fabrics from '../assets/images/official/Monofilament-Fabrics.jpg?url';
-import asset_rPET_Fabrics from '../assets/images/official/rPET-Fabrics.jpg?url';
-import asset_Lumber_Cover_Fabrics from '../assets/images/official/Lumber-Cover-Fabrics.jpg?url';
-import asset_woven_specialty_fabrics from '../assets/images/official/specialty_fabrics.png?url';
+import asset_Monofilament_Fabrics from '../assets/images/Monofilament-Fabrics-297x300.jpg';
+import asset_rPET_Fabrics from '../assets/images/rPET-Fabrics-297x300.jpg';
+import asset_Lumber_Cover_Fabrics from '../assets/images/Lumber-Cover-Fabrics-297x300.jpg';
+import asset_woven_specialty_fabrics from '../assets/images/specialty_fabrics-300x300.png';
 
 // Retail
-import asset_PP_shopping_bag from '../assets/images/official/PP-shopping-bag.jpg?url';
-import asset_jute_shopping_bag from '../assets/images/juth_shopping_bag.png?url';
-import asset_paper_bag_twisted_handle from '../assets/images/paper_bag_with_twisted_handle.png?url';
-import asset_white_bleached_flat_handle from '../assets/images/white_bleached_flat_handle.png?url';
+import asset_PP_shopping_bag from '../assets/images/PP-shopping-bag-297x300.jpg';
+import asset_jute_shopping_bag from '../assets/images/bulk3-297x300.png';
+import asset_paper_bag_twisted_handle from '../assets/images/bulk12-297x300.png';
+import asset_white_bleached_flat_handle from '../assets/images/bulk11-297x300.png';
 
 // Agro Textiles
-import asset_hail_nets from '../assets/images/official/hail_nets.png?url';
-import asset_roofing_underlayment from '../assets/images/official/roofing_underlayment.png?url';
-import asset_house_wrap from '../assets/images/official/house_wrap.png?url';
-import asset_silage_wrap from '../assets/images/official/SILAGE-WRAP-BALE-WRAP.jpg?url';
+import asset_hail_nets from '../assets/images/hail_nets-300x300.png';
+import asset_roofing_underlayment from '../assets/images/roofing_underlayment-300x300.png';
+import asset_house_wrap from '../assets/images/house_wrap-300x300.png';
+import asset_silage_wrap from '../assets/images/SILAGE-WRAP-BALE-WRAP-300x300.jpg';
 
 // Retail — additional
 import asset_retail_friendly from '../assets/images/official/Retail-Friendly-Packaging.jpg?url';
@@ -184,9 +184,14 @@ function GlobalSourcingGraphic() {
 // ─── Product Card Image with Shimmer Skeleton ────────────────────────────────
 function ProductCardImage({ src, alt }) {
   const [isLoaded, setIsLoaded] = useState(false);
+  const imgRef = useRef(null);
 
   useEffect(() => {
-    setIsLoaded(false);
+    if (imgRef.current && imgRef.current.complete && imgRef.current.naturalWidth > 0) {
+      setIsLoaded(true);
+    } else {
+      setIsLoaded(false);
+    }
   }, [src]);
 
   return (
@@ -220,6 +225,8 @@ function ProductCardImage({ src, alt }) {
 
       {/* Actual Product Image */}
       <img
+        ref={imgRef}
+        key={src}
         src={src}
         alt={alt}
         loading="eager"
@@ -230,8 +237,8 @@ function ProductCardImage({ src, alt }) {
           height: '100%',
           objectFit: 'contain',
           opacity: isLoaded ? 1 : 0,
-          transform: isLoaded ? 'scale(1)' : 'scale(0.96)',
-          transition: 'opacity 0.28s ease, transform 0.28s ease',
+          transform: isLoaded ? 'scale(1)' : 'scale(0.97)',
+          transition: 'opacity 0.2s ease, transform 0.2s ease',
           position: 'relative',
           zIndex: 2
         }}
