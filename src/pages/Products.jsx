@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
-import { ArrowRight, ShieldCheck, ChevronRight, Filter, Search } from 'lucide-react';
+import { ArrowRight, ShieldCheck, ChevronRight, Filter, Search, Package } from 'lucide-react';
 
 import asset_9e742bd7_c239_40c0_b23a_4dc7325f456d_300x300_png_1 from '../assets/images/official/9e742bd7-c239-40c0-b23a-4dc7325f456d.png?url';
 import asset_8f21b94e_0d1a_4770_bf8a_3399ef293774_md_300x300_jpg_4 from '../assets/images/official/8f21b94e-0d1a-4770-bf8a-3399ef293774.jpeg?url';
@@ -16,6 +16,69 @@ import asset_juteburlap_bags from '../assets/images/official/juteburlap_bags.png
 import asset_specialty_fabrics from '../assets/images/official/specialty_fabrics.png?url';
 import asset_PP_shopping_bag from '../assets/images/official/PP-shopping-bag.jpg?url';
 import asset_horticultural from '../assets/images/official/horticultural__landscaping.png?url';
+
+function ProductCardImage({ src, alt, category }) {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(false);
+  }, [src]);
+
+  return (
+    <div className="img-container" style={{ height: '220px', background: '#FFFFFF', position: 'relative', padding: '16px', overflow: 'hidden' }}>
+      {!isLoaded && (
+        <div
+          className="image-skeleton"
+          style={{
+            position: 'absolute',
+            inset: '16px',
+            borderRadius: '12px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 1
+          }}
+        >
+          <Package size={28} color="#94A3B8" style={{ opacity: 0.5 }} />
+        </div>
+      )}
+      <img
+        src={src}
+        alt={alt}
+        loading="eager"
+        decoding="async"
+        onLoad={() => setIsLoaded(true)}
+        style={{
+          width: '100%',
+          height: '100%',
+          objectFit: 'contain',
+          opacity: isLoaded ? 1 : 0,
+          transform: isLoaded ? 'scale(1)' : 'scale(0.96)',
+          transition: 'opacity 0.28s ease, transform 0.28s ease',
+          position: 'relative',
+          zIndex: 2
+        }}
+      />
+      {category && (
+        <span style={{
+          position: 'absolute',
+          top: '12px',
+          left: '12px',
+          background: 'rgba(7, 40, 52, 0.85)',
+          backdropFilter: 'blur(4px)',
+          color: '#FFFFFF',
+          fontSize: '11px',
+          fontWeight: '700',
+          padding: '4px 10px',
+          borderRadius: '50px',
+          zIndex: 3
+        }}>
+          {category}
+        </span>
+      )}
+    </div>
+  );
+}
 
 export default function Products() {
   const [activeCategory, setActiveCategory] = useState('All');
@@ -237,28 +300,7 @@ export default function Products() {
                   key={idx}
                   className="product-card-premium"
                 >
-                  {/* Image */}
-                  <div className="img-container" style={{ height: '220px', background: '#FFFFFF', position: 'relative', padding: '16px' }}>
-                    <img 
-                      src={product.image} 
-                      alt={product.title} 
-                      style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
-                    />
-                    <span style={{
-                      position: 'absolute',
-                      top: '12px',
-                      left: '12px',
-                      background: 'rgba(7, 40, 52, 0.85)',
-                      backdropFilter: 'blur(4px)',
-                      color: '#FFFFFF',
-                      fontSize: '11px',
-                      fontWeight: '700',
-                      padding: '4px 10px',
-                      borderRadius: '50px'
-                    }}>
-                      {product.category}
-                    </span>
-                  </div>
+                  <ProductCardImage src={product.image} alt={product.title} category={product.category} />
 
                   {/* Content */}
                   <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', flexGrow: 1 }}>

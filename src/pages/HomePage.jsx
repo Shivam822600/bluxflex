@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../components/Layout';
 import { useLanguage } from '../context/LanguageContext';
@@ -22,7 +22,7 @@ import {
 } from 'lucide-react';
 
 // ─── Hero Graphic (Pure Cutout Packaging: FIBC Jumbo Bag, Boxes, Kraft Sacks) ─
-import heroPackagingCutout from '../assets/images/bulkflex_hero_cutout.jpg?url';
+import heroPackagingCutout from '../assets/images/home-main-image.png?url';
 
 // ─── Product Image Assets (official folder) ───────────────────────────────────
 // FIBC / Jumbo Bags
@@ -176,6 +176,65 @@ function GlobalSourcingGraphic() {
           filter: 'contrast(1.04) brightness(1.01)'
         }}
         loading="eager"
+      />
+    </div>
+  );
+}
+
+// ─── Product Card Image with Shimmer Skeleton ────────────────────────────────
+function ProductCardImage({ src, alt }) {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(false);
+  }, [src]);
+
+  return (
+    <div style={{
+      height: '240px',
+      background: '#FFFFFF',
+      padding: '16px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      position: 'relative',
+      overflow: 'hidden'
+    }}>
+      {/* Animated Shimmer Skeleton Placeholder */}
+      {!isLoaded && (
+        <div
+          className="image-skeleton"
+          style={{
+            position: 'absolute',
+            inset: '16px',
+            borderRadius: '12px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 1
+          }}
+        >
+          <Package size={30} color="#94A3B8" style={{ opacity: 0.5 }} />
+        </div>
+      )}
+
+      {/* Actual Product Image */}
+      <img
+        src={src}
+        alt={alt}
+        loading="eager"
+        decoding="async"
+        onLoad={() => setIsLoaded(true)}
+        style={{
+          width: '100%',
+          height: '100%',
+          objectFit: 'contain',
+          opacity: isLoaded ? 1 : 0,
+          transform: isLoaded ? 'scale(1)' : 'scale(0.96)',
+          transition: 'opacity 0.28s ease, transform 0.28s ease',
+          position: 'relative',
+          zIndex: 2
+        }}
       />
     </div>
   );
@@ -344,6 +403,18 @@ export default function HomePage() {
       },
     ]
   ];
+
+  // Preload all exact product images in browser cache so tab switching is instant
+  useEffect(() => {
+    productsData.forEach((category) => {
+      category.forEach((item) => {
+        if (item && item.image) {
+          const img = new Image();
+          img.src = item.image;
+        }
+      });
+    });
+  }, []);
 
   return (
     <Layout>
@@ -609,6 +680,14 @@ export default function HomePage() {
                 <button
                   key={idx}
                   onClick={() => setActiveTab(idx)}
+                  onMouseEnter={() => {
+                    productsData[idx]?.forEach((item) => {
+                      if (item && item.image) {
+                        const img = new Image();
+                        img.src = item.image;
+                      }
+                    });
+                  }}
                   style={{
                     background: activeTab === idx ? '#142E3D' : '#FFFFFF',
                     color: activeTab === idx ? '#FFFFFF' : '#475569',
@@ -653,7 +732,7 @@ export default function HomePage() {
           }}>
             {productsData[activeTab]?.map((prod, idx) => (
               <div
-                key={idx}
+                key={`${activeTab}-${prod.title || idx}`}
                 className="product-card-premium"
                 style={{
                   background: '#FFFFFF',
@@ -666,14 +745,7 @@ export default function HomePage() {
                 onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = '0 16px 40px rgba(20,46,61,0.10)'; }}
                 onMouseLeave={(e) => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = '0 4px 16px rgba(20,46,61,0.04)'; }}
               >
-                <div style={{ height: '240px', background: '#FFFFFF', padding: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
-                  <img
-                    src={prod.image}
-                    alt={prod.title}
-                    style={{ width: '100%', height: '100%', objectFit: 'contain' }}
-                    loading="lazy"
-                  />
-                </div>
+                <ProductCardImage src={prod.image} alt={prod.title} />
                 <div style={{ padding: '0 20px 20px 20px' }}>
                   <h3 style={{ fontSize: '16px', fontWeight: '800', color: '#142E3D', marginBottom: '6px' }}>{prod.title}</h3>
                   <p style={{ fontSize: '12.5px', color: '#64748B', lineHeight: 1.6, marginBottom: '16px' }}>{prod.desc}</p>
